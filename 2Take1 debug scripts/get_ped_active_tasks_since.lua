@@ -1,8 +1,5 @@
 local NATIVES <const> = require("lib\\natives2845")
 
-local text = "PED ACTIVE TASKS:"
-local playerPed = player.player_ped()
-
 
 local function create_tick_handler(handler)
     return menu.create_thread(function()
@@ -14,6 +11,7 @@ local function create_tick_handler(handler)
 end
 
 
+local playerPed = player.player_ped()
 local base_tasks = {}
 
 -- Get initial set of tasks
@@ -27,6 +25,8 @@ menu.clear_all_notifications()
 
 -- Main loop to continuously check for new tasks
 create_tick_handler(function()
+    local playerPed = player.player_ped()
+
     for i = 0, 1000 do
         if NATIVES.TASK.GET_IS_TASK_ACTIVE(playerPed, i) then
             if not base_tasks[i] then
