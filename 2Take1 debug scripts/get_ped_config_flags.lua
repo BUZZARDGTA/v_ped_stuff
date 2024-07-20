@@ -1,5 +1,6 @@
 local NATIVES <const> = require("lib\\natives2845")
 
+
 local text = "PED CONFIG FLAGS:"
 local playerPed = player.player_ped()
 
