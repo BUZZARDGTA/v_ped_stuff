@@ -391,7 +391,7 @@ void CPedConfigFlags::Init(CPed* pPed)
 	SetFlag( CPED_CONFIG_FLAG_SteersAroundPeds,  true );
 	SetFlag( CPED_CONFIG_FLAG_SteersAroundObjects,  true );
 	SetFlag( CPED_CONFIG_FLAG_SteersAroundVehicles,  true );
-	
+
 	SetFlag( CPED_CONFIG_FLAG_KeepRelationshipGroupAfterCleanUp, true );
 
 	SetFlag( CPED_CONFIG_FLAG_CanLosePropsOnDamage, true );
@@ -429,7 +429,7 @@ void CPedConfigFlags::Reset(CPed* pPed)
 
 //
 // Function:	CPedResetFlags::StaticInit
-// Use:			Sets up bit masks of the flags to clear in various sections of the 
+// Use:			Sets up bit masks of the flags to clear in various sections of the
 void CPedResetFlags::StaticInit()
 {
 	// reset these flag every frame in the Reset function
@@ -480,7 +480,7 @@ void CPedResetFlags::StaticInit()
 	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_ApplyVelocityDirectly );
 	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DisablePlayerLockon );
 
-	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DoNotClampFootIk );	
+	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DoNotClampFootIk );
 
 	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_ResetMoveGroupAfterRagdoll );// reset function messes with this, but ok to clear first
 	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_KnockedToTheFloorByPlayer );// reset function messes with this, but ok to clear first
@@ -497,8 +497,8 @@ void CPedResetFlags::StaticInit()
 
 	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_IncreasedAvoidanceRadius );
 	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_EnableMoverAnimationWhileAttached );
-	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_NoTimeDelayBeforeShot );	
-	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_IsVaulting );	
+	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_NoTimeDelayBeforeShot );
+	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_IsVaulting );
 	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_IsParachuting );
 	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableProcessProbes );
 	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_SuppressSlowingForCorners );
@@ -508,14 +508,14 @@ void CPedResetFlags::StaticInit()
 	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_SkipReactInReactAndFlee );
 	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_ForceForwardTransitionInReactAndFlee );
 	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_UseTighterTurnSettings );
-	
+
 	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_VisemeAnimsBlocked );
-	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableArmSolver );	
-	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableBodyLookSolver );	
+	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableArmSolver );
+	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableBodyLookSolver );
 	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableBodyRecoilSolver );
-	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableHeadSolver );	
-	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableTorsoSolver );	
-	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableTorsoReactSolver );	
+	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableHeadSolver );
+	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableTorsoSolver );
+	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableTorsoReactSolver );
 	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableTorsoVehicleSolver );
 	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableRootSlopeFixupSolver );
 	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_ShootFromGround );
@@ -571,7 +571,7 @@ void CPedResetFlags::StaticInit()
 	sm_PreAIPostInventoryResetFlagMask.BitSet().Set( CPED_RESET_FLAG_TemporarilyBlockWeaponSwitching );
 	sm_PreAIPostInventoryResetFlagMask.BitSet().Set( CPED_RESET_FLAG_TemporarilyBlockWeaponEquipping );
 	sm_PreAIPostInventoryResetFlagMask.BitSet().Set( CPED_RESET_FLAG_OnlySelectVehicleWeapons );
-	
+
 	// these are the flags we will reset before we perform the task update
 	sm_PreTaskResetFlagMask.BitSet().Set( CPED_RESET_FLAG_ProcessPreRender2 );
 	sm_PreTaskResetFlagMask.BitSet().Set( CPED_RESET_FLAG_IsJumping );
@@ -595,7 +595,7 @@ void CPedResetFlags::StaticInit()
 	sm_PreTaskResetFlagMask.BitSet().Set( CPED_RESET_FLAG_IsRappelling );
 	sm_PreTaskResetFlagMask.BitSet().Set( CPED_RESET_FLAG_IsFalling );
 	sm_PreTaskResetFlagMask.BitSet().Set( CPED_RESET_FLAG_PedExitedVehicleThisFrame );
-	sm_PreTaskResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableLegSolver );	
+	sm_PreTaskResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableLegSolver );
 	sm_PreTaskResetFlagMask.BitSet().Set( CPED_RESET_FLAG_NoCollisionMovementMode );
 	sm_PreTaskResetFlagMask.BitSet().Set( CPED_RESET_FLAG_SkipAimingIdleIntro );
 	sm_PreTaskResetFlagMask.BitSet().Set( CPED_RESET_FLAG_BlockIkWeaponReactions );
@@ -699,10 +699,10 @@ void CPedResetFlags::StaticInit()
 	sm_PreTaskResetFlagMask.BitSet().Set( CPED_RESET_FLAG_PutDownHelmetFX );
 	sm_PreTaskResetFlagMask.BitSet().Set( CPED_RESET_FLAG_ForceWantedLevelWhenKilled );
 	sm_PreTaskResetFlagMask.BitSet().Set( CPED_RESET_FLAG_EnableCollisionOnNetworkCloneWhenFixed );
-	
+
 	// these are the flags we will reset in the ResetPrePhysics function
 	sm_PrePhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_IsDrowning );
-	sm_PrePhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_AmbientAnimsBlocked ); 
+	sm_PrePhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_AmbientAnimsBlocked );
 	sm_PrePhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_IgnoredByAutoOpenDoors );
 	sm_PrePhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_AmbientIdleAndBaseAnimsBlocked );
 	sm_PrePhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_WasPhysicsOverridden );
@@ -718,7 +718,7 @@ void CPedResetFlags::StaticInit()
 	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_DisablePlayerJumping );
 	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_DisablePlayerVaulting );
 	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_DisablePlayerAutoVaulting );
-	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableGaitReduction );	
+	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableGaitReduction );
 	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_CollideWithGlassRagdoll );
 	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_CollideWithGlassWeapon );
 	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_ScriptDisableSecondaryAnimationTasks );
@@ -819,7 +819,7 @@ void CPedResetFlags::StaticInit()
 	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableAutoForceOutWhenBlowingUpCar );
 	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableDustOffAnims );
 	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableMeleeHitReactions );
-	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_AllowHeadPropInVehicle );    
+	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_AllowHeadPropInVehicle );
 	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_DontQuitMotionAiming );
 	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_PreserveAnimatedAngularVelocity );
 	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableVoiceDrivenMouthMovement );
@@ -828,8 +828,8 @@ void CPedResetFlags::StaticInit()
 	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_SteerIntoSkids );
 	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_AllowTasksIncompatibleWithMotion );
 	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_AllowOpenDoorIkBeforeFullMovement );
-	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_AllowHomingMissileLockOnInVehicle );	
-	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_DontUseSprintEnergy );	
+	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_AllowHomingMissileLockOnInVehicle );
+	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_DontUseSprintEnergy );
 	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableMaterialCollisionDamage );
 	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableMPFriendlyLockon );
 	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableMPFriendlyLethalMeleeActions );
@@ -848,9 +848,9 @@ void CPedResetFlags::StaticInit()
 	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_PoVCameraConstrained );
 	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableMeleeWeaponSelection );
 	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableSpikeStripRoadBlocks );
-	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_IsLowerPriorityMeleeTarget );	
-	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_ForceScanForEventsThisFrame );	
-	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_ForceAutoEquipHelmetsInAicraft );	
+	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_IsLowerPriorityMeleeTarget );
+	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_ForceScanForEventsThisFrame );
+	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_ForceAutoEquipHelmetsInAicraft );
 	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_UseFirstPersonVehicleAnimsIfFPSCamNotDominant );
 	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_ForceIntoStandPoseOnJetski );
 	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_SuppressTakedownMeleeActions );
@@ -1007,7 +1007,7 @@ void CPedResetFlags::Reset(CPed* pPed)
 		if(bResetMoveGroupAfterRagdoll)
 		{
 			bResetMoveGroupAfterRagdoll = false;
-		}		
+		}
 		// Unset the knocked to floor flag.
 		bKnockedToTheFloorByPlayer = false;
 	}
@@ -1035,7 +1035,7 @@ void CPedResetFlags::Reset(CPed* pPed)
 	{
 		m_nSetEntityZFromGround--;
 	}
-	
+
 	if(m_nSetEntityZFromGround == 0)
 	{
 		m_fEntityZFromGroundZHeight=0.0f;

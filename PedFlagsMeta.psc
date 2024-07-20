@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <ParserSchema xmlns="http://www.rockstargames.com/RageParserSchema"
  generate="class">
-  
+
   <enumdef type="ePedConfigFlags" generate="bitset">
-    <enumval name="CPED_CONFIG_FLAG_CreatedByFactory"/> 
+    <enumval name="CPED_CONFIG_FLAG_CreatedByFactory"/>
     <enumval name="CPED_CONFIG_FLAG_CanBeShotInVehicle" description=" script can stop peds being shot when driving vehicle (including exposed ones like bikes)"/>
     <enumval name="CPED_CONFIG_FLAG_NoCriticalHits" description=" ped cannot be killed by a single bullet"/>
     <enumval name="CPED_CONFIG_FLAG_DrownsInWater" description=" does this ped drown or swim?"/>
@@ -326,7 +326,7 @@
     <enumval name="CPED_CONFIG_FLAG_ForcePoseCharacterCloth" description="If set, default cloth pose will be applied if is available in the character cloth when the cloth is created."/>
     <enumval name="CPED_CONFIG_FLAG_HasClothCollisionBounds" description="If set, ped will use cloth collision bounds."/>
     <enumval name="CPED_CONFIG_FLAG_HasHighHeels" description="Set when the ped has high heels"/>
-    <enumval name="CPED_CONFIG_FLAG_TreatAsAmbientPedForDriverLockOn" description="If set, this force player ped to treat this ped as an ambient target rather than a mission ped for driver lock on"/>    
+    <enumval name="CPED_CONFIG_FLAG_TreatAsAmbientPedForDriverLockOn" description="If set, this force player ped to treat this ped as an ambient target rather than a mission ped for driver lock on"/>
     <enumval name="CPED_CONFIG_FLAG_DontBehaveLikeLaw" description="Currently used to prevent security peds from behaving like police (they will not report wanted position, can attack without WL, etc)"/>
     <enumval name="CPED_CONFIG_FLAG_SpawnedAtScenario" description="If set, the ped was originally spawned at a scenario point."/>
     <enumval name="CPED_CONFIG_FLAG_DisablePoliceInvestigatingBody" description="If set, police will not perform the CTaskShockingPoliceInvestigate Behavior on the ped"/>
@@ -403,7 +403,7 @@
     <enumval name="CPED_CONFIG_FLAG_KeepTargetLossResponseOnCleanup" description="On cleanup the ped will not reset their target loss response"/>
     <enumval name="CPED_CONFIG_FLAG_PlayersDontDragMeOutOfCar" description="Similar to DontDragMeOutCar except it only prevents players from dragging the ped out and allows AI to still do so"/>
     <enumval name="CPED_CONFIG_FLAG_BroadcastRepondedToThreatWhenGoingToPointShooting" description="Whenever the ped starts shooting while going to a point, it trigger a responded to threat broadcast"/>
-    <enumval name="CPED_CONFIG_FLAG_IgnorePedTypeForIsFriendlyWith" description="If this is set then IsFriendlyWith will ignore the ped type checks (i.e. two PEDTYPE_COP peds are not automatically friendly)"/>    
+    <enumval name="CPED_CONFIG_FLAG_IgnorePedTypeForIsFriendlyWith" description="If this is set then IsFriendlyWith will ignore the ped type checks (i.e. two PEDTYPE_COP peds are not automatically friendly)"/>
     <enumval name="CPED_CONFIG_FLAG_TreatNonFriendlyAsHateWhenInCombat" description="Any non friendly ped will be considered as hated instead"/>
     <enumval name="CPED_CONFIG_FLAG_DontLeaveVehicleIfLeaderNotInVehicle" description="Supresses exit vehicle task being created in CEventLeaderExitedCarAsDriver::CreateResponseTask." />
     <enumval name="CPED_CONFIG_FLAG_ChangeFromPermanentToAmbientPopTypeOnMigration" description="Change ped to ambient pop type on migration." />
@@ -526,7 +526,7 @@
     <enumval name="CPED_RESET_FLAG_IsWalkingRoundPlayer" description="Whether this ped is walking around another ped (one frame latency)"/>
 
     <enumval name="CPED_RESET_FLAG_GestureAnimsAllowed"/>
-  
+
     <enumval name="CPED_RESET_FLAG_VisemeAnimsBlocked" description="Blocks viseme anims from playing"/>
     <enumval name="CPED_RESET_FLAG_AmbientAnimsBlocked" description="Blocks new ambient idles from starting."/>
 
@@ -913,10 +913,10 @@
     <enumval name="CPED_RESET_FLAG_PlayFPSIdleFidgets" description="Allows us to load and play idle fidgets in TaskMotionAiming"/>
     <enumval name="CPED_RESET_FLAG_ForceExtraLongBlendInForPedSkipIdleCoverTransition" description="When putting a ped directly into cover, the ped will blend in the new cover anims slowly to prevent a pose pop"/>
     <enumval name="CPED_RESET_FLAG_BlendingOutFPSIdleFidgets" description="True if FPS idle fidgets are blending out"/>
-    <enumval name="CPED_RESET_FLAG_DisableMotionBaseVelocityOverride"/>    
+    <enumval name="CPED_RESET_FLAG_DisableMotionBaseVelocityOverride"/>
     <enumval name="CPED_RESET_FLAG_FPSSwimUseSwimMotionTask" description="Set to true when we are pressing forward on the left stick in FPS mode so we switch from Aiming to Swimmimg/Diving motion tasks"/>
     <enumval name="CPED_RESET_FLAG_FPSSwimUseAimingMotionTask" description="Set to true when we are strafing in water in FPS mode so we use the motion aiming task"/>
-    <enumval name="CPED_RESET_FLAG_FiringWeaponWhenReady" description="set when ped has decided to fire weapon when ready, used in FPS mode"/>      
+    <enumval name="CPED_RESET_FLAG_FiringWeaponWhenReady" description="set when ped has decided to fire weapon when ready, used in FPS mode"/>
     <enumval name="CPED_RESET_FLAG_IsBlindFiring" description="True if the blind fire task is running"/>
     <enumval name="CPED_RESET_FLAG_IsPeekingFromCover" description="True if the ped is peeking in cover"/>
     <enumval name="CPED_RESET_FLAG_TaskSkipProcessPreComputeImpacts" description="True to bail out of ProcessPreComputeImpacts"/>
@@ -930,15 +930,15 @@
     <enumval name="CPED_RESET_FLAG_InContactWithDeepSurface" description="ped is in contact with GTA_DEEP_SURFACE_TYPE bounds"/>
     <enumval name="CPED_RESET_FLAG_DontSuppressUseNavMeshToNavigateToVehicleDoorWhenVehicleInWater" description=""/>
     <enumval name="CPED_RESET_FLAG_IncludePedReferenceVelocityWhenFiringProjectiles" description="Add on the ped's velocity to the projectile's initial velocity."/>
-    <enumval name="CPED_RESET_FLAG_IsDoingCoverOutroToPeek" description=""/>    
+    <enumval name="CPED_RESET_FLAG_IsDoingCoverOutroToPeek" description=""/>
     <enumval name="CPED_RESET_FLAG_InstantBlendToAimNoSettle"/>
     <enumval name="CPED_RESET_FLAG_ForcePreCameraAnimUpdate" description="Force a pre camera animation update if the ped is the first person camera target during the pre camera update"/>
     <enumval name="CPED_RESET_FLAG_DisableHelmetCullFPS" description="Disables PV_FLAG_HIDE_IN_FIRST_PERSON from culling the prop in CPedPropsMgr::RenderPropsInternal"/>
-    <enumval name="CPED_RESET_FLAG_ShouldIgnoreCoverAutoHeadingCorrection" description=""/> 
+    <enumval name="CPED_RESET_FLAG_ShouldIgnoreCoverAutoHeadingCorrection" description=""/>
     <enumval name="CPED_RESET_FLAG_DisableReticuleInCoverThisFrame"/>
     <enumval name="CPED_RESET_FLAG_ForceScriptedCameraLowCoverAngleWhenEnteringCover"/>
     <enumval name="CPED_RESET_FLAG_DisableCameraConstraintFallBackThisFrame"/>
-    <enumval name="CPED_RESET_FLAG_DisableFPSArmIK" description="Disables FPS arm IK in CTaskPlayerOnFoot::IsStateValidForFPSIK"/>    
+    <enumval name="CPED_RESET_FLAG_DisableFPSArmIK" description="Disables FPS arm IK in CTaskPlayerOnFoot::IsStateValidForFPSIK"/>
     <enumval name="CPED_RESET_FLAG_DisableRightArmIKInCoverOutroFPS" description="Turn off right arm IK during cover outros in FPS mode when set"/>
     <enumval name="CPED_RESET_FLAG_DoFPSSprintBreakOut"/>
     <enumval name="CPED_RESET_FLAG_DoFPSJumpBreakOut"/>
