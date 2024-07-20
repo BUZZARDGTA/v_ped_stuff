@@ -66,7 +66,7 @@
     <enumval name="CPED_CONFIG_FLAG_IsStanding" description=" is ped standing on something"/>
     <enumval name="CPED_CONFIG_FLAG_WasStanding" description=" was the ped standing last frame"/>
     <enumval name="CPED_CONFIG_FLAG_InVehicle" description=" is in a vehicle"/>
-    <enumval name="CPED_CONFIG_FLAG_OnMount" />
+    <enumval name="CPED_CONFIG_FLAG_OnMount"/>
     <enumval name="CPED_CONFIG_FLAG_AttachedToVehicle" description=" is attached to a vehicle"/>
     <enumval name="CPED_CONFIG_FLAG_IsSwimming" description=" is ped swimming in water  "/>
     <enumval name="CPED_CONFIG_FLAG_WasSwimming" description=" was the ped swimming in water last frame"/>
@@ -286,10 +286,10 @@
     <enumval name="CPED_CONFIG_FLAG_StoppedSpeechUponFreezing" description="Marks that we've already dealt with cleaning up speech audio after becoming frozen."/>
     <enumval name="CPED_CONFIG_FLAG_DisableGoToWritheWhenInjured" description="If set, CPed::DAMAGED_GOTOWRITHE will no longer get set.  In particular, tazer hits wil no longer kill this ped in one hit."/>
     <enumval name="CPED_CONFIG_FLAG_OnlyUseForcedSeatWhenEnteringHeliInGroup" description="If set this ped will only use their forced seat index if the vehicle they're entering is a heli as part of a group"/>
-    <enumval name="CPED_CONFIG_FLAG_ThrownFromVehicleDueToExhaustion" description="Ped got tired and was thrown from bike. Used to scale ragdoll damage for a few seconds after the dismount." />
-    <enumval name="CPED_CONFIG_FLAG_UpdateEnclosedSearchRegion"  description="This ped will update their enclosed regions" />
+    <enumval name="CPED_CONFIG_FLAG_ThrownFromVehicleDueToExhaustion" description="Ped got tired and was thrown from bike. Used to scale ragdoll damage for a few seconds after the dismount."/>
+    <enumval name="CPED_CONFIG_FLAG_UpdateEnclosedSearchRegion"  description="This ped will update their enclosed regions"/>
     <enumval name="CPED_CONFIG_FLAG_DisableWeirdPedEvents"/>
-    <enumval name="CPED_CONFIG_FLAG_ShouldChargeNow" description="This ped should charge if in combat right away, for use by scripts, cleared once ped charges" />
+    <enumval name="CPED_CONFIG_FLAG_ShouldChargeNow" description="This ped should charge if in combat right away, for use by scripts, cleared once ped charges"/>
     <enumval name="CPED_CONFIG_FLAG_RagdollingOnBoat" description="We don't want ragdolling peds processing buoyancy when in a boat."/>
     <enumval name="CPED_CONFIG_FLAG_HasBrandishedWeapon"/>
     <enumval name="CPED_CONFIG_FLAG_AllowMinorReactionsAsMissionPed" description="If true, this ped will react to events such as being hit by a vehicle as a mission ped"/>
@@ -359,8 +359,8 @@
     <enumval name="CPED_CONFIG_FLAG_ForceSynchronousScenarioExitChecking" description="This ped will expensively probe for a scenario exit location in one frame."/>
     <enumval name="CPED_CONFIG_FLAG_ThrowingGrenadeWhileAiming" description="Set true in CTaskAimGunOnFoot::Aiming_OnUpdate, false in CTaskAimAndThrowProjectile::CleanUp."/>
     <enumval name="CPED_CONFIG_FLAG_HeadbobToRadioEnabled" description="Set in."/>
-    <enumval name="CPED_CONFIG_FLAG_ForceDeepSurfaceCheck" description="Don't do distance from camera culling of the deep surface check, needed for detecting snow, mud, etc." />
-    <enumval name="CPED_CONFIG_FLAG_DisableDeepSurfaceAnims" description="Disable deep surface anims to prevent them slowing ped down" />
+    <enumval name="CPED_CONFIG_FLAG_ForceDeepSurfaceCheck" description="Don't do distance from camera culling of the deep surface check, needed for detecting snow, mud, etc."/>
+    <enumval name="CPED_CONFIG_FLAG_DisableDeepSurfaceAnims" description="Disable deep surface anims to prevent them slowing ped down"/>
     <enumval name="CPED_CONFIG_FLAG_DontBlipNotSynced" description="Don't blip this ped, this is not synced over the network to allow script to individually control a peds blippedness on different machines"/>
     <enumval name="CPED_CONFIG_FLAG_IsDuckingInVehicle" description="Ped is ducking inside a vehicle."/>
     <enumval name="CPED_CONFIG_FLAG_PreventAutoShuffleToTurretSeat"/>
@@ -405,9 +405,9 @@
     <enumval name="CPED_CONFIG_FLAG_BroadcastRepondedToThreatWhenGoingToPointShooting" description="Whenever the ped starts shooting while going to a point, it trigger a responded to threat broadcast"/>
     <enumval name="CPED_CONFIG_FLAG_IgnorePedTypeForIsFriendlyWith" description="If this is set then IsFriendlyWith will ignore the ped type checks (i.e. two PEDTYPE_COP peds are not automatically friendly)"/>
     <enumval name="CPED_CONFIG_FLAG_TreatNonFriendlyAsHateWhenInCombat" description="Any non friendly ped will be considered as hated instead"/>
-    <enumval name="CPED_CONFIG_FLAG_DontLeaveVehicleIfLeaderNotInVehicle" description="Supresses exit vehicle task being created in CEventLeaderExitedCarAsDriver::CreateResponseTask." />
-    <enumval name="CPED_CONFIG_FLAG_ChangeFromPermanentToAmbientPopTypeOnMigration" description="Change ped to ambient pop type on migration." />
-    <enumval name="CPED_CONFIG_FLAG_AllowMeleeReactionIfMeleeProofIsOn" description="Allow melee reaction to come through even if proof is on" />
+    <enumval name="CPED_CONFIG_FLAG_DontLeaveVehicleIfLeaderNotInVehicle" description="Supresses exit vehicle task being created in CEventLeaderExitedCarAsDriver::CreateResponseTask."/>
+    <enumval name="CPED_CONFIG_FLAG_ChangeFromPermanentToAmbientPopTypeOnMigration" description="Change ped to ambient pop type on migration."/>
+    <enumval name="CPED_CONFIG_FLAG_AllowMeleeReactionIfMeleeProofIsOn" description="Allow melee reaction to come through even if proof is on"/>
     <enumval name="CPED_CONFIG_FLAG_UsingLowriderLeans" description="Ped is playing lowrider lean animations due to vehicle suspension modification."/>
     <enumval name="CPED_CONFIG_FLAG_UsingAlternateLowriderLeans" description="Ped is playing alternate lowrider lean animations (ie arm on window) due to vehicle suspension modification."/>
     <enumval name="CPED_CONFIG_FLAG_UseNormalExplosionDamageWhenBlownUpInVehicle" description="If this is set, the ped won't be instantly killed if vehicle is blown up (from CAutomobile::BlowUpCar -> KillPedsInVehicle). Instead, they will take normal explosive damage and be forced to exit the vehicle if they're still alive."/>
@@ -797,14 +797,14 @@
     <enumval name="CPED_RESET_FLAG_PreventBikeFromLeaning" description=""/>
     <enumval name="CPED_RESET_FLAG_InCoverTaskActive" description=""/>
     <enumval name="CPED_RESET_FLAG_EnableSteepSlopePrevention" description="Pushes the ped through the same steep slope tolerances in TaskMotionBase that the player encounters"/>
-    <enumval name="CPED_RESET_FLAG_InsideEnclosedSearchRegion" />
-    <enumval name="CPED_RESET_FLAG_JumpingOutOfVehicle" />
-    <enumval name="CPED_RESET_FLAG_IsTuckedOnBicycleThisFrame" />
+    <enumval name="CPED_RESET_FLAG_InsideEnclosedSearchRegion"/>
+    <enumval name="CPED_RESET_FLAG_JumpingOutOfVehicle"/>
+    <enumval name="CPED_RESET_FLAG_IsTuckedOnBicycleThisFrame"/>
     <enumval name="CPED_RESET_FLAG_ProcessPostMovementTimeSliced" description="Parallel flag to ProcessPostMovement, except this is reset in PreTask(), meaning it stays consistent across timeslicing."/>
-    <enumval name="CPED_RESET_FLAG_EnablePressAndReleaseDives" />
-    <enumval name="CPED_RESET_FLAG_OnlyExitVehicleOnButtonRelease" />
-    <enumval name="CPED_RESET_FLAG_IsGoingToStandOnExitedVehicle" />
-    <enumval name="CPED_RESET_FLAG_BlockRagdollFromVehicleFallOff" />
+    <enumval name="CPED_RESET_FLAG_EnablePressAndReleaseDives"/>
+    <enumval name="CPED_RESET_FLAG_OnlyExitVehicleOnButtonRelease"/>
+    <enumval name="CPED_RESET_FLAG_IsGoingToStandOnExitedVehicle"/>
+    <enumval name="CPED_RESET_FLAG_BlockRagdollFromVehicleFallOff"/>
     <enumval name="CPED_RESET_FLAG_DisableTorsoVehicleSolver" description=""/>
     <enumval name="CPED_RESET_FLAG_IsExitingUpsideDownVehicle" description=""/>
     <enumval name="CPED_RESET_FLAG_IsExitingOnsideVehicle" description=""/>
@@ -818,22 +818,22 @@
     <enumval name="CPED_RESET_FLAG_StreamActionModeAnimsIfDisabled" description="Stream action mode anims even if action mode is disabled"/>
     <enumval name="CPED_RESET_FLAG_ForceUpdateRagdollMatrix" description="Ped requires ragdoll matrix update next frame."/>
     <enumval name="CPED_RESET_FLAG_PreventGoingIntoShuntInVehicleState" description="If set, the ped will not go into the shunt in vehicle pose"/>
-    <enumval name="CPED_RESET_FLAG_DisableIndependentMoverFrame" />
-    <enumval name="CPED_RESET_FLAG_DoingDrivebyOutro" />
-    <enumval name="CPED_RESET_FLAG_BeingElectrocuted" />
-    <enumval name="CPED_RESET_FLAG_DisableUnarmedDrivebys" />
-    <enumval name="CPED_RESET_FLAG_TalkingToPlayer" />
+    <enumval name="CPED_RESET_FLAG_DisableIndependentMoverFrame"/>
+    <enumval name="CPED_RESET_FLAG_DoingDrivebyOutro"/>
+    <enumval name="CPED_RESET_FLAG_BeingElectrocuted"/>
+    <enumval name="CPED_RESET_FLAG_DisableUnarmedDrivebys"/>
+    <enumval name="CPED_RESET_FLAG_TalkingToPlayer"/>
     <enumval name="CPED_RESET_FLAG_DontActivateRagdollFromPlayerPedImpactReset" description="Block ragdoll activations from animated player bumps"/>
     <enumval name="CPED_RESET_FLAG_DontActivateRagdollFromAiRagdollImpactReset" description="Block ragdoll activations from collisions with an ai ragdoll"/>
     <enumval name="CPED_RESET_FLAG_DontActivateRagdollFromPlayerRagdollImpactReset" description="Block ragdoll activations from collisions with a player ragdoll"/>
     <enumval name="CPED_RESET_FLAG_DisableVisemeBodyAdditive" description="If set, prevents visemes from playing any additive body animations"/>
     <enumval name="CPED_RESET_FLAG_CapsuleBeingPushedByPlayerCapsule" description="Set when the player capsule is pushing up against this peds capsule"/>
-    <enumval name="CPED_RESET_FLAG_ForceActionMode" />
-    <enumval name="CPED_RESET_FLAG_ForceUnarmedActionMode" />
+    <enumval name="CPED_RESET_FLAG_ForceActionMode"/>
+    <enumval name="CPED_RESET_FLAG_ForceUnarmedActionMode"/>
     <enumval name="CPED_RESET_FLAG_UsingMoverExtraction" description="Set when the players capsule is getting repositioned each frame relative to an anim and origin"/>
-    <enumval name="CPED_RESET_FLAG_BeingJacked" />
+    <enumval name="CPED_RESET_FLAG_BeingJacked"/>
     <enumval name="CPED_RESET_FLAG_EnableVoiceDrivenMouthMovement" description="If set, turn on the voice driven mouth movement"/>
-    <enumval name="CPED_RESET_FLAG_IsReloading" />
+    <enumval name="CPED_RESET_FLAG_IsReloading"/>
     <enumval name="CPED_RESET_FLAG_UseTighterEnterVehicleSettings" description="Ped should use tighter (shorter) settings for entering vehicles"/>
     <enumval name="CPED_RESET_FLAG_InRaceMode" description="Set when the player is in the race mode."/>
     <enumval name="CPED_RESET_FLAG_DisableAmbientMeleeMoves" description="Disable ambient (initial) melee moves"/>
@@ -881,9 +881,9 @@
     <enumval name="CPED_RESET_FLAG_AllowOpenDoorIkBeforeFullMovement" description="When set, code will ignore the logic that requires the ped to be in CTaskHumanLocomotion::State_Moving"/>
     <enumval name="CPED_RESET_FLAG_AllowHomingMissileLockOnInVehicle" description="When set, code will bypass rel settings and allow a homing lock on to this ped when they are in a vehicle"/>
     <enumval name="CPED_RESET_FLAG_AllowCloneForcePostCameraAIUpdate"/>
-    <enumval name="CPED_RESET_FLAG_DisableHighHeels" description="Force the high heels DOF to be 0" />
-    <enumval name="CPED_RESET_FLAG_BreakTargetLock" description="Force lock on to break for this ped" />
-      <enumval name="CPED_RESET_FLAG_DontUseSprintEnergy" description="Player does not get tired when sprinting" />
+    <enumval name="CPED_RESET_FLAG_DisableHighHeels" description="Force the high heels DOF to be 0"/>
+    <enumval name="CPED_RESET_FLAG_BreakTargetLock" description="Force lock on to break for this ped"/>
+      <enumval name="CPED_RESET_FLAG_DontUseSprintEnergy" description="Player does not get tired when sprinting"/>
     <enumval name="CPED_RESET_FLAG_DontChangeHorseMbr" description="Similar to CPED_RESET_FLAG_DontChangeMbrInSimpleMoveDoNothing, but for horses."/>
     <enumval name="CPED_RESET_FLAG_DisableMaterialCollisionDamage" description="Don't be damaged by touching dangerous material (e.g. electic generator)"/>
     <enumval name="CPED_RESET_FLAG_DisableMPFriendlyLockon" description="Don't target friendly players in MP"/>
@@ -924,8 +924,8 @@
     <enumval name="CPED_RESET_FLAG_FPSAllowAimIKForThrownProjectile" description="To control enabling of FPS aim IK while using a projectile until it is ready"/>
     <enumval name="CPED_RESET_FLAG_TriggerRoadRageAnim" description=""/>
     <enumval name="CPED_RESET_FLAG_ForcePreCameraAiAnimUpdateIfFirstPerson" description="Force a pre camera ai and animation update if the ped is the first person camera target during the pre camera update"/>
-    <enumval name="CPED_RESET_FLAG_NoCollisionDamageFromOtherPeds" description="Any ped this is set on won't register damage from collisions against other peds." />
-    <enumval name="CPED_RESET_FLAG_BlockCameraSwitching" description="Block camera view mode switching." />
+    <enumval name="CPED_RESET_FLAG_NoCollisionDamageFromOtherPeds" description="Any ped this is set on won't register damage from collisions against other peds."/>
+    <enumval name="CPED_RESET_FLAG_BlockCameraSwitching" description="Block camera view mode switching."/>
     <enumval name="CPED_RESET_FLAG_NeverDieFromCapsuleRagdollSettings" description="Negate the capsule's preference for ragdoll triggering death on this ped."/>
     <enumval name="CPED_RESET_FLAG_InContactWithDeepSurface" description="ped is in contact with GTA_DEEP_SURFACE_TYPE bounds"/>
     <enumval name="CPED_RESET_FLAG_DontSuppressUseNavMeshToNavigateToVehicleDoorWhenVehicleInWater" description=""/>
@@ -949,9 +949,9 @@
     <enumval name="CPED_RESET_FLAG_WasFPSJumpingWithProjectile" description="ped was jumping on foot with projectile in hand"/>
     <enumval name="CPED_RESET_FLAG_DisableMeleeWeaponSelection"/>
     <enumval name="CPED_RESET_FLAG_WaypointPlaybackSlowMoreForCorners" description="slow for corners more aggressively for waypoint playback"/>
-    <enumval name="CPED_RESET_FLAG_FPSPlacingProjectile" description="True while placing a projectile in FPS mode" />
+    <enumval name="CPED_RESET_FLAG_FPSPlacingProjectile" description="True while placing a projectile in FPS mode"/>
     <enumval name="CPED_RESET_FLAG_UseBulletPenetrationForGlass" description="Ped will use bullet penetration code when glass material is hit."/>
-    <enumval name="CPED_RESET_FLAG_FPSPlantingBombOnFloor" description="Doing a floor plant with a bomb in FPS mode" />
+    <enumval name="CPED_RESET_FLAG_FPSPlantingBombOnFloor" description="Doing a floor plant with a bomb in FPS mode"/>
     <enumval name="CPED_RESET_FLAG_ForceSkipFPSAimIntro" description="don't do FPS Aim intro"/>
     <enumval name="CPED_RESET_FLAG_CanBePinnedByFriendlyBullets" description="If set on a ped then they are allowed to be pinned by bullets from friendly peds"/>
     <enumval name="CPED_RESET_FLAG_DisableLeftArmIKInCoverOutroFPS" description="Turn off left arm IK during cover outros in FPS mode when set"/>
