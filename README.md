@@ -13,6 +13,9 @@
 
 # PED_CONFIG_FLAG
 
+## [IB_U_Z_Z_A_R_Dl](https://github.com/Illegal-Services)
+[v_ped_stuff/ePedConfigFlags.xml](ePedConfigFlags.xml)
+
 ## [alloc8or.re](https://alloc8or.re/gta5/nativedb/)
 
 [PED::SET_PED_CONFIG_FLAG](https://alloc8or.re/gta5/nativedb/?n=0x1913FE4CBF41C463) / [PED::GET_PED_CONFIG_FLAG](https://alloc8or.re/gta5/nativedb/?n=0x7EE53118C892B513)
