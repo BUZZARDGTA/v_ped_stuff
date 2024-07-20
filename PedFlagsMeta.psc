@@ -471,10 +471,8 @@
     <enumval name="CPED_RESET_FLAG_FallenDown" description="decides whether to ik rotate body to match ground angle"/>
     <enumval name="CPED_RESET_FLAG_DontRenderThisFrame" description="force ped to stop rendering this frame (for example - drive task can stop peds rendering inside buses)"/>
     <enumval name="CPED_RESET_FLAG_IsDrowning"/>
-
     <enumval name="CPED_RESET_FLAG_PedHitWallLastFrame"/>
     <enumval name="CPED_RESET_FLAG_UsingMobilePhone"/>
-
     <enumval name="CPED_RESET_FLAG_BlockMovementAnims" description="completely disable processing of on-foot movement anim blending for this frame"/>
     <enumval name="CPED_RESET_FLAG_ZeroDesiredMoveBlendRatios" description="zero out all inputs to movement system this frame, causing ped to stop moving"/>
     <enumval name="CPED_RESET_FLAG_DontChangeMbrInSimpleMoveDoNothing" description="If this is set, then CTaskSimpleMoveDoNothing will not reset desired moveblendratio to zero this frame."/>
@@ -483,13 +481,10 @@
     <enumval name="CPED_RESET_FLAG_Wandering"/>
     <enumval name="CPED_RESET_FLAG_ProcessPhysicsTasks" description="do we need to call process physics for (main) tasks this frame"/>
     <enumval name="CPED_RESET_FLAG_ProcessPreRender2" description="do we need to call ProcessPreRender2 for tasks"/>
-
     <!-- wants to get reset before CPedIntelligence::ProcessAfterProcCol() -->
     <enumval name="CPED_RESET_FLAG_SetLastMatrixDone"/>
-
     <!-- wants to get reset at start of CPedIntelligence::ProcessAfterPreRender() -->
     <enumval name="CPED_RESET_FLAG_FiringWeapon" description="set when ped fires any weapon, so script can check the flag"/>
-
     <!--  gets reset at the start of the peds intelligence update -->
     <enumval name="CPED_RESET_FLAG_SearchingForCover" description="Set if the ped is likely to be searching for cover, used by the navmesh to load coverpoints around interested peds"/>
     <enumval name="CPED_RESET_FLAG_KeepCoverPoint" description="Set if the ped wants to keep their current cover point this frame, otherwise it gets released"/>
@@ -497,131 +492,81 @@
     <enumval name="CPED_RESET_FLAG_IsJumping" description="is the ped jumping."/>
     <enumval name="CPED_RESET_FLAG_IsLanding" description="is landing after being in the air"/>
     <enumval name="CPED_RESET_FLAG_CullExtraFarAway" description="flag Ai can set to make ped get culled further away (used for roadblock cops, crimials...)"/>
-
     <!--  wants to get reset at start of ResetPostMovement -->
     <enumval name="CPED_RESET_FLAG_DontActivateRagdollFromAnyPedImpactReset"/>
     <enumval name="CPED_RESET_FLAG_ForceScriptControlledRagdoll"/>
-
     <enumval name="CPED_RESET_FLAG_TaskUseKinematicPhysics" description ="For use by tasks - puts the ped into Kinematic physics mode. In this mode the ped will push other objects our of the way, but not be physically affected by them"/>
-
     <enumval name="CPED_RESET_FLAG_TemporarilyBlockWeaponSwitching" description="Stop weapon switch processing"/>
-
     <enumval name="CPED_RESET_FLAG_DoNotClampFootIk" description="Stop clamping the foot IK. Maybe the clamps should be parameters of the IK manager, but apparently that is to be refactored in future"/>
-
     <!-- *************************************************************************************
        The following bit-flags are set by tasks during their processing, and are picked up
        by CPed::SelectCurrentAnimGroup() to prevent it from having query the task tree.      -->
-
     <enumval name="CPED_RESET_FLAG_MoveBlend_bFleeTaskRunning" description="TASK_SMART_FLEE, or TASK_COMPLEX_LEAVE_CAR_AND_FLEE"/>
     <enumval name="CPED_RESET_FLAG_IsAiming" description="TASK_GUN or TASK_USE_COVER"/>
     <enumval name="CPED_RESET_FLAG_MoveBlend_bTaskComplexGunRunning" description="TASK_COMPLEX_GUN (only)"/>
     <enumval name="CPED_RESET_FLAG_MoveBlend_bMeleeTaskRunning" description="TASK_COMPLEX_MELEE"/>
     <enumval name="CPED_RESET_FLAG_MoveBlend_bCopSearchTaskRunning" description="TASK_COMPLEX_SEARCH_FOR_PED_ON_FOOT"/>
     <enumval name="CPED_RESET_FLAG_PatrollingInVehicle" description="ped is patrolling in a vehicle, likely meaning they are swat or police"/>
-
     <enumval name="CPED_RESET_FLAG_RaiseVelocityChangeLimit"/>
-
     <enumval name="CPED_RESET_FLAG_DimTargetReticule"/>
-
     <enumval name="CPED_RESET_FLAG_IsWalkingRoundPlayer" description="Whether this ped is walking around another ped (one frame latency)"/>
-
     <enumval name="CPED_RESET_FLAG_GestureAnimsAllowed"/>
-
     <enumval name="CPED_RESET_FLAG_VisemeAnimsBlocked" description="Blocks viseme anims from playing"/>
     <enumval name="CPED_RESET_FLAG_AmbientAnimsBlocked" description="Blocks new ambient idles from starting."/>
-
     <enumval name="CPED_RESET_FLAG_KnockedToTheFloorByPlayer"/>
     <enumval name="CPED_RESET_FLAG_RandomisePointsDuringNavigation"/>
     <enumval name="CPED_RESET_FLAG_Prevent180SkidTurns"/>
-
     <enumval name="CPED_RESET_FLAG_IsOnAssistedMovementRoute"/>
-
     <enumval name="CPED_RESET_FLAG_ApplyVelocityDirectly" description="Should we apply the velocity directly to the physics collider or go through the force solver?"/>
-
     <enumval name="CPED_RESET_FLAG_DisablePlayerLockon"/>
-
     <enumval name="CPED_RESET_FLAG_ResetMoveGroupAfterRagdoll" description="If true, will reset the temp anim group when not ragdolling"/>
-
     <enumval name="CPED_RESET_FLAG_DisablePedConstraints" description="Allow the ped to rotate around freely"/>
-
     <enumval name="CPED_RESET_FLAG_DisablePlayerJumping" description="Disables player jumping if true. Reset in ResetPostPhysics, as it will be set via script"/>
     <enumval name="CPED_RESET_FLAG_DisablePlayerVaulting" description="Disables player vaulting/climbing if true."/>
-
     <enumval name="CPED_RESET_FLAG_DisableAsleepImpulse" description="Disable the code that pushes peds which fall asleep in the air"/>
-
     <enumval name="CPED_RESET_FLAG_ForcePostCameraAIUpdate"/>
     <enumval name="CPED_RESET_FLAG_ForcePostCameraAnimUpdate"/>
     <enumval name="CPED_RESET_FLAG_ePostCameraAnimUpdateUseZeroTimestep"/>
-
     <enumval name="CPED_RESET_FLAG_CollideWithGlassRagdoll"/>
     <enumval name="CPED_RESET_FLAG_CollideWithGlassWeapon"/>
-
     <enumval name="CPED_RESET_FLAG_SyncDesiredHeadingToCurrentHeading"/>
-
     <enumval name="CPED_RESET_FLAG_AllowUpdateIfNoCollisionLoaded"/>
     <enumval name="CPED_RESET_FLAG_InternalWalkingRndPlayer"/>
-
     <enumval name="CPED_RESET_FLAG_PlacingCharge" description="Setting Bomb (firing weapon is set also)"/>
     <enumval name="CPED_RESET_FLAG_ScriptDisableSecondaryAnimationTasks" description="Disable upper body animtion tasks such as shove ped and open door anims"/>
-
     <enumval name="CPED_RESET_FLAG_SearchingForClimb"/>
     <enumval name="CPED_RESET_FLAG_SearchingForDoors"/>
-
     <enumval name="CPED_RESET_FLAG_WanderingStoppedForOtherPed"/>
-
     <enumval name="CPED_RESET_FLAG_SupressGunfireEvents"/>
     <enumval name="CPED_RESET_FLAG_InfiniteStamina" description="Currently just for mounts, but could be expanded to anything with stamina"/>
-
     <enumval name="CPED_RESET_FLAG_BlockWeaponReactionsUnlessDead" description=" Stops ragdoll and nm behaviors triggering from weapon damage unless the ped has died."/>
-
     <enumval name="CPED_RESET_FLAG_ForcePlayerFiring"/>
-
     <enumval name="CPED_RESET_FLAG_InCoverFacingLeft" description="set when exiting the cover state saying if we are facing left"/>
-
     <enumval name="CPED_RESET_FLAG_ForcePeekFromCover" description="if set the ped will go into peeking if they are already in cover"/>
-
     <enumval name="CPED_RESET_FLAG_NotAllowedToChangeCrouchState" description="if set the ped will not be allowed to change their crouch state"/>
-
     <enumval name="CPED_RESET_FLAG_ForcePedToStrafe" description="forces a ped to strafe"/>
     <enumval name="CPED_RESET_FLAG_ForceMeleeStrafingAnims" description="forces a ped to use the melee strafing anims when strafing"/>
-
     <enumval name="CPED_RESET_FLAG_UseKinematicPhysics" description ="To be used by scripts - puts the ped into Kinematic physics mode. In this mode the ped will push other objects our of the way, but not be physically affected by them"/>
-
     <enumval name="CPED_RESET_FLAG_ClearLockonTarget" description="Clears the player's lockon target next frame"/>
     <enumval name="CPED_RESET_FLAG_CanPedSeeHatedPedBeingUsed" description="Activates can ped see hated ped generating events even when blocking of non-temp events is on"/>
-
     <enumval name="CPED_RESET_FLAG_InstantBlendToAim" description ="Makes the ped performa an instant blend to aim if starting a gun task this frame"/>
-
     <enumval name="CPED_RESET_FLAG_ForceImprovedIdleTurns" description ="Forces the ped to use an improved idle turning system that should help him turn to face more quickly"/>
     <enumval name="CPED_RESET_FLAG_HitPedWithWeapon" description="set when damage is inflicted by this ped on another ped"/>
-
     <enumval name="CPED_RESET_FLAG_ForcePedToUseScripCamHeading" description="forces a ped to the scripted camera heading instead of gameplay"/>
-
     <enumval name="CPED_RESET_FLAG_ProcessProbesWhenExtractingZ" description="makes the capsule physics push the ped out of the ground even when extracting z"/>
     <enumval name="CPED_RESET_FLAG_KeepDesiredCoverPoint" description="should the ped keep their desired cover point this frame"/>
-
     <enumval name="CPED_RESET_FLAG_HasProcessedCornering" description="whether the ped has already processed slowing down for this corner"/>
-
     <enumval name="CPED_RESET_FLAG_StandingOnForkliftForks" description="Set when the ped standing capsule hits the forklift forks."/>
     <enumval name="CPED_RESET_FLAG_AimWeaponReactionRunning" description="ped is running the reaction task this frame"/>
-
     <enumval name="CPED_RESET_FLAG_InContactWithFoliage" description="ped is in contact with GTA_FOLIAGE_TYPE bounds"/>
-
     <enumval name="CPED_RESET_FLAG_ForceExplosionCollisions" description="ped will always collide with explosions, even when collision is off"/>
-
     <enumval name="CPED_RESET_FLAG_IgnoreTargetsCoverForLOS" description="when checking LOS against targets this ped will ignore their cover (if the cover exists)"/>
-
     <enumval name="CPED_RESET_FLAG_BlockAnimatedWeaponReactions" description="Ped should not play animated damager reactions while this flag is set"/>
-
     <enumval name="CPED_RESET_FLAG_DisablePedCapsule" description="Removes the ped capsule from the physics simulation"/>
-
     <enumval name="CPED_RESET_FLAG_DisableCrouchWhileInCover" description="Force the crouch flag to return true while in cover."/>
-
     <enumval name="CPED_RESET_FLAG_IncreasedAvoidanceRadius" description="Adds extra 2m onto the radius other peds use to avoid this ped during local steering."/>
-
     <enumval name="CPED_RESET_FLAG_UNUSED_REPLACE_ME" description=""/>
     <enumval name="CPED_RESET_FLAG_ForceRunningSpeedForFragSmashing" description="Can be set by designers to force the ped to smash more easily through frags."/>
-
     <enumval name="CPED_RESET_FLAG_EnableMoverAnimationWhileAttached" description="While flagged, any mover animation will be applied to the offset of the attachment."/>
     <enumval name="CPED_RESET_FLAG_NoTimeDelayBeforeShot" description="While flagged, The time delay before a player can fire after aiming is 0"/>
     <enumval name="CPED_RESET_FLAG_SearchingForAutoVaultClimb" description="inform climb code we are doing an autovault"/>
