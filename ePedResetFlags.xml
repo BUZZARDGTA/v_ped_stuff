@@ -3,6 +3,15 @@
  generate="class">
 
   <enumdef type="ePedResetFlags" generate="bitset">
+    <!--
+    (PRF = PED RESET FLAG)
+    gta v source\src\dev_ng\game\Peds\PedFlags.cpp
+    gta v source\src\dev_ng\game\Peds\PedFlagsMeta.psc
+    gta v source\src\dev_ng\game\script_headers\commands_ped.sch
+    WARNING: values can change after a game update
+    if R* adds in the middle!
+    This is up-to-date for b3274
+    -->
     <enumval name="CPED_RESET_FLAG_FallenDown" value="0" description="decides whether to ik rotate body to match ground angle"/>
     <enumval name="CPED_RESET_FLAG_DontRenderThisFrame" value="1" description="force ped to stop rendering this frame (for example - drive task can stop peds rendering inside buses)"/>
     <enumval name="CPED_RESET_FLAG_IsDrowning" value="2" description=""/>

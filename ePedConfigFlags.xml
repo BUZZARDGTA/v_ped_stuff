@@ -3,6 +3,15 @@
  generate="class">
 
   <enumdef type="ePedConfigFlags" generate="bitset">
+    <!--
+    (PCF = PED CONFIG FLAG)
+    gta v source\src\dev_ng\game\Peds\PedFlags.cpp
+    gta v source\src\dev_ng\game\Peds\PedFlagsMeta.psc
+    gta v source\src\dev_ng\game\script_headers\commands_ped.sch
+    WARNING: values can change after a game update
+    if R* adds in the middle!
+    This is up-to-date for b3274
+    -->
     <enumval name="CreatedByFactory" value="0" description=""/>
     <enumval name="CanBeShotInVehicle" value="1" description="script can stop peds being shot when driving vehicle (including exposed ones like bikes)"/>
     <enumval name="NoCriticalHits" value="2" description="ped cannot be killed by a single bullet"/>
