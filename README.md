@@ -5,9 +5,10 @@
 
 # GET_IS_TASK_ACTIVE
 
-| [alloc8or.re](https://alloc8or.re/gta5/nativedb/)                                   | [nativedb.dotindustries.dev](https://nativedb.dotindustries.dev/gta5/natives)                  | [docs.fivem.net](https://docs.fivem.net/natives/) |
-| ----------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
-| [TASK::GET_IS_TASK_ACTIVE](https://alloc8or.re/gta5/nativedb/?n=0xB0760331C7AA4155) | [TASK::GET_IS_TASK_ACTIVE](https://nativedb.dotindustries.dev/gta5/natives/0xB0760331C7AA4155) | [TASK::GET_IS_TASK_ACTIVE](https://docs.fivem.net/natives/?_0xB0760331C7AA4155) |
+| [IB_U_Z_Z_A_R_Dl](https://github.com/Illegal-Services) | [alloc8or.re](https://alloc8or.re/gta5/nativedb/)                                   | [nativedb.dotindustries.dev](https://nativedb.dotindustries.dev/gta5/natives)                  | [docs.fivem.net](https://docs.fivem.net/natives/) |
+| ------------------------------------------------------ | ----------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| [eTaskTypeIndex.h](eTaskTypeIndex.h)                   | [TASK::GET_IS_TASK_ACTIVE](https://alloc8or.re/gta5/nativedb/?n=0xB0760331C7AA4155) | [TASK::GET_IS_TASK_ACTIVE](https://nativedb.dotindustries.dev/gta5/natives/0xB0760331C7AA4155) | [TASK::GET_IS_TASK_ACTIVE](https://docs.fivem.net/natives/?_0xB0760331C7AA4155) |
+|                                                        |                                                                                     |                                                                                                |                                                                                 |
 
 # PED_CONFIG_FLAG (PCF)
 
