@@ -109,20 +109,20 @@
     <enumval name="CPED_CONFIG_FLAG_SteersAroundObjects" description="Enables/disables the low-level steering behaviour around peds and objects"/>
     <enumval name="CPED_CONFIG_FLAG_OpenDoorArmIK" description="Set if the ped should enable open door arm IK"/>
     <enumval name="CPED_CONFIG_FLAG_ForceReload" description="Force a reload of the current weapon" hideFrom="script"/>
-    <enumval name="CPED_CONFIG_FLAG_DontActivateRagdollFromVehicleImpact" description ="Blocks ragdoll activation when hit by a vehicle"/>
-    <enumval name="CPED_CONFIG_FLAG_DontActivateRagdollFromBulletImpact" description ="Blocks ragdoll activation when hit by a bullet"/>
-    <enumval name="CPED_CONFIG_FLAG_DontActivateRagdollFromExplosions" description ="Blocks ragdoll activation when hit by an explosive"/>
-    <enumval name="CPED_CONFIG_FLAG_DontActivateRagdollFromFire" description ="Blocks ragdoll activation when set on fire"/>
-    <enumval name="CPED_CONFIG_FLAG_DontActivateRagdollFromElectrocution" description ="Blocks ragdoll activation when electrocuted"/>
-    <enumval name="CPED_CONFIG_FLAG_IsBeingDraggedToSafety" description ="Whether this ped is being dragged to safety"/>
-    <enumval name="CPED_CONFIG_FLAG_HasBeenDraggedToSafety" description ="Whether this ped has been dragged to safety"/>
-    <enumval name="CPED_CONFIG_FLAG_KeepWeaponHolsteredUnlessFired" description ="Ignores the creation of the weapon object unless the gun is shot."/>
-    <enumval name="CPED_CONFIG_FLAG_ForceScriptControlledKnockout" description ="Forces a melee knockout state for the victim ped"/>
-    <enumval name="CPED_CONFIG_FLAG_FallOutOfVehicleWhenKilled" description ="Forces a ped to fall out of a vehicle when killed"/>
-    <enumval name="CPED_CONFIG_FLAG_GetOutBurningVehicle" description ="If set, a ped will escape a burning vehicle they are inside "/>
-    <enumval name="CPED_CONFIG_FLAG_BumpedByPlayer" description ="Whether this ped has been bumped by the player."/>
-    <enumval name="CPED_CONFIG_FLAG_RunFromFiresAndExplosions" description ="If set, a ped will run away from fires or potential explosions "/>
-    <enumval name="CPED_CONFIG_FLAG_TreatAsPlayerDuringTargeting" description ="If set, the ped will be given the same boost a player gets in the targeting scoring system."/>
+    <enumval name="CPED_CONFIG_FLAG_DontActivateRagdollFromVehicleImpact" description="Blocks ragdoll activation when hit by a vehicle"/>
+    <enumval name="CPED_CONFIG_FLAG_DontActivateRagdollFromBulletImpact" description="Blocks ragdoll activation when hit by a bullet"/>
+    <enumval name="CPED_CONFIG_FLAG_DontActivateRagdollFromExplosions" description="Blocks ragdoll activation when hit by an explosive"/>
+    <enumval name="CPED_CONFIG_FLAG_DontActivateRagdollFromFire" description="Blocks ragdoll activation when set on fire"/>
+    <enumval name="CPED_CONFIG_FLAG_DontActivateRagdollFromElectrocution" description="Blocks ragdoll activation when electrocuted"/>
+    <enumval name="CPED_CONFIG_FLAG_IsBeingDraggedToSafety" description="Whether this ped is being dragged to safety"/>
+    <enumval name="CPED_CONFIG_FLAG_HasBeenDraggedToSafety" description="Whether this ped has been dragged to safety"/>
+    <enumval name="CPED_CONFIG_FLAG_KeepWeaponHolsteredUnlessFired" description="Ignores the creation of the weapon object unless the gun is shot."/>
+    <enumval name="CPED_CONFIG_FLAG_ForceScriptControlledKnockout" description="Forces a melee knockout state for the victim ped"/>
+    <enumval name="CPED_CONFIG_FLAG_FallOutOfVehicleWhenKilled" description="Forces a ped to fall out of a vehicle when killed"/>
+    <enumval name="CPED_CONFIG_FLAG_GetOutBurningVehicle" description="If set, a ped will escape a burning vehicle they are inside "/>
+    <enumval name="CPED_CONFIG_FLAG_BumpedByPlayer" description="Whether this ped has been bumped by the player."/>
+    <enumval name="CPED_CONFIG_FLAG_RunFromFiresAndExplosions" description="If set, a ped will run away from fires or potential explosions "/>
+    <enumval name="CPED_CONFIG_FLAG_TreatAsPlayerDuringTargeting" description="If set, the ped will be given the same boost a player gets in the targeting scoring system."/>
     <enumval name="CPED_CONFIG_FLAG_IsHandCuffed" description="indicates if the ped is currently hand cuffed"/>
     <enumval name="CPED_CONFIG_FLAG_IsAnkleCuffed" description="indicates if the ped is currently ankle cuffed"/>
     <enumval name="CPED_CONFIG_FLAG_DisableMelee" description="Disables the melee for a particular ped"/>
@@ -145,8 +145,8 @@
     <enumval name="CPED_CONFIG_FLAG_ArrestResult" description="True if the arrest task succeeded"/>
     <enumval name="CPED_CONFIG_FLAG_CanAttackFriendly" description="True allows this ped to attack peds theya re friendly with"/>
     <enumval name="CPED_CONFIG_FLAG_WillJackAnyPlayer" description="True if this player ped can jack any other player (MP Only)"/>
-    <enumval name="CPED_CONFIG_FLAG_BumpedByPlayerVehicle" description ="Whether this ped has been bumped by a player vehicle."/>
-    <enumval name="CPED_CONFIG_FLAG_DodgedPlayerVehicle" description ="Whether this ped has just dodged a player vehicle."/>
+    <enumval name="CPED_CONFIG_FLAG_BumpedByPlayerVehicle" description="Whether this ped has been bumped by a player vehicle."/>
+    <enumval name="CPED_CONFIG_FLAG_DodgedPlayerVehicle" description="Whether this ped has just dodged a player vehicle."/>
     <enumval name="CPED_CONFIG_FLAG_WillJackWantedPlayersRatherThanStealCar" description="True if this player will jack wanted passengers rather than try to steal a car (cops arresting crims) (MP Only)"/>
     <enumval name="CPED_CONFIG_FLAG_NoCopWantedAggro" description="If this flag is set on a cap, skip some of the code that would normally make them extra aggressive and alert."/>
     <enumval name="CPED_CONFIG_FLAG_DisableLadderClimbing" description="If this flag is set on a ped it will not scan for or climb ladders"/>
@@ -212,19 +212,19 @@
     <enumval name="CPED_CONFIG_FLAG_ForcedToUseSpecificGroupSeatIndex" description="Ped is forced to use specific seat index set by SET_PED_GROUP_MEMBER_PASSENGER_INDEX"/>
     <enumval name="CPED_CONFIG_FLAG_LowPhysicsLodMayPlaceOnNavMesh" description="If set, peds in low lod physics will be placed so that their feet rest on the navmesh"/>
     <enumval name="CPED_CONFIG_FLAG_DisableExplosionReactions" description="If set, peds will disable all explosion reactions"/>
-    <enumval name="CPED_CONFIG_FLAG_DodgedPlayer" description ="Whether this ped has just dodged a player."/>
+    <enumval name="CPED_CONFIG_FLAG_DodgedPlayer" description="Whether this ped has just dodged a player."/>
     <enumval name="CPED_CONFIG_FLAG_WaitingForPlayerControlInterrupt" description="Set when player switches to an ai ped and keeps the scripted task of the ai ped"/>
-    <enumval name="CPED_CONFIG_FLAG_ForcedToStayInCover" description ="Ped won't move out of cover when set (not even to fire)."/>
+    <enumval name="CPED_CONFIG_FLAG_ForcedToStayInCover" description="Ped won't move out of cover when set (not even to fire)."/>
     <enumval name="CPED_CONFIG_FLAG_GeneratesSoundEvents" description="Does this ped generate sound events?"/>
     <enumval name="CPED_CONFIG_FLAG_ListensToSoundEvents" description="Does this ped have the ability to respond to sound events?"/>
-    <enumval name="CPED_CONFIG_FLAG_AllowToBeTargetedInAVehicle" description ="Ped can be targeting inside a vehicle"/>
-    <enumval name="CPED_CONFIG_FLAG_WaitForDirectEntryPointToBeFreeWhenExiting" description =""/>
-    <enumval name="CPED_CONFIG_FLAG_OnlyRequireOnePressToExitVehicle" description =""/>
-    <enumval name="CPED_CONFIG_FLAG_ForceExitToSkyDive" description =""/>
+    <enumval name="CPED_CONFIG_FLAG_AllowToBeTargetedInAVehicle" description="Ped can be targeting inside a vehicle"/>
+    <enumval name="CPED_CONFIG_FLAG_WaitForDirectEntryPointToBeFreeWhenExiting" description=""/>
+    <enumval name="CPED_CONFIG_FLAG_OnlyRequireOnePressToExitVehicle" description=""/>
+    <enumval name="CPED_CONFIG_FLAG_ForceExitToSkyDive" description=""/>
     <enumval name="CPED_CONFIG_FLAG_SteersAroundVehicles" description="Enables/disables the low-level steering behaviour around vehicles"/>
     <enumval name="CPED_CONFIG_FLAG_AllowPedInVehiclesOverrideTaskFlags" description="If set, allow the ped to be set in vehicles even if the ped's TaskData would otherwise disallow it."/>
     <enumval name="CPED_CONFIG_FLAG_DontEnterLeadersVehicle" description="If set, the ped will not enter the leader's vehicle."/>
-    <enumval name="CPED_CONFIG_FLAG_DisableExitToSkyDive" description =""/>
+    <enumval name="CPED_CONFIG_FLAG_DisableExitToSkyDive" description=""/>
     <enumval name="CPED_CONFIG_FLAG_ScriptHasDisabledCollision" description="Script disabled collision on this ped via SET_ENTITY_COLLISION, this leaves on collision against explosions and weapons"/>
     <enumval name="CPED_CONFIG_FLAG_UseAmbientModelScaling" description="This ped is drawn randomly scaled from [0.5,1.0]"/>
     <enumval name="CPED_CONFIG_FLAG_DontWatchFirstOnNextHurryAway" description="Hurry away without watching the next time this ped runs CTaskHurryAway."/>
@@ -339,8 +339,8 @@
     <enumval name="CPED_CONFIG_FLAG_ScriptForceNoTimesliceIntelligenceUpdate" description="If set, the ped will never have their intelligence update time sliced across frames."/>
     <enumval name="CPED_CONFIG_FLAG_JackedOutOfMyVehicle" description="If set, this ped has been jacked out of its vehicle."/>
     <enumval name="CPED_CONFIG_FLAG_WentIntoCombatAfterBeingJacked" description="If set, this ped went into combat because of being jacked."/>
-    <enumval name="CPED_CONFIG_FLAG_DontActivateRagdollForVehicleGrab" description ="Blocks ragdoll activation when grabbing vehicle doors"/>
-    <enumval name="CPED_CONFIG_FLAG_ForcePackageCharacterCloth" description ="Set the flag for forcing package on character cloth when cloth is created on the ped"/>
+    <enumval name="CPED_CONFIG_FLAG_DontActivateRagdollForVehicleGrab" description="Blocks ragdoll activation when grabbing vehicle doors"/>
+    <enumval name="CPED_CONFIG_FLAG_ForcePackageCharacterCloth" description="Set the flag for forcing package on character cloth when cloth is created on the ped"/>
     <enumval name="CPED_CONFIG_FLAG_DontRemoveWithValidOrder"/>
     <enumval name="CPED_CONFIG_FLAG_AllowTaskDoNothingTimeslicing" description="If set, this ped will timeslice it's DoNothing Task when computing default task."/>
     <enumval name="CPED_CONFIG_FLAG_ForcedToStayInCoverDueToPlayerSwitch"/>
@@ -370,14 +370,14 @@
     <enumval name="CPED_CONFIG_FLAG_TreatDislikeAsHateWhenInCombat" description="If this ped is in combat then any ped they dislike they will consider the relationship hate instead"/>
     <enumval name="CPED_CONFIG_FLAG_OnlyUpdateTargetWantedIfSeen" description="If the target is a player we will only set the WL or update the radar if they are seen"/>
     <enumval name="CPED_CONFIG_FLAG_AllowAutoShuffleToDriversSeat" description="Allows this ped to auto shuffle to the driver seat of a vehicle if the driver is dead (law and MP peds would do this normally)"/>
-    <enumval name="CPED_CONFIG_FLAG_DontActivateRagdollFromSmokeGrenade" description ="Blocks ragdoll activation when damaged by smoke grenade"/>
+    <enumval name="CPED_CONFIG_FLAG_DontActivateRagdollFromSmokeGrenade" description="Blocks ragdoll activation when damaged by smoke grenade"/>
     <enumval name="CPED_CONFIG_FLAG_LinkMBRToOwnerOnChain" description="This ped will attempt to match the speed of the owner while following its current scenario chain."/>
     <enumval name="CPED_CONFIG_FLAG_AmbientFriendBumpedByPlayer" description="The player has walked into our ambient friend."/>
     <enumval name="CPED_CONFIG_FLAG_AmbientFriendBumpedByPlayerVehicle" description="The player has driven into our ambient friend."/>
     <enumval name="CPED_CONFIG_FLAG_InFPSUnholsterTransition" description="Player is playing the unholster transition in FPS mode"/>
-    <enumval name="CPED_CONFIG_FLAG_PreventReactingToSilencedCloneBullets" description ="Prevents the ped from reacting to silenced bullets fired from network clone peds"/>
-    <enumval name="CPED_CONFIG_FLAG_DisableInjuredCryForHelpEvents" description ="Blocks ped from creating the injured cry for help events (run over, tazed or melee would usually do this)"/>
-    <enumval name="CPED_CONFIG_FLAG_NeverLeaveTrain" description ="Prevents peds riding trains from getting off them"/>
+    <enumval name="CPED_CONFIG_FLAG_PreventReactingToSilencedCloneBullets" description="Prevents the ped from reacting to silenced bullets fired from network clone peds"/>
+    <enumval name="CPED_CONFIG_FLAG_DisableInjuredCryForHelpEvents" description="Blocks ped from creating the injured cry for help events (run over, tazed or melee would usually do this)"/>
+    <enumval name="CPED_CONFIG_FLAG_NeverLeaveTrain" description="Prevents peds riding trains from getting off them"/>
     <enumval name="CPED_CONFIG_FLAG_DontDropJetpackOnDeath" description="When dead, don't drop eqquiped jetpack"/>
     <enumval name="CPED_CONFIG_FLAG_UseFPSUnholsterTransitionDuringCombatRoll" description="Player is playing the unholster transition in FPS mode"/>
     <enumval name="CPED_CONFIG_FLAG_ExitingFPSCombatRoll" description="Player is exiting combat roll in FPS mode"/>
@@ -495,7 +495,7 @@
     <!--  wants to get reset at start of ResetPostMovement -->
     <enumval name="CPED_RESET_FLAG_DontActivateRagdollFromAnyPedImpactReset"/>
     <enumval name="CPED_RESET_FLAG_ForceScriptControlledRagdoll"/>
-    <enumval name="CPED_RESET_FLAG_TaskUseKinematicPhysics" description ="For use by tasks - puts the ped into Kinematic physics mode. In this mode the ped will push other objects our of the way, but not be physically affected by them"/>
+    <enumval name="CPED_RESET_FLAG_TaskUseKinematicPhysics" description="For use by tasks - puts the ped into Kinematic physics mode. In this mode the ped will push other objects our of the way, but not be physically affected by them"/>
     <enumval name="CPED_RESET_FLAG_TemporarilyBlockWeaponSwitching" description="Stop weapon switch processing"/>
     <enumval name="CPED_RESET_FLAG_DoNotClampFootIk" description="Stop clamping the foot IK. Maybe the clamps should be parameters of the IK manager, but apparently that is to be refactored in future"/>
     <!-- *************************************************************************************
@@ -546,11 +546,11 @@
     <enumval name="CPED_RESET_FLAG_NotAllowedToChangeCrouchState" description="if set the ped will not be allowed to change their crouch state"/>
     <enumval name="CPED_RESET_FLAG_ForcePedToStrafe" description="forces a ped to strafe"/>
     <enumval name="CPED_RESET_FLAG_ForceMeleeStrafingAnims" description="forces a ped to use the melee strafing anims when strafing"/>
-    <enumval name="CPED_RESET_FLAG_UseKinematicPhysics" description ="To be used by scripts - puts the ped into Kinematic physics mode. In this mode the ped will push other objects our of the way, but not be physically affected by them"/>
+    <enumval name="CPED_RESET_FLAG_UseKinematicPhysics" description="To be used by scripts - puts the ped into Kinematic physics mode. In this mode the ped will push other objects our of the way, but not be physically affected by them"/>
     <enumval name="CPED_RESET_FLAG_ClearLockonTarget" description="Clears the player's lockon target next frame"/>
     <enumval name="CPED_RESET_FLAG_CanPedSeeHatedPedBeingUsed" description="Activates can ped see hated ped generating events even when blocking of non-temp events is on"/>
-    <enumval name="CPED_RESET_FLAG_InstantBlendToAim" description ="Makes the ped performa an instant blend to aim if starting a gun task this frame"/>
-    <enumval name="CPED_RESET_FLAG_ForceImprovedIdleTurns" description ="Forces the ped to use an improved idle turning system that should help him turn to face more quickly"/>
+    <enumval name="CPED_RESET_FLAG_InstantBlendToAim" description="Makes the ped performa an instant blend to aim if starting a gun task this frame"/>
+    <enumval name="CPED_RESET_FLAG_ForceImprovedIdleTurns" description="Forces the ped to use an improved idle turning system that should help him turn to face more quickly"/>
     <enumval name="CPED_RESET_FLAG_HitPedWithWeapon" description="set when damage is inflicted by this ped on another ped"/>
     <enumval name="CPED_RESET_FLAG_ForcePedToUseScripCamHeading" description="forces a ped to the scripted camera heading instead of gameplay"/>
     <enumval name="CPED_RESET_FLAG_ProcessProbesWhenExtractingZ" description="makes the capsule physics push the ped out of the ground even when extracting z"/>

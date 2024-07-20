@@ -26,7 +26,7 @@
     <enumval name="CPED_RESET_FLAG_CullExtraFarAway" value="20" description="flag Ai can set to make ped get culled further away (used for roadblock cops, crimials...)"/>
     <enumval name="CPED_RESET_FLAG_DontActivateRagdollFromAnyPedImpactReset" value="21" description=""/>
     <enumval name="CPED_RESET_FLAG_ForceScriptControlledRagdoll" value="22" description=""/>
-    <enumval name="CPED_RESET_FLAG_TaskUseKinematicPhysics" value="23" description ="For use by tasks - puts the ped into Kinematic physics mode. In this mode the ped will push other objects our of the way, but not be physically affected by them"/>
+    <enumval name="CPED_RESET_FLAG_TaskUseKinematicPhysics" value="23" description="For use by tasks - puts the ped into Kinematic physics mode. In this mode the ped will push other objects our of the way, but not be physically affected by them"/>
     <enumval name="CPED_RESET_FLAG_TemporarilyBlockWeaponSwitching" value="24" description="Stop weapon switch processing"/>
     <enumval name="CPED_RESET_FLAG_DoNotClampFootIk" value="25" description="Stop clamping the foot IK. Maybe the clamps should be parameters of the IK manager, but apparently that is to be refactored in future"/>
     <enumval name="CPED_RESET_FLAG_MoveBlend_bFleeTaskRunning" value="26" description="TASK_SMART_FLEE, or TASK_COMPLEX_LEAVE_CAR_AND_FLEE"/>
@@ -74,11 +74,11 @@
     <enumval name="CPED_RESET_FLAG_NotAllowedToChangeCrouchState" value="68" description="if set the ped will not be allowed to change their crouch state"/>
     <enumval name="CPED_RESET_FLAG_ForcePedToStrafe" value="69" description="forces a ped to strafe"/>
     <enumval name="CPED_RESET_FLAG_ForceMeleeStrafingAnims" value="70" description="forces a ped to use the melee strafing anims when strafing"/>
-    <enumval name="CPED_RESET_FLAG_UseKinematicPhysics" value="71" description ="To be used by scripts - puts the ped into Kinematic physics mode. In this mode the ped will push other objects our of the way, but not be physically affected by them"/>
+    <enumval name="CPED_RESET_FLAG_UseKinematicPhysics" value="71" description="To be used by scripts - puts the ped into Kinematic physics mode. In this mode the ped will push other objects our of the way, but not be physically affected by them"/>
     <enumval name="CPED_RESET_FLAG_ClearLockonTarget" value="72" description="Clears the player's lockon target next frame"/>
     <enumval name="CPED_RESET_FLAG_CanPedSeeHatedPedBeingUsed" value="73" description="Activates can ped see hated ped generating events even when blocking of non-temp events is on"/>
-    <enumval name="CPED_RESET_FLAG_InstantBlendToAim" value="74" description ="Makes the ped performa an instant blend to aim if starting a gun task this frame"/>
-    <enumval name="CPED_RESET_FLAG_ForceImprovedIdleTurns" value="75" description ="Forces the ped to use an improved idle turning system that should help him turn to face more quickly"/>
+    <enumval name="CPED_RESET_FLAG_InstantBlendToAim" value="74" description="Makes the ped performa an instant blend to aim if starting a gun task this frame"/>
+    <enumval name="CPED_RESET_FLAG_ForceImprovedIdleTurns" value="75" description="Forces the ped to use an improved idle turning system that should help him turn to face more quickly"/>
     <enumval name="CPED_RESET_FLAG_HitPedWithWeapon" value="76" description="set when damage is inflicted by this ped on another ped"/>
     <enumval name="CPED_RESET_FLAG_ForcePedToUseScripCamHeading" value="77" description="forces a ped to the scripted camera heading instead of gameplay"/>
     <enumval name="CPED_RESET_FLAG_ProcessProbesWhenExtractingZ" value="78" description="makes the capsule physics push the ped out of the ground even when extracting z"/>
