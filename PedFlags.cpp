@@ -549,18 +549,18 @@ void CPedResetFlags::StaticInit()
 	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_FPSSwimUseSwimMotionTask );
 	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_FPSSwimUseAimingMotionTask );
 	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_FiringWeaponWhenReady );
-	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_FPSAllowAimIKForThrownProjectile);
+	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_FPSAllowAimIKForThrownProjectile );
 	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_InstantBlendToAimNoSettle );
-	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableHelmetCullFPS);
-	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableFPSArmIK);
-	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableRightArmIKInCoverOutroFPS);
-	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_WeaponBlockedInFPSMode);
+	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableHelmetCullFPS );
+	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableFPSArmIK );
+	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableRightArmIKInCoverOutroFPS );
+	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_WeaponBlockedInFPSMode );
 	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_ScriptClearingPedTasks );
-	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_WasFPSJumpingWithProjectile);
-	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_WaypointPlaybackSlowMoreForCorners);
-	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_FPSPlacingProjectile);
-	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_FPSPlantingBombOnFloor);
-	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableLeftArmIKInCoverOutroFPS);
+	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_WasFPSJumpingWithProjectile );
+	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_WaypointPlaybackSlowMoreForCorners );
+	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_FPSPlacingProjectile );
+	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_FPSPlantingBombOnFloor );
+	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableLeftArmIKInCoverOutroFPS );
 	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_StartProjectileTaskWithPrimingDisabled );
 	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_CheckFPSSwitchInCameraUpdate );
 	sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_InflictedDamageThisFrame );
@@ -690,7 +690,7 @@ void CPedResetFlags::StaticInit()
 	sm_PreTaskResetFlagMask.BitSet().Set( CPED_RESET_FLAG_IsDoingCoverOutroToPeek );
 	sm_PreTaskResetFlagMask.BitSet().Set( CPED_RESET_FLAG_ShouldIgnoreCoverAutoHeadingCorrection );
 	sm_PreTaskResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableReticuleInCoverThisFrame );
-	sm_PreTaskResetFlagMask.BitSet().Set( CPED_RESET_FLAG_IsPeekingFromCover);
+	sm_PreTaskResetFlagMask.BitSet().Set( CPED_RESET_FLAG_IsPeekingFromCover );
 	sm_PreTaskResetFlagMask.BitSet().Set( CPED_RESET_FLAG_CoverOutroRunning );
 	sm_PreTaskResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableCameraConstraintFallBackThisFrame );
 	sm_PreTaskResetFlagMask.BitSet().Set( CPED_RESET_FLAG_IsExitingCover );
@@ -726,7 +726,7 @@ void CPedResetFlags::StaticInit()
 	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_ForcePlayerFiring );
 	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_ForcePeekFromCover );
 	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_ForcePedToStrafe );
-	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_ForcePedToUseScripCamHeading);
+	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_ForcePedToUseScripCamHeading );
 	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_UseKinematicPhysics );
 	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_ClearLockonTarget );
 	sm_PostPhysicsFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableCrouchWhileInCover );
@@ -896,7 +896,7 @@ void CPedResetFlags::StaticInit()
 
 	// these are the flags we will reset in the ResetPostPreRender function
 	sm_PostPreRenderFlagMask.BitSet().Set( CPED_RESET_FLAG_ePostCameraAnimUpdateUseZeroTimestep );
-	sm_PostPreRenderFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableHighHeels);
+	sm_PostPreRenderFlagMask.BitSet().Set( CPED_RESET_FLAG_DisableHighHeels );
 
 #if __DEV
 	// verify we got all the flags...
@@ -911,32 +911,32 @@ void CPedResetFlags::StaticInit()
 	allResetFlags.BitSet().Union(sm_PostPreRenderFlagMask.BitSet());
 
 	// a few flags are ok to not be getting reset?
-	allResetFlags.BitSet().Set(CPED_RESET_FLAG_RaiseVelocityChangeLimit);	// is reset in the middle of CPed::ProcessPhysics, can we do it earlier?
-	allResetFlags.BitSet().Set(CPED_RESET_FLAG_SearchingForClimb);			// is reset in CClimbDetector::Process
-	allResetFlags.BitSet().Set(CPED_RESET_FLAG_SearchingForAutoVaultClimb);	// is reset in CClimbDetector::Process
-	allResetFlags.BitSet().Set(CPED_RESET_FLAG_SearchingForDoors);			// is reset in CPedIntelligence::Process_NearbyEntityLists
-	allResetFlags.BitSet().Set(CPED_RESET_FLAG_HitPedWithWeapon);			// is reset in ResetPostPreRender
-	allResetFlags.BitSet().Set(CPED_RESET_FLAG_IsNearDoor);					// Is reset in CPed::ProcessControl_Intelligence
-	allResetFlags.BitSet().Set(CPED_RESET_FLAG_SearchingForDropDown);		// is reset in CDropDetector::Process
-	allResetFlags.BitSet().Set(CPED_RESET_FLAG_TasksNeedProcessMoveSignalCalls);	// is reset in CPedIntelligence::Process_Tasks
-    allResetFlags.BitSet().Set(CPED_RESET_FLAG_FirstPhysicsUpdate);                // is reset in CPed::ProcessProbes
-	allResetFlags.BitSet().Set(CPED_RESET_FLAG_SpawnedThisFrameByAmbientPopulation);	// is reset in CPedIntelligence::Process_Tasks
-	allResetFlags.BitSet().Set(CPED_RESET_FLAG_InContactWithFoliage);// Its reset direct in prephysics
-	allResetFlags.BitSet().Set(CPED_RESET_FLAG_InContactWithBIGFoliage);// Its reset direct in prephysics
+	allResetFlags.BitSet().Set( CPED_RESET_FLAG_RaiseVelocityChangeLimit );	// is reset in the middle of CPed::ProcessPhysics, can we do it earlier?
+	allResetFlags.BitSet().Set( CPED_RESET_FLAG_SearchingForClimb );			// is reset in CClimbDetector::Process
+	allResetFlags.BitSet().Set( CPED_RESET_FLAG_SearchingForAutoVaultClimb );	// is reset in CClimbDetector::Process
+	allResetFlags.BitSet().Set( CPED_RESET_FLAG_SearchingForDoors );			// is reset in CPedIntelligence::Process_NearbyEntityLists
+	allResetFlags.BitSet().Set( CPED_RESET_FLAG_HitPedWithWeapon );			// is reset in ResetPostPreRender
+	allResetFlags.BitSet().Set( CPED_RESET_FLAG_IsNearDoor );					// Is reset in CPed::ProcessControl_Intelligence
+	allResetFlags.BitSet().Set( CPED_RESET_FLAG_SearchingForDropDown );		// is reset in CDropDetector::Process
+	allResetFlags.BitSet().Set( CPED_RESET_FLAG_TasksNeedProcessMoveSignalCalls );	// is reset in CPedIntelligence::Process_Tasks
+    allResetFlags.BitSet().Set( CPED_RESET_FLAG_FirstPhysicsUpdate );                // is reset in CPed::ProcessProbes
+	allResetFlags.BitSet().Set( CPED_RESET_FLAG_SpawnedThisFrameByAmbientPopulation );	// is reset in CPedIntelligence::Process_Tasks
+	allResetFlags.BitSet().Set( CPED_RESET_FLAG_InContactWithFoliage );// Its reset direct in prephysics
+	allResetFlags.BitSet().Set( CPED_RESET_FLAG_InContactWithBIGFoliage );// Its reset direct in prephysics
 	allResetFlags.BitSet().Set( CPED_RESET_FLAG_TouchingOverhang );			//Reset in CPed::ProcessPreComputeImpactsForMover
 	allResetFlags.BitSet().Set( CPED_RESET_FLAG_TooSteepForPlayer );		//Reset in CPed::ProcessPreComputeImpactsForMover
-	allResetFlags.BitSet().Set(CPED_RESET_FLAG_DisableCellphoneAnimations ); // it is reset in task mobile phone
-	allResetFlags.BitSet().Set(CPED_RESET_FLAG_IsBeingMeleeHomedByPlayer ); // it is reset in CTaskCombat
+	allResetFlags.BitSet().Set( CPED_RESET_FLAG_DisableCellphoneAnimations ); // it is reset in task mobile phone
+	allResetFlags.BitSet().Set( CPED_RESET_FLAG_IsBeingMeleeHomedByPlayer ); // it is reset in CTaskCombat
 	allResetFlags.BitSet().Set( CPED_RESET_FLAG_InsideEnclosedSearchRegion ); // reset in pedintelligence
 	allResetFlags.BitSet().Set( CPED_RESET_FLAG_IsExactStopping );				// Reset in CTaskMoveGoToPointAndStandStill
 	allResetFlags.BitSet().Set( CPED_RESET_FLAG_IsExactStopSettling );			// Reset in CTaskMoveGoToPointAndStandStill
 	allResetFlags.BitSet().Set( CPED_RESET_FLAG_GestureAnimsAllowed );			// Reset in CPed::ProcessAnimDataEmbeddedInAudioAssets
 	allResetFlags.BitSet().Set( CPED_RESET_FLAG_GestureAnimsBlockedFromScript );			// Reset in CPed::ProcessAnimDataEmbeddedInAudioAssets
-	allResetFlags.BitSet().Set(CPED_RESET_FLAG_CancelLeftHandGripIk);			// Reset in CPed::PreRender()
-	allResetFlags.BitSet().Set(CPED_RESET_FLAG_TriggerRoadRageAnim);			// after task update.
-	allResetFlags.BitSet().Set(CPED_RESET_FLAG_InContactWithDeepSurface);// Its reset direct in prephysics
+	allResetFlags.BitSet().Set( CPED_RESET_FLAG_CancelLeftHandGripIk );			// Reset in CPed::PreRender()
+	allResetFlags.BitSet().Set( CPED_RESET_FLAG_TriggerRoadRageAnim );			// after task update.
+	allResetFlags.BitSet().Set( CPED_RESET_FLAG_InContactWithDeepSurface );// Its reset direct in prephysics
 	allResetFlags.BitSet().Set( CPED_RESET_FLAG_BlockRemotePlayerRecording );
-	allResetFlags.BitSet().Set(CPED_RESET_FLAG_UNUSED_REPLACE_ME);		// Unused but don't want it asserting...
+	allResetFlags.BitSet().Set( CPED_RESET_FLAG_UNUSED_REPLACE_ME );		// Unused but don't want it asserting...
 
 	for(int i=0;i<ePedResetFlags_NUM_ENUMS;i++)
 	{
