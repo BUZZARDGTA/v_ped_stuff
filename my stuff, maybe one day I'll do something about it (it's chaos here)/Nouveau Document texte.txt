@@ -1,0 +1,5 @@
+        TemporarilyBlockWeaponSwitching = 24,
+        DoingCombatRoll = 254,
+        BreakTargetLock = 352,
+        BlockCameraSwitching = 395,
+        CheckFPSSwitchInCameraUpdate = 431

@@ -1,0 +1,2 @@
+            and i ~= 392 and i ~= 435 -- Both of them together, in third person ped is punching the the car's steering wheel, same in first person but you also hear the horning sometimes. It also shakes your cam lmfao
+            and i ~= 393 and i ~= 437 -- Both of them together, prevents you from aiming in first person

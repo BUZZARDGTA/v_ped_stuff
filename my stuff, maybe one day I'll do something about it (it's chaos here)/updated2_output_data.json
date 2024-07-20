@@ -1,0 +1,2802 @@
+{
+    "PRF_FallenDown": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "decides whether to ik rotate body to match ground angle",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DontRenderThisFrame": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "force ped to stop rendering this frame (for example - drive task can stop peds rendering inside buses)",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_IsDrowning": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_PedHitWallLastFrame": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_UsingMobilePhone": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_BlockMovementAnims": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "completely disable processing of on-foot movement anim blending for this frame",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ZeroDesiredMoveBlendRatios": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "zero out all inputs to movement system this frame, causing ped to stop moving",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DontChangeMbrInSimpleMoveDoNothing": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "If this is set, then CTaskSimpleMoveDoNothing will not reset desired moveblendratio to zero this frame.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_FollowingRoute": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "whether this ped is following a route of some sort - used to let simplest goto task pull the ped back onto their current route segment",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_TakingRouteSplineCorner": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "whether the ped is cornering via a spline curve, which will take them off their route linesegment",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_Wandering": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ProcessPhysicsTasks": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "do we need to call process physics for (main) tasks this frame",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ProcessPreRender2": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "do we need to call ProcessPreRender2 for tasks",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_SetLastMatrixDone": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_FiringWeapon": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "set when ped fires any weapon, so script can check the flag",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_SearchingForCover": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Set if the ped is likely to be searching for cover, used by the navmesh to load coverpoints around interested peds",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_KeepCoverPoint": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Set if the ped wants to keep their current cover point this frame, otherwise it gets released",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_IsClimbing": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "If the ped is climbing, shimmying or on a ladder.  Stops ProcessProbes() from happening.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_IsJumping": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "is the ped jumping.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_IsLanding": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "is landing after being in the air",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_CullExtraFarAway": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "flag Ai can set to make ped get culled further away (used for roadblock cops, crimials...)",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DontActivateRagdollFromAnyPedImpactReset": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ForceScriptControlledRagdoll": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_TemporarilyBlockWeaponSwitching": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Stop weapon switch processing",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DoNotClampFootIk": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Stop clamping the foot IK. Maybe the clamps should be parameters of the IK manager, but apparently that is to be refactored in future",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_MoveBlend_bFleeTaskRunning": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "TASK_SMART_FLEE, or TASK_COMPLEX_LEAVE_CAR_AND_FLEE",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_IsAiming": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "TASK_GUN or TASK_USE_COVER",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_MoveBlend_bTaskComplexGunRunning": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "TASK_COMPLEX_GUN (only)",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_MoveBlend_bMeleeTaskRunning": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "TASK_COMPLEX_MELEE",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_MoveBlend_bCopSearchTaskRunning": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "TASK_COMPLEX_SEARCH_FOR_PED_ON_FOOT",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_PatrollingInVehicle": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "ped is patrolling in a vehicle, likely meaning they are swat or police",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_RaiseVelocityChangeLimit": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DimTargetReticule": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_IsWalkingRoundPlayer": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Whether this ped is walking around another ped (one frame latency)",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_GestureAnimsAllowed": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_VisemeAnimsBlocked": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Blocks viseme anims from playing",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_AmbientAnimsBlocked": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Blocks new ambient idles from starting.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_KnockedToTheFloorByPlayer": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_RandomisePointsDuringNavigation": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_Prevent180SkidTurns": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_IsOnAssistedMovementRoute": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ApplyVelocityDirectly": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Should we apply the velocity directly to the physics collider or go through the force solver?",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisablePlayerLockon": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ResetMoveGroupAfterRagdoll": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "If true, will reset the temp anim group when not ragdolling",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisablePedConstraints": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Allow the ped to rotate around freely",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisablePlayerJumping": {
+        "bitflag": 46,
+        "PedFlagsMeta.psc": "Disables player jumping if true. Reset in ResetPostPhysics, as it will be set via script",
+        "commands_ped.sch": "Disable jumping (exclusive from climbing).",
+        "communityDescription1": "Disable jumping",
+        "communityDescription2": ""
+    },
+    "PRF_DisablePlayerVaulting": {
+        "bitflag": 47,
+        "PedFlagsMeta.psc": "Disables player vaulting/climbing if true.",
+        "commands_ped.sch": "Disable climbing / vaulting (but not auto-vault, that's a seperate flag).",
+        "communityDescription1": "Disable climbing / vaulting",
+        "communityDescription2": ""
+    },
+    "PRF_DisableAsleepImpulse": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Disable the code that pushes peds which fall asleep in the air",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ForcePostCameraAIUpdate": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ForcePostCameraAnimUpdate": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ePostCameraAnimUpdateUseZeroTimestep": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_CollideWithGlassRagdoll": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_CollideWithGlassWeapon": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_SyncDesiredHeadingToCurrentHeading": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_AllowUpdateIfNoCollisionLoaded": {
+        "bitflag": 55,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "Don't freeze this ped for not having bounds loaded around it",
+        "communityDescription1": "Don't freeze this ped for not having bounds loaded around it",
+        "communityDescription2": ""
+    },
+    "PRF_InternalWalkingRndPlayer": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_PlacingCharge": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Setting Bomb (firing weapon is set also)",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ScriptDisableSecondaryAnimationTasks": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Disable upper body animtion tasks such as shove ped and open door anims",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_SearchingForClimb": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_SearchingForDoors": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_WanderingStoppedForOtherPed": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_SupressGunfireEvents": {
+        "bitflag": 62,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "Supresses AI generating fire events, so civilians wont be shocked or react, for use in a shooting range for example",
+        "communityDescription1": "Supresses AI generating fire events, so civilians wont be shocked or react, for use in a shooting range for example",
+        "communityDescription2": ""
+    },
+    "PRF_InfiniteStamina": {
+        "bitflag": 63,
+        "PedFlagsMeta.psc": "Currently just for mounts, but could be expanded to anything with stamina",
+        "commands_ped.sch": "Currently just for mounts, but could be expanded to anything with stamina",
+        "communityDescription1": "Currently just for mounts, but could be expanded to anything with stamina",
+        "communityDescription2": ""
+    },
+    "PRF_BlockWeaponReactionsUnlessDead": {
+        "bitflag": 64,
+        "PedFlagsMeta.psc": " Stops ragdoll and nm behaviors triggering from weapon damage unless the ped has died.",
+        "commands_ped.sch": "Stops the ped from reacting to damage events (such as shots / fires, etc). The ped will still take damage while this flag is active. Note: this does not block explosion reactions.",
+        "communityDescription1": "Stops the ped from reacting to damage events (such as shots / fires, etc). The ped will still take damage while this flag is active. Note: this does not block explosion reactions.",
+        "communityDescription2": ""
+    },
+    "PRF_ForcePlayerFiring": {
+        "bitflag": 65,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "Forces player to fire even if they aren't pressing fire",
+        "communityDescription1": "Forces player to fire even if they aren't pressing fire",
+        "communityDescription2": ""
+    },
+    "PRF_InCoverFacingLeft": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "set when exiting the cover state saying if we are facing left",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ForcePeekFromCover": {
+        "bitflag": 67,
+        "PedFlagsMeta.psc": "if set the ped will go into peeking if they are already in cover",
+        "commands_ped.sch": "Forces an actor that is in cover to continue (or start if they haven't yet) peeking",
+        "communityDescription1": "Forces an actor that is in cover to continue (or start if they haven't yet) peeking",
+        "communityDescription2": ""
+    },
+    "PRF_NotAllowedToChangeCrouchState": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "if set the ped will not be allowed to change their crouch state",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ForcePedToStrafe": {
+        "bitflag": 69,
+        "PedFlagsMeta.psc": "forces a ped to strafe",
+        "commands_ped.sch": "Forces an actor to strafe",
+        "communityDescription1": "Forces an actor to strafe",
+        "communityDescription2": ""
+    },
+    "PRF_ForceMeleeStrafingAnims": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "forces a ped to use the melee strafing anims when strafing",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_HitPedWithWeapon": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "set when damage is inflicted by this ped on another ped",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ForcePedToUseScripCamHeading": {
+        "bitflag": 77,
+        "PedFlagsMeta.psc": "forces a ped to the scripted camera heading instead of gameplay",
+        "commands_ped.sch": "forces a ped to the scripted camera heading instead of gameplay",
+        "communityDescription1": "forces a ped to the scripted camera heading instead of gameplay",
+        "communityDescription2": ""
+    },
+    "PRF_ProcessProbesWhenExtractingZ": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "makes the capsule physics push the ped out of the ground even when extracting z",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_KeepDesiredCoverPoint": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "should the ped keep their desired cover point this frame",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_HasProcessedCornering": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "whether the ped has already processed slowing down for this corner",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_StandingOnForkliftForks": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Set when the ped standing capsule hits the forklift forks.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_AimWeaponReactionRunning": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "ped is running the reaction task this frame",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_InContactWithFoliage": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "ped is in contact with GTA_FOLIAGE_TYPE bounds",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ForceExplosionCollisions": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "ped will always collide with explosions, even when collision is off",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_IgnoreTargetsCoverForLOS": {
+        "bitflag": 85,
+        "PedFlagsMeta.psc": "when checking LOS against targets this ped will ignore their cover (if the cover exists)",
+        "commands_ped.sch": "When doing LOS checks to other peds we won't use the cover vantage position as the \"target\" position",
+        "communityDescription1": "When doing LOS checks to other peds we won't use the cover vantage position as the \"target\" position",
+        "communityDescription2": ""
+    },
+    "PRF_BlockAnimatedWeaponReactions": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Ped should not play animated damager reactions while this flag is set",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisablePedCapsule": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Removes the ped capsule from the physics simulation",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableCrouchWhileInCover": {
+        "bitflag": 88,
+        "PedFlagsMeta.psc": "Force the crouch flag to return true while in cover.",
+        "commands_ped.sch": "Force the crouch flag to return true while in cover.",
+        "communityDescription1": "Force the crouch flag to return true while in cover.",
+        "communityDescription2": ""
+    },
+    "PRF_IncreasedAvoidanceRadius": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Adds extra 2m onto the radius other peds use to avoid this ped during local steering.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ForceRunningSpeedForFragSmashing": {
+        "bitflag": 91,
+        "PedFlagsMeta.psc": "Can be set by designers to force the ped to smash more easily through frags.",
+        "commands_ped.sch": "Forces a ped to apply forces to frags as if running on contact, to guarantee peds will smash through frag objects when playing custom anims",
+        "communityDescription1": "Forces a ped to apply forces to frags as if running on contact, to guarantee peds will smash through frag objects when playing custom anims",
+        "communityDescription2": ""
+    },
+    "PRF_EnableMoverAnimationWhileAttached": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "While flagged, any mover animation will be applied to the offset of the attachment.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_NoTimeDelayBeforeShot": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "While flagged, The time delay before a player can fire after aiming is 0",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_SearchingForAutoVaultClimb": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "inform climb code we are doing an autovault",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ExtraLongWeaponRange": {
+        "bitflag": 95,
+        "PedFlagsMeta.psc": "Extends the range of a peds weapons to 250m",
+        "commands_ped.sch": "Force the bullets gun range to increase to 250m",
+        "communityDescription1": "Force the bullets gun range to increase to 250m",
+        "communityDescription2": ""
+    },
+    "PRF_ForcePlayerToEnterVehicleThroughDirectDoorOnly": {
+        "bitflag": 96,
+        "PedFlagsMeta.psc": "Forces the player to only use direct access when entering vehicles",
+        "commands_ped.sch": "Forces the player to only use direct access when entering vehicles",
+        "communityDescription1": "Forces the player to only use direct access when entering vehicles",
+        "communityDescription2": ""
+    },
+    "PRF_TaskCullExtraFarAway": {
+        "bitflag": 97,
+        "PedFlagsMeta.psc": "Can be set by ai tasks on the main task tree to disable a ped getting cull from a vehicle.",
+        "commands_ped.sch": "Disable a ped getting cull from a vehicle from pretend occupants.",
+        "communityDescription1": "Disable a ped getting cull from a vehicle from pretend occupants.",
+        "communityDescription2": ""
+    },
+    "PRF_IsVaulting": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Set the entire time CTaskVault is running.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_IsParachuting": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Set the entire time CTaskParachute is running.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_SuppressSlowingForCorners": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "If set this will prevent the ped from slowing down to take corners this frame",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableProcessProbes": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Disables processing of probes.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisablePlayerAutoVaulting": {
+        "bitflag": 102,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "If this flag is set on a ped it will not attempt to autovault",
+        "communityDescription1": "If this flag is set on a ped it will not attempt to autovault",
+        "communityDescription2": ""
+    },
+    "PRF_DisableGaitReduction": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ExitVehicleTaskFinishedThisFrame": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_RequiresLegIk": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_JayWalking": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "If set then the ped is jay walking and a vehicle is allowed to run him over.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_UseBulletPenetration": {
+        "bitflag": 107,
+        "PedFlagsMeta.psc": "Ped will use bullet penetration code.",
+        "commands_ped.sch": "If this flag is set on a ped it will use the bullet shoot through code",
+        "communityDescription1": "If this flag is set on a ped it will use the bullet shoot through code",
+        "communityDescription2": ""
+    },
+    "PRF_ForceAimAtHead": {
+        "bitflag": 108,
+        "PedFlagsMeta.psc": "Force all attackers to target the head of this ped",
+        "commands_ped.sch": "Force all attackers to target the head of this ped",
+        "communityDescription1": "Force all attackers to target the head of this ped",
+        "communityDescription2": ""
+    },
+    "PRF_IsInStationaryScenario": {
+        "bitflag": 109,
+        "PedFlagsMeta.psc": "In a scenario and not moving",
+        "commands_ped.sch": "Inform avoidance code that this ped isn't going anywhere and should be steered around rather than waited for",
+        "communityDescription1": "Inform avoidance code that this ped isn't going anywhere and should be steered around rather than waited for",
+        "communityDescription2": ""
+    },
+    "PRF_TemporarilyBlockWeaponEquipping": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Stop weapon equipping",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_CoverOutroRunning": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "TASK_AIM_GUN_FROM_COVER_OUTRO",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_PuttingOnHelmet": {
+        "bitflag": 113,
+        "PedFlagsMeta.psc": " putting on helmet",
+        "commands_ped.sch": "When set, the ped is putting on a helmet. DONT SET THIS only query it",
+        "communityDescription1": "When set, the ped is putting on a helmet.",
+        "communityDescription2": ""
+    },
+    "PRF_AllowPullingPedOntoRoute": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": " allows goto task to apply heading in order to pull a ped back onto their route",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ApplyAnimatedVelocityWhilstAttached": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Allows attachment offsets to be updated from animated velocities",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_AICoverEntryRunning": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "TASK_ENTER_COVER : State_PlayAIEntryAnim",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ResponseAfterScenarioPanic": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "The ped is entering threat response after panic exiting a scenario.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_IsNearDoor": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Ped is near a non-vehicle door",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableTorsoSolver": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_PanicInVehicle": {
+        "bitflag": 120,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "When set, the ped will play panic animations if in a vehicle",
+        "communityDescription1": "When set, the ped will play panic animations if in a vehicle",
+        "communityDescription2": ""
+    },
+    "PRF_DisableDynamicCapsuleRadius": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Turn off dynamic adjustments to ped capsules",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_IsRappelling": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Is currently in a rappel task",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_SkipReactInReactAndFlee": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "When this ped goes to ThreatResponse, play the flee transition but not the reaction clip if fleeing.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_CannotBeTargeted": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Will prevent this ped from being a part of any other peds target list",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_IsFalling": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Ped is in pure fall state (i.e. no parachuting, landing etc included",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ForceInjuryAfterStunned": {
+        "bitflag": 126,
+        "PedFlagsMeta.psc": "Forces this ped to the injured state after being stunned",
+        "commands_ped.sch": "Forces this ped to the injured state after being stunned",
+        "communityDescription1": "Forces this ped to the injured state after being stunned",
+        "communityDescription2": ""
+    },
+    "PRF_HurtThisFrame": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "The ped has entered the hurt state this frame",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_BlockWeaponFire": {
+        "bitflag": 128,
+        "PedFlagsMeta.psc": "Prevent the ped from shooting a weapon",
+        "commands_ped.sch": "Prevent the ped from shooting a weapon",
+        "communityDescription1": "Prevent the ped from shooting a weapon",
+        "communityDescription2": ""
+    },
+    "PRF_ExpandPedCapsuleFromSkeleton": {
+        "bitflag": 129,
+        "PedFlagsMeta.psc": "Set the ped capsule radius based on skeleton",
+        "commands_ped.sch": "Set the ped capsule radius based on skeleton",
+        "communityDescription1": "Set the ped capsule radius based on skeleton",
+        "communityDescription2": ""
+    },
+    "PRF_DisableWeaponLaserSight": {
+        "bitflag": 130,
+        "PedFlagsMeta.psc": "Toggle the weapon laser sight off for this frame",
+        "commands_ped.sch": "Toggle the weapon laser sight off for this frame",
+        "communityDescription1": "Toggle the weapon laser sight off for this frame",
+        "communityDescription2": ""
+    },
+    "PRF_PedExitedVehicleThisFrame": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Set when ped gets set out of vehicle",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_SearchingForDropDown": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Ped is seatching for drop down",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_UseTighterTurnSettings": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Ped should use tighter turn settings in human locomotion motion task",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableArmSolver": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Disable the arm solver this frame",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ForcePreCameraAIUpdate": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_TasksNeedProcessMoveSignalCalls": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Set when peds require calls to ProcessMoveSignals(), for AI timeslicing to work with Move",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_NoCollisionMovementMode": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Set when a ped is moving in an area where collisions with fixed geometry are unlikely.  The ped's physics will not be forced to activate.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_IsNearLaddder": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Ped is near top of a ladder",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_IgnoredByAutoOpenDoors": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Set this for a ped to be ignored by the auto opened doors when checking to see if the door should be opened.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_BlockIkWeaponReactions": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Ped should not play Ik damager reactions while this flag is set",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_FirstPhysicsUpdate": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Ped was just created this frame",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_SpawnedThisFrameByAmbientPopulation": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Ped was spawned this frame",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_SuspendInitiatedMeleeActions": {
+        "bitflag": 149,
+        "PedFlagsMeta.psc": "Temporarily suspend any melee actions this frame (does not include hit reactions). Use PCF_DisableMelee to turn it off completely",
+        "commands_ped.sch": "Temporarily suspend any melee actions this frame (does not include hit reactions). Use PCF_DisableMelee to turn it off completely",
+        "communityDescription1": "Temporarily suspend any melee actions this frame",
+        "communityDescription2": ""
+    },
+    "PRF_SuppressInAirEvent": {
+        "bitflag": 150,
+        "PedFlagsMeta.psc": "Prevents ped from getting the in air event the next frame",
+        "commands_ped.sch": "Prevents ped from getting the in air event the next frame",
+        "communityDescription1": "Prevents ped from getting the in air event the next frame",
+        "communityDescription2": ""
+    },
+    "PRF_AllowTasksIncompatibleWithMotion": {
+        "bitflag": 151,
+        "PedFlagsMeta.psc": "If set, ped will skip CheckTasksAreCompatibleWithMotion",
+        "commands_ped.sch": "If set, allows ped to have tasks incompatible with its current motion",
+        "communityDescription1": "If set, allows ped to have tasks incompatible with its current motion",
+        "communityDescription2": ""
+    },
+    "PRF_IsEnteringOrExitingVehicle": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "TASK_ENTER_VEHICLE or TASK_EXIT_VEHICLE",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_PlayerOnHorse": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "TASK_PLAYER_ON_HORSE",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_HasGunTaskWithAimingState": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Ped is running TASK_GUN and task's state is State_Aim",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_SuppressLethalMeleeActions": {
+        "bitflag": 155,
+        "PedFlagsMeta.psc": "This will suppress any melee action that is considered lethal (RA_IS_LETHAL, defined in action_table.meta)",
+        "commands_ped.sch": "This will suppress any melee action that is considered lethal (RA_IS_LETHAL, defined in action_table.meta)",
+        "communityDescription1": "This will suppress any melee action that is considered lethal",
+        "communityDescription2": ""
+    },
+    "PRF_AmbientIdleAndBaseAnimsBlocked": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Blocks ambient idles and base animations from playing.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_UseAlternativeWhenBlock": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "If set, ped will use alternative aiming/firing anims",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ForceLowLodWaterCheck": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "If set, the ped will always force probe for being in water when in low LOD mode.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_MakeHeadInvisible": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "If set, scale the head of the ped to 0.001",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_NoAutoRunWhenFiring": {
+        "bitflag": 167,
+        "PedFlagsMeta.psc": "Don't auto run when NoAutoRunWhenFiring is set.",
+        "commands_ped.sch": "Don't auto run when NoAutoRunWhenFiring is set",
+        "communityDescription1": "Don't auto run when NoAutoRunWhenFiring is set",
+        "communityDescription2": ""
+    },
+    "PRF_PermitEventDuringScenarioExit": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Ignore certain aspects (FOV checks, etc) of AffectsPedCore() on some events while the ped is playing a scenario exit.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableSteeringAroundVehicles": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": " Enables/disables the low-level steering behaviour around vehicles",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableSteeringAroundPeds": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": " Enables/disables the low-level steering behaviour around peds",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableSteeringAroundObjects": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": " Enables/disables the low-level steering behaviour around objects",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableSteeringAroundNavMeshEdges": {
+        "bitflag": 172,
+        "PedFlagsMeta.psc": " Enables/disables the low-level steering behaviour around nav mesh edges",
+        "commands_ped.sch": "Don't let this ped take navmesh edges into account when performing their low-level steering/avoidance code",
+        "communityDescription1": "Don't let this ped take navmesh edges into account when performing their low-level steering/avoidance code",
+        "communityDescription2": ""
+    },
+    "PRF_ForceCombatTaunt": {
+        "bitflag": 179,
+        "PedFlagsMeta.psc": "Forces a combat taunt for peds using the insult special ability.",
+        "commands_ped.sch": "If this ped has the INSULT special ability, and this flag is set, he will always use the combat taunt when the special is activated",
+        "communityDescription1": "If this ped has the INSULT special ability, and this flag is set, he will always use the combat taunt when the special is activated",
+        "communityDescription2": ""
+    },
+    "PRF_SkipAiUpdateProcessControl": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "True if we've already run this ped's AI and can skip it from within ProcessControl",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_OverridePhysics": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "A reset flag that disables collision and gravity on the ped and drives entity positions and rotations directly, rather than going through the physics update.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_WasPhysicsOverridden": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "True if physics was overriden during the last update.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_BlockWeaponHoldingAnims": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Block any onfoot weapon holding anims.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableMoveTaskHeadingAdjustments": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "True if the ped's movement task should not adjust the heading of the ped.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_PreventAllMeleeTakedowns": {
+        "bitflag": 187,
+        "PedFlagsMeta.psc": "Will temporarily prevent any takedown from being performed on this ped",
+        "commands_ped.sch": "Will temporarily prevent any takedown from being performed on this ped",
+        "communityDescription1": "Will temporarily prevent any takedown from being performed on this ped",
+        "communityDescription2": ""
+    },
+    "PRF_PreventFailedMeleeTakedowns": {
+        "bitflag": 188,
+        "PedFlagsMeta.psc": "Will temporarily prevent any failed takedowns from being performed on this ped",
+        "commands_ped.sch": "Will temporarily prevent any failed takedown from being performed on this ped",
+        "communityDescription1": "Will temporarily prevent any failed takedown from being performed on this ped",
+        "communityDescription2": ""
+    },
+    "PRF_UseTighterAvoidanceSettings": {
+        "bitflag": 190,
+        "PedFlagsMeta.psc": "Ped should use tighter avoidance settings in navigation task",
+        "commands_ped.sch": "Will temporarily force min avoidance on this ped.  will brush other peds but avoid a bit",
+        "communityDescription1": "Will temporarily force min avoidance on this ped.  will brush other peds but avoid a bit",
+        "communityDescription2": ""
+    },
+    "PRF_IsHigherPriorityClipControllingPed": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "True if the active task on the main task tree is taking responsibility for the mover track",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_VehicleCrushingRagdoll": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Set to true if a vehicle is pressing downward on the ragdoll",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_OnActivationUpdate": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Ped was just activated this frame",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ForceMotionStateLeaveDesiredMBR": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Set this to disable setting the desired move blendratio when forcing the motion state. Usefull for forcing a flee start, etc",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableDropDowns": {
+        "bitflag": 195,
+        "PedFlagsMeta.psc": "Disable drop downs for this ped",
+        "commands_ped.sch": "Disable drop downs for this ped",
+        "communityDescription1": "Disable drop downs for this ped",
+        "communityDescription2": ""
+    },
+    "PRF_InContactWithBIGFoliage": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "ped is in contact with GTA_FOLIAGE_TYPE bounds that are large and the player can be hidden",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableCellphoneAnimations": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "tells taskmobile phone to Blends out move network and prevents it from blending in",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_IsExitingVehicle": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "TASK_EXIT_VEHICLE",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableActionMode": {
+        "bitflag": 200,
+        "PedFlagsMeta.psc": "Disables combat anims for ped",
+        "commands_ped.sch": "Disable combat anims for ped.",
+        "communityDescription1": "Disable combat anims for ped.",
+        "communityDescription2": ""
+    },
+    "PRF_EquippedWeaponChanged": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Equipped weapon changed this frame",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_TouchingOverhang": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Some part appears to be contrained downwards",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_TooSteepForPlayer": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "We're standing on something flagged too steep for the player to stand on",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_BlockSecondaryAnim": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Block any secondary scripted task animations playing on this ped",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_IsInCombat": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "This ped is running the combat task",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_UseHeadOrientationForPerception": {
+        "bitflag": 206,
+        "PedFlagsMeta.psc": "Will use the ped's head orientation for perception tests",
+        "commands_ped.sch": "Use the ped's head orientation for perception tests",
+        "communityDescription1": "Use the ped's head orientation for perception tests",
+        "communityDescription2": ""
+    },
+    "PRF_IsDoingDriveby": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "This ped is running a driveby gun or projectile task",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_IsEnteringCover": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "This ped is running a cover entry task",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ForceMovementScannerCheck": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Set to make CStaticMovementScanner::Scan() check for collisions as if we were moving",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableJumpRagdollOnCollision": {
+        "bitflag": 210,
+        "PedFlagsMeta.psc": "If true, the player will no longer auto-ragdoll when colliding with objects, peds, etc. while jumping",
+        "commands_ped.sch": "The player will no longer auto-ragdoll when colliding with objects, peds, etc. while jumping",
+        "communityDescription1": "The player will no longer auto-ragdoll when colliding with objects, peds, etc. while jumping",
+        "communityDescription2": ""
+    },
+    "PRF_IsBeingMeleeHomedByPlayer": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Set on the target ped in melee if the player is homing towards them",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ShouldLaunchBicycleThisFrame": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "This ped should launch the bicycle this frame",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_CanDoBicycleWheelie": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "This ped can do a bicycle wheelie",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ForceProcessPhysicsUpdateEachSimStep": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "If true, ProcessPhysics() will execute completely for each physics simulation step",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisablePedCapsuleMapCollision": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Disables collision between the ped capsule and the map (usefull in cases where the entity position is being tightly controlled outside of physics, e.g. by an animation)",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableSeatShuffleDueToInjuredDriver": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "If true, motion in vehicle task won't shuffle to the driver seat just because the driver is injured",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ProcessPostMovement": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "do we need to call ProcessPostMovement for tasks",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ProcessPostCamera": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "do we need to call ProcessPostCamera for tasks",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ProcessPostPreRender": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "do we need to call ProcessPostPreRender for tasks",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ProcessPhysicsTasksMotion": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "do we need to call process physics for motion tasks this frame",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ProcessPhysicsTasksMovement": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "do we need to call process physics for movement tasks this frame",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableFriendlyGunReactAudio": {
+        "bitflag": 227,
+        "PedFlagsMeta.psc": "If set, disables friendly responses to gunshots/being aimed at.",
+        "commands_ped.sch": "If set, disables friendly responses to gunshots/being aimed at.",
+        "communityDescription1": "If set, disables friendly responses to gunshots/being aimed at.",
+        "communityDescription2": ""
+    },
+    "PRF_ForceForwardTransitionInReactAndFlee": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "If set, force CTaskReactAndFlee to use a forward facing flee transition",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_IsEnteringVehicle": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "TASK_ENTER_VEHICLE",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DoNotSkipNavMeshTrackerUpdate": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "If set we will not allow the NavMeshTracker update to be skipped this frame.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_RagdollOnVehicle": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Set to true when the ragdoll is lying on top of a vehicle (note- hands, feet, forearms and shins are not included in the test)",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableNMForRiverRapids": {
+        "bitflag": 234,
+        "PedFlagsMeta.psc": "If set, disable NM reactions to fast moving water",
+        "commands_ped.sch": "Disable NM reactions to fast moving water for this ped",
+        "communityDescription1": "Disable NM reactions to fast moving water for this ped",
+        "communityDescription2": ""
+    },
+    "PRF_IsInWrithe": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "If set, the ped is on the ground writhing and might start shooting from ground",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_PreventGoingIntoStillInVehicleState": {
+        "bitflag": 236,
+        "PedFlagsMeta.psc": "If set, the ped will not go into the still in vehicle pose",
+        "commands_ped.sch": "If set, the ped will not go into the still in vehicle pose",
+        "communityDescription1": "If set, the ped will not go into the still in vehicle pose",
+        "communityDescription2": ""
+    },
+    "PRF_UseFastEnterExitVehicleRates": {
+        "bitflag": 237,
+        "PedFlagsMeta.psc": "If set, the ped will get in and out of vehicles faster",
+        "commands_ped.sch": "If set, the ped will get in and out of vehicles faster (same as in mp)",
+        "communityDescription1": "If set, the ped will get in and out of vehicles faster",
+        "communityDescription2": ""
+    },
+    "PRF_DisableGroundAttachment": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "If set, the ped won't attach to a ground physical when his physics disables (useful for cutscenes, etc)",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ForceProcessPedStandingUpdateEachSimStep": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "When set, ProcessPedStanding will get called for each physics step.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableFlashLight": {
+        "bitflag": 253,
+        "PedFlagsMeta.psc": "When set, the flash light on a Ai weapon will be turned off.",
+        "commands_ped.sch": "When set, the flash light on a Ai weapon will be turned off",
+        "communityDescription1": "When set, the flash light on a Ai weapon will be turned off",
+        "communityDescription2": ""
+    },
+    "PRF_DoingCombatRoll": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "When set, the ped is doing a combat roll",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_CanAbortExitForInAirEvent": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "When set, the ped can abort the exit vehicle anim to go into fall",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ForceEnableFlashLightForAI": {
+        "bitflag": 258,
+        "PedFlagsMeta.psc": "When set, the ai ped will enable their flash light",
+        "commands_ped.sch": "When set, the ai ped will enable their flash light",
+        "communityDescription1": "When set, the ai ped will enable their flash light",
+        "communityDescription2": ""
+    },
+    "PRF_WaitingForCompletedPathRequest": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "This ped is waiting for a path request which is now complete, so their tasks must be updated this frame",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableCombatAudio": {
+        "bitflag": 262,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "Disables combat audio",
+        "communityDescription1": "Disables combat audio",
+        "communityDescription2": ""
+    },
+    "PRF_DisableCoverAudio": {
+        "bitflag": 263,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "Disables cover audio",
+        "communityDescription1": "Disables cover audio",
+        "communityDescription2": ""
+    },
+    "PRF_EnableSteepSlopePrevention": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Pushes the ped through the same steep slope tolerances in TaskMotionBase that the player encounters",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ProcessPostMovementTimeSliced": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Parallel flag to ProcessPostMovement, except this is reset in PreTask(), meaning it stays consistent across timeslicing.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_OverrideHairScale": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Scales the ped's hair down to the specified value",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ConsiderAsPlayerCoverThreatWithoutLOS": {
+        "bitflag": 282,
+        "PedFlagsMeta.psc": "Considered as a threat as part of player cover search even if they can't see the player",
+        "commands_ped.sch": "Considered as a threat as part of player cover search even if they can't see the player",
+        "communityDescription1": "Considered as a threat as part of player cover search even if they can't see the player",
+        "communityDescription2": ""
+    },
+    "PRF_StreamActionModeAnimsIfDisabled": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Stream action mode anims even if action mode is disabled",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ForceUpdateRagdollMatrix": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Ped requires ragdoll matrix update next frame.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_PreventGoingIntoShuntInVehicleState": {
+        "bitflag": 287,
+        "PedFlagsMeta.psc": "If set, the ped will not go into the shunt in vehicle pose",
+        "commands_ped.sch": "If set, the ped will not go into the shunt in vehicle pose",
+        "communityDescription1": "If set, the ped will not go into the shunt in vehicle pose",
+        "communityDescription2": ""
+    },
+    "PRF_DontActivateRagdollFromPlayerPedImpactReset": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Block ragdoll activations from animated player bumps",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DontActivateRagdollFromAiRagdollImpactReset": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Block ragdoll activations from collisions with an ai ragdoll",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DontActivateRagdollFromPlayerRagdollImpactReset": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Block ragdoll activations from collisions with a player ragdoll",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableVisemeBodyAdditive": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "If set, prevents visemes from playing any additive body animations",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_CapsuleBeingPushedByPlayerCapsule": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Set when the player capsule is pushing up against this peds capsule",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_UsingMoverExtraction": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Set when the players capsule is getting repositioned each frame relative to an anim and origin",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_EnableVoiceDrivenMouthMovement": {
+        "bitflag": 302,
+        "PedFlagsMeta.psc": "If set, turn on the voice driven mouth movement",
+        "commands_ped.sch": "If set, turn on the voice driven mouth movement",
+        "communityDescription1": "If set, turn on the voice driven mouth movement",
+        "communityDescription2": ""
+    },
+    "PRF_UseTighterEnterVehicleSettings": {
+        "bitflag": 304,
+        "PedFlagsMeta.psc": "Ped should use tighter (shorter) settings for entering vehicles",
+        "commands_ped.sch": "To have peds do better vehicle entries when in a group and interfered by other peds, use carefully though",
+        "communityDescription1": "To have peds do better vehicle entries when in a group and interfered by other peds, use carefully though",
+        "communityDescription2": ""
+    },
+    "PRF_InRaceMode": {
+        "bitflag": 305,
+        "PedFlagsMeta.psc": "Set when the player is in the race mode.",
+        "commands_ped.sch": "Set when the player is in the races to make the player more interesting to look at.",
+        "communityDescription1": "Set when the player is in the races to make the player more interesting to look at.",
+        "communityDescription2": ""
+    },
+    "PRF_DisableAmbientMeleeMoves": {
+        "bitflag": 306,
+        "PedFlagsMeta.psc": "Disable ambient (initial) melee moves",
+        "commands_ped.sch": "Disable ambient (initial) melee moves",
+        "communityDescription1": "Disable ambient melee moves (something to do with idle things)",
+        "communityDescription2": ""
+    },
+    "PRF_AllowSpecialAbilityInVehicle": {
+        "bitflag": 308,
+        "PedFlagsMeta.psc": "Allows the player to trigger the special ability while in a vehicle",
+        "commands_ped.sch": "Allows the player to trigger the special ability while in a vehicle",
+        "communityDescription1": "Allows the player to trigger the special ability while in a vehicle",
+        "communityDescription2": ""
+    },
+    "PRF_DisableInVehicleActions": {
+        "bitflag": 309,
+        "PedFlagsMeta.psc": "Prevents ped from doing in vehicle actions such as starting engine, hotwiring, closing door etc.",
+        "commands_ped.sch": "Prevents ped from doing in vehicle actions like closing door, hotwiring, starting engine, putting on helmet etc",
+        "communityDescription1": "Prevents ped from doing in vehicle actions like closing door, hotwiring, starting engine, putting on helmet etc",
+        "communityDescription2": ""
+    },
+    "PRF_ForceInstantSteeringWheelIkBlendIn": {
+        "bitflag": 310,
+        "PedFlagsMeta.psc": "Forces ped to blend in steering wheel ik instantly rather than over time.",
+        "commands_ped.sch": "Forces ped to blend in steering wheel ik instantly rather than over time",
+        "communityDescription1": "Forces ped to blend in steering wheel ik instantly rather than over time",
+        "communityDescription2": ""
+    },
+    "PRF_IgnoreThreatEngagePlayerCoverBonus": {
+        "bitflag": 311,
+        "PedFlagsMeta.psc": "Ignores the bonus score for selecting cover that the player can engage the enemy at",
+        "commands_ped.sch": "Ignores the bonus score for selecting cover that the player can engage the enemy at",
+        "communityDescription1": "Ignores the bonus score for selecting cover that the player can engage the enemy at",
+        "communityDescription2": ""
+    },
+    "PRF_Block180Turns": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Blocks triggering of 180 turns in human locomotion this frame.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DontCloseVehicleDoor": {
+        "bitflag": 313,
+        "PedFlagsMeta.psc": "Prevents the ped from closing the vehicle door of the car they're in",
+        "commands_ped.sch": "Prevents the ped from closing the vehicle door of the car they're inside",
+        "communityDescription1": "Prevents the ped from closing the vehicle door of the car they're inside",
+        "communityDescription2": ""
+    },
+    "PRF_SkipExplosionOcclusion": {
+        "bitflag": 314,
+        "PedFlagsMeta.psc": "Map collision will not block this ped from being hit by explosions",
+        "commands_ped.sch": "Explosions can't be blocked by map collision when damaging this ped",
+        "communityDescription1": "Explosions can't be blocked by map collision when damaging this ped",
+        "communityDescription2": ""
+    },
+    "PRF_ProcessPhysicsTasksTimeSliced": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Parallel flag to ProcessPhysicsTasks, except this is reset in PreTask(), meaning it stays consistent across timeslicing.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_MeleeStrikeAgainstNonPed": {
+        "bitflag": 316,
+        "PedFlagsMeta.psc": "Set when the ped has performed a melee strike and hit any non ped material",
+        "commands_ped.sch": "Set when the ped has performed a melee strike and hit any non ped material",
+        "communityDescription1": "Set when the ped has performed a melee strike and hit any non ped material",
+        "communityDescription2": ""
+    },
+    "PRF_IgnoreNavigationForDoorArmIK": {
+        "bitflag": 317,
+        "PedFlagsMeta.psc": "We will not attempt to walk around doors when using arm IK",
+        "commands_ped.sch": "We will not attempt to walk around doors when using arm IK",
+        "communityDescription1": "We will not attempt to walk around doors when using arm IK",
+        "communityDescription2": ""
+    },
+    "PRF_DisableAimingWhileParachuting": {
+        "bitflag": 318,
+        "PedFlagsMeta.psc": "Disable aiming while parachuting",
+        "commands_ped.sch": "Disable aiming while parachuting",
+        "communityDescription1": "Disable aiming while parachuting",
+        "communityDescription2": ""
+    },
+    "PRF_DisablePedCollisionWithPedEvent": {
+        "bitflag": 319,
+        "PedFlagsMeta.psc": "Disable hit reaction due to colliding with a ped",
+        "commands_ped.sch": "Disable hit reaction due to colliding with a ped",
+        "communityDescription1": "Disable hit reaction due to colliding with a ped",
+        "communityDescription2": ""
+    },
+    "PRF_IgnoreVelocityWhenClosingVehicleDoor": {
+        "bitflag": 320,
+        "PedFlagsMeta.psc": "Will ignore the vehicle speed threshold and close the door anyway",
+        "commands_ped.sch": "Will ignore the vehicle speed threshold and close the door anyway",
+        "communityDescription1": "Will ignore the vehicle speed threshold and close the door anyway",
+        "communityDescription2": ""
+    },
+    "PRF_SkipOnFootIdleIntro": {
+        "bitflag": 321,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "Skip idle intro",
+        "communityDescription1": "Skip idle intro",
+        "communityDescription2": ""
+    },
+    "PRF_DontWalkRoundObjects": {
+        "bitflag": 322,
+        "PedFlagsMeta.psc": "Don't walk round objects that we collide with whilst moving",
+        "commands_ped.sch": "Don't walk round objects that we collide with whilst moving",
+        "communityDescription1": "Don't walk round objects that we collide with whilst moving",
+        "communityDescription2": ""
+    },
+    "PRF_DisablePedEnteredMyVehicleEvents": {
+        "bitflag": 323,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "Disable ped entered my vehicle events",
+        "communityDescription1": "Disable ped entered my vehicle events",
+        "communityDescription2": ""
+    },
+    "PRF_CancelLeftHandGripIk": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Call ProcessLeftHandGripIk() to cancel left hand grip IK, at the right time of the frame",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ResetMovementStaticCounter": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Will keep reset the static counter when this is set",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableInVehiclePedVariationBlocking": {
+        "bitflag": 326,
+        "PedFlagsMeta.psc": "Will allow ped variations to be rendered in vehicles, even if marked otherwise",
+        "commands_ped.sch": "Will allow ped variations to be rendered in vehicles, even if marked otherwise",
+        "communityDescription1": "Will allow ped variations to be rendered in vehicles, even if marked otherwise",
+        "communityDescription2": ""
+    },
+    "PRF_ReduceEffectOfVehicleRamControlLoss": {
+        "bitflag": 327,
+        "PedFlagsMeta.psc": "When on a mission this reset flag will slightly reduce the amount of time the player loses control of their vehicle when hit by an AI ped",
+        "commands_ped.sch": "When on a mission this reset flag will slightly reduce the amount of time the player loses control of their vehicle when hit by an AI ped",
+        "communityDescription1": "When on a mission this reset flag will slightly reduce the amount of time the player loses control of their vehicle when hit by an AI ped",
+        "communityDescription2": ""
+    },
+    "PRF_DisablePlayerMeleeFriendlyAttacks": {
+        "bitflag": 328,
+        "PedFlagsMeta.psc": "Another flag to disable friendly attack from the player. Set on the opponent you would like it to be disabled on.",
+        "commands_ped.sch": "Another flag to disable friendly attack from the player. Set on the opponent you would like it to be disabled on.",
+        "communityDescription1": "Another flag to disable friendly attack from the player. Set on the opponent you would like it to be disabled on.",
+        "communityDescription2": ""
+    },
+    "PRF_MotionPedDoPostMovementIndependentMover": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_IsMeleeTargetUnreachable": {
+        "bitflag": 330,
+        "PedFlagsMeta.psc": "Set when the melee target has been deemed unreachable (AI only)",
+        "commands_ped.sch": "Set when the melee target has been deemed unreachable (AI only)",
+        "communityDescription1": "Set when the melee target has been deemed unreachable (AI only)",
+        "communityDescription2": ""
+    },
+    "PRF_DisableAutoForceOutWhenBlowingUpCar": {
+        "bitflag": 331,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "Disable automatically forcing player to exit a vehicle in a network game when blowing up vehicle",
+        "communityDescription1": "Disable automatically forcing player to exit a vehicle in a network game when blowing up vehicle",
+        "communityDescription2": ""
+    },
+    "PRF_ThrowingProjectile": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_OverrideHairScaleLarger": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Scales the ped's hair up to the specified value",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableDustOffAnims": {
+        "bitflag": 334,
+        "PedFlagsMeta.psc": "Disable amient dust off animations",
+        "commands_ped.sch": "Disable amient dust off animations",
+        "communityDescription1": "Disable amient dust off animations",
+        "communityDescription2": ""
+    },
+    "PRF_DisableMeleeHitReactions": {
+        "bitflag": 335,
+        "PedFlagsMeta.psc": "This ped will refrain from ever performing a melee hit reaction",
+        "commands_ped.sch": "This ped will refrain from ever performing a melee hit reaction",
+        "communityDescription1": "This ped will refrain from ever performing a melee hit reaction",
+        "communityDescription2": ""
+    },
+    "PRF_VisemeAnimsAudioBlocked": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Blocks viseme anims audio from playing",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_AllowHeadPropInVehicle": {
+        "bitflag": 337,
+        "PedFlagsMeta.psc": "This overrides PV_FLAG_NOT_IN_CAR set on any head prop and stops it from being removed when getting into the vehicle",
+        "commands_ped.sch": "This overrides PV_FLAG_NOT_IN_CAR set on any head prop and stops it from being removed when getting into the vehicle",
+        "communityDescription1": "ALlow the player to enter vehicle with ped props",
+        "communityDescription2": ""
+    },
+    "PRF_IsInVehicleChase": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DontQuitMotionAiming": {
+        "bitflag": 339,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_SetLastBoundMatricesDone": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Ensure that the last bound matrices are only updated once per frame",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_PreserveAnimatedAngularVelocity": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Don't allow the locomotion task to adjust angular velocity coming from animation",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_OpenDoorArmIK": {
+        "bitflag": 342,
+        "PedFlagsMeta.psc": "Set if the ped should enable open door arm IK",
+        "commands_ped.sch": "Reset version of PCF_OpenDoorArmIK, which sets if the ped should enable open door arm IK.",
+        "communityDescription1": "Use Inverse kinematics for vehicle doors",
+        "communityDescription2": ""
+    },
+    "PRF_UseTighterTurnSettingsForScript": {
+        "bitflag": 343,
+        "PedFlagsMeta.psc": "Script set flag, to force use of tighter turn settings in locomotion task",
+        "commands_ped.sch": "Force use of tighter turn settings in locomotion task",
+        "communityDescription1": "Force use of tighter turn settings in locomotion task",
+        "communityDescription2": ""
+    },
+    "PRF_ForcePreCameraProcessExternallyDrivenDOFs": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Set if the ped should process externally driven dofs before the pre-camera ai update",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_LadderBlockingMovement": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Ped is waiting for ladder and blocking movement to prevent falling off",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableVoiceDrivenMouthMovement": {
+        "bitflag": 346,
+        "PedFlagsMeta.psc": "If set, turn off the voice driven mouth movement (overrides EnableVoiceDrivenMouthMovement)",
+        "commands_ped.sch": "If set, turn off the voice driven mouth movement (overrides EnableVoiceDrivenMouthMovement)",
+        "communityDescription1": "If set, turn off the voice driven mouth movement",
+        "communityDescription2": ""
+    },
+    "PRF_SteerIntoSkids": {
+        "bitflag": 347,
+        "PedFlagsMeta.psc": "If set, steer into skids while driving",
+        "commands_ped.sch": "If set, steer into skids while driving",
+        "communityDescription1": "If set, steer into skids while driving",
+        "communityDescription2": ""
+    },
+    "PRF_AllowOpenDoorIkBeforeFullMovement": {
+        "bitflag": 348,
+        "PedFlagsMeta.psc": "When set, code will ignore the logic that requires the ped to be in CTaskHumanLocomotion::State_Moving",
+        "commands_ped.sch": "When set, code will ignore the logic that requires the ped to be in CTaskHumanLocomotion::State_Moving",
+        "communityDescription1": "When set, code will ignore the logic that requires the ped to be in CTaskHumanLocomotion::State_Moving",
+        "communityDescription2": ""
+    },
+    "PRF_AllowHomingMissileLockOnInVehicle": {
+        "bitflag": 349,
+        "PedFlagsMeta.psc": "When set, code will bypass rel settings and allow a homing lock on to this ped when they are in a vehicle",
+        "commands_ped.sch": "When set, code will bypass rel settings and allow a homing lock on to this ped when they are in a vehicle",
+        "communityDescription1": "When set, code will bypass rel settings and allow a homing lock on to this ped when they are in a vehicle",
+        "communityDescription2": ""
+    },
+    "PRF_AllowCloneForcePostCameraAIUpdate": {
+        "bitflag": 350,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DontChangeHorseMbr": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Similar to PRF_DontChangeMbrInSimpleMoveDoNothing, but for horses.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableMaterialCollisionDamage": {
+        "bitflag": 355,
+        "PedFlagsMeta.psc": "Don't be damaged by touching dangerous material (e.g. electic generator)",
+        "commands_ped.sch": "Don't be damaged by touching dangerous material (e.g. electic generator)",
+        "communityDescription1": "Don't be damaged by touching dangerous material, For like eletrical things",
+        "communityDescription2": ""
+    },
+    "PRF_DisableMPFriendlyLockon": {
+        "bitflag": 356,
+        "PedFlagsMeta.psc": "Don't target friendly players in MP",
+        "commands_ped.sch": "Don't target friendly players in MP",
+        "communityDescription1": "Don't target friendly players in MP",
+        "communityDescription2": ""
+    },
+    "PRF_DisableMPFriendlyLethalMeleeActions": {
+        "bitflag": 357,
+        "PedFlagsMeta.psc": "Don't melee kill friendly players in MP",
+        "commands_ped.sch": "Don't melee kill friendly players in MP",
+        "communityDescription1": "Don't melee kill friendly players in MP",
+        "communityDescription2": ""
+    },
+    "PRF_IfLeaderStopsSeekCover": {
+        "bitflag": 358,
+        "PedFlagsMeta.psc": "If our leader stops, try and seek cover if we can",
+        "commands_ped.sch": "If our leader stops, try and seek cover if we can",
+        "communityDescription1": "If our leader stops, try and seek cover if we can",
+        "communityDescription2": ""
+    },
+    "PRF_ProcessPostPreRenderAfterAttachments": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "do we need to call PRF_ProcessPostPreRenderAfterAttachments for tasks",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DoDamageCoughFacial": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_IsUsingJetpack": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Is ped currently using jetpack. e.g. in air",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_UseInteriorCapsuleSettings": {
+        "bitflag": 362,
+        "PedFlagsMeta.psc": "Use Interior capsule settings",
+        "commands_ped.sch": "Use Interior capsule settings",
+        "communityDescription1": "Use Interior capsule settings",
+        "communityDescription2": ""
+    },
+    "PRF_IsClosingVehicleDoor": {
+        "bitflag": 363,
+        "PedFlagsMeta.psc": "Ped is closing a vehicle door",
+        "commands_ped.sch": "Ped is closing a vehicle door",
+        "communityDescription1": "Ped is closing a vehicle door",
+        "communityDescription2": ""
+    },
+    "PRF_DisableIdleExtraHeadingChange": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Disable lerping the ped towards the desired heading in the locomotion idle",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_OnlySelectVehicleWeapons": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Only allows vehicle weapons to be selected in CPedWeaponSelector::SelectWeapon",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_IsWarpingIntoVehicleMP": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Set in CTaskEnterVehicle::SetPedInSeat_OnEnter if ped is warping into a vehicle in multiplayer",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_RemoveHelmet": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Forces a ped to remove its helmet.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_IsRemovingHelmet": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Returns true if ped is removing its helmet.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_GestureAnimsBlockedFromScript": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_NeverRagdoll": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Disable all attempts by this ped to ragdoll.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableWallHitAnimation": {
+        "bitflag": 371,
+        "PedFlagsMeta.psc": "Disable stuck wall hit animation for the ped this frame.",
+        "commands_ped.sch": "Disable stuck wall hit animation for the ped this frame",
+        "communityDescription1": "Disable stuck wall hit animation for the ped this frame",
+        "communityDescription2": ""
+    },
+    "PRF_PlayAgitatedAnimsInVehicle": {
+        "bitflag": 372,
+        "PedFlagsMeta.psc": "Play agitated anims in vehicle - overrides normal sit idle",
+        "commands_ped.sch": "When set, the ped will play panic animations if in a vehicle",
+        "communityDescription1": "When set, the ped will play panic animations if in a vehicle",
+        "communityDescription2": ""
+    },
+    "PRF_IsSeatShuffling": {
+        "bitflag": 373,
+        "PedFlagsMeta.psc": "Returns true if ped is shuffling seat.",
+        "commands_ped.sch": "Ped is shuffling seat",
+        "communityDescription1": "Ped is shuffling seat",
+        "communityDescription2": ""
+    },
+    "PRF_IsThrowingProjectileWhileAiming": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "True if we are running TASK_AIM_AND_THROW_PROJECTILE as a subtask of TASK_AIM_GUN_ON_FOOT.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableProjectileThrowsWhileAimingGun": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Set by script command DISABLE_PLAYER_THROW_GRENADE_WHILE_USING_GUN.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_AllowControlRadioInAnySeatInMP": {
+        "bitflag": 376,
+        "PedFlagsMeta.psc": "Allows ped in any seat to control radio in multiplayer.",
+        "commands_ped.sch": "Allows ped in any seat to control the radio (in MP only)",
+        "communityDescription1": "Allows ped in any seat to control the radio",
+        "communityDescription2": ""
+    },
+    "PRF_DisableSpycarTransformation": {
+        "bitflag": 377,
+        "PedFlagsMeta.psc": "Blocks ped from manually transforming spycar to/from car/sub modes.",
+        "commands_ped.sch": "Blocks ped from manually transforming spycar to/from car/sub modes",
+        "communityDescription1": "Blocks ped from manually transforming spycar to/from car/sub modes",
+        "communityDescription2": ""
+    },
+    "PRF_BlockQuadLocomotionIdleTurns": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Prevent CTaskQuadLocomotion from blending in idle turns, regardless of desired/currenting heading differential.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_BlockHeadbobbingToRadio": {
+        "bitflag": 379,
+        "PedFlagsMeta.psc": "Blocks ped from headbobbing to radio music in vehicles.",
+        "commands_ped.sch": "Blocks ped from headbobbing to radio music in vehicles",
+        "communityDescription1": "Blocks ped from headbobbing to radio music in vehicles",
+        "communityDescription2": ""
+    },
+    "PRF_PlayFPSIdleFidgets": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Allows us to load and play idle fidgets in TaskMotionAiming",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ForceExtraLongBlendInForPedSkipIdleCoverTransition": {
+        "bitflag": 381,
+        "PedFlagsMeta.psc": "When putting a ped directly into cover, the ped will blend in the new cover anims slowly to prevent a pose pop",
+        "commands_ped.sch": "When putting a ped directly into cover, the ped will blend in the new cover anims slowly to prevent a pose pop, see B*1788366",
+        "communityDescription1": "When putting a ped directly into cover, the ped will blend in the new cover anims slowly to prevent a pose pop, see B*1788366",
+        "communityDescription2": ""
+    },
+    "PRF_BlendingOutFPSIdleFidgets": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "True if FPS idle fidgets are blending out",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableMotionBaseVelocityOverride": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_FPSSwimUseSwimMotionTask": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Set to true when we are pressing forward on the left stick in FPS mode so we switch from Aiming to Swimmimg/Diving motion tasks",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_FPSSwimUseAimingMotionTask": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Set to true when we are strafing in water in FPS mode so we use the motion aiming task",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_FiringWeaponWhenReady": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "set when ped has decided to fire weapon when ready, used in FPS mode",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_IsBlindFiring": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "True if the blind fire task is running",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_IsPeekingFromCover": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "True if the ped is peeking in cover",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_TaskSkipProcessPreComputeImpacts": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "True to bail out of ProcessPreComputeImpacts",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableAssistedAimLockon": {
+        "bitflag": 390,
+        "PedFlagsMeta.psc": "Don't ever try to lock on to this ped with cinematic aim",
+        "commands_ped.sch": "Don't ever try to lock on to this ped with cinematic aim",
+        "communityDescription1": "Don't ever try to lock on to this ped with cinematic aim",
+        "communityDescription2": ""
+    },
+    "PRF_FPSAllowAimIKForThrownProjectile": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "To control enabling of FPS aim IK while using a projectile until it is ready",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ForcePreCameraAiAnimUpdateIfFirstPerson": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Force a pre camera ai and animation update if the ped is the first person camera target during the pre camera update",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_NeverDieFromCapsuleRagdollSettings": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Negate the capsule's preference for ragdoll triggering death on this ped.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_InContactWithDeepSurface": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "ped is in contact with GTA_DEEP_SURFACE_TYPE bounds",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_IncludePedReferenceVelocityWhenFiringProjectiles": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Add on the ped's velocity to the projectile's initial velocity.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_InstantBlendToAimNoSettle": {
+        "bitflag": 401,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "If true it avoids playing the settle anim when aiming",
+        "communityDescription1": "If true it avoids playing the settle anim when aiming",
+        "communityDescription2": ""
+    },
+    "PRF_ForcePreCameraAnimUpdate": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Force a pre camera animation update if the ped is the first person camera target during the pre camera update",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableHelmetCullFPS": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Disables PV_FLAG_HIDE_IN_FIRST_PERSON from culling the prop in CPedPropsMgr::RenderPropsInternal",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableReticuleInCoverThisFrame": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ForceScriptedCameraLowCoverAngleWhenEnteringCover": {
+        "bitflag": 406,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "For first person mode, when the player enters low cover, will orientate camera to face left or right rather than into cover",
+        "communityDescription1": "For first person mode, when the player enters low cover, will orientate camera to face left or right rather than into cover",
+        "communityDescription2": ""
+    },
+    "PRF_DisableCameraConstraintFallBackThisFrame": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableFPSArmIK": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Disables FPS arm IK in CTaskPlayerOnFoot::IsStateValidForFPSIK",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableRightArmIKInCoverOutroFPS": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Turn off right arm IK during cover outros in FPS mode when set",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DoFPSSprintBreakOut": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DoFPSJumpBreakOut": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_IsExitingCover": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_WeaponBlockedInFPSMode": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "True if running CTaskWeaponBlocked in FPS mode",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_PoVCameraConstrained": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ScriptClearingPedTasks": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Set in CommandClearPedTasksImmediately in commands_task.cpp",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_WasFPSJumpingWithProjectile": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "ped was jumping on foot with projectile in hand",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableMeleeWeaponSelection": {
+        "bitflag": 417,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "",
+        "communityDescription1": "Disables weapon wheel melee's",
+        "communityDescription2": ""
+    },
+    "PRF_WaypointPlaybackSlowMoreForCorners": {
+        "bitflag": 418,
+        "PedFlagsMeta.psc": "slow for corners more aggressively for waypoint playback",
+        "commands_ped.sch": "Allows peds following waypoint recordings to slow down more for corners. (Achieves same effect as the EWAYPOINT_SUPPRESS_EXACTSTOP flag, which is passed into TASK_FOLLOW_WAYPOINT_RECORDING).",
+        "communityDescription1": "Allows peds following waypoint recordings to slow down more for corners. (",
+        "communityDescription2": ""
+    },
+    "PRF_UseBulletPenetrationForGlass": {
+        "bitflag": 420,
+        "PedFlagsMeta.psc": "Ped will use bullet penetration code when glass material is hit.",
+        "commands_ped.sch": "Ped will use bullet penetration code when glass material is hit.",
+        "communityDescription1": "Ped will use bullet penetration code when glass material is hit.",
+        "communityDescription2": ""
+    },
+    "PRF_ForceSkipFPSAimIntro": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "don't do FPS Aim intro",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_CanBePinnedByFriendlyBullets": {
+        "bitflag": 423,
+        "PedFlagsMeta.psc": "If set on a ped then they are allowed to be pinned by bullets from friendly peds",
+        "commands_ped.sch": "If set on a ped then they are allowed to be pinned by bullets from friendly peds",
+        "communityDescription1": "If set on a ped then they are allowed to be pinned by bullets from friendly peds",
+        "communityDescription2": ""
+    },
+    "PRF_DisableLeftArmIKInCoverOutroFPS": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Turn off left arm IK during cover outros in FPS mode when set",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableSpikeStripRoadBlocks": {
+        "bitflag": 425,
+        "PedFlagsMeta.psc": "Blocks road blocks with spike strips from spawning",
+        "commands_ped.sch": "Blocks road blocks with spike strips from spawning",
+        "communityDescription1": "Blocks road blocks with spike strips from spawning",
+        "communityDescription2": ""
+    },
+    "PRF_SkipFPSUnHolsterTransition": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "skip aim unholster transition",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_PutDownHelmetFX": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "trigger the put down helmet fx",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_IsLowerPriorityMeleeTarget": {
+        "bitflag": 428,
+        "PedFlagsMeta.psc": "Peds marked with this flag will only be able to be hit by the player if the player explicitly presses the melee button",
+        "commands_ped.sch": "Peds marked with this flag will only be able to be hit by the player if the player explicitly presses the melee button",
+        "communityDescription1": "Peds marked with this flag will only be able to be hit by the player if the player explicitly presses the melee button",
+        "communityDescription2": ""
+    },
+    "PRF_ForceScanForEventsThisFrame": {
+        "bitflag": 429,
+        "PedFlagsMeta.psc": "disable timeslicing of event scanning",
+        "commands_ped.sch": "Disable timeslicing of event scanning this frame (see url:bugstar:2100836 for an example situation where this is useful)",
+        "communityDescription1": "Disable timeslicing of event scanning this frame",
+        "communityDescription2": ""
+    },
+    "PRF_StartProjectileTaskWithPrimingDisabled": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Set this flag to disable priming when the projectile task starts up until the attack trigger is released and pressed again",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_CheckFPSSwitchInCameraUpdate": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Set if we want to perform a second AI/anim update when switching between first person/third person",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ForceAutoEquipHelmetsInAicraft": {
+        "bitflag": 432,
+        "PedFlagsMeta.psc": "Force ped to auto-equip a helmet om entering aircraft. Overrides PCF_DisableAutoEquipHelmetsInAicraft (set in the interaction menu)",
+        "commands_ped.sch": "Forces ped to auto-equip a helmet when entering an aircraft. Overrides PCF_DisableAutoEquipHelmetsInAicraft which is set in the interaction menu.",
+        "communityDescription1": "Forces ped to auto-equip a helmet when entering an aircraft.",
+        "communityDescription2": ""
+    },
+    "PRF_BlockRemotePlayerRecording": {
+        "bitflag": 433,
+        "PedFlagsMeta.psc": "Flag used by replay editor to disable recording specified remote players (for url:bugstar:2218297).",
+        "commands_ped.sch": "Flag used by replay editor to disable recording specified remote players (for url:bugstar:2218297).",
+        "communityDescription1": "Flag used by replay editor to disable recording specified remote players",
+        "communityDescription2": ""
+    },
+    "PRF_InflictedDamageThisFrame": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Inflicted damage this frame",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_UseFirstPersonVehicleAnimsIfFPSCamNotDominant": {
+        "bitflag": 435,
+        "PedFlagsMeta.psc": "allow FPS vehicle anims even if FPS camera isn't dominant",
+        "commands_ped.sch": "allow FPS vehicle anims even if FPS camera isn't dominant",
+        "communityDescription1": "allow FPS vehicle anims even if FPS camera isn't dominant",
+        "communityDescription2": ""
+    },
+    "PRF_ForceIntoStandPoseOnJetski": {
+        "bitflag": 436,
+        "PedFlagsMeta.psc": "puts the ped in a standing pose on the jetski",
+        "commands_ped.sch": "allow FPS vehicle anims even if FPS camera isn't dominant",
+        "communityDescription1": "allow FPS vehicle anims even if FPS camera isn't dominant",
+        "communityDescription2": ""
+    },
+    "PRF_InAirDefenceSphere": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Ped is located inside an air defence sphere.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_SuppressTakedownMeleeActions": {
+        "bitflag": 438,
+        "PedFlagsMeta.psc": "This will suppress all takedown melee actions (RA_IS_TAKEDOWN or RA_IS_STEALTH_KILL, defined in action_table.meta)",
+        "commands_ped.sch": "This will suppress all takedown melee actions (RA_IS_TAKEDOWN or RA_IS_STEALTH_KILL, defined in action_table.meta)",
+        "communityDescription1": "This will suppress all takedown melee actions",
+        "communityDescription2": ""
+    },
+    "PRF_InvertLookAroundControls": {
+        "bitflag": 439,
+        "PedFlagsMeta.psc": "Inverts lookaround controls (right stick / mouse) for this player, for this frame.",
+        "commands_ped.sch": "Inverts lookaround controls (right stick / mouse) for this player",
+        "communityDescription1": "Inverts lookaround controls (right stick / mouse) for this player",
+        "communityDescription2": ""
+    },
+    "PRF_IgnoreCombatManager": {
+        "bitflag": 440,
+        "PedFlagsMeta.psc": "Allows attacking ped to engage another entity without waiting for its turn (if there's multiple attackers).",
+        "commands_ped.sch": "Allows attacking ped to engage another entity without waiting for its turn (if there's multiple attackers)",
+        "communityDescription1": "Allows attacking ped to engage another entity without waiting for its turn",
+        "communityDescription2": ""
+    },
+    "PRF_UseBlendedCamerasOnUpdateFpsCameraRelativeMatrix": {
+        "bitflag": 441,
+        "PedFlagsMeta.psc": "Check if there is an active camera blending and use the blended camera frame when compute the FPS camera relative matrix.",
+        "commands_ped.sch": "Check if there is an active camera blending and use the blended camera frame when compute the FPS camera relative matrix.",
+        "communityDescription1": "Check if there is an active camera blending and use the blended camera frame when compute the FPS camera relative matrix.",
+        "communityDescription2": ""
+    },
+    "PRF_ForceMeleeCounter": {
+        "bitflag": 442,
+        "PedFlagsMeta.psc": "Forces the ped to perform a dodge and a counter move if it's attacked.",
+        "commands_ped.sch": "Forces the ped to perform a dodge and a counter move if it's attacked.",
+        "communityDescription1": "Forces the ped to perform a dodge and a counter move if it's attacked.",
+        "communityDescription2": ""
+    },
+    "PRF_WasHitByVehicleMelee": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Indicates that ped was hit by vehicle melee attack.",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_SuppressNavmeshForEnterVehicleTask": {
+        "bitflag": 444,
+        "PedFlagsMeta.psc": "Dont allow ped to use navmesh when navigating in TaskEnterVehicle",
+        "commands_ped.sch": "Suppress navmesh navigation in TaskEnterVehicle. Will use gotopoint or bail if cant use that",
+        "communityDescription1": "Suppress navmesh navigation in TaskEnterVehicle. Will use gotopoint or bail if cant use that",
+        "communityDescription2": ""
+    },
+    "PRF_DisablePlayerCombatRoll": {
+        "bitflag": 446,
+        "PedFlagsMeta.psc": "Disables player combat rolling.",
+        "commands_ped.sch": "Prevents the player from performing a combat roll.",
+        "communityDescription1": "Prevents the player from performing a combat roll.",
+        "communityDescription2": ""
+    },
+    "PRF_IgnoreDetachSafePositionCheck": {
+        "bitflag": 447,
+        "PedFlagsMeta.psc": "Will ignore safe position check on detaching the ped",
+        "commands_ped.sch": "Will ignore safe position check on detaching the ped",
+        "communityDescription1": "Will ignore safe position check on detaching the ped",
+        "communityDescription2": ""
+    },
+    "PRF_DisableEasyLadderConditions": {
+        "bitflag": 448,
+        "PedFlagsMeta.psc": "Prevents the more forgiving MP ladder detection settings from being used, and forces SP settings.",
+        "commands_ped.sch": "Prevents the more forgiving MP ladder detection settings from being used, and forces SP settings.",
+        "communityDescription1": "Prevents the more forgiving MP ladder detection settings from being used, and forces SP settings.",
+        "communityDescription2": ""
+    },
+    "PRF_PlayerIgnoresScenarioSpawnRestrictions": {
+        "bitflag": 449,
+        "PedFlagsMeta.psc": "Makes local player ignore certain scenario spawn restrictions on scenarios that respect this flag",
+        "commands_ped.sch": "Makes local player ignore certain scenario spawn restrictions on scenarios that respect this flag",
+        "communityDescription1": "Makes local player ignore certain scenario spawn restrictions on scenarios that respect this flag",
+        "communityDescription2": ""
+    },
+    "PRF_UsingDrone": {
+        "bitflag": 450,
+        "PedFlagsMeta.psc": "Indicates player is using Drone from Battle DLC",
+        "commands_ped.sch": "Indicates player is using Drone from Battle DLC",
+        "communityDescription1": "Check if the player is using a drone, hasn't been tested but found in decomps",
+        "communityDescription2": ""
+    },
+    "PRF_ForceWantedLevelWhenKilled": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Will force the player that killed this ped to get wanted level, even if he wouldnt otherwise",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_UseScriptedWeaponFirePosition": {
+        "bitflag": 452,
+        "PedFlagsMeta.psc": "Will use scripted firing position on the clones of this ped on other machines",
+        "commands_ped.sch": "Will use scripted firing position on the clones of this ped on other machines",
+        "communityDescription1": "Will use scripted firing position on the clones of this ped on other machines",
+        "communityDescription2": ""
+    },
+    "PRF_EnableCollisionOnNetworkCloneWhenFixed": {
+        "bitflag": null,
+        "PedFlagsMeta.psc": "Enable collision on player ped network clones when physics is fixed",
+        "commands_ped.sch": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_UseExtendedRagdollCollisionCalculator": {
+        "bitflag": 454,
+        "PedFlagsMeta.psc": "Use extended logic for determining damage instigator for ragdoll collisions",
+        "commands_ped.sch": "Use extended logic for determining damage instigator for ragdoll collisions",
+        "communityDescription1": "Use extended logic for determining damage instigator for ragdoll collisions",
+        "communityDescription2": ""
+    },
+    "PRF_PreventLockonToFriendlyPlayers": {
+        "bitflag": 455,
+        "PedFlagsMeta.psc": "Prevent the player locking on to friendly players",
+        "commands_ped.sch": "Prevent the player locking on to friendly players",
+        "communityDescription1": "Prevent the player locking on to friendly players",
+        "communityDescription2": ""
+    },
+    "PRF_OnlyAbortScriptedAnimOnMovementByInput": {
+        "bitflag": 456,
+        "PedFlagsMeta.psc": "Modifies AF_ABORT_ON_PED_MOVEMENT to only trigger an abort when movement would be caused by player input",
+        "commands_ped.sch": "Modifies AF_ABORT_ON_PED_MOVEMENT to only trigger an abort when movement would be caused by player input",
+        "communityDescription1": "Modifies AF_ABORT_ON_PED_MOVEMENT to only trigger an abort when movement would be caused by player input",
+        "communityDescription2": ""
+    },
+    "PRF_PreventAllStealthKills": {
+        "bitflag": 457,
+        "PedFlagsMeta.psc": "Prevents stealth take downs from being preformed on a ped",
+        "commands_ped.sch": "Prevents stealth take downs from being preformed on a ped",
+        "communityDescription1": "Prevents stealth take downs from being preformed on a ped",
+        "communityDescription2": ""
+    },
+    "PRF_BlockFallTaskFromExplosionDamage": {
+        "bitflag": 458,
+        "PedFlagsMeta.psc": "Prevent peds from entering a fall task if affected by explosion damage",
+        "commands_ped.sch": "Prevent peds from entering a fall task if affected by explosion damage",
+        "communityDescription1": "Prevent peds from entering a fall task if affected by explosion damage",
+        "communityDescription2": ""
+    },
+    "PRF_AllowPedRearEntry": {
+        "bitflag": 459,
+        "PedFlagsMeta.psc": "Mimics the behaviour like with boss peds by holding the button for entering the rear seats",
+        "commands_ped.sch": "Mimics the behaviour of boss peds by holding the button for entering the rear seats",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_DisableSecondaryAnimationTasks": {
+        "bitflag": 58,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "Disable upper body animtion tasks such as shove ped and open door anims",
+        "communityDescription1": "Disable upper body animtion tasks such as shove ped and open door anims",
+        "communityDescription2": ""
+    },
+    "PRF_SearchForClosestDoor": {
+        "bitflag": 60,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "Will check for the closest door in proximity and store it off",
+        "communityDescription1": "Will check for the closest door in proximity and store it off",
+        "communityDescription2": ""
+    },
+    "PRF_UseKinematicPhysics": {
+        "bitflag": 71,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "Enables kinematic physics mode on this ped. This stops other physical objects from pushing the ped around, and causes the ped to push any physical objects out of its way when it moves into them.",
+        "communityDescription1": "Enables kinematic physics mode on this ped. This stops other physical objects from pushing the ped around, and causes the ped to push any physical objects out of its way when it moves into them.",
+        "communityDescription2": ""
+    },
+    "PRF_ClearLockonTarget": {
+        "bitflag": 72,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "Clear the players lockon target next frame",
+        "communityDescription1": "Clear the players lockon target next frame",
+        "communityDescription2": ""
+    },
+    "PRF_DisableSeeThroughChecksWhenTargeting": {
+        "bitflag": 112,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "Any targeting LoS checks will fail if any materials with 'see through' materials found.",
+        "communityDescription1": "Any targeting LoS checks will fail if any materials with 'see through' materials found.",
+        "communityDescription2": ""
+    },
+    "PRF_CannotBeTargetedByAI": {
+        "bitflag": 124,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "When set, this ped cannot be added to the targeting list of AI peds, will be removed if already in the list and is thought of as not able to be attacked",
+        "communityDescription1": "When set, this ped cannot be added to the targeting list of AI peds, will be removed if already in the list and is thought of as not able to be attacked",
+        "communityDescription2": ""
+    },
+    "PRF_InstantBlendToAim": {
+        "bitflag": 156,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "Blend straight into an aim instantly, if starting a gun task this frame",
+        "communityDescription1": "Blend straight into an aim instantly, if starting a gun task this frame",
+        "communityDescription2": ""
+    },
+    "PRF_MakeHeadInvisble": {
+        "bitflag": 166,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "If set, scale the head of the ped to 0.001",
+        "communityDescription1": "If set, scale the head of the ped to 0.001",
+        "communityDescription2": ""
+    },
+    "PRF_DisableTakeOffParachutePack": {
+        "bitflag": 177,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "Disable taking off the parachute pack",
+        "communityDescription1": "Disable taking off the parachute pack",
+        "communityDescription2": ""
+    },
+    "PRF_IgnoreCombatTaunts": {
+        "bitflag": 180,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "This ped will ignore combat taunts",
+        "communityDescription1": "This ped will ignore combat taunts",
+        "communityDescription2": ""
+    },
+    "PRF_DisableTakeOffScubaGear": {
+        "bitflag": 197,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "Disable taking off the scuba gear",
+        "communityDescription1": "Disable taking off the scuba gear",
+        "communityDescription2": ""
+    },
+    "PRF_DisableParachuting": {
+        "bitflag": 217,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "Disable parachuting for the ped",
+        "communityDescription1": "Disable parachuting for the ped",
+        "communityDescription2": ""
+    },
+    "PRF_KeepParachutePackOnAfterTeleport": {
+        "bitflag": 222,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "Keep the parachute pack on after a teleport",
+        "communityDescription1": "Keep the parachute pack on after a teleport",
+        "communityDescription2": ""
+    },
+    "PRF_DontRaiseFistsWhenLockedOn": {
+        "bitflag": 223,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "Whether or not you want the player ped to use the new front melee logic in TODO #981120",
+        "communityDescription1": "Disable the first person hands up animation (i think)",
+        "communityDescription2": ""
+    },
+    "PRF_PreferMeleeBodyIkHitReaction": {
+        "bitflag": 224,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "This will prefer all melee hit reactions to use body ik hit reactions if ragdoll is not selected",
+        "communityDescription1": "This will prefer all melee hit reactions to use body ik hit reactions if ragdoll is not selected",
+        "communityDescription2": ""
+    },
+    "PRF_DisableAgitationTriggers": {
+        "bitflag": 228,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "Disables agitation triggers",
+        "communityDescription1": "Disables agitation triggers",
+        "communityDescription2": ""
+    },
+    "PRF_DisableAgitation": {
+        "bitflag": 239,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "Disables agitation",
+        "communityDescription1": "Disables agitation",
+        "communityDescription2": ""
+    },
+    "PRF_DisableTalk": {
+        "bitflag": 240,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "Disables talking",
+        "communityDescription1": "Disables talking",
+        "communityDescription2": ""
+    },
+    "PRF_UseProbeSlopeStairsDetection": {
+        "bitflag": 247,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "Uses more expensive slope/stairs detection",
+        "communityDescription1": "Uses more expensive slope/stairs detection",
+        "communityDescription2": ""
+    },
+    "PRF_DisableVehicleDamageReactions": {
+        "bitflag": 248,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "Disables vehicle damage reactions",
+        "communityDescription1": "Disables vehicle damage reactions",
+        "communityDescription2": ""
+    },
+    "PRF_DisablePotentialBlastReactions": {
+        "bitflag": 249,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "Disables potential blast reactions",
+        "communityDescription1": "Disables potential blast reactions",
+        "communityDescription2": ""
+    },
+    "PRF_OnlyAllowLeftArmDoorIk": {
+        "bitflag": 250,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "When set along side open door ik, will only use the left hand",
+        "communityDescription1": "When set along side open door ik, will only use the left hand",
+        "communityDescription2": ""
+    },
+    "PRF_OnlyAllowRightArmDoorIk": {
+        "bitflag": 251,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "When set along side open door ik, will only use the left hand",
+        "communityDescription1": "When set along side open door ik, will only use the left hand",
+        "communityDescription2": ""
+    },
+    "PRF_EnablePressAndReleaseDives": {
+        "bitflag": 271,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "Player has to press and hold dive button to dive in water",
+        "communityDescription1": "Player has to press and hold dive button to dive in water",
+        "communityDescription2": ""
+    },
+    "PRF_OnlyExitVehicleOnButtonRelease": {
+        "bitflag": 272,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "Only allows player to exit vehicle when button is released rather than pressed or held",
+        "communityDescription1": "Only allows player to exit vehicle when button is released rather than pressed or held",
+        "communityDescription2": ""
+    },
+    "PRF_BlockCustomAIEntryAnims": {
+        "bitflag": 283,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "Disables ped from using custom ai cover entry animations",
+        "communityDescription1": "Disables ped from using custom ai cover entry animations",
+        "communityDescription2": ""
+    },
+    "PRF_IgnoreVehicleEntryCollisionTests": {
+        "bitflag": 284,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "Ignore the vehicle entry collision tests for this ped",
+        "communityDescription1": "Ignore the vehicle entry collision tests for this ped",
+        "communityDescription2": ""
+    },
+    "PRF_DisableHighHeels": {
+        "bitflag": 351,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "Force the high heels DOF to be 0",
+        "communityDescription1": "Force the high heels DOF to be 0",
+        "communityDescription2": ""
+    },
+    "PRF_DontUseSprintEnergy": {
+        "bitflag": 353,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "Player does not get tired when sprinting",
+        "communityDescription1": "Player does not get tired when sprinting",
+        "communityDescription2": ""
+    },
+    "PRF_NoCollisionDamageFromOtherPeds": {
+        "bitflag": 394,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "Any ped this is set on won't register damage from collisions against other peds.",
+        "communityDescription1": "Any ped this is set on won't register damage from collisions against other peds.",
+        "communityDescription2": ""
+    },
+    "PRF_DontSuppressUseNavMeshToNavigateToVehicleDoorWhenVehicleInWater": {
+        "bitflag": 398,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "For thing that inherit from boats only",
+        "communityDescription1": "For thing that inherit from boats only",
+        "communityDescription2": ""
+    },
+    "PRF_DisableShallowWaterBikeJumpOutThisFrame": {
+        "bitflag": 445,
+        "PedFlagsMeta.psc": "",
+        "commands_ped.sch": "Prevents the ped from jumping out of the vehicle in shallow water if the bike is submerged",
+        "communityDescription1": "Prevents the ped from jumping out of the vehicle in shallow water if the bike is submerged",
+        "communityDescription2": ""
+    },
+    "PRF_ForcePedToUseRearSeats": {
+        "intflag": null,
+        "rockstarDescription1": "",
+        "rockstarDescription2": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    },
+    "PRF_ForcePedToUseFrontSeats": {
+        "intflag": null,
+        "rockstarDescription1": "",
+        "rockstarDescription2": "",
+        "communityDescription1": "",
+        "communityDescription2": ""
+    }
+}
