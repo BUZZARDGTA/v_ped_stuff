@@ -26,6 +26,9 @@
 
 # PED_RESET_FLAG
 
+## [IB_U_Z_Z_A_R_Dl](https://github.com/Illegal-Services)
+[v_ped_stuff/ePedResetFlags.xml](ePedResetFlags.xml)
+
 ## [alloc8or.re](https://alloc8or.re/gta5/nativedb/)
 
 [PED::SET_PED_RESET_FLAG](https://alloc8or.re/gta5/nativedb/?n=0xC1E8A365BF3B29F2) / [PED::GET_PED_RESET_FLAG](https://alloc8or.re/gta5/nativedb/?n=0xAF9E59B1B1FBF2A0)
