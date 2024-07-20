@@ -1,0 +1,469 @@
+<?xml version="1.0"?>
+<ParserSchema xmlns="http://www.rockstargames.com/RageParserSchema"
+ generate="class">
+
+  <enumdef type="ePedConfigFlags" generate="bitset">
+    <enumval name="CreatedByFactory" value="0" description=""/>
+    <enumval name="CanBeShotInVehicle" value="1" description="script can stop peds being shot when driving vehicle (including exposed ones like bikes)"/>
+    <enumval name="NoCriticalHits" value="2" description="ped cannot be killed by a single bullet"/>
+    <enumval name="DrownsInWater" value="3" description="does this ped drown or swim?"/>
+    <enumval name="DrownsInSinkingVehicle" value="4" description="does this ped take damage whilst in a sinking vehicle?"/>
+    <enumval name="DiesInstantlyWhenSwimming" value="5" description="Ped cannot swim and will die as soon as they are required to swim"/>
+    <enumval name="HasBulletProofVest" value="6" description="is this ped wearing a bullet proof vest"/>
+    <enumval name="UpperBodyDamageAnimsOnly" value="7" description="force ped to play only upper body damage anims from weapons"/>
+    <enumval name="NeverFallOffSkis" value="8" description="Ped will never fall over on skis"/>
+    <enumval name="NeverEverTargetThisPed" value="9" description="script control over player targeting"/>
+    <enumval name="ThisPedIsATargetPriority" value="10" description="script control over player targeting"/>
+    <enumval name="TargettableWithNoLos" value="11" description="script control over player targeting"/>
+    <enumval name="DoesntListenToPlayerGroupCommands" value="12" description="script can set this so ped will be in players group but not reacting to commands"/>
+    <enumval name="NeverLeavesGroup" value="13" description=""/>
+    <enumval name="DoesntDropWeaponsWhenDead" value="14" description="script command"/>
+    <enumval name="SetDelayedWeaponAsCurrent" value="15" description="when the peds delayed weapon finally loads, set it as the peds current weapon"/>
+    <enumval name="KeepTasksAfterCleanUp" value="16" description="If true ped will carry on with task even after script ped cleanup"/>
+    <enumval name="BlockNonTemporaryEvents" value="17" description="! Set to block any events that might interrupt the currently running tasks."/>
+    <enumval name="HasAScriptBrain" value="18" description=""/>
+    <enumval name="WaitingForScriptBrainToLoad" value="19" description=""/>
+    <enumval name="AllowMedicsToReviveMe" value="20" description="never allow this ped to be revived"/>
+    <enumval name="MoneyHasBeenGivenByScript" value="21" description="script can give specific amount of money to ped (script peds don't drop any money by default)"/>
+    <enumval name="NotAllowedToCrouch" value="22" description="Is this ped allowed to crouch at all?"/>
+    <enumval name="DeathPickupsPersist" value="23" description="script command to control what type of pickups are created when ped dies"/>
+    <enumval name="IgnoreSeenMelee" value="24" description="script command so ped doesn't stop to watch fights"/>
+    <enumval name="ForceDieIfInjured" value="25" description="script command so missions peds die if injured"/>
+    <enumval name="DontDragMeOutCar" value="26" description="force this ped can't be carjacked"/>
+    <enumval name="StayInCarOnJack" value="27" description="script sets this to keep peds in car when the player steals it"/>
+    <enumval name="ForceDieInCar" value="28" description="don't fall out car if killed"/>
+    <enumval name="GetOutUndriveableVehicle" value="29" description="script can stop peds automatically getting out of vehicle when it's upside down or undrivable(for races and stuff)"/>
+    <enumval name="WillRemainOnBoatAfterMissionEnds" value="30" description="script can stop peds automatically leaving boats when they become random chars, after a script quits"/>
+    <enumval name="DontStoreAsPersistent" value="31" description="Some peds (like mission peds) should not be stored as persistent."/>
+    <enumval name="WillFlyThroughWindscreen" value="32" description=""/>
+    <enumval name="DieWhenRagdoll" value="33" description=""/>
+    <enumval name="HasHelmet" value="34" description="currently has helmet equipped?"/>
+    <enumval name="UseHelmet" value="35" description="will the ped try to put on their helmet?"/>
+    <enumval name="DontTakeOffHelmet" value="36" description="the ped will not take off their helmet (if equipped) while this is set"/>
+    <enumval name="HideInCutscene" value="37" description=""/>
+    <enumval name="PedIsEnemyToPlayer" value="38" description=""/>
+    <enumval name="DisableEvasiveDives" value="39" description=""/>
+    <enumval name="PedGeneratesDeadBodyEvents" value="40" description="Generates shocking events as if dead"/>
+    <enumval name="DontAttackPlayerWithoutWantedLevel" value="41" description=""/>
+    <enumval name="DontInfluenceWantedLevel" value="42" description="Can do any crime against this character and the cops turn a blind eye (no crime reported)"/>
+    <enumval name="DisablePlayerLockon" value="43" description=""/>
+    <enumval name="DisableLockonToRandomPeds" value="44" description=""/>
+    <enumval name="AllowLockonToFriendlyPlayers" value="45" description=""/>
+    <enumval name="DisableHornAudioWhenDead" value="46" description="Disable the horn when a ped dies in the car and has his head against the wheel"/>
+    <enumval name="PedBeingDeleted" value="47" description=""/>
+    <enumval name="BlockWeaponSwitching" value="48" description="Disable weapon switching while this is set"/>
+    <enumval name="BlockGroupPedAimedAtResponse" value="49" description="Disable the behaviour which causes player-group peds to crouch when the player aims at them"/>
+    <enumval name="WillFollowLeaderAnyMeans" value="50" description="Basically defines whether group peds will use cars etc to follow their leader (default=false)"/>
+    <enumval name="BlippedByScript" value="51" description="Set to true if the char has ever been blipped, not 100% correct so don't use it on anything sensitive."/>
+    <enumval name="DrawRadarVisualField" value="52" description="Draw this peds visual field in the stealth radar"/>
+    <enumval name="StopWeaponFiringOnImpact" value="53" description="Set to true to stop the peds weapon firing on impact when they drop it"/>
+    <enumval name="DissableAutoFallOffTests" value="54" description="Set to true to stop ped scanning for things to fall off when shot by the player"/>
+    <enumval name="SteerAroundDeadBodies" value="55" description="Forces peds to steer around dead bodies, the default is false."/>
+    <enumval name="ConstrainToNavMesh" value="56" description="Ped is constrained to navmesh's surface"/>
+    <enumval name="SyncingAnimatedProps" value="57" description="Set this to true if the ped should attempt to synchronise the animations of an attached prop to its movement anims"/>
+    <enumval name="IsFiring" value="58" description=""/>
+    <enumval name="WasFiring" value="59" description=""/>
+    <enumval name="IsStanding" value="60" description="is ped standing on something"/>
+    <enumval name="WasStanding" value="61" description="was the ped standing last frame"/>
+    <enumval name="InVehicle" value="62" description="is in a vehicle"/>
+    <enumval name="OnMount" value="63" description=""/>
+    <enumval name="AttachedToVehicle" value="64" description="is attached to a vehicle"/>
+    <enumval name="IsSwimming" value="65" description="is ped swimming in water  "/>
+    <enumval name="WasSwimming" value="66" description="was the ped swimming in water last frame"/>
+    <enumval name="IsSkiing" value="67" description="is the ped skiing"/>
+    <enumval name="IsSitting" value="68" description="is the ped sitting"/>
+    <enumval name="KilledByStealth" value="69" description="Determines if this ped was killed by a stealth action"/>
+    <enumval name="KilledByTakedown" value="70" description="Determines if this ped was killed by a takedown action"/>
+    <enumval name="Knockedout" value="71" description="Determines if this ped was finished with a knockout action"/>
+    <enumval name="ClearRadarBlipOnDeath" value="72" description="so peds automatically given blips will clear them again when they die (mainly used for peds recruited into players group)"/>
+    <enumval name="JustGotOffTrain" value="73" description="train code uses this when grabbing random peds to get in trains"/>
+    <enumval name="JustGotOnTrain" value="74" description="train code uses this when grabbing random peds to get in trains"/>
+    <enumval name="UsingCoverPoint" value="75" description="set to true when a ped is in process of using a cover point"/>
+    <enumval name="IsInTheAir" value="76" description="is in the air"/>
+    <enumval name="KnockedUpIntoAir" value="77" description="has ped been knocked up into the air by a car collision"/>
+    <enumval name="IsAimingGun" value="78" description="is ped aiming gun"/>
+    <enumval name="HasJustLeftCar" value="79" description="used by navigation to force scan for cars collisions"/>
+    <enumval name="TargetWhenInjuredAllowed" value="80" description=""/>
+    <enumval name="CurrLeftFootCollNM" value="81" description="footprints"/>
+    <enumval name="PrevLeftFootCollNM" value="82" description="footprints"/>
+    <enumval name="CurrRightFootCollNM" value="83" description="footprints"/>
+    <enumval name="PrevRightFootCollNM" value="84" description="footprints"/>
+    <enumval name="HasBeenBumpedInCar" value="85" description="Has this ped been bumped by a car while driving?"/>
+    <enumval name="InWaterTaskQuitToClimbLadder" value="86" description="The in-water task has just quit in response to a ladder-climb request"/>
+    <enumval name="NMTwoHandedWeaponBothHandsConstrained" value="87" description="when using physical 2-handed weapons, both hands have been latched to the gun model (used when sending ConfigureCharacter to NM)"/>
+    <enumval name="CreatedBloodPoolTimer" value="88" description=""/>
+    <enumval name="DontActivateRagdollFromAnyPedImpact" value="89" description=""/>
+    <enumval name="GroupPedFailedToEnterCover" value="90" description=""/>
+    <enumval name="AlreadyChattedOnPhone" value="91" description=""/>
+    <enumval name="AlreadyReactedToPedOnRoof" value="92" description=""/>
+    <enumval name="ForcePedLoadCover" value="93" description="Set by the script to force a ped to load cover"/>
+    <enumval name="BlockCoweringInCover" value="94" description=""/>
+    <enumval name="BlockPeekingInCover" value="95" description=""/>
+    <enumval name="JustLeftCarNotCheckedForDoors" value="96" description="Set when a ped exits a car.  The first time he he moves he should check for door obstructions."/>
+    <enumval name="VaultFromCover" value="97" description=""/>
+    <enumval name="AutoConversationLookAts" value="98" description=""/>
+    <enumval name="UsingCrouchedPedCapsule" value="99" description="Set to indicate that the ped's bounds are in the crouched configuration"/>
+    <enumval name="HasDeadPedBeenReported" value="100" description="Whether this ped has been investigated (for dead peds)"/>
+    <enumval name="ForcedAim" value="101" description="If set, we will always behave like we have the aim trigger pressed"/>
+    <enumval name="SteersAroundPeds" value="102" description="Enables/disables the low-level steering behaviour around peds and objects"/>
+    <enumval name="SteersAroundObjects" value="103" description="Enables/disables the low-level steering behaviour around peds and objects"/>
+    <enumval name="OpenDoorArmIK" value="104" description="Set if the ped should enable open door arm IK"/>
+    <enumval name="ForceReload" value="105" description="Force a reload of the current weapon" hideFrom="script"/>
+    <enumval name="DontActivateRagdollFromVehicleImpact" value="106" description="Blocks ragdoll activation when hit by a vehicle"/>
+    <enumval name="DontActivateRagdollFromBulletImpact" value="107" description="Blocks ragdoll activation when hit by a bullet"/>
+    <enumval name="DontActivateRagdollFromExplosions" value="108" description="Blocks ragdoll activation when hit by an explosive"/>
+    <enumval name="DontActivateRagdollFromFire" value="109" description="Blocks ragdoll activation when set on fire"/>
+    <enumval name="DontActivateRagdollFromElectrocution" value="110" description="Blocks ragdoll activation when electrocuted"/>
+    <enumval name="IsBeingDraggedToSafety" value="111" description="Whether this ped is being dragged to safety"/>
+    <enumval name="HasBeenDraggedToSafety" value="112" description="Whether this ped has been dragged to safety"/>
+    <enumval name="KeepWeaponHolsteredUnlessFired" value="113" description="Ignores the creation of the weapon object unless the gun is shot."/>
+    <enumval name="ForceScriptControlledKnockout" value="114" description="Forces a melee knockout state for the victim ped"/>
+    <enumval name="FallOutOfVehicleWhenKilled" value="115" description="Forces a ped to fall out of a vehicle when killed"/>
+    <enumval name="GetOutBurningVehicle" value="116" description="If set, a ped will escape a burning vehicle they are inside "/>
+    <enumval name="BumpedByPlayer" value="117" description="Whether this ped has been bumped by the player."/>
+    <enumval name="RunFromFiresAndExplosions" value="118" description="If set, a ped will run away from fires or potential explosions "/>
+    <enumval name="TreatAsPlayerDuringTargeting" value="119" description="If set, the ped will be given the same boost a player gets in the targeting scoring system."/>
+    <enumval name="IsHandCuffed" value="120" description="indicates if the ped is currently hand cuffed"/>
+    <enumval name="IsAnkleCuffed" value="121" description="indicates if the ped is currently ankle cuffed"/>
+    <enumval name="DisableMelee" value="122" description="Disables the melee for a particular ped"/>
+    <enumval name="DisableUnarmedDrivebys" value="123" description="Disables unarmed driveby taunts for ped"/>
+    <enumval name="JustGetsPulledOutWhenElectrocuted" value="124" description="MP only, if ped is electrocuted or rubber bulletted, players jacking the ped will just pull them out"/>
+    <enumval name="UNUSED_REPLACE_ME" value="125" description=""/>
+    <enumval name="WillNotHotwireLawEnforcementVehicle" value="126" description="True if the ped will skip hotwiring a law enforcement vehicle if it needs to be hotwired"/>
+    <enumval name="WillCommandeerRatherThanJack" value="127" description="True if the ped will try to commandeer a vehicle rather than jack if possible"/>
+    <enumval name="CanBeAgitated" value="128" description="True if the ped will respond to agitation events"/>
+    <enumval name="ForcePedToFaceLeftInCover" value="129" description="If set ped will turn to face left in cover"/>
+    <enumval name="ForcePedToFaceRightInCover" value="130" description="If set ped will turn to face right in cover"/>
+    <enumval name="BlockPedFromTurningInCover" value="131" description="If set ped will not turn in cover, unless one of the force flags is set"/>
+    <enumval name="KeepRelationshipGroupAfterCleanUp" value="132" description="Will allow the ped to keep their relationship group after mission cleanup as opposed to going back to default"/>
+    <enumval name="ForcePedToBeDragged" value="133" description="Forces Ped To Loop Try Locked Door Anim In Order To Be Dragged Along When Vehicle Moves"/>
+    <enumval name="PreventPedFromReactingToBeingJacked" value="134" description="Ped doesn't react when being jacked"/>
+    <enumval name="IsScuba" value="135" description="indicates if the ped is currently equipped for scuba"/>
+    <enumval name="WillArrestRatherThanJack" value="136" description="For cops arresting peds in vehicles"/>
+    <enumval name="RemoveDeadExtraFarAway" value="137" description="We must be further away before ped polulation remove this ped when it is dead"/>
+    <enumval name="RidingTrain" value="138" description="True if the ped is riding a train"/>
+    <enumval name="ArrestResult" value="139" description="True if the arrest task succeeded"/>
+    <enumval name="CanAttackFriendly" value="140" description="True allows this ped to attack peds theya re friendly with"/>
+    <enumval name="WillJackAnyPlayer" value="141" description="True if this player ped can jack any other player (MP Only)"/>
+    <enumval name="BumpedByPlayerVehicle" value="142" description="Whether this ped has been bumped by a player vehicle."/>
+    <enumval name="DodgedPlayerVehicle" value="143" description="Whether this ped has just dodged a player vehicle."/>
+    <enumval name="WillJackWantedPlayersRatherThanStealCar" value="144" description="True if this player will jack wanted passengers rather than try to steal a car (cops arresting crims) (MP Only)"/>
+    <enumval name="NoCopWantedAggro" value="145" description="If this flag is set on a cap, skip some of the code that would normally make them extra aggressive and alert."/>
+    <enumval name="DisableLadderClimbing" value="146" description="If this flag is set on a ped it will not scan for or climb ladders"/>
+    <enumval name="StairsDetected" value="147" description="If this flag is set on a ped it has detected stairs"/>
+    <enumval name="SlopeDetected" value="148" description="If this flag is set on a ped it has detected a slope"/>
+    <enumval name="HelmetHasBeenShot" value="149" description="If this flag is set on a ped it's helmet has been damaged"/>
+    <enumval name="CowerInsteadOfFlee" value="150" description="If set, the ped will cower in place rather than flee, used. Used for scenarios in confined spaces."/>
+    <enumval name="CanActivateRagdollWhenVehicleUpsideDown" value="151" description="If set the ped will be allowed to ragdoll when the vehicle they are in gets turned upside down if the seat supports it."/>
+    <enumval name="AlwaysRespondToCriesForHelp" value="152" description="If set, the ped will respond to CEventInjuredCryForHelp regardless if it is allied with the injured ped."/>
+    <enumval name="DisableBloodPoolCreation" value="153" description=""/>
+    <enumval name="ShouldFixIfNoCollision" value="154" description="If set, the ped will be fixed if there is no collision around."/>
+    <enumval name="CanPerformArrest" value="155" description="If set, the ped can perform arrests on peds that can be arrested"/>
+    <enumval name="CanPerformUncuff" value="156" description="If set, the ped can uncuff peds that are handcuffed"/>
+    <enumval name="CanBeArrested" value="157" description="If set, the ped may be arrested"/>
+    <enumval name="MoverConstrictedByOpposingCollisions" value="158" description="If set, the ped's mover is getting collisions from opposing sides."/>
+    <enumval name="PlayerPreferFrontSeatMP" value="159" description="When true, Prefer the front seat when getting in a car with buddies."/>
+    <enumval name="DontActivateRagdollFromImpactObject" value="160" description=""/>
+    <enumval name="DontActivateRagdollFromMelee" value="161" description=""/>
+    <enumval name="DontActivateRagdollFromWaterJet" value="162" description=""/>
+    <enumval name="DontActivateRagdollFromDrowning" value="163" description=""/>
+    <enumval name="DontActivateRagdollFromFalling" value="164" description=""/>
+    <enumval name="DontActivateRagdollFromRubberBullet" value="165" description=""/>
+    <enumval name="IsInjured" value="166" description="When true, the ped will use injured movement anim sets and getup animations."/>
+    <enumval name="DontEnterVehiclesInPlayersGroup" value="167" description="When true, will follow the player around if in their group but wont enter vehicles."/>
+    <enumval name="SwimmingTasksRunning" value="168" description="stronger than IsSwimming, persists so long as the tasks are active"/>
+    <enumval name="PreventAllMeleeTaunts" value="169" description="Disable all melee taunts for this particular ped"/>
+    <enumval name="ForceDirectEntry" value="170" description="Will force this ped to use the direct entry point for any vehicle they try to enter, or warp in"/>
+    <enumval name="AlwaysSeeApproachingVehicles" value="171" description="This ped will always see approaching vehicles (even from behind)."/>
+    <enumval name="CanDiveAwayFromApproachingVehicles" value="172" description="This ped can dive away from approaching vehicles."/>
+    <enumval name="AllowPlayerToInterruptVehicleEntryExit" value="173" description="Will allow player to interrupt a peds scripted entry/exit task as if they had triggered it themselves"/>
+    <enumval name="OnlyAttackLawIfPlayerIsWanted" value="174" description="This ped won't attack cops unless the player is wanted."/>
+    <enumval name="PlayerInContactWithKinematicPed" value="175" description="Gets set to true if the player ped is colliding against a ped in kinematic mode."/>
+    <enumval name="PlayerInContactWithSomethingOtherThanKinematicPed" value="176" description="Gets set to true if the player ped is colliding against something which isn't a ped in kinematic mode."/>
+    <enumval name="PedsJackingMeDontGetIn" value="177" description="If set any ped jacking this ped will not get in as part of the jack."/>
+    <enumval name="AdditionalRappellingPed" value="178" description=""/>
+    <enumval name="PedIgnoresAnimInterruptEvents" value="179" description="AI peds only, will not early out of anims"/>
+    <enumval name="IsInCustody" value="180" description="Signifies a player is in custody"/>
+    <enumval name="ForceStandardBumpReactionThresholds" value="181" description="By default, armed and friendly peds have increased resistance to being bumped by players and friendly vehicles. Setting this flag will make them use the standard thresholds instead."/>
+    <enumval name="LawWillOnlyAttackIfPlayerIsWanted" value="182" description="If set, this ped can only be attacked by law if the player is wanted"/>
+    <enumval name="IsAgitated" value="183" description="If set, this ped is agitated."/>
+    <enumval name="PreventAutoShuffleToDriversSeat" value="184" description="MP only, prevents passenger from auto shuffling over to drivers seat if it becomes free."/>
+    <enumval name="UseKinematicModeWhenStationary" value="185" description="When enabled, the ped will continually set the kinematic mode reset flag when stationary."/>
+    <enumval name="EnableWeaponBlocking" value="186" description="When enabled, Non-player peds can use WeaponBlocking behaviors"/>
+    <enumval name="HasHurtStarted" value="187" description=""/>
+    <enumval name="DisableHurt" value="188" description="Will prevent the peds go into hurt combat mode"/>
+    <enumval name="PlayerIsWeird" value="189" description="Should this player ped periodically generate shocking events for being weird."/>
+    <enumval name="PedHadPhoneConversation" value="190" description="Has this ped had a phone conversation before."/>
+    <enumval name="BeganCrossingRoad" value="191" description="Indicates ped started crossing the road in case of interruption."/>
+    <enumval name="WarpIntoLeadersVehicle" value="192" description="Warp into leaders vehicle"/>
+    <enumval name="DoNothingWhenOnFootByDefault" value="193" description="Do nothing when on foot by default"/>
+    <enumval name="UsingScenario" value="194" description="Set when the ped is using a scenario. Call CPed::UpdateSpatialArrayTypeFlags() if changing."/>
+    <enumval name="VisibleOnScreen" value="195" description="Set when the ped is visible on screen, as determined by CPedAILodManager."/>
+    <enumval name="DontCollideWithKinematic" value="196" description="If true, the ped will not collide with other kinematic peds."/>
+    <enumval name="ActivateOnSwitchFromLowPhysicsLod" value="197" description="If set, activate physics when switching from low to regular physics LOD."/>
+    <enumval name="DontActivateRagdollOnPedCollisionWhenDead" value="198" description="Peds with this flag set won't be allowed to reactivate their ragdoll when hit by another ragdoll."/>
+    <enumval name="DontActivateRagdollOnVehicleCollisionWhenDead" value="199" description="Peds with this flag set won't be allowed to reactivate their ragdoll when hit by a vehicle."/>
+    <enumval name="HasBeenInArmedCombat" value="200" description="Is set if this ped has ever been in armed combat"/>
+    <enumval name="UseDiminishingAmmoRate" value="201" description="Set for when we want to diminish the ammo at a slower rate. Used specifically in cases where AI do not have infinite ammo."/>
+    <enumval name="Avoidance_Ignore_All" value="202" description="This ped won't steer around anyone"/>
+    <enumval name="Avoidance_Ignored_by_All" value="203" description="Other peds won't steer around this ped"/>
+    <enumval name="Avoidance_Ignore_Group1" value="204" description="This ped won't steer around peds marked group 1"/>
+    <enumval name="Avoidance_Member_of_Group1" value="205" description="This ped is marked as a member of avoidance group 1"/>
+    <enumval name="ForcedToUseSpecificGroupSeatIndex" value="206" description="Ped is forced to use specific seat index set by SET_PED_GROUP_MEMBER_PASSENGER_INDEX"/>
+    <enumval name="LowPhysicsLodMayPlaceOnNavMesh" value="207" description="If set, peds in low lod physics will be placed so that their feet rest on the navmesh"/>
+    <enumval name="DisableExplosionReactions" value="208" description="If set, peds will disable all explosion reactions"/>
+    <enumval name="DodgedPlayer" value="209" description="Whether this ped has just dodged a player."/>
+    <enumval name="WaitingForPlayerControlInterrupt" value="210" description="Set when player switches to an ai ped and keeps the scripted task of the ai ped"/>
+    <enumval name="ForcedToStayInCover" value="211" description="Ped won't move out of cover when set (not even to fire)."/>
+    <enumval name="GeneratesSoundEvents" value="212" description="Does this ped generate sound events?"/>
+    <enumval name="ListensToSoundEvents" value="213" description="Does this ped have the ability to respond to sound events?"/>
+    <enumval name="AllowToBeTargetedInAVehicle" value="214" description="Ped can be targeting inside a vehicle"/>
+    <enumval name="WaitForDirectEntryPointToBeFreeWhenExiting" value="215" description=""/>
+    <enumval name="OnlyRequireOnePressToExitVehicle" value="216" description=""/>
+    <enumval name="ForceExitToSkyDive" value="217" description=""/>
+    <enumval name="SteersAroundVehicles" value="218" description="Enables/disables the low-level steering behaviour around vehicles"/>
+    <enumval name="AllowPedInVehiclesOverrideTaskFlags" value="219" description="If set, allow the ped to be set in vehicles even if the ped's TaskData would otherwise disallow it."/>
+    <enumval name="DontEnterLeadersVehicle" value="220" description="If set, the ped will not enter the leader's vehicle."/>
+    <enumval name="DisableExitToSkyDive" value="221" description=""/>
+    <enumval name="ScriptHasDisabledCollision" value="222" description="Script disabled collision on this ped via SET_ENTITY_COLLISION, this leaves on collision against explosions and weapons"/>
+    <enumval name="UseAmbientModelScaling" value="223" description="This ped is drawn randomly scaled from [0.5,1.0]"/>
+    <enumval name="DontWatchFirstOnNextHurryAway" value="224" description="Hurry away without watching the next time this ped runs CTaskHurryAway."/>
+    <enumval name="DisablePotentialToBeWalkedIntoResponse" value="225" description="make EVENT_POTENTIAL_BE_WALKED_INTO not affect this ped."/>
+    <enumval name="DisablePedAvoidance" value="226" description="This ped will not avoid other peds whilst navigating"/>
+    <enumval name="ForceRagdollUponDeath" value="227" description="When the ped dies, it will ragdoll instead of potentially choosing an animated death."/>
+    <enumval name="CanLosePropsOnDamage" value="228" description="When ped receives damage any prop glasses could be knocked off"/>
+    <enumval name="DisablePanicInVehicle" value="229" description=""/>
+    <enumval name="AllowedToDetachTrailer" value="230" description="Allow this ped to detach trailers from vehicles"/>
+    <enumval name="HasShotBeenReactedToFromFront" value="231" description=""/>
+    <enumval name="HasShotBeenReactedToFromBack" value="232" description=""/>
+    <enumval name="HasShotBeenReactedToFromLeft" value="233" description=""/>
+    <enumval name="HasShotBeenReactedToFromRight" value="234" description=""/>
+    <enumval name="AllowBlockDeadPedRagdollActivation" value="235" description="If set, the ragdoll activation blocking flags can be used to disable activation of dead peds. Otherwise, by default, dead peds can always activate their ragdolls"/>
+    <enumval name="IsHoldingProp" value="236" description="True if the ped is currently holding a prop."/>
+    <enumval name="BlocksPathingWhenDead" value="237" description="When this ped dies their body will block all pathfinding modes - not just wandering."/>
+    <enumval name="ForcePlayNormalScenarioExitOnNextScriptCommand" value="238" description="The next time this ped leaves a scenario to perform some script task they will be forced into their normal scenario exit."/>
+    <enumval name="ForcePlayImmediateScenarioExitOnNextScriptCommand" value="239" description="The next time this ped leaves a scneario to perform some script task they will be forced into their immediate (blend out) exit."/>
+    <enumval name="ForceSkinCharacterCloth" value="240" description="Force character cloth to stay skinned immediately after being created. If flag is not set then character cloth is not forced to be skinned when created."/>
+    <enumval name="LeaveEngineOnWhenExitingVehicles" value="241" description="The player will leave the engine running when leaving vehicles"/>
+    <enumval name="PhoneDisableTextingAnimations" value="242" description="tells taskmobile phone to not texting animations.  Currently don't play these in MP"/>
+    <enumval name="PhoneDisableTalkingAnimations" value="243" description="tells taskmobile phone to not talking animations.  Currently don't play these in MP"/>
+    <enumval name="PhoneDisableCameraAnimations" value="244" description="tells taskmobile phone to not camera animations.  Currently don't play these in SP"/>
+    <enumval name="DisableBlindFiringInShotReactions" value="245" description="Stops the ped from accidentally blind firing it's weapon when doing an nm shot reaction"/>
+    <enumval name="AllowNearbyCoverUsage" value="246" description="This makes it so that OTHER peds are allowed to take cover at points that would otherwise be rejected due to proximity"/>
+    <enumval name="InStrafeTransition" value="247" description="True if in strafe transition."/>
+    <enumval name="CanPlayInCarIdles" value="248"  description="If false, blocks in-car idle animations from playing."/>
+    <enumval name="CanAttackNonWantedPlayerAsLaw" value="249" description="If this is a law ped then it will ignore the player wanted level clean check in combat and continue attacking"/>
+    <enumval name="WillTakeDamageWhenVehicleCrashes" value="250" description="Ped gets damaged when the vehicle they are in crashes"/>
+    <enumval name="AICanDrivePlayerAsRearPassenger" value="251" description="If this ai ped is driving the vehicle, if the player taps to enter, they will enter as a rear passenger, if they hold, they'll jack the driver"/>
+    <enumval name="PlayerCanJackFriendlyPlayers" value="252" description="If a friendly player is driving the vehicle, if the player taps to enter, they will enter as a passenger, if they hold, they'll jack the driver"/>
+    <enumval name="OnStairs" value="253" description="Are we on stairs?"/>
+    <enumval name="SimulatingAiming" value="254"  description="Simulating the aim button for player until on input detection."/>
+    <enumval name="AIDriverAllowFriendlyPassengerSeatEntry" value="255" description="If this ai ped is driving the vehicle, allow players to get in passenger seats"/>
+    <enumval name="ParentCarIsBeingRemoved" value="256" description="Set on the target ped if the car they are in is being removed to avoid an expensive detach check"/>
+    <enumval name="AllowMissionPedToUseInjuredMovement" value="257" description="Set the target ped to be allowed to use Injured movement clips"/>
+    <enumval name="CanLoseHelmetOnDamage" value="258" description="When ped receives a head shot then a helmet can be knocked off"/>
+    <enumval name="NeverDoScenarioExitProbeChecks" value="259" description="When this ped exits a scenario they ignore probe checks against the environment and just pick an exit clip."/>
+    <enumval name="SuppressLowLODRagdollSwitchWhenCorpseSettles" value="260" description="This will suppress the automatic switch to a lower ragdoll LOD when switching to the ragdoll frame after dying."/>
+    <enumval name="PreventUsingLowerPrioritySeats" value="261" description="Don't use certain seats (like hanging on the side of a vehicle)"/>
+    <enumval name="JustLeftVehicleNeedsReset" value="262" description="Set when leaving a vehicle and disabling collision with the vehicle exiting to indicate we need to clear out the disabling"/>
+    <enumval name="TeleportIfCantReachPlayer" value="263" description="If this ped is following the player and stuck in a place where he can't be reached, teleport when possible."/>
+    <enumval name="PedsInVehiclePositionNeedsReset" value="264" description="Ped was being jacked/killed but isn't anymore, ensure they're in the seat"/>
+    <enumval name="PedsFullyInSeat" value="265" description="Ped is fully in the seat (Set after the position needs reset flag)"/>
+    <enumval name="AllowPlayerLockOnIfFriendly" value="266" description="If this ped is friendly with the player, this will allow the ped to lockon"/>
+    <enumval name="UseCameraHeadingForDesiredDirectionLockOnTest" value="267" description="Force camera direction for heading test if desired direction is also set"/>
+    <enumval name="TeleportToLeaderVehicle" value="268" description="If set, teleport if ped is not in the leader's vehicle before TaskEnterVehicle::m_SecondsBeforeWarpToLeader."/>
+    <enumval name="Avoidance_Ignore_WeirdPedBuffer" value="269" description="Don't give weird peds extra buffer"/>
+    <enumval name="OnStairSlope" value="270" description="Are we on a stair slope?"/>
+    <enumval name="HasPlayedNMGetup" value="271" description="This ped has gotten up from NM at least once."/>
+    <enumval name="DontBlipCop" value="272" description="Wanted system shouldnt consider this ped when creating blips."/>
+    <enumval name="SpawnedAtExtendedRangeScenario" value="273" description="Set if the ped spawned at a scenario with extended range."/>
+    <enumval name="WalkAlongsideLeaderWhenClose" value="274" description="This ped will walk alongside group leader if they are the first member of the leader's pedgroup, they are close enough to the leader, and the pedgroup's formation is set up to allow this (such as in the default CPedFormationTypes::FORMATION_LOOSE)."/>
+    <enumval name="KillWhenTrapped" value="275" description="This will kill a mission ped that becomes trapped (like under a cow carcass) and cannot getup."/>
+    <enumval name="EdgeDetected" value="276" description="If this flag is set on a ped it has detected an edge"/>
+    <enumval name="AlwaysWakeUpPhysicsOfIntersectedPeds" value="277" description="This ped will cause physics to activate on any ped this ped's capsule is inside of, even if this ped is being attached."/>
+    <enumval name="EquippedAmbientLoadOutWeapon" value="278" description="This is set to prevent a ped from holstering a loadout weapon equipped during CPedPopulation::EquipPed as part of the defined CAmbientPedModelVariations' loadout."/>
+    <enumval name="AvoidTearGas" value="279" description="If set, a ped will avoid tear gas."/>
+    <enumval name="StoppedSpeechUponFreezing" value="280" description="Marks that we've already dealt with cleaning up speech audio after becoming frozen."/>
+    <enumval name="DisableGoToWritheWhenInjured" value="281" description="If set, CPed::DAMAGED_GOTOWRITHE will no longer get set.  In particular, tazer hits wil no longer kill this ped in one hit."/>
+    <enumval name="OnlyUseForcedSeatWhenEnteringHeliInGroup" value="282" description="If set this ped will only use their forced seat index if the vehicle they're entering is a heli as part of a group"/>
+    <enumval name="ThrownFromVehicleDueToExhaustion" value="283" description="Ped got tired and was thrown from bike. Used to scale ragdoll damage for a few seconds after the dismount."/>
+    <enumval name="UpdateEnclosedSearchRegion" value="284"  description="This ped will update their enclosed regions"/>
+    <enumval name="DisableWeirdPedEvents" value="285" description=""/>
+    <enumval name="ShouldChargeNow" value="286" description="This ped should charge if in combat right away, for use by scripts, cleared once ped charges"/>
+    <enumval name="RagdollingOnBoat" value="287" description="We don't want ragdolling peds processing buoyancy when in a boat."/>
+    <enumval name="HasBrandishedWeapon" value="288" description=""/>
+    <enumval name="AllowMinorReactionsAsMissionPed" value="289" description="If true, this ped will react to events such as being hit by a vehicle as a mission ped"/>
+    <enumval name="BlockDeadBodyShockingEventsWhenDead" value="290" description="If true, this ped will not generate dead body shocking events when dead."/>
+    <enumval name="PedHasBeenSeen" value="291" description="True if the ped has be visible to the player"/>
+    <enumval name="PedIsInReusePool" value="292" description="True if the ped is currently in the ped reuse pool"/>
+    <enumval name="PedWasReused" value="293" description="True if the ped was in the reuse pool and then was reused"/>
+    <enumval name="DisableShockingEvents" value="294" description=""/>
+    <enumval name="MovedUsingLowLodPhysicsSinceLastActive" value="295" description="Set for peds that have moved using low LOD physics"/>
+    <enumval name="NeverReactToPedOnRoof" value="296" description="If true, this ped will not react to a ped standing on the roof."/>
+    <enumval name="ForcePlayFleeScenarioExitOnNextScriptCommand" value="297" description="If set this ped will use a flee exit to leave on the next script command."/>
+    <enumval name="JustBumpedIntoVehicle" value="298" description="Set for peds that just bumped into a vehicle"/>
+    <enumval name="DisableShockingDrivingOnPavementEvents" value="299" description=""/>
+    <enumval name="ShouldThrowSmokeNow" value="300" description="This ped should throw a smoke grenade in combat right away, for use by scripts, cleared once ped throws"/>
+    <enumval name="DisablePedConstraints" value="301" description="Flags the ped to ensure it either does or does not have its control constraints"/>
+    <enumval name="ForceInitialPeekInCover" value="302" description="If set, ped will peek once before firing in cover. Cleared upon peeking."/>
+    <enumval name="CreatedByDispatch" value="303" description="this ped was created by one of the dispatch systems, usually law enforcement"/>
+    <enumval name="PointGunLeftHandSupporting" value="304" description="NM state config flag. Set to true when the characters support hand has broken from the weapon"/>
+    <enumval name="DisableJumpingFromVehiclesAfterLeader" value="305" description="If true, ped will not bail out of a vehicle after his group leader."/>
+    <enumval name="DontActivateRagdollFromPlayerPedImpact" value="306" description="Blocks ragdoll activation from animated player ped bumps"/>
+    <enumval name="DontActivateRagdollFromAiRagdollImpact" value="307" description="Blocks ragdoll activation from collisions with ai ragdolls"/>
+    <enumval name="DontActivateRagdollFromPlayerRagdollImpact" value="308" description="Blocks ragdoll activation from collisions with a ragdolling player"/>
+    <enumval name="DisableQuadrupedSpring" value="309" description="Use to disable quadruped spring processing when settling from a ragdoll performance"/>
+    <enumval name="IsInCluster" value="310" description="This ped is currently in a cluster."/>
+    <enumval name="ShoutToGroupOnPlayerMelee" value="311" description="If set, ped will shout target position when melee attacked by a player"/>
+    <enumval name="IgnoredByAutoOpenDoors" value="312" description="Set this for a ped to be ignored by the auto opened doors when checking to see if the door should be opened."/>
+    <enumval name="PreferInjuredGetup" value="313" description="Set this during nm tasks to trigger an injured geup when the ped gets up."/>
+    <enumval name="ForceIgnoreMeleeActiveCombatant" value="314" description="Purposely ignore the melee active combatant role and push them into a support or inactive combatant role"/>
+    <enumval name="CheckLoSForSoundEvents" value="315" description="If set, ped will ignore sound events generated by entites it can't see."/>
+    <enumval name="JackedAbandonedCar" value="316" description="This ped was spawned to steal an ambient car that was left around"/>
+    <enumval name="CanSayFollowedByPlayerAudio" value="317" description="If set, ped can play FRIEND_FOLLOWED_BY_PLAYER lines."/>
+    <enumval name="ActivateRagdollFromMinorPlayerContact" value="318" description="If set, the ped will activate the nm ragdoll balance as soon as he's touhed by the player (ignoring velocity thresholds)."/>
+    <enumval name="HasPortablePickupAttached" value="319" description="If set, the ped is carrying a portable pickuup."/>
+    <enumval name="ForcePoseCharacterCloth" value="320" description="If set, default cloth pose will be applied if is available in the character cloth when the cloth is created."/>
+    <enumval name="HasClothCollisionBounds" value="321" description="If set, ped will use cloth collision bounds."/>
+    <enumval name="HasHighHeels" value="322" description="Set when the ped has high heels"/>
+    <enumval name="TreatAsAmbientPedForDriverLockOn" value="323" description="If set, this force player ped to treat this ped as an ambient target rather than a mission ped for driver lock on"/>
+    <enumval name="DontBehaveLikeLaw" value="324" description="Currently used to prevent security peds from behaving like police (they will not report wanted position, can attack without WL, etc)"/>
+    <enumval name="SpawnedAtScenario" value="325" description="If set, the ped was originally spawned at a scenario point."/>
+    <enumval name="DisablePoliceInvestigatingBody" value="326" description="If set, police will not perform the CTaskShockingPoliceInvestigate Behavior on the ped"/>
+    <enumval name="DisableWritheShootFromGround" value="327" description="If set, the ped will no longer shoot while writhing."/>
+    <enumval name="LowerPriorityOfWarpSeats" value="328" description=""/>
+    <enumval name="DisableTalkTo" value="329" description=""/>
+    <enumval name="DontBlip" value="330" description="Stops a ped being blipped by the wanted system"/>
+    <enumval name="IsSwitchingWeapon" value="331" description="ped is running the swap weapon task"/>
+    <enumval name="IgnoreLegIkRestrictions" value="332" description="If set, the ped will ignore leg IK request restrictions for non-player peds."/>
+    <enumval name="ScriptForceNoTimesliceIntelligenceUpdate" value="333" description="If set, the ped will never have their intelligence update time sliced across frames."/>
+    <enumval name="JackedOutOfMyVehicle" value="334" description="If set, this ped has been jacked out of its vehicle."/>
+    <enumval name="WentIntoCombatAfterBeingJacked" value="335" description="If set, this ped went into combat because of being jacked."/>
+    <enumval name="DontActivateRagdollForVehicleGrab" value="336" description="Blocks ragdoll activation when grabbing vehicle doors"/>
+    <enumval name="ForcePackageCharacterCloth" value="337" description="Set the flag for forcing package on character cloth when cloth is created on the ped"/>
+    <enumval name="DontRemoveWithValidOrder" value="338" description=""/>
+    <enumval name="AllowTaskDoNothingTimeslicing" value="339" description="If set, this ped will timeslice it's DoNothing Task when computing default task."/>
+    <enumval name="ForcedToStayInCoverDueToPlayerSwitch" value="340" description=""/>
+    <enumval name="ForceProneCharacterCloth" value="341" description="Set the flag to place character cloth in prone state when cloth is created on the ped"/>
+    <enumval name="NotAllowedToJackAnyPlayers" value="342" description=""/>
+    <enumval name="InToStrafeTransition" value="343" description=""/>
+    <enumval name="KilledByStandardMelee" value="344" description="Killed by standard melee"/>
+    <enumval name="AlwaysLeaveTrainUponArrival" value="345" description="Does this ped always (not randomly) leave the train when it arrives at a station"/>
+    <enumval name="ForcePlayDirectedNormalScenarioExitOnNextScriptCommand" value="346" description="Set flag to determine that a directed normal exit should be use for new tasks on this scenario ped."/>
+    <enumval name="OnlyWritheFromWeaponDamage" value="347" description="Only allow ped to writhe from weapon damage, not from other stuff, like small vehicle impacts"/>
+    <enumval name="UseSloMoBloodVfx" value="348" description="Flags the ped to use the slo mo blood vfx instead of the normal ones"/>
+    <enumval name="EquipJetpack" value="349" description="Equip/put on the jetpack if we have one in our inventory"/>
+    <enumval name="PreventDraggedOutOfCarThreatResponse" value="350" description="Don't do threat response when dragged out of a car"/>
+    <enumval name="ScriptHasCompletelyDisabledCollision" value="351" description="Script has completely disabled collision on this ped via SET_ENTITY_COMPLETELY_DISABLE_COLLISION"/>
+    <enumval name="NeverDoScenarioNavChecks" value="352" description="This ped will not check for navmesh when exiting their scenario."/>
+    <enumval name="ForceSynchronousScenarioExitChecking" value="353" description="This ped will expensively probe for a scenario exit location in one frame."/>
+    <enumval name="ThrowingGrenadeWhileAiming" value="354" description="Set true in CTaskAimGunOnFoot::Aiming_OnUpdate, false in CTaskAimAndThrowProjectile::CleanUp."/>
+    <enumval name="HeadbobToRadioEnabled" value="355" description="Set in."/>
+    <enumval name="ForceDeepSurfaceCheck" value="356" description="Don't do distance from camera culling of the deep surface check, needed for detecting snow, mud, etc."/>
+    <enumval name="DisableDeepSurfaceAnims" value="357" description="Disable deep surface anims to prevent them slowing ped down"/>
+    <enumval name="DontBlipNotSynced" value="358" description="Don't blip this ped, this is not synced over the network to allow script to individually control a peds blippedness on different machines"/>
+    <enumval name="IsDuckingInVehicle" value="359" description="Ped is ducking inside a vehicle."/>
+    <enumval name="PreventAutoShuffleToTurretSeat" value="360" description=""/>
+    <enumval name="DisableEventInteriorStatusCheck" value="361" description="Disables the ignore events based on interior status check which normally has peds inside ignore events from outside"/>
+    <enumval name="HasReserveParachute" value="362" description="Does ped have a reserve chute that they can deploy"/>
+    <enumval name="UseReserveParachute" value="363" description="Use reserve parachute settings."/>
+    <enumval name="TreatDislikeAsHateWhenInCombat" value="364" description="If this ped is in combat then any ped they dislike they will consider the relationship hate instead"/>
+    <enumval name="OnlyUpdateTargetWantedIfSeen" value="365" description="If the target is a player we will only set the WL or update the radar if they are seen"/>
+    <enumval name="AllowAutoShuffleToDriversSeat" value="366" description="Allows this ped to auto shuffle to the driver seat of a vehicle if the driver is dead (law and MP peds would do this normally)"/>
+    <enumval name="DontActivateRagdollFromSmokeGrenade" value="367" description="Blocks ragdoll activation when damaged by smoke grenade"/>
+    <enumval name="LinkMBRToOwnerOnChain" value="368" description="This ped will attempt to match the speed of the owner while following its current scenario chain."/>
+    <enumval name="AmbientFriendBumpedByPlayer" value="369" description="The player has walked into our ambient friend."/>
+    <enumval name="AmbientFriendBumpedByPlayerVehicle" value="370" description="The player has driven into our ambient friend."/>
+    <enumval name="InFPSUnholsterTransition" value="371" description="Player is playing the unholster transition in FPS mode"/>
+    <enumval name="PreventReactingToSilencedCloneBullets" value="372" description="Prevents the ped from reacting to silenced bullets fired from network clone peds"/>
+    <enumval name="DisableInjuredCryForHelpEvents" value="373" description="Blocks ped from creating the injured cry for help events (run over, tazed or melee would usually do this)"/>
+    <enumval name="NeverLeaveTrain" value="374" description="Prevents peds riding trains from getting off them"/>
+    <enumval name="DontDropJetpackOnDeath" value="375" description="When dead, don't drop eqquiped jetpack"/>
+    <enumval name="UseFPSUnholsterTransitionDuringCombatRoll" value="376" description="Player is playing the unholster transition in FPS mode"/>
+    <enumval name="ExitingFPSCombatRoll" value="377" description="Player is exiting combat roll in FPS mode"/>
+    <enumval name="ScriptHasControlOfPlayer" value="378" description="True when script is controlling the movement of the player"/>
+    <enumval name="PlayFPSIdleFidgetsForProjectile" value="379" description="True when we should be playing idle fidgets for projectiles"/>
+    <enumval name="DisableAutoEquipHelmetsInBikes" value="380" description="Set from interaction menu"/>
+    <enumval name="DisableAutoEquipHelmetsInAircraft" value="381" description="Set from interaction menu"/>
+    <enumval name="WasPlayingFPSGetup" value="382" description="Was playing getup animations in FPS mode"/>
+    <enumval name="WasPlayingFPSMeleeActionResult" value="383" description="Was playing action result animations in FPS mode"/>
+    <enumval name="PreferNoPriorityRemoval" value="384" description="Unless scenario conditions apply, make this ped go through normal deletion but not priority deletion."/>
+    <enumval name="FPSFidgetsAbortedOnFire" value="385" description="True when the FPS idle fidgets are aborted because the player fired the gun"/>
+    <enumval name="ForceFPSIKWithUpperBodyAnim" value="386" description="True when upper body anims are used during various tasks."/>
+    <enumval name="SwitchingCharactersInFirstPerson" value="387" description="True we switch a character in first person mode (in CGameWorld::ChangePlayerPed)"/>
+    <enumval name="IsClimbingLadder" value="388" description="True when the ped is climbing a ladder"/>
+    <enumval name="HasBareFeet" value="389" description="Set when the ped has no shoes"/>
+    <enumval name="UNUSED_REPLACE_ME_2" value="390" description=""/>
+    <enumval name="GoOnWithoutVehicleIfItIsUnableToGetBackToRoad" value="391" description="It will force the ped to abandon its vehicle (when using TaskGoToPointAnyMeans) if it is unable to get back to road"/>
+    <enumval name="BlockDroppingHealthSnacksOnDeath" value="392" description="Set by script to prevent peds from dropping snack health pickups on death (in CPed::CreateDeadPedPickups)."/>
+    <enumval name="ResetLastVehicleOnVehicleExit" value="393" description="Reset the ped's stored MyVehicle pointer when this ped leaves their vehicle."/>
+    <enumval name="ForceThreatResponseToNonFriendToFriendMeleeActions" value="394" description="Forces threat response to melee actions from non friend to friend peds."/>
+    <enumval name="DontRespondToRandomPedsDamage" value="395" description="Do not respond to random peds damage"/>
+    <enumval name="AllowContinuousThreatResponseWantedLevelUpdates" value="396" description="Shares logic of OnlyUpdateTargetWantedIfSeen but will continue to check even after the initial WL is set"/>
+    <enumval name="KeepTargetLossResponseOnCleanup" value="397" description="On cleanup the ped will not reset their target loss response"/>
+    <enumval name="PlayersDontDragMeOutOfCar" value="398" description="Similar to DontDragMeOutCar except it only prevents players from dragging the ped out and allows AI to still do so"/>
+    <enumval name="BroadcastRepondedToThreatWhenGoingToPointShooting" value="399" description="Whenever the ped starts shooting while going to a point, it trigger a responded to threat broadcast"/>
+    <enumval name="IgnorePedTypeForIsFriendlyWith" value="400" description="If this is set then IsFriendlyWith will ignore the ped type checks (i.e. two PEDTYPE_COP peds are not automatically friendly)"/>
+    <enumval name="TreatNonFriendlyAsHateWhenInCombat" value="401" description="Any non friendly ped will be considered as hated instead"/>
+    <enumval name="DontLeaveVehicleIfLeaderNotInVehicle" value="402" description="Supresses exit vehicle task being created in CEventLeaderExitedCarAsDriver::CreateResponseTask."/>
+    <enumval name="ChangeFromPermanentToAmbientPopTypeOnMigration" value="403" description="Change ped to ambient pop type on migration."/>
+    <enumval name="AllowMeleeReactionIfMeleeProofIsOn" value="404" description="Allow melee reaction to come through even if proof is on"/>
+    <enumval name="UsingLowriderLeans" value="405" description="Ped is playing lowrider lean animations due to vehicle suspension modification."/>
+    <enumval name="UsingAlternateLowriderLeans" value="406" description="Ped is playing alternate lowrider lean animations (ie arm on window) due to vehicle suspension modification."/>
+    <enumval name="UseNormalExplosionDamageWhenBlownUpInVehicle" value="407" description="If this is set, the ped won't be instantly killed if vehicle is blown up (from CAutomobile::BlowUpCar -> KillPedsInVehicle). Instead, they will take normal explosive damage and be forced to exit the vehicle if they're still alive."/>
+    <enumval name="DisableHomingMissileLockForVehiclePedInside" value="408" description="Blocks locking on of the vehicle that the ped is inside."/>
+    <enumval name="DisableTakeOffScubaGear" value="409" description="Same as CPED_RESET_FLAG_DisableTakeOffScubaGear but on a config flag."/>
+    <enumval name="IgnoreMeleeFistWeaponDamageMult" value="410" description="Melee fist weapons (ie knuckle duster) won't apply relative health damage scaler (m_MeleeRightFistTargetHealthDamageScaler in weapon info)."/>
+    <enumval name="LawPedsCanFleeFromNonWantedPlayer" value="411" description="Allows law ped to flee even if ped is not wanted and CWanted::m_AllRandomsFlee is set."/>
+    <enumval name="ForceBlipSecurityPedsIfPlayerIsWanted" value="412" description="Forces security peds (not cop peds) to be blipped on the minimap if the player is wanted. Set on the local player."/>
+    <enumval name="IsHolsteringWeapon" value="413" description="Ped is running the swap weapon task and holstering the previous weapon, but has not started drawing the new one."/>
+    <enumval name="UseGoToPointForScenarioNavigation" value="414" description="Don't use nav mesh for navigating to scenario points. DLC Hack for yachts"/>
+    <enumval name="DontClearLocalPassengersWantedLevel" value="415" description="Don't clear local ped's wanted level when remote ped in the same car has his wanted level cleared by script."/>
+    <enumval name="BlockAutoSwapOnWeaponPickups" value="416" description="Block auto weapon swaps for weapon pickups."/>
+    <enumval name="ThisPedIsATargetPriorityForAI" value="417" description="Increase AI targeting score for peds with this flag."/>
+    <enumval name="IsSwitchingHelmetVisor" value="418" description="Indicates that ped is playing switch visor up/down anim"/>
+    <enumval name="ForceHelmetVisorSwitch" value="419" description="Forces ped to do a visor helmet switch if able to."/>
+    <enumval name="IsPerformingVehicleMelee" value="420" description="Indicates that ped is performing vehicle melee action."/>
+    <enumval name="UseOverrideFootstepPtFx" value="421" description="The ped should use any override footstep effects that are set up."/>
+    <enumval name="DisableVehicleCombat" value="422" description="Disables vehicle combat."/>
+    <enumval name="TreatAsFriendlyForTargetingAndDamage" value="423" description="Prevents this ped from being locked on and blocks ability to damage / fire at ped."/>
+    <enumval name="AllowBikeAlternateAnimations" value="424" description="Allows players on motorcycles to use the alternate animation set when available."/>
+    <enumval name="TreatAsFriendlyForTargetingAndDamageNonSynced" value="425" description="Prevents this ped from being locked on and blocks ability to damage / fire at ped. This flag is not synced, so will only work on machine that set it"/>
+    <enumval name="UseLockpickVehicleEntryAnimations" value="426" description="When set, will attempt to use lockpick animations designed for Franklin in SP mode when breaking into a car."/>
+    <enumval name="IgnoreInteriorCheckForSprinting" value="427" description="When set, player will be able to sprint inside interriors even if it is tagged to prevent it."/>
+    <enumval name="SwatHeliSpawnWithinLastSpottedLocation" value="428" description="When set, swat helicopters will spawn within last spotted location instead of actual ped location (and target is a player)."/>
+    <enumval name="DisableStartEngine" value="429" description="prevents ped from playing start engine anims (and turning engine on)"/>
+    <enumval name="IgnoreBeingOnFire" value="430" description="makes ped ignore being on fire (fleeing, reacting to CEventOnFire event)"/>
+    <enumval name="DisableTurretOrRearSeatPreference" value="431" description="Disables turret seat and activity seat preference for vehicle entry for local player"/>
+    <enumval name="DisableWantedHelicopterSpawning" value="432" description="Will not spawn wanted helicopters to chase after this target"/>
+    <enumval name="UseTargetPerceptionForCreatingAimedAtEvents" value="433" description="Will only create aimed at events if player is within normal perception of the target"/>
+    <enumval name="DisableHomingMissileLockon" value="434" description="Will prevent homing lockon on this ped"/>
+    <enumval name="ForceIgnoreMaxMeleeActiveSupportCombatants" value="435" description="Ignore max number of active support combatants and let ped join them as such"/>
+    <enumval name="StayInDefensiveAreaWhenInVehicle" value="436" description="Will try to stay within set defensive area while driving a vehicle"/>
+    <enumval name="DontShoutTargetPosition" value="437" description="Will prevent the ped from communicating target position to all other friendly peds"/>
+    <enumval name="DisableHelmetArmor" value="438" description="Will apply full headshot damage, regardless if ped has a helmet (or armored one)"/>
+    <enumval name="CreatedByConcealedPlayer" value="439" description="Marks a ped that was created by concealed player from marked up scenarios"/>
+    <enumval name="PermanentlyDisablePotentialToBeWalkedIntoResponse" value="440" description="Synced and permanent version of CPED_CONFIG_FLAG_DisablePotentialToBeWalkedIntoResponse"/>
+    <enumval name="PreventVehExitDueToInvalidWeapon" value="441" description="Will prevent ped from automatically being forced out of vehicle due to weapon being invalid (e.g. turret seats after going into water)"/>
+    <enumval name="IgnoreNetSessionFriendlyFireCheckForAllowDamage" value="442" description="Will ignore the friendly fire setting set by NETWORK_SET_FRIENDLY_FIRE_OPTION when checking if ped can be damaged"/>
+    <enumval name="DontLeaveCombatIfTargetPlayerIsAttackedByPolice" value="443" description="Will make ped stay in combat even if the player hes targeting starts being attacked by cops"/>
+    <enumval name="CheckLockedBeforeWarp" value="444" description="Will check when entering a vehicle if it is locked before warping"/>
+    <enumval name="DontShuffleInVehicleToMakeRoom" value="445" description="Will prevent a player from shuffling across to make room if another player is entering from the same side"/>
+    <enumval name="GiveWeaponOnGetup" value="446" description="Will give the ped a weapon to use once their weapon is removed for getups"/>
+    <enumval name="DontHitVehicleWithProjectiles" value="447" description="Ped fired projectiles will ignore the vehicle they are in"/>
+    <enumval name="DisableForcedEntryForOpenVehiclesFromTryLockedDoor" value="448" description="Will prevent ped from forcing entry into cars that are open from TryLockedDoor state"/>
+    <enumval name="FiresDummyRockets" value="449" description="This ped will fire rockets that explode when close to its target, and won't affect it"/>
+    <enumval name="PedIsArresting" value="450" description="Is the ped currently preforming an arrest"/>
+    <enumval name="IsDecoyPed" value="451" description="Will make this ped a decoy ped that will focus targeting"/>
+    <enumval name="HasEstablishedDecoy" value="452" description="This ped has created a decoy"/>
+    <enumval name="BlockDispatchedHelicoptersFromLanding" value="453" description="Will prevent dispatched helicopters from landing and dropping off peds"/>
+    <enumval name="DontCryForHelpOnStun" value="454" description="Will prevent peds from crying for help when shot with the stun gun"/>
+    <enumval name="HitByTranqWeapon" value="455" description="Tranq weapons are handled differently in terms of damage. This triggers that logic"/>
+    <enumval name="CanBeIncapacitated" value="456" description="If set, the ped may be incapacitated"/>
+    <enumval name="ForcedAimFromArrest" value="457" description="If set, we will always behave like we have the aim trigger pressed"/>
+    <enumval name="DontChangeTargetFromMelee" value="458" description="If set, we wont set a new target after a melee attack"/>
+    <enumval name="DisableHealthRegenerationWhenStunned" value="459" description="Used to disable health regeneration when damaged with the stun gun in MP"/>
+    <enumval name="RagdollFloatsIndefinitely" value="460" description="Prevents a dead ped from sinking"/>
+    <enumval name="BlockElectricWeaponDamage" value="461" description="Blocks electric weapon damage"/>
+  </enumdef>
+</ParserSchema>
