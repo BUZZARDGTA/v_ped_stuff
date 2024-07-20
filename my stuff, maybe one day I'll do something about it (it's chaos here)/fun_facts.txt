@@ -1,0 +1,26 @@
+Note:
+There could be more "old name / R* employee lazy" entries,
+I could technically find all of them if someone wants me to.
+I just randomely found those while doing my essential testings.
+
+PCF:
+    ["125"] = "IsDrunk" -- > has been removed
+
+    ["20"] = "AllowMedicsToAttend" --> old name / R* employee lazy
+    ["26"] = "DontAllowToBeDraggedOutOfVehicle" --> old name / R* employee lazy
+    ["114"] = "ForceControlledKnockout" --> old name / R* employee lazy
+    ["115"] = "FallsOutOfVehicleWhenKilled" --> old name / R* employee lazy
+    ["169"] = "CannotBeTargeted" --> old name / R* employee lazy
+    ["198"] = "DontReactivateRagdollOnPedCollisionWhenDead" --> old name / R* employee lazy
+    ["259"] = "AllowMissionPedToUseInjuredMovement" --> old name / R* employee lazy
+    ["300"] = "ShouldThrowSmokeGrenadeNow" --> old name / R* employee lazy
+    ["333"] = "ForceNoTimesliceIntelligenceUpdate" --> old name / R* employee lazy
+    ["381"] = "DisableAutoEquipHelmetsInAicraft" --> old name / R* employee lazy
+    ["451"] = "DecoyPed" --> old name / R* employee lazy
+
+PRF:
+    ["58"] = "DisableSecondaryAnimationTasks" --> old name / R* employee lazy
+    ["60"] = "SearchForClosestDoor" --> old name / R* employee lazy
+    ["124"] = "CannotBeTargetedByAI" --> old name / R* employee lazy
+    ["156"] = "InstantBlendToAim" --> old name / R* employee lazy
+    ["166"] = "MakeHeadInvisble" --> old name / R* employee lazy
