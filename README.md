@@ -3,7 +3,7 @@
   <img src="https://img.shields.io/badge/Game_Build-3274-green" alt="Game Build">
 </p>
 
-# GET_IS_TASK_ACTIVE (eTask)
+# GET_IS_TASK_ACTIVE
 
 | [alloc8or.re](https://alloc8or.re/gta5/nativedb/)                                   | [nativedb.dotindustries.dev](https://nativedb.dotindustries.dev/gta5/natives)                  | [docs.fivem.net](https://docs.fivem.net/natives/) |
 | ----------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
