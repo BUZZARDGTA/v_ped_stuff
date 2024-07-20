@@ -2,7 +2,7 @@
 2   -- weapon wheel you cannot select any firearm but you can select a few knifes (not all of them).
 18  -- in first person your weapon camera view is a bit shallower, however it does some weird camera movements restrictions.
 19  -- same then 18 but without the weird camera movements restrictions.
-24  -- Blocks the weapon wheel.
+24  -- PRF_TemporarilyBlockWeaponSwitching // Blocks the weapon wheel.
 33  -- Crosshair like when you aim at a dead ped.
 46  -- Prevent ped from jumping
 49  -- shoot 2 bullets/grenades/other stuff from weapons instead of 1, works with any firearms except projectiles
@@ -35,15 +35,18 @@
 208 -- first person prevent ped weapon aiming
 243 -- idk it's doing some weird shit especially in first person, it looks down basically.
 246 -- idk aiming slowly and weirdly. maybe see 364
+254 -- PRF_DoingCombatRoll // Ped is performing a combat roll
 260 -- first person force aim
 269 -- prevents your ped from moving arms / hands / try on a bike is fun, also while aiming.
 298 -- idk it glitches with ped and radar when walking around, it also forces walking once aiming + movement input received.
 299 -- idk it glitches your hands with a weapon equiped, try shooting and then stop u'll see a weird anim.
 301 -- idk first person 360 spinning loop
+303 -- // PRF_IsReloading // unsure but it all looks like it's this one.
 309 -- PRF_DisableInVehicleActions // Prevents ped from doing in vehicle actions like closing door, hotwiring, starting engine, putting on helmet etc
 329 -- mhmm how to document that one ... When you walks, forces the ped to walk in literally front of you directly. Makes it funnier with first person aiming (u'll probably look really amusing to other players)
 332 -- idk it's just glitching your hand in first person view with a weapon aiming
 339 -- PRF_DontQuitMotionAiming // idk it's doing some weird shit when you're aiming it doesn't let you quit aiming.
+352 -- PRF_BreakTargetLock // Don't allow other players to aim you (untested because need a controller friend lmfao)
 360 -- Look at your face now lmfao, only works on a Male char.
 361 -- Prevents you from using the weapon wheel. on a vehicle you are restricted to your pistol
 363 -- PRF_IsClosingVehicleDoor // Ped is closing a vehicle door
@@ -54,9 +57,10 @@
 374 -- first person weird effect on weapon's handling.
 392 + 435 -- Both of them together, in third person ped is punching the the car's steering wheel, same in first person but you also hear the horning sometimes. It also shakes your cam lmfao
 393 + 437 -- Both of them together, prevents you from aiming in first person
-395 -- is ped reloading IsReloading
+395 -- // PRF_BlockCameraSwitching // You cannot switch from Third to First or vis versa camera anymore when this flag is set.
 402 -- your whole ped will go faster. (run, shoot, etc)
 403 -- in first person can't see the pilot helmet vision thingy anymore
 408 -- in first person your weapon is looking higher then usual
 417 -- PRF_DisableMeleeWeaponSelection // Prvents you from selecting a melee weapon.
+431 -- PRF_CheckFPSSwitchInCameraUpdate // idk, I just know it's that one because I reverse engineered PRF_DoingCombatRoll's source code (254)
 439 -- PRF_InvertLookAroundControls // Inverts lookaround controls (right stick / mouse) for this player
