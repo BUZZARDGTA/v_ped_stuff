@@ -3,6 +3,15 @@
   <img src="https://img.shields.io/badge/Game_Build-3274-green" alt="Game Build">
 </p>
 
+**Without being pretentious, my repository offers the most up-to-date enums.**
+<br>
+**I believe it’s the most comprehensive resource available online, unmatched in quality.**
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Online_Version-1.69-green" alt="Online Version">
+  <img src="https://img.shields.io/badge/Game_Build-3274-green" alt="Game Build">
+</p>
+
 # GET_IS_TASK_ACTIVE
 
 | [IB_U_Z_Z_A_R_Dl](https://github.com/Illegal-Services) | [alloc8or.re](https://alloc8or.re/gta5/nativedb/)                                   | [nativedb.dotindustries.dev](https://nativedb.dotindustries.dev/gta5/natives)                  | [docs.fivem.net](https://docs.fivem.net/natives/) |
