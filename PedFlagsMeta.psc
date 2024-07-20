@@ -883,7 +883,7 @@
     <enumval name="CPED_RESET_FLAG_AllowCloneForcePostCameraAIUpdate"/>
     <enumval name="CPED_RESET_FLAG_DisableHighHeels" description="Force the high heels DOF to be 0"/>
     <enumval name="CPED_RESET_FLAG_BreakTargetLock" description="Force lock on to break for this ped"/>
-      <enumval name="CPED_RESET_FLAG_DontUseSprintEnergy" description="Player does not get tired when sprinting"/>
+    <enumval name="CPED_RESET_FLAG_DontUseSprintEnergy" description="Player does not get tired when sprinting"/>
     <enumval name="CPED_RESET_FLAG_DontChangeHorseMbr" description="Similar to CPED_RESET_FLAG_DontChangeMbrInSimpleMoveDoNothing, but for horses."/>
     <enumval name="CPED_RESET_FLAG_DisableMaterialCollisionDamage" description="Don't be damaged by touching dangerous material (e.g. electic generator)"/>
     <enumval name="CPED_RESET_FLAG_DisableMPFriendlyLockon" description="Don't target friendly players in MP"/>
@@ -967,7 +967,7 @@
     <enumval name="CPED_RESET_FLAG_InflictedDamageThisFrame" description="Inflicted damage this frame"/>
     <enumval name="CPED_RESET_FLAG_UseFirstPersonVehicleAnimsIfFPSCamNotDominant" description="allow FPS vehicle anims even if FPS camera isn't dominant"/>
     <enumval name="CPED_RESET_FLAG_ForceIntoStandPoseOnJetski" description="puts the ped in a standing pose on the jetski"/>
-   <enumval name="CPED_RESET_FLAG_InAirDefenceSphere" description="Ped is located inside an air defence sphere."/>
+    <enumval name="CPED_RESET_FLAG_InAirDefenceSphere" description="Ped is located inside an air defence sphere."/>
     <enumval name="CPED_RESET_FLAG_SuppressTakedownMeleeActions" description="This will suppress all takedown melee actions (RA_IS_TAKEDOWN or RA_IS_STEALTH_KILL, defined in action_table.meta)"/>
     <enumval name="CPED_RESET_FLAG_InvertLookAroundControls" description="Inverts lookaround controls (right stick / mouse) for this player, for this frame."/>
     <enumval name="CPED_RESET_FLAG_IgnoreCombatManager" description="Allows attacking ped to engage another entity without waiting for its turn (if there's multiple attackers)."/>
