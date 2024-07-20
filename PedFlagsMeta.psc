@@ -585,14 +585,14 @@
     <enumval name="CPED_RESET_FLAG_ForcePedToStrafe" description="forces a ped to strafe"/>
     <enumval name="CPED_RESET_FLAG_ForceMeleeStrafingAnims" description="forces a ped to use the melee strafing anims when strafing"/>
 
-    <enumval name ="CPED_RESET_FLAG_UseKinematicPhysics" description ="To be used by scripts - puts the ped into Kinematic physics mode. In this mode the ped will push other objects our of the way, but not be physically affected by them"/>
+    <enumval name="CPED_RESET_FLAG_UseKinematicPhysics" description ="To be used by scripts - puts the ped into Kinematic physics mode. In this mode the ped will push other objects our of the way, but not be physically affected by them"/>
 
-    <enumval name ="CPED_RESET_FLAG_ClearLockonTarget" description = "Clears the player's lockon target next frame"/>
-    <enumval name ="CPED_RESET_FLAG_CanPedSeeHatedPedBeingUsed" description = "Activates can ped see hated ped generating events even when blocking of non-temp events is on"/>
+    <enumval name="CPED_RESET_FLAG_ClearLockonTarget" description="Clears the player's lockon target next frame"/>
+    <enumval name="CPED_RESET_FLAG_CanPedSeeHatedPedBeingUsed" description="Activates can ped see hated ped generating events even when blocking of non-temp events is on"/>
 
-    <enumval name ="CPED_RESET_FLAG_InstantBlendToAim" description ="Makes the ped performa an instant blend to aim if starting a gun task this frame"/>
+    <enumval name="CPED_RESET_FLAG_InstantBlendToAim" description ="Makes the ped performa an instant blend to aim if starting a gun task this frame"/>
 
-    <enumval name ="CPED_RESET_FLAG_ForceImprovedIdleTurns" description ="Forces the ped to use an improved idle turning system that should help him turn to face more quickly"/>
+    <enumval name="CPED_RESET_FLAG_ForceImprovedIdleTurns" description ="Forces the ped to use an improved idle turning system that should help him turn to face more quickly"/>
     <enumval name="CPED_RESET_FLAG_HitPedWithWeapon" description="set when damage is inflicted by this ped on another ped"/>
 
     <enumval name="CPED_RESET_FLAG_ForcePedToUseScripCamHeading" description="forces a ped to the scripted camera heading instead of gameplay"/>
@@ -642,7 +642,7 @@
     <enumval name="CPED_RESET_FLAG_IsInStationaryScenario" description="In a scenario and not moving"/>
     <enumval name="CPED_RESET_FLAG_TemporarilyBlockWeaponEquipping" description="Stop weapon equipping"/>
     <enumval name="CPED_RESET_FLAG_CoverOutroRunning" description="TASK_AIM_GUN_FROM_COVER_OUTRO"/>
-    <enumval name="CPED_RESET_FLAG_DisableSeeThroughChecksWhenTargeting" description = "Any targeting LoS checks will fail if any materials with 'see through' materials found."/>
+    <enumval name="CPED_RESET_FLAG_DisableSeeThroughChecksWhenTargeting" description="Any targeting LoS checks will fail if any materials with 'see through' materials found."/>
     <enumval name="CPED_RESET_FLAG_PuttingOnHelmet" description=" putting on helmet"/>
     <enumval name="CPED_RESET_FLAG_AllowPullingPedOntoRoute" description=" allows goto task to apply heading in order to pull a ped back onto their route"/>
     <enumval name="CPED_RESET_FLAG_ApplyAnimatedVelocityWhilstAttached" description="Allows attachment offsets to be updated from animated velocities"/>
