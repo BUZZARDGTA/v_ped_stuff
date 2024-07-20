@@ -477,7 +477,7 @@ local playerPed = player.player_ped()
 local base_flags = {}
 
 -- Get initial set of flags
-for i = 0, 1000 do
+for i = 0, 459 do
     if NATIVES.PED.GET_PED_RESET_FLAG(playerPed, i) then
         base_flags[i] = true
     end
@@ -489,7 +489,7 @@ menu.clear_all_notifications()
 create_tick_handler(function()
     local playerPed = player.player_ped()
 
-    for i = 0, 1000 do
+    for i = 0, 459 do
         if NATIVES.PED.GET_PED_RESET_FLAG(playerPed, i) then
             if not base_flags[i] then
                 menu.notify("New ped reset flag: " .. PRF_TABLE[tostring(i)] .. " (" .. i .. ")", "", 6, 0)

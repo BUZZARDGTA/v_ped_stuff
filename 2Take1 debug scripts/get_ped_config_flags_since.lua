@@ -479,7 +479,7 @@ local playerPed = player.player_ped()
 local base_flags = {}
 
 -- Get initial set of flags
-for i = 0, 1000 do
+for i = 0, 461 do
     if NATIVES.PED.GET_PED_CONFIG_FLAG(playerPed, i, true) then
         base_flags[i] = true
     end
@@ -491,7 +491,7 @@ menu.clear_all_notifications()
 create_tick_handler(function()
     local playerPed = player.player_ped()
 
-    for i = 0, 1000 do
+    for i = 0, 461 do
         if NATIVES.PED.GET_PED_CONFIG_FLAG(playerPed, i, true) then
             if not base_flags[i] then
                 menu.notify("New ped config flag: " .. PCF_TABLE[tostring(i)] .. " (" .. i .. ")", "", 6, 0)

@@ -466,7 +466,7 @@ local PRF_TABLE <const> = {
 local text = "PED RESET FLAGS:"
 local playerPed = player.player_ped()
 
-for i = 0, 1000 do
+for i = 0, 459 do
     -- https://alloc8or.re/gta5/nativedb/?n=0xC1E8A365BF3B29F2
     if NATIVES.PED.GET_PED_RESET_FLAG(playerPed, i) then
         text = text .. "\n" .. i
