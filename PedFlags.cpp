@@ -11,227 +11,227 @@
 
 AI_OPTIMISATIONS();
 
-CompileTimeAssert(CPED_RESET_FLAG_DisablePlayerJumping == 46);					// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_ScriptDisableSecondaryAnimationTasks == 58);	// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_SupressGunfireEvents == 62);					// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_InfiniteStamina == 63);						// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_BlockWeaponReactionsUnlessDead == 64);		// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_ForcePlayerFiring == 65);						// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_ForcePeekFromCover == 67);					// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_ForcePedToStrafe == 69);						// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_UseKinematicPhysics==71);						// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_ClearLockonTarget == 72);						// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_ForcePedToUseScripCamHeading == 77);			// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableCrouchWhileInCover == 88);				// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_ForceRunningSpeedForFragSmashing == 91);		// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_ExtraLongWeaponRange == 95);					// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_ForcePlayerToEnterVehicleThroughDirectDoorOnly == 96);	// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_TaskCullExtraFarAway == 97);					// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisablePlayerAutoVaulting == 102);			// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableGaitReduction == 103);					// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_UseBulletPenetration == 107);					// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_ForceAimAtHead == 108);						// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableSeeThroughChecksWhenTargeting == 112);	// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_PanicInVehicle == 120);						// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_CannotBeTargeted == 124);						// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_ForceInjuryAfterStunned == 126);				// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_BlockWeaponFire == 128);						// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableWeaponLaserSight == 130);				// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableArmSolver == 134);						// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableBodyLookSolver == 186);				// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableHeadSolver == 135);					// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableLegSolver ==136);						// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableTorsoSolver == 119);					// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableTorsoReactSolver == 137);				// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableRootSlopeFixupSolver == 148);			// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_SuspendInitiatedMeleeActions == 149);			// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_SuppressInAirEvent == 150);					// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_SuppressLethalMeleeActions == 155);			// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_InstantBlendToAimFromScript == 156);			// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_MakeHeadInvisible == 166);					// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_NoAutoRunWhenFiring == 167);					// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableTakeOffParachutePack == 177);			// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_ForceCombatTaunt == 179);						// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_IgnoreCombatTaunts == 180);					// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_PreventAllMeleeTakedowns == 187);				// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_PreventFailedMeleeTakedowns == 188);			// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_UseTighterAvoidanceSettings == 190);			// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableDropDowns == 195);						// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableTakeOffScubaGear == 197);				// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableCellphoneAnimations == 198);			// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableActionMode == 200);					// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_UseHeadOrientationForPerception == 206);		// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableJumpRagdollOnCollision == 210);		// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableParachuting == 217);					// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_KeepParachutePackOnAfterTeleport == 222);		// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DontRaiseFistsWhenLockedOn == 223);			// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_PreferMeleeBodyIkHitReaction == 224);			// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableFriendlyGunReactAudio == 227);			// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableAgitationTriggers == 228);				// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableNMForRiverRapids == 234);				// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_PreventGoingIntoStillInVehicleState == 236);	// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_UseFastEnterExitVehicleRates == 237);			// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableAgitation == 239);						// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableTalk == 240);							// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_UseProbeSlopeStairsDetection == 247);			// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableVehicleDamageReactions == 248);		// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisablePotentialBlastReactions == 249);		// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_OnlyAllowLeftArmDoorIk == 250);				// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_OnlyAllowRightArmDoorIk == 251);				// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableBodyRecoilSolver == 255);				// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_ForceEnableFlashLightForAI == 258);			// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableCombatAudio == 262);					// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableCoverAudio == 263);					// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_InsideEnclosedSearchRegion == 267);			// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_EnablePressAndReleaseDives == 271);			// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_OnlyExitVehicleOnButtonRelease == 272);		// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableTorsoVehicleSolver == 275);			// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_ConsiderAsPlayerCoverThreatWithoutLOS == 282);// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_BlockCustomAIEntryAnims == 283);				// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_IgnoreVehicleEntryCollisionTests == 284);		// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_PreventGoingIntoShuntInVehicleState == 287);	// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_EnableVoiceDrivenMouthMovement == 302);		// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_UseTighterEnterVehicleSettings == 304);		// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_InRaceMode == 305);							// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableAmbientMeleeMoves == 306);				// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_AllowSpecialAbilityInVehicle == 308);			// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableInVehicleActions == 309);				// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_ForceInstantSteeringWheelIkBlendIn == 310);	// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_IgnoreThreatEngagePlayerCoverBonus == 311);	// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DontCloseVehicleDoor == 313);					// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_SkipExplosionOcclusion == 314);				// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_MeleeStrikeAgainstNonPed == 316);				// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_IgnoreNavigationForDoorArmIK == 317);			// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableAimingWhileParachuting == 318);		// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisablePedCollisionWithPedEvent == 319);		// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_IgnoreVelocityWhenClosingVehicleDoor == 320);	// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_SkipOnFootIdleIntro == 321);					// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DontWalkRoundObjects == 322);					// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisablePedEnteredMyVehicleEvents == 323);		// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableInVehiclePedVariationBlocking == 326);	// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_ReduceEffectOfVehicleRamControlLoss == 327);	// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisablePlayerMeleeFriendlyAttacks == 328);	// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_IsMeleeTargetUnreachable == 330);				// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableAutoForceOutWhenBlowingUpCar == 331);	// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableDustOffAnims == 334);					// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableMeleeHitReactions == 335);				// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_AllowHeadPropInVehicle == 337); 				// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DontQuitMotionAiming == 339); 				// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_OpenDoorArmIK == 342);						// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_UseTighterTurnSettingsForScript == 343); 		// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableVoiceDrivenMouthMovement == 346);		// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_SteerIntoSkids == 347);						// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_AllowOpenDoorIkBeforeFullMovement == 348);	// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_AllowHomingMissileLockOnInVehicle == 349);	// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_AllowCloneForcePostCameraAIUpdate == 350);	// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableHighHeels == 351);						// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableMaterialCollisionDamage == 355);		// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableMPFriendlyLockon == 356);				// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableMPFriendlyLethalMeleeActions == 357);	// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_IfLeaderStopsSeekCover == 358);				// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_UseInteriorCapsuleSettings == 362);			// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_IsClosingVehicleDoor == 363);					// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_PlayAgitatedAnimsInVehicle == 372);			// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_IsSeatShuffling == 373);						// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_AllowControlRadioInAnySeatInMP == 376);		// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableSpycarTransformation == 377);			// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_ForceExtraLongBlendInForPedSkipIdleCoverTransition == 381);	// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableAssistedAimLockon == 390);				// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_NoCollisionDamageFromOtherPeds == 394);		// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DontSuppressUseNavMeshToNavigateToVehicleDoorWhenVehicleInWater == 398);	// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_InstantBlendToAimNoSettle == 401);			// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_ForceScriptedCameraLowCoverAngleWhenEnteringCover == 406);	// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableMeleeWeaponSelection == 417);			// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_UseBulletPenetrationForGlass == 420);			// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_CanBePinnedByFriendlyBullets == 423);			// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableSpikeStripRoadBlocks == 425);			// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_IsLowerPriorityMeleeTarget == 428);			// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_ForceScanForEventsThisFrame == 429);			// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_ForceAutoEquipHelmetsInAicraft == 432);		// "Reset out of sync with commands_ped.sch
-CompileTimeAssert(CPED_RESET_FLAG_UseFirstPersonVehicleAnimsIfFPSCamNotDominant == 435);	// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_ForceIntoStandPoseOnJetski == 436);			// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_SuppressTakedownMeleeActions == 438);			// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_InvertLookAroundControls == 439);				// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_IgnoreCombatManager == 440);					// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_UseBlendedCamerasOnUpdateFpsCameraRelativeMatrix == 441);	// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_ForceMeleeCounter == 442);					// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_WasHitByVehicleMelee == 443);					// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_SuppressNavmeshForEnterVehicleTask == 444);	// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableShallowWaterBikeJumpOutThisFrame == 445);	// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisablePlayerCombatRoll == 446);				// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_IgnoreDetachSafePositionCheck == 447);		// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_DisableEasyLadderConditions == 448);		// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_PlayerIgnoresScenarioSpawnRestrictions == 449);		// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_UsingDrone == 450);		// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_UseScriptedWeaponFirePosition == 452);		// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_UseExtendedRagdollCollisionCalculator == 454);// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_PreventLockonToFriendlyPlayers == 455);		// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_PreventAllStealthKills == 457);			    // "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_BlockFallTaskFromExplosionDamage == 458);		// "Reset flags out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_RESET_FLAG_AllowPedRearEntry == 459);					// "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisablePlayerJumping == 46); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_ScriptDisableSecondaryAnimationTasks == 58); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_SupressGunfireEvents == 62); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_InfiniteStamina == 63); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_BlockWeaponReactionsUnlessDead == 64); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_ForcePlayerFiring == 65); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_ForcePeekFromCover == 67); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_ForcePedToStrafe == 69); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_UseKinematicPhysics==71); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_ClearLockonTarget == 72); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_ForcePedToUseScripCamHeading == 77); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableCrouchWhileInCover == 88); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_ForceRunningSpeedForFragSmashing == 91); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_ExtraLongWeaponRange == 95); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_ForcePlayerToEnterVehicleThroughDirectDoorOnly == 96); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_TaskCullExtraFarAway == 97); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisablePlayerAutoVaulting == 102); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableGaitReduction == 103); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_UseBulletPenetration == 107); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_ForceAimAtHead == 108); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableSeeThroughChecksWhenTargeting == 112); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_PanicInVehicle == 120); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_CannotBeTargeted == 124); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_ForceInjuryAfterStunned == 126); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_BlockWeaponFire == 128); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableWeaponLaserSight == 130); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableArmSolver == 134); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableBodyLookSolver == 186); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableHeadSolver == 135); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableLegSolver ==136); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableTorsoSolver == 119); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableTorsoReactSolver == 137); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableRootSlopeFixupSolver == 148); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_SuspendInitiatedMeleeActions == 149); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_SuppressInAirEvent == 150); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_SuppressLethalMeleeActions == 155); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_InstantBlendToAimFromScript == 156); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_MakeHeadInvisible == 166); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_NoAutoRunWhenFiring == 167); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableTakeOffParachutePack == 177); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_ForceCombatTaunt == 179); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_IgnoreCombatTaunts == 180); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_PreventAllMeleeTakedowns == 187); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_PreventFailedMeleeTakedowns == 188); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_UseTighterAvoidanceSettings == 190); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableDropDowns == 195); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableTakeOffScubaGear == 197); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableCellphoneAnimations == 198); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableActionMode == 200); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_UseHeadOrientationForPerception == 206); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableJumpRagdollOnCollision == 210); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableParachuting == 217); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_KeepParachutePackOnAfterTeleport == 222); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DontRaiseFistsWhenLockedOn == 223); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_PreferMeleeBodyIkHitReaction == 224); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableFriendlyGunReactAudio == 227); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableAgitationTriggers == 228); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableNMForRiverRapids == 234); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_PreventGoingIntoStillInVehicleState == 236); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_UseFastEnterExitVehicleRates == 237); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableAgitation == 239); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableTalk == 240); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_UseProbeSlopeStairsDetection == 247); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableVehicleDamageReactions == 248); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisablePotentialBlastReactions == 249); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_OnlyAllowLeftArmDoorIk == 250); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_OnlyAllowRightArmDoorIk == 251); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableBodyRecoilSolver == 255); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_ForceEnableFlashLightForAI == 258); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableCombatAudio == 262); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableCoverAudio == 263); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_InsideEnclosedSearchRegion == 267); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_EnablePressAndReleaseDives == 271); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_OnlyExitVehicleOnButtonRelease == 272); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableTorsoVehicleSolver == 275); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_ConsiderAsPlayerCoverThreatWithoutLOS == 282); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_BlockCustomAIEntryAnims == 283); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_IgnoreVehicleEntryCollisionTests == 284); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_PreventGoingIntoShuntInVehicleState == 287); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_EnableVoiceDrivenMouthMovement == 302); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_UseTighterEnterVehicleSettings == 304); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_InRaceMode == 305); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableAmbientMeleeMoves == 306); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_AllowSpecialAbilityInVehicle == 308); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableInVehicleActions == 309); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_ForceInstantSteeringWheelIkBlendIn == 310); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_IgnoreThreatEngagePlayerCoverBonus == 311); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DontCloseVehicleDoor == 313); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_SkipExplosionOcclusion == 314); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_MeleeStrikeAgainstNonPed == 316); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_IgnoreNavigationForDoorArmIK == 317); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableAimingWhileParachuting == 318); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisablePedCollisionWithPedEvent == 319); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_IgnoreVelocityWhenClosingVehicleDoor == 320); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_SkipOnFootIdleIntro == 321); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DontWalkRoundObjects == 322); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisablePedEnteredMyVehicleEvents == 323); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableInVehiclePedVariationBlocking == 326); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_ReduceEffectOfVehicleRamControlLoss == 327); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisablePlayerMeleeFriendlyAttacks == 328); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_IsMeleeTargetUnreachable == 330); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableAutoForceOutWhenBlowingUpCar == 331); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableDustOffAnims == 334); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableMeleeHitReactions == 335); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_AllowHeadPropInVehicle == 337); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DontQuitMotionAiming == 339); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_OpenDoorArmIK == 342); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_UseTighterTurnSettingsForScript == 343); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableVoiceDrivenMouthMovement == 346); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_SteerIntoSkids == 347); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_AllowOpenDoorIkBeforeFullMovement == 348); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_AllowHomingMissileLockOnInVehicle == 349); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_AllowCloneForcePostCameraAIUpdate == 350); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableHighHeels == 351); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableMaterialCollisionDamage == 355); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableMPFriendlyLockon == 356); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableMPFriendlyLethalMeleeActions == 357); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_IfLeaderStopsSeekCover == 358); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_UseInteriorCapsuleSettings == 362); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_IsClosingVehicleDoor == 363); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_PlayAgitatedAnimsInVehicle == 372); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_IsSeatShuffling == 373); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_AllowControlRadioInAnySeatInMP == 376); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableSpycarTransformation == 377); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_ForceExtraLongBlendInForPedSkipIdleCoverTransition == 381); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableAssistedAimLockon == 390); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_NoCollisionDamageFromOtherPeds == 394); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DontSuppressUseNavMeshToNavigateToVehicleDoorWhenVehicleInWater == 398); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_InstantBlendToAimNoSettle == 401); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_ForceScriptedCameraLowCoverAngleWhenEnteringCover == 406); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableMeleeWeaponSelection == 417); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_UseBulletPenetrationForGlass == 420); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_CanBePinnedByFriendlyBullets == 423); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableSpikeStripRoadBlocks == 425); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_IsLowerPriorityMeleeTarget == 428); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_ForceScanForEventsThisFrame == 429); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_ForceAutoEquipHelmetsInAicraft == 432); // "Reset out of sync with commands_ped.sch
+CompileTimeAssert(CPED_RESET_FLAG_UseFirstPersonVehicleAnimsIfFPSCamNotDominant == 435); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_ForceIntoStandPoseOnJetski == 436); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_SuppressTakedownMeleeActions == 438); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_InvertLookAroundControls == 439); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_IgnoreCombatManager == 440); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_UseBlendedCamerasOnUpdateFpsCameraRelativeMatrix == 441); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_ForceMeleeCounter == 442); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_WasHitByVehicleMelee == 443); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_SuppressNavmeshForEnterVehicleTask == 444); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableShallowWaterBikeJumpOutThisFrame == 445); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisablePlayerCombatRoll == 446); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_IgnoreDetachSafePositionCheck == 447); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_DisableEasyLadderConditions == 448); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_PlayerIgnoresScenarioSpawnRestrictions == 449); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_UsingDrone == 450); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_UseScriptedWeaponFirePosition == 452); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_UseExtendedRagdollCollisionCalculator == 454); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_PreventLockonToFriendlyPlayers == 455); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_PreventAllStealthKills == 457); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_BlockFallTaskFromExplosionDamage == 458); // "Reset flags out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_RESET_FLAG_AllowPedRearEntry == 459); // "Reset flags out of sync with commands_ped.sch"
 
 
-CompileTimeAssert(CPED_CONFIG_FLAG_AllowMedicsToReviveMe == 20);				// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_GetOutUndriveableVehicle == 29);				// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_WillFlyThroughWindscreen == 32);				// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_DontInfluenceWantedLevel == 42);				// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_DisableLockonToRandomPeds == 44);			// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_AllowLockonToFriendlyPlayers == 45);			// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_DisableHornAudioWhenDead == 46);				// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_IsAimingGun == 78);							// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_ForcedAim == 101);							// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_KeepWeaponHolsteredUnlessFired == 113);		// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_ForceScriptControlledKnockout == 114);		// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_FallOutOfVehicleWhenKilled == 115);			// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_GetOutBurningVehicle == 116);				// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_RunFromFiresAndExplosions == 118);			// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_TreatAsPlayerDuringTargeting == 119);		// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_IsHandCuffed == 120);						// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_IsAnkleCuffed == 121);						// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_DisableMelee == 122);						// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_DisableUnarmedDrivebys == 123);				// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_JustGetsPulledOutWhenElectrocuted == 124);	// "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_AllowMedicsToReviveMe == 20); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_GetOutUndriveableVehicle == 29); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_WillFlyThroughWindscreen == 32); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_DontInfluenceWantedLevel == 42); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_DisableLockonToRandomPeds == 44); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_AllowLockonToFriendlyPlayers == 45); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_DisableHornAudioWhenDead == 46); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_IsAimingGun == 78); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_ForcedAim == 101); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_KeepWeaponHolsteredUnlessFired == 113); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_ForceScriptControlledKnockout == 114); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_FallOutOfVehicleWhenKilled == 115); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_GetOutBurningVehicle == 116); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_RunFromFiresAndExplosions == 118); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_TreatAsPlayerDuringTargeting == 119); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_IsHandCuffed == 120); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_IsAnkleCuffed == 121); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_DisableMelee == 122); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_DisableUnarmedDrivebys == 123); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_JustGetsPulledOutWhenElectrocuted == 124); // "Config out of sync with commands_ped.sch"
 #if ENABLE_DRUNK
-CompileTimeAssert(CPED_CONFIG_FLAG_IsDrunk == 125);								// "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_IsDrunk == 125); // "Config out of sync with commands_ped.sch"
 #endif // ENABLE_DRUNK
 CompileTimeAssert(CPED_CONFIG_FLAG_WillNotHotwireLawEnforcementVehicle == 126); // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_WillCommandeerRatherThanJack == 127);		// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_ForcePedToFaceLeftInCover == 129);			// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_ForcePedToFaceRightInCover == 130);			// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_BlockPedFromTurningInCover == 131);			// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_KeepRelationshipGroupAfterCleanUp == 132);	// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_ForcePedToBeDragged == 133);					// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_PreventPedFromReactingToBeingJacked == 134);	// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_IsScuba == 135);								// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_RemoveDeadExtraFarAway == 137);				// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_ArrestResult == 139);						// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_CanAttackFriendly == 140);					// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_WillJackAnyPlayer == 141);					// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_WillJackWantedPlayersRatherThanStealCar == 144);	// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_DisableLadderClimbing == 146);				// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_CanActivateRagdollWhenVehicleUpsideDown == 151);// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_AlwaysRespondToCriesForHelp == 152);			// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_DisableBloodPoolCreation == 153);			// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_ShouldFixIfNoCollision == 154);				// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_CanPerformArrest == 155);					// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_CanPerformUncuff == 156);					// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_CanBeArrested == 157);						// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_PlayerPreferFrontSeatMP == 159);				// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_DontEnterVehiclesInPlayersGroup == 167);		// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_ForceDirectEntry == 170);					// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_AlwaysSeeApproachingVehicles == 171);		// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_CanDiveAwayFromApproachingVehicles == 172);	// "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_WillCommandeerRatherThanJack == 127); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_ForcePedToFaceLeftInCover == 129); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_ForcePedToFaceRightInCover == 130); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_BlockPedFromTurningInCover == 131); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_KeepRelationshipGroupAfterCleanUp == 132); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_ForcePedToBeDragged == 133); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_PreventPedFromReactingToBeingJacked == 134); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_IsScuba == 135); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_RemoveDeadExtraFarAway == 137); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_ArrestResult == 139); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_CanAttackFriendly == 140); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_WillJackAnyPlayer == 141); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_WillJackWantedPlayersRatherThanStealCar == 144); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_DisableLadderClimbing == 146); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_CanActivateRagdollWhenVehicleUpsideDown == 151); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_AlwaysRespondToCriesForHelp == 152); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_DisableBloodPoolCreation == 153); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_ShouldFixIfNoCollision == 154); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_CanPerformArrest == 155); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_CanPerformUncuff == 156); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_CanBeArrested == 157); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_PlayerPreferFrontSeatMP == 159); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_DontEnterVehiclesInPlayersGroup == 167); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_ForceDirectEntry == 170); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_AlwaysSeeApproachingVehicles == 171); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_CanDiveAwayFromApproachingVehicles == 172); // "Config out of sync with commands_ped.sch"
 CompileTimeAssert(CPED_CONFIG_FLAG_AllowPlayerToInterruptVehicleEntryExit == 173); // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_OnlyAttackLawIfPlayerIsWanted == 174);		// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_PedsJackingMeDontGetIn == 177);				// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_PedIgnoresAnimInterruptEvents == 179);		// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_IsInCustody == 180);							// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_ForceStandardBumpReactionThresholds == 181);	// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_LawWillOnlyAttackIfPlayerIsWanted == 182);	// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_PreventAutoShuffleToDriversSeat == 184);		// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_UseKinematicModeWhenStationary == 185);		// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_PlayerIsWeird == 189);						// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_DoNothingWhenOnFootByDefault == 193);		// "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_OnlyAttackLawIfPlayerIsWanted == 174); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_PedsJackingMeDontGetIn == 177); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_PedIgnoresAnimInterruptEvents == 179); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_IsInCustody == 180); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_ForceStandardBumpReactionThresholds == 181); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_LawWillOnlyAttackIfPlayerIsWanted == 182); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_PreventAutoShuffleToDriversSeat == 184); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_UseKinematicModeWhenStationary == 185); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_PlayerIsWeird == 189); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_DoNothingWhenOnFootByDefault == 193); // "Config out of sync with commands_ped.sch"
 CompileTimeAssert(CPED_CONFIG_FLAG_DontActivateRagdollOnPedCollisionWhenDead == 198); // "Config out of sync with commands_ped.sch"
 CompileTimeAssert(CPED_CONFIG_FLAG_DontActivateRagdollOnVehicleCollisionWhenDead == 199); // "Config out of sync with commands_ped.sch"
 CompileTimeAssert(CPED_CONFIG_FLAG_HasBeenInArmedCombat == 200); // "Config out of sync with commands_ped.sch"
@@ -285,12 +285,12 @@ CompileTimeAssert(CPED_CONFIG_FLAG_NotAllowedToJackAnyPlayers == 342); // "Confi
 CompileTimeAssert(CPED_CONFIG_FLAG_AlwaysLeaveTrainUponArrival == 345); // "Config out of sync with commands_ped.sch"
 CompileTimeAssert(CPED_CONFIG_FLAG_OnlyWritheFromWeaponDamage == 347); // "Config out of sync with commands_ped.sch"
 CompileTimeAssert(CPED_CONFIG_FLAG_UseSloMoBloodVfx == 348); // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_PreventDraggedOutOfCarThreatResponse == 350);	// "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_PreventDraggedOutOfCarThreatResponse == 350); // "Config out of sync with commands_ped.sch"
 CompileTimeAssert(CPED_CONFIG_FLAG_PreventAutoShuffleToTurretSeat == 360); // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_ForceDeepSurfaceCheck == 356);				// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_DisableDeepSurfaceAnims == 357);				// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_DontBlipNotSynced == 358);	// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_IsDuckingInVehicle == 359);	// "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_ForceDeepSurfaceCheck == 356); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_DisableDeepSurfaceAnims == 357); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_DontBlipNotSynced == 358); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_IsDuckingInVehicle == 359); // "Config out of sync with commands_ped.sch"
 CompileTimeAssert(CPED_CONFIG_FLAG_TreatDislikeAsHateWhenInCombat == 364); // "Config out of sync with commands_ped.sch"
 CompileTimeAssert(CPED_CONFIG_FLAG_OnlyUpdateTargetWantedIfSeen == 365); // "Config out of sync with commands_ped.sch"
 CompileTimeAssert(CPED_CONFIG_FLAG_AllowAutoShuffleToDriversSeat == 366); // "Config out of sync with commands_ped.sch"
@@ -300,8 +300,8 @@ CompileTimeAssert(CPED_CONFIG_FLAG_NeverLeaveTrain == 374); // "Config out of sy
 CompileTimeAssert(CPED_CONFIG_FLAG_DontDropJetpackOnDeath == 375); // "Config out of sync with commands_ped.sch"
 CompileTimeAssert(CPED_CONFIG_FLAG_DisableAutoEquipHelmetsInBikes == 380); // "Config out of sync with commands_ped.sch"
 CompileTimeAssert(CPED_CONFIG_FLAG_DisableAutoEquipHelmetsInAircraft == 381); // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_GoOnWithoutVehicleIfItIsUnableToGetBackToRoad == 391);			// "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_BlockDroppingHealthSnacksOnDeath == 392);			// "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_GoOnWithoutVehicleIfItIsUnableToGetBackToRoad == 391); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_BlockDroppingHealthSnacksOnDeath == 392); // "Config out of sync with commands_ped.sch"
 CompileTimeAssert(CPED_CONFIG_FLAG_ForceThreatResponseToNonFriendToFriendMeleeActions == 394); // Forces threat response to melee actions from non friend to friend peds.
 CompileTimeAssert(CPED_CONFIG_FLAG_DontRespondToRandomPedsDamage == 395); // Do not respond to random peds damage.
 CompileTimeAssert(CPED_CONFIG_FLAG_AllowContinuousThreatResponseWantedLevelUpdates == 396); // "Config out of sync with commands_ped.sch"
@@ -315,42 +315,42 @@ CompileTimeAssert(CPED_CONFIG_FLAG_AllowMeleeReactionIfMeleeProofIsOn == 404); /
 CompileTimeAssert(CPED_CONFIG_FLAG_UseNormalExplosionDamageWhenBlownUpInVehicle == 407); // "Config out of sync with commands_ped.sch"
 CompileTimeAssert(CPED_CONFIG_FLAG_DisableHomingMissileLockForVehiclePedInside == 408); // "Config out of sync with commands_ped.sch"
 CompileTimeAssert(CPED_CONFIG_FLAG_DisableTakeOffScubaGear == 409); // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_IgnoreMeleeFistWeaponDamageMult == 410);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_LawPedsCanFleeFromNonWantedPlayer == 411);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_ForceBlipSecurityPedsIfPlayerIsWanted == 412);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_UseGoToPointForScenarioNavigation == 414);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_DontClearLocalPassengersWantedLevel == 415);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_BlockAutoSwapOnWeaponPickups == 416);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_ThisPedIsATargetPriorityForAI == 417);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_IsSwitchingHelmetVisor == 418);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_ForceHelmetVisorSwitch == 419);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_IsPerformingVehicleMelee == 420);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_UseOverrideFootstepPtFx == 421);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_DisableVehicleCombat == 422);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_AllowBikeAlternateAnimations == 424);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_UseLockpickVehicleEntryAnimations == 426);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_SwatHeliSpawnWithinLastSpottedLocation == 428);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_DisableStartEngine == 429);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_IgnoreBeingOnFire == 430);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_DisableTurretOrRearSeatPreference == 431);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_DisableWantedHelicopterSpawning == 432);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_UseTargetPerceptionForCreatingAimedAtEvents == 433);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_DisableHomingMissileLockon == 434);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_ForceIgnoreMaxMeleeActiveSupportCombatants == 435);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_StayInDefensiveAreaWhenInVehicle == 436);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_DontShoutTargetPosition == 437);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_DisableHelmetArmor == 438);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_PreventVehExitDueToInvalidWeapon == 441);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_IgnoreNetSessionFriendlyFireCheckForAllowDamage == 442);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_CheckLockedBeforeWarp == 444);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_DontShuffleInVehicleToMakeRoom == 445);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_DontHitVehicleWithProjectiles == 447);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_DisableForcedEntryForOpenVehiclesFromTryLockedDoor == 448);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_FiresDummyRockets == 449);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_PedIsArresting == 450);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_IsDecoyPed == 451);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_HasEstablishedDecoy == 452);  // "Config out of sync with commands_ped.sch"
-CompileTimeAssert(CPED_CONFIG_FLAG_BlockDispatchedHelicoptersFromLanding == 453);  // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_IgnoreMeleeFistWeaponDamageMult == 410); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_LawPedsCanFleeFromNonWantedPlayer == 411); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_ForceBlipSecurityPedsIfPlayerIsWanted == 412); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_UseGoToPointForScenarioNavigation == 414); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_DontClearLocalPassengersWantedLevel == 415); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_BlockAutoSwapOnWeaponPickups == 416); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_ThisPedIsATargetPriorityForAI == 417); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_IsSwitchingHelmetVisor == 418); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_ForceHelmetVisorSwitch == 419); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_IsPerformingVehicleMelee == 420); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_UseOverrideFootstepPtFx == 421); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_DisableVehicleCombat == 422); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_AllowBikeAlternateAnimations == 424); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_UseLockpickVehicleEntryAnimations == 426); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_SwatHeliSpawnWithinLastSpottedLocation == 428); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_DisableStartEngine == 429); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_IgnoreBeingOnFire == 430); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_DisableTurretOrRearSeatPreference == 431); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_DisableWantedHelicopterSpawning == 432); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_UseTargetPerceptionForCreatingAimedAtEvents == 433); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_DisableHomingMissileLockon == 434); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_ForceIgnoreMaxMeleeActiveSupportCombatants == 435); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_StayInDefensiveAreaWhenInVehicle == 436); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_DontShoutTargetPosition == 437); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_DisableHelmetArmor == 438); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_PreventVehExitDueToInvalidWeapon == 441); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_IgnoreNetSessionFriendlyFireCheckForAllowDamage == 442); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_CheckLockedBeforeWarp == 444); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_DontShuffleInVehicleToMakeRoom == 445); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_DontHitVehicleWithProjectiles == 447); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_DisableForcedEntryForOpenVehiclesFromTryLockedDoor == 448); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_FiresDummyRockets == 449); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_PedIsArresting == 450); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_IsDecoyPed == 451); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_HasEstablishedDecoy == 452); // "Config out of sync with commands_ped.sch"
+CompileTimeAssert(CPED_CONFIG_FLAG_BlockDispatchedHelicoptersFromLanding == 453); // "Config out of sync with commands_ped.sch"
 CompileTimeAssert(CPED_CONFIG_FLAG_DontCryForHelpOnStun == 454); // "Config out of sync with commands_ped.sch"
 CompileTimeAssert(CPED_CONFIG_FLAG_CanBeIncapacitated == 456); // "Config out of sync with commands_ped.sch"
 CompileTimeAssert(CPED_CONFIG_FLAG_ForcedAimFromArrest == 457); // "Config out of sync with commands_ped.sch"
@@ -361,24 +361,24 @@ CompileTimeAssert(CPED_CONFIG_FLAG_BlockElectricWeaponDamage == 461); // "Config
 
 
 // Statics
-ePedResetFlagsBitSet		CPedResetFlags::sm_ResetFlagMask;
-ePedResetFlagsBitSet		CPedResetFlags::sm_PreAIPostInventoryResetFlagMask;
-ePedResetFlagsBitSet		CPedResetFlags::sm_PreTaskResetFlagMask;
-ePedResetFlagsBitSet		CPedResetFlags::sm_PrePhysicsFlagMask;
-ePedResetFlagsBitSet		CPedResetFlags::sm_PostPhysicsFlagMask;
-ePedResetFlagsBitSet		CPedResetFlags::sm_PostMovementFlagMask;
-ePedResetFlagsBitSet		CPedResetFlags::sm_PostCameraFlagMask;
-ePedResetFlagsBitSet		CPedResetFlags::sm_PostPreRenderFlagMask;
+ePedResetFlagsBitSet        CPedResetFlags::sm_ResetFlagMask;
+ePedResetFlagsBitSet        CPedResetFlags::sm_PreAIPostInventoryResetFlagMask;
+ePedResetFlagsBitSet        CPedResetFlags::sm_PreTaskResetFlagMask;
+ePedResetFlagsBitSet        CPedResetFlags::sm_PrePhysicsFlagMask;
+ePedResetFlagsBitSet        CPedResetFlags::sm_PostPhysicsFlagMask;
+ePedResetFlagsBitSet        CPedResetFlags::sm_PostMovementFlagMask;
+ePedResetFlagsBitSet        CPedResetFlags::sm_PostCameraFlagMask;
+ePedResetFlagsBitSet        CPedResetFlags::sm_PostPreRenderFlagMask;
 
 void CPedConfigFlags::Init(CPed* pPed)
 {
     m_Flags.BitSet().Reset();
 
     // script control over taking damage
-    SetFlag( CPED_CONFIG_FLAG_CanBeShotInVehicle,  true );			// script can stop peds being shot when driving vehicle (including exposed ones like bikes)
-    SetFlag( CPED_CONFIG_FLAG_DrownsInWater,  true );				// does this ped drown or swim?
+    SetFlag( CPED_CONFIG_FLAG_CanBeShotInVehicle,  true ); // script can stop peds being shot when driving vehicle (including exposed ones like bikes)
+    SetFlag( CPED_CONFIG_FLAG_DrownsInWater,  true ); // does this ped drown or swim?
     SetFlag( CPED_CONFIG_FLAG_DrownsInSinkingVehicle,  true );
-    SetFlag( CPED_CONFIG_FLAG_AllowMedicsToReviveMe,  true );		// never allow this ped to be revived
+    SetFlag( CPED_CONFIG_FLAG_AllowMedicsToReviveMe,  true ); // never allow this ped to be revived
     SetFlag( CPED_CONFIG_FLAG_GetOutUndriveableVehicle,  true );
     SetFlag( CPED_CONFIG_FLAG_GetOutBurningVehicle,  true );
     SetFlag( CPED_CONFIG_FLAG_RunFromFiresAndExplosions,  true );
@@ -386,7 +386,7 @@ void CPedConfigFlags::Init(CPed* pPed)
     SetFlag( CPED_CONFIG_FLAG_WillFlyThroughWindscreen,  true );
     SetFlag( CPED_CONFIG_FLAG_CanActivateRagdollWhenVehicleUpsideDown, true );
     SetFlag( CPED_CONFIG_FLAG_UseHelmet,  true );
-    SetFlag( CPED_CONFIG_FLAG_HideInCutscene,  true );				// all (mission) peds are hidden in cutscene as default
+    SetFlag( CPED_CONFIG_FLAG_HideInCutscene,  true ); // all (mission) peds are hidden in cutscene as default
 
     SetFlag( CPED_CONFIG_FLAG_SteersAroundPeds,  true );
     SetFlag( CPED_CONFIG_FLAG_SteersAroundObjects,  true );
@@ -400,7 +400,7 @@ void CPedConfigFlags::Init(CPed* pPed)
     SetFlag( CPED_CONFIG_FLAG_CanPlayInCarIdles, true ); // By default, allow in-car idles
 
     // non single bit variables
-    nCantBeKnockedOffVehicle  = KNOCKOFFVEHICLE_DEFAULT;		// 0=Default(harder for mission peds) 1=Never 2=Always normal(also for mission peds)
+    nCantBeKnockedOffVehicle  = KNOCKOFFVEHICLE_DEFAULT;        // 0=Default(harder for mission peds) 1=Never 2=Always normal(also for mission peds)
 
     nPedGestureMode = GESTURE_MODE_DEFAULT;
 
@@ -428,13 +428,13 @@ void CPedConfigFlags::Reset(CPed* pPed)
 }
 
 //
-// Function:	CPedResetFlags::StaticInit
-// Use:			Sets up bit masks of the flags to clear in various sections of the
+// Function:    CPedResetFlags::StaticInit
+// Use:            Sets up bit masks of the flags to clear in various sections of the
 void CPedResetFlags::StaticInit()
 {
     // reset these flag every frame in the Reset function
-    sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_FallenDown );			// decides whether to ik rotate body to match ground angle
-    sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DontRenderThisFrame );	// force ped to stop rendering this frame (for example - drive task can stop peds rendering inside buses)
+    sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_FallenDown ); // decides whether to ik rotate body to match ground angle
+    sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DontRenderThisFrame ); // force ped to stop rendering this frame (for example - drive task can stop peds rendering inside buses)
     sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_SetLastMatrixDone );
     sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_SetLastBoundMatricesDone );
 
@@ -456,7 +456,7 @@ void CPedResetFlags::StaticInit()
     sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DontChangeHorseMbr );
 
     sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_IsLanding );
-    sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_CullExtraFarAway );		// flag Ai can set to make ped get culled further away (used for roadblock cops, crimials...)
+    sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_CullExtraFarAway ); // flag Ai can set to make ped get culled further away (used for roadblock cops, crimials...)
 
     sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DontActivateRagdollFromAnyPedImpactReset );
     sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_ForceScriptControlledRagdoll );
@@ -482,10 +482,10 @@ void CPedResetFlags::StaticInit()
 
     sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_DoNotClampFootIk );
 
-    sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_ResetMoveGroupAfterRagdoll );// reset function messes with this, but ok to clear first
-    sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_KnockedToTheFloorByPlayer );// reset function messes with this, but ok to clear first
-    sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_IsWalkingRoundPlayer );// reset function messes with this, but ok to clear first
-    sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_SyncDesiredHeadingToCurrentHeading );// set to true in the reset function (but ok to clear first)
+    sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_ResetMoveGroupAfterRagdoll ); // reset function messes with this, but ok to clear first
+    sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_KnockedToTheFloorByPlayer ); // reset function messes with this, but ok to clear first
+    sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_IsWalkingRoundPlayer ); // reset function messes with this, but ok to clear first
+    sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_SyncDesiredHeadingToCurrentHeading ); // set to true in the reset function (but ok to clear first)
     sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_SupressGunfireEvents );
     sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_BlockWeaponReactionsUnlessDead );
     sm_ResetFlagMask.BitSet().Set( CPED_RESET_FLAG_InCoverFacingLeft );
@@ -911,32 +911,32 @@ void CPedResetFlags::StaticInit()
     allResetFlags.BitSet().Union(sm_PostPreRenderFlagMask.BitSet());
 
     // a few flags are ok to not be getting reset?
-    allResetFlags.BitSet().Set( CPED_RESET_FLAG_RaiseVelocityChangeLimit );	// is reset in the middle of CPed::ProcessPhysics, can we do it earlier?
-    allResetFlags.BitSet().Set( CPED_RESET_FLAG_SearchingForClimb );			// is reset in CClimbDetector::Process
-    allResetFlags.BitSet().Set( CPED_RESET_FLAG_SearchingForAutoVaultClimb );	// is reset in CClimbDetector::Process
-    allResetFlags.BitSet().Set( CPED_RESET_FLAG_SearchingForDoors );			// is reset in CPedIntelligence::Process_NearbyEntityLists
-    allResetFlags.BitSet().Set( CPED_RESET_FLAG_HitPedWithWeapon );			// is reset in ResetPostPreRender
-    allResetFlags.BitSet().Set( CPED_RESET_FLAG_IsNearDoor );					// Is reset in CPed::ProcessControl_Intelligence
-    allResetFlags.BitSet().Set( CPED_RESET_FLAG_SearchingForDropDown );		// is reset in CDropDetector::Process
-    allResetFlags.BitSet().Set( CPED_RESET_FLAG_TasksNeedProcessMoveSignalCalls );	// is reset in CPedIntelligence::Process_Tasks
-    allResetFlags.BitSet().Set( CPED_RESET_FLAG_FirstPhysicsUpdate );                // is reset in CPed::ProcessProbes
-    allResetFlags.BitSet().Set( CPED_RESET_FLAG_SpawnedThisFrameByAmbientPopulation );	// is reset in CPedIntelligence::Process_Tasks
-    allResetFlags.BitSet().Set( CPED_RESET_FLAG_InContactWithFoliage );// Its reset direct in prephysics
-    allResetFlags.BitSet().Set( CPED_RESET_FLAG_InContactWithBIGFoliage );// Its reset direct in prephysics
-    allResetFlags.BitSet().Set( CPED_RESET_FLAG_TouchingOverhang );			//Reset in CPed::ProcessPreComputeImpactsForMover
-    allResetFlags.BitSet().Set( CPED_RESET_FLAG_TooSteepForPlayer );		//Reset in CPed::ProcessPreComputeImpactsForMover
+    allResetFlags.BitSet().Set( CPED_RESET_FLAG_RaiseVelocityChangeLimit ); // is reset in the middle of CPed::ProcessPhysics, can we do it earlier?
+    allResetFlags.BitSet().Set( CPED_RESET_FLAG_SearchingForClimb ); // is reset in CClimbDetector::Process
+    allResetFlags.BitSet().Set( CPED_RESET_FLAG_SearchingForAutoVaultClimb ); // is reset in CClimbDetector::Process
+    allResetFlags.BitSet().Set( CPED_RESET_FLAG_SearchingForDoors ); // is reset in CPedIntelligence::Process_NearbyEntityLists
+    allResetFlags.BitSet().Set( CPED_RESET_FLAG_HitPedWithWeapon ); // is reset in ResetPostPreRender
+    allResetFlags.BitSet().Set( CPED_RESET_FLAG_IsNearDoor ); // Is reset in CPed::ProcessControl_Intelligence
+    allResetFlags.BitSet().Set( CPED_RESET_FLAG_SearchingForDropDown ); // is reset in CDropDetector::Process
+    allResetFlags.BitSet().Set( CPED_RESET_FLAG_TasksNeedProcessMoveSignalCalls ); // is reset in CPedIntelligence::Process_Tasks
+    allResetFlags.BitSet().Set( CPED_RESET_FLAG_FirstPhysicsUpdate ); // is reset in CPed::ProcessProbes
+    allResetFlags.BitSet().Set( CPED_RESET_FLAG_SpawnedThisFrameByAmbientPopulation ); // is reset in CPedIntelligence::Process_Tasks
+    allResetFlags.BitSet().Set( CPED_RESET_FLAG_InContactWithFoliage ); // Its reset direct in prephysics
+    allResetFlags.BitSet().Set( CPED_RESET_FLAG_InContactWithBIGFoliage ); // Its reset direct in prephysics
+    allResetFlags.BitSet().Set( CPED_RESET_FLAG_TouchingOverhang ); // Reset in CPed::ProcessPreComputeImpactsForMover
+    allResetFlags.BitSet().Set( CPED_RESET_FLAG_TooSteepForPlayer ); // Reset in CPed::ProcessPreComputeImpactsForMover
     allResetFlags.BitSet().Set( CPED_RESET_FLAG_DisableCellphoneAnimations ); // it is reset in task mobile phone
     allResetFlags.BitSet().Set( CPED_RESET_FLAG_IsBeingMeleeHomedByPlayer ); // it is reset in CTaskCombat
     allResetFlags.BitSet().Set( CPED_RESET_FLAG_InsideEnclosedSearchRegion ); // reset in pedintelligence
-    allResetFlags.BitSet().Set( CPED_RESET_FLAG_IsExactStopping );				// Reset in CTaskMoveGoToPointAndStandStill
-    allResetFlags.BitSet().Set( CPED_RESET_FLAG_IsExactStopSettling );			// Reset in CTaskMoveGoToPointAndStandStill
-    allResetFlags.BitSet().Set( CPED_RESET_FLAG_GestureAnimsAllowed );			// Reset in CPed::ProcessAnimDataEmbeddedInAudioAssets
-    allResetFlags.BitSet().Set( CPED_RESET_FLAG_GestureAnimsBlockedFromScript );			// Reset in CPed::ProcessAnimDataEmbeddedInAudioAssets
-    allResetFlags.BitSet().Set( CPED_RESET_FLAG_CancelLeftHandGripIk );			// Reset in CPed::PreRender()
-    allResetFlags.BitSet().Set( CPED_RESET_FLAG_TriggerRoadRageAnim );			// after task update.
-    allResetFlags.BitSet().Set( CPED_RESET_FLAG_InContactWithDeepSurface );// Its reset direct in prephysics
+    allResetFlags.BitSet().Set( CPED_RESET_FLAG_IsExactStopping ); // Reset in CTaskMoveGoToPointAndStandStill
+    allResetFlags.BitSet().Set( CPED_RESET_FLAG_IsExactStopSettling ); // Reset in CTaskMoveGoToPointAndStandStill
+    allResetFlags.BitSet().Set( CPED_RESET_FLAG_GestureAnimsAllowed ); // Reset in CPed::ProcessAnimDataEmbeddedInAudioAssets
+    allResetFlags.BitSet().Set( CPED_RESET_FLAG_GestureAnimsBlockedFromScript ); // Reset in CPed::ProcessAnimDataEmbeddedInAudioAssets
+    allResetFlags.BitSet().Set( CPED_RESET_FLAG_CancelLeftHandGripIk ); // Reset in CPed::PreRender()
+    allResetFlags.BitSet().Set( CPED_RESET_FLAG_TriggerRoadRageAnim ); // after task update.
+    allResetFlags.BitSet().Set( CPED_RESET_FLAG_InContactWithDeepSurface ); // Its reset direct in prephysics
     allResetFlags.BitSet().Set( CPED_RESET_FLAG_BlockRemotePlayerRecording );
-    allResetFlags.BitSet().Set( CPED_RESET_FLAG_UNUSED_REPLACE_ME );		// Unused but don't want it asserting...
+    allResetFlags.BitSet().Set( CPED_RESET_FLAG_UNUSED_REPLACE_ME ); // Unused but don't want it asserting...
 
     for(int i=0;i<ePedResetFlags_NUM_ENUMS;i++)
     {
