@@ -1,11 +1,11 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Online_Version-1.69-green" alt="Online Version">
   <img src="https://img.shields.io/badge/Game_Build-3274-green" alt="Game Build">
+  <br><br>
+  <strong>Without being pretentious, my repository offers the most up-to-date enums.</strong>
+  <br>
+  <strong>I believe it’s the most comprehensive resource available online, unmatched in quality.</strong>
 </p>
-
-**Without being pretentious, my repository offers the most up-to-date enums.**
-<br>
-**I believe it’s the most comprehensive resource available online, unmatched in quality.**
 
 # GET_IS_TASK_ACTIVE
 
