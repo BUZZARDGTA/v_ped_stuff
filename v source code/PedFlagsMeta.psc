@@ -4,93 +4,93 @@
 
   <enumdef type="ePedConfigFlags" generate="bitset">
     <enumval name="CPED_CONFIG_FLAG_CreatedByFactory"/>
-    <enumval name="CPED_CONFIG_FLAG_CanBeShotInVehicle" description=" script can stop peds being shot when driving vehicle (including exposed ones like bikes)"/>
-    <enumval name="CPED_CONFIG_FLAG_NoCriticalHits" description=" ped cannot be killed by a single bullet"/>
-    <enumval name="CPED_CONFIG_FLAG_DrownsInWater" description=" does this ped drown or swim?"/>
-    <enumval name="CPED_CONFIG_FLAG_DrownsInSinkingVehicle" description=" does this ped take damage whilst in a sinking vehicle?"/>
-    <enumval name="CPED_CONFIG_FLAG_DiesInstantlyWhenSwimming" description=" Ped cannot swim and will die as soon as they are required to swim"/>
-    <enumval name="CPED_CONFIG_FLAG_HasBulletProofVest" description=" is this ped wearing a bullet proof vest"/>
-    <enumval name="CPED_CONFIG_FLAG_UpperBodyDamageAnimsOnly" description=" force ped to play only upper body damage anims from weapons"/>
-    <enumval name="CPED_CONFIG_FLAG_NeverFallOffSkis" description=" Ped will never fall over on skis"/>
-    <enumval name="CPED_CONFIG_FLAG_NeverEverTargetThisPed" description=" script control over player targeting"/>
-    <enumval name="CPED_CONFIG_FLAG_ThisPedIsATargetPriority" description=" script control over player targeting"/>
-    <enumval name="CPED_CONFIG_FLAG_TargettableWithNoLos" description=" script control over player targeting"/>
-    <enumval name="CPED_CONFIG_FLAG_DoesntListenToPlayerGroupCommands" description=" script can set this so ped will be in players group but not reacting to commands"/>
+    <enumval name="CPED_CONFIG_FLAG_CanBeShotInVehicle" description="script can stop peds being shot when driving vehicle (including exposed ones like bikes)"/>
+    <enumval name="CPED_CONFIG_FLAG_NoCriticalHits" description="ped cannot be killed by a single bullet"/>
+    <enumval name="CPED_CONFIG_FLAG_DrownsInWater" description="does this ped drown or swim?"/>
+    <enumval name="CPED_CONFIG_FLAG_DrownsInSinkingVehicle" description="does this ped take damage whilst in a sinking vehicle?"/>
+    <enumval name="CPED_CONFIG_FLAG_DiesInstantlyWhenSwimming" description="Ped cannot swim and will die as soon as they are required to swim"/>
+    <enumval name="CPED_CONFIG_FLAG_HasBulletProofVest" description="is this ped wearing a bullet proof vest"/>
+    <enumval name="CPED_CONFIG_FLAG_UpperBodyDamageAnimsOnly" description="force ped to play only upper body damage anims from weapons"/>
+    <enumval name="CPED_CONFIG_FLAG_NeverFallOffSkis" description="Ped will never fall over on skis"/>
+    <enumval name="CPED_CONFIG_FLAG_NeverEverTargetThisPed" description="script control over player targeting"/>
+    <enumval name="CPED_CONFIG_FLAG_ThisPedIsATargetPriority" description="script control over player targeting"/>
+    <enumval name="CPED_CONFIG_FLAG_TargettableWithNoLos" description="script control over player targeting"/>
+    <enumval name="CPED_CONFIG_FLAG_DoesntListenToPlayerGroupCommands" description="script can set this so ped will be in players group but not reacting to commands"/>
     <enumval name="CPED_CONFIG_FLAG_NeverLeavesGroup"/>
-    <enumval name="CPED_CONFIG_FLAG_DoesntDropWeaponsWhenDead" description=" script command"/>
-    <enumval name="CPED_CONFIG_FLAG_SetDelayedWeaponAsCurrent" description=" when the peds delayed weapon finally loads, set it as the peds current weapon"/>
-    <enumval name="CPED_CONFIG_FLAG_KeepTasksAfterCleanUp" description=" If true ped will carry on with task even after script ped cleanup"/>
+    <enumval name="CPED_CONFIG_FLAG_DoesntDropWeaponsWhenDead" description="script command"/>
+    <enumval name="CPED_CONFIG_FLAG_SetDelayedWeaponAsCurrent" description="when the peds delayed weapon finally loads, set it as the peds current weapon"/>
+    <enumval name="CPED_CONFIG_FLAG_KeepTasksAfterCleanUp" description="If true ped will carry on with task even after script ped cleanup"/>
     <enumval name="CPED_CONFIG_FLAG_BlockNonTemporaryEvents" description="! Set to block any events that might interrupt the currently running tasks."/>
     <enumval name="CPED_CONFIG_FLAG_HasAScriptBrain"/>
     <enumval name="CPED_CONFIG_FLAG_WaitingForScriptBrainToLoad"/>
-    <enumval name="CPED_CONFIG_FLAG_AllowMedicsToReviveMe" description=" never allow this ped to be revived"/>
-    <enumval name="CPED_CONFIG_FLAG_MoneyHasBeenGivenByScript" description=" script can give specific amount of money to ped (script peds don't drop any money by default)"/>
-    <enumval name="CPED_CONFIG_FLAG_NotAllowedToCrouch" description=" Is this ped allowed to crouch at all?"/>
-    <enumval name="CPED_CONFIG_FLAG_DeathPickupsPersist" description=" script command to control what type of pickups are created when ped dies"/>
+    <enumval name="CPED_CONFIG_FLAG_AllowMedicsToReviveMe" description="never allow this ped to be revived"/>
+    <enumval name="CPED_CONFIG_FLAG_MoneyHasBeenGivenByScript" description="script can give specific amount of money to ped (script peds don't drop any money by default)"/>
+    <enumval name="CPED_CONFIG_FLAG_NotAllowedToCrouch" description="Is this ped allowed to crouch at all?"/>
+    <enumval name="CPED_CONFIG_FLAG_DeathPickupsPersist" description="script command to control what type of pickups are created when ped dies"/>
     <enumval name="CPED_CONFIG_FLAG_IgnoreSeenMelee" description="script command so ped doesn't stop to watch fights"/>
     <enumval name="CPED_CONFIG_FLAG_ForceDieIfInjured" description="script command so missions peds die if injured"/>
-    <enumval name="CPED_CONFIG_FLAG_DontDragMeOutCar" description=" force this ped can't be carjacked"/>
-    <enumval name="CPED_CONFIG_FLAG_StayInCarOnJack" description=" script sets this to keep peds in car when the player steals it"/>
-    <enumval name="CPED_CONFIG_FLAG_ForceDieInCar" description=" don't fall out car if killed"/>
-    <enumval name="CPED_CONFIG_FLAG_GetOutUndriveableVehicle" description=" script can stop peds automatically getting out of vehicle when it's upside down or undrivable(for races and stuff)"/>
-    <enumval name="CPED_CONFIG_FLAG_WillRemainOnBoatAfterMissionEnds" description=" script can stop peds automatically leaving boats when they become random chars, after a script quits"/>
-    <enumval name="CPED_CONFIG_FLAG_DontStoreAsPersistent" description=" Some peds (like mission peds) should not be stored as persistent."/>
+    <enumval name="CPED_CONFIG_FLAG_DontDragMeOutCar" description="force this ped can't be carjacked"/>
+    <enumval name="CPED_CONFIG_FLAG_StayInCarOnJack" description="script sets this to keep peds in car when the player steals it"/>
+    <enumval name="CPED_CONFIG_FLAG_ForceDieInCar" description="don't fall out car if killed"/>
+    <enumval name="CPED_CONFIG_FLAG_GetOutUndriveableVehicle" description="script can stop peds automatically getting out of vehicle when it's upside down or undrivable(for races and stuff)"/>
+    <enumval name="CPED_CONFIG_FLAG_WillRemainOnBoatAfterMissionEnds" description="script can stop peds automatically leaving boats when they become random chars, after a script quits"/>
+    <enumval name="CPED_CONFIG_FLAG_DontStoreAsPersistent" description="Some peds (like mission peds) should not be stored as persistent."/>
     <enumval name="CPED_CONFIG_FLAG_WillFlyThroughWindscreen"/>
     <enumval name="CPED_CONFIG_FLAG_DieWhenRagdoll"/>
-    <enumval name="CPED_CONFIG_FLAG_HasHelmet" description=" currently has helmet equipped?"/>
-    <enumval name="CPED_CONFIG_FLAG_UseHelmet" description=" will the ped try to put on their helmet?"/>
-    <enumval name="CPED_CONFIG_FLAG_DontTakeOffHelmet" description=" the ped will not take off their helmet (if equipped) while this is set"/>
+    <enumval name="CPED_CONFIG_FLAG_HasHelmet" description="currently has helmet equipped?"/>
+    <enumval name="CPED_CONFIG_FLAG_UseHelmet" description="will the ped try to put on their helmet?"/>
+    <enumval name="CPED_CONFIG_FLAG_DontTakeOffHelmet" description="the ped will not take off their helmet (if equipped) while this is set"/>
     <enumval name="CPED_CONFIG_FLAG_HideInCutscene"/>
     <enumval name="CPED_CONFIG_FLAG_PedIsEnemyToPlayer"/>
     <enumval name="CPED_CONFIG_FLAG_DisableEvasiveDives"/>
-    <enumval name="CPED_CONFIG_FLAG_PedGeneratesDeadBodyEvents" description=" Generates shocking events as if dead"/>
+    <enumval name="CPED_CONFIG_FLAG_PedGeneratesDeadBodyEvents" description="Generates shocking events as if dead"/>
     <enumval name="CPED_CONFIG_FLAG_DontAttackPlayerWithoutWantedLevel"/>
-    <enumval name="CPED_CONFIG_FLAG_DontInfluenceWantedLevel" description=" Can do any crime against this character and the cops turn a blind eye (no crime reported)"/>
+    <enumval name="CPED_CONFIG_FLAG_DontInfluenceWantedLevel" description="Can do any crime against this character and the cops turn a blind eye (no crime reported)"/>
     <enumval name="CPED_CONFIG_FLAG_DisablePlayerLockon"/>
     <enumval name="CPED_CONFIG_FLAG_DisableLockonToRandomPeds"/>
     <enumval name="CPED_CONFIG_FLAG_AllowLockonToFriendlyPlayers"/>
     <enumval name="CPED_CONFIG_FLAG_DisableHornAudioWhenDead " description="Disable the horn when a ped dies in the car and has his head against the wheel"/>
     <enumval name="CPED_CONFIG_FLAG_PedBeingDeleted"/>
-    <enumval name="CPED_CONFIG_FLAG_BlockWeaponSwitching" description=" Disable weapon switching while this is set"/>
-    <enumval name="CPED_CONFIG_FLAG_BlockGroupPedAimedAtResponse" description=" Disable the behaviour which causes player-group peds to crouch when the player aims at them"/>
-    <enumval name="CPED_CONFIG_FLAG_WillFollowLeaderAnyMeans" description=" Basically defines whether group peds will use cars etc to follow their leader (default=false)"/>
-    <enumval name="CPED_CONFIG_FLAG_BlippedByScript" description=" Set to true if the char has ever been blipped, not 100% correct so don't use it on anything sensitive."/>
-    <enumval name="CPED_CONFIG_FLAG_DrawRadarVisualField" description=" Draw this peds visual field in the stealth radar"/>
-    <enumval name="CPED_CONFIG_FLAG_StopWeaponFiringOnImpact" description=" Set to true to stop the peds weapon firing on impact when they drop it"/>
-    <enumval name="CPED_CONFIG_FLAG_DissableAutoFallOffTests" description=" Set to true to stop ped scanning for things to fall off when shot by the player"/>
-    <enumval name="CPED_CONFIG_FLAG_SteerAroundDeadBodies" description=" Forces peds to steer around dead bodies, the default is false."/>
-    <enumval name="CPED_CONFIG_FLAG_ConstrainToNavMesh" description=" Ped is constrained to navmesh's surface"/>
-    <enumval name="CPED_CONFIG_FLAG_SyncingAnimatedProps" description=" Set this to true if the ped should attempt to synchronise the animations of an attached prop to its movement anims"/>
+    <enumval name="CPED_CONFIG_FLAG_BlockWeaponSwitching" description="Disable weapon switching while this is set"/>
+    <enumval name="CPED_CONFIG_FLAG_BlockGroupPedAimedAtResponse" description="Disable the behaviour which causes player-group peds to crouch when the player aims at them"/>
+    <enumval name="CPED_CONFIG_FLAG_WillFollowLeaderAnyMeans" description="Basically defines whether group peds will use cars etc to follow their leader (default=false)"/>
+    <enumval name="CPED_CONFIG_FLAG_BlippedByScript" description="Set to true if the char has ever been blipped, not 100% correct so don't use it on anything sensitive."/>
+    <enumval name="CPED_CONFIG_FLAG_DrawRadarVisualField" description="Draw this peds visual field in the stealth radar"/>
+    <enumval name="CPED_CONFIG_FLAG_StopWeaponFiringOnImpact" description="Set to true to stop the peds weapon firing on impact when they drop it"/>
+    <enumval name="CPED_CONFIG_FLAG_DissableAutoFallOffTests" description="Set to true to stop ped scanning for things to fall off when shot by the player"/>
+    <enumval name="CPED_CONFIG_FLAG_SteerAroundDeadBodies" description="Forces peds to steer around dead bodies, the default is false."/>
+    <enumval name="CPED_CONFIG_FLAG_ConstrainToNavMesh" description="Ped is constrained to navmesh's surface"/>
+    <enumval name="CPED_CONFIG_FLAG_SyncingAnimatedProps" description="Set this to true if the ped should attempt to synchronise the animations of an attached prop to its movement anims"/>
     <enumval name="CPED_CONFIG_FLAG_IsFiring"/>
     <enumval name="CPED_CONFIG_FLAG_WasFiring"/>
-    <enumval name="CPED_CONFIG_FLAG_IsStanding" description=" is ped standing on something"/>
-    <enumval name="CPED_CONFIG_FLAG_WasStanding" description=" was the ped standing last frame"/>
-    <enumval name="CPED_CONFIG_FLAG_InVehicle" description=" is in a vehicle"/>
+    <enumval name="CPED_CONFIG_FLAG_IsStanding" description="is ped standing on something"/>
+    <enumval name="CPED_CONFIG_FLAG_WasStanding" description="was the ped standing last frame"/>
+    <enumval name="CPED_CONFIG_FLAG_InVehicle" description="is in a vehicle"/>
     <enumval name="CPED_CONFIG_FLAG_OnMount"/>
-    <enumval name="CPED_CONFIG_FLAG_AttachedToVehicle" description=" is attached to a vehicle"/>
-    <enumval name="CPED_CONFIG_FLAG_IsSwimming" description=" is ped swimming in water  "/>
-    <enumval name="CPED_CONFIG_FLAG_WasSwimming" description=" was the ped swimming in water last frame"/>
-    <enumval name="CPED_CONFIG_FLAG_IsSkiing" description=" is the ped skiing"/>
-    <enumval name="CPED_CONFIG_FLAG_IsSitting" description=" is the ped sitting"/>
+    <enumval name="CPED_CONFIG_FLAG_AttachedToVehicle" description="is attached to a vehicle"/>
+    <enumval name="CPED_CONFIG_FLAG_IsSwimming" description="is ped swimming in water  "/>
+    <enumval name="CPED_CONFIG_FLAG_WasSwimming" description="was the ped swimming in water last frame"/>
+    <enumval name="CPED_CONFIG_FLAG_IsSkiing" description="is the ped skiing"/>
+    <enumval name="CPED_CONFIG_FLAG_IsSitting" description="is the ped sitting"/>
     <enumval name="CPED_CONFIG_FLAG_KilledByStealth" description="Determines if this ped was killed by a stealth action"/>
     <enumval name="CPED_CONFIG_FLAG_KilledByTakedown" description="Determines if this ped was killed by a takedown action"/>
     <enumval name="CPED_CONFIG_FLAG_Knockedout" description="Determines if this ped was finished with a knockout action"/>
-    <enumval name="CPED_CONFIG_FLAG_ClearRadarBlipOnDeath" description=" so peds automatically given blips will clear them again when they die (mainly used for peds recruited into players group)"/>
-    <enumval name="CPED_CONFIG_FLAG_JustGotOffTrain" description=" train code uses this when grabbing random peds to get in trains"/>
-    <enumval name="CPED_CONFIG_FLAG_JustGotOnTrain" description=" train code uses this when grabbing random peds to get in trains"/>
-    <enumval name="CPED_CONFIG_FLAG_UsingCoverPoint" description=" set to true when a ped is in process of using a cover point"/>
-    <enumval name="CPED_CONFIG_FLAG_IsInTheAir" description=" is in the air"/>
-    <enumval name="CPED_CONFIG_FLAG_KnockedUpIntoAir" description=" has ped been knocked up into the air by a car collision"/>
-    <enumval name="CPED_CONFIG_FLAG_IsAimingGun" description=" is ped aiming gun"/>
-    <enumval name="CPED_CONFIG_FLAG_HasJustLeftCar" description=" used by navigation to force scan for cars collisions"/>
+    <enumval name="CPED_CONFIG_FLAG_ClearRadarBlipOnDeath" description="so peds automatically given blips will clear them again when they die (mainly used for peds recruited into players group)"/>
+    <enumval name="CPED_CONFIG_FLAG_JustGotOffTrain" description="train code uses this when grabbing random peds to get in trains"/>
+    <enumval name="CPED_CONFIG_FLAG_JustGotOnTrain" description="train code uses this when grabbing random peds to get in trains"/>
+    <enumval name="CPED_CONFIG_FLAG_UsingCoverPoint" description="set to true when a ped is in process of using a cover point"/>
+    <enumval name="CPED_CONFIG_FLAG_IsInTheAir" description="is in the air"/>
+    <enumval name="CPED_CONFIG_FLAG_KnockedUpIntoAir" description="has ped been knocked up into the air by a car collision"/>
+    <enumval name="CPED_CONFIG_FLAG_IsAimingGun" description="is ped aiming gun"/>
+    <enumval name="CPED_CONFIG_FLAG_HasJustLeftCar" description="used by navigation to force scan for cars collisions"/>
     <enumval name="CPED_CONFIG_FLAG_TargetWhenInjuredAllowed"/>
-    <enumval name="CPED_CONFIG_FLAG_CurrLeftFootCollNM" description=" footprints"/>
-    <enumval name="CPED_CONFIG_FLAG_PrevLeftFootCollNM" description=" footprints"/>
-    <enumval name="CPED_CONFIG_FLAG_CurrRightFootCollNM" description=" footprints"/>
-    <enumval name="CPED_CONFIG_FLAG_PrevRightFootCollNM" description=" footprints"/>
-    <enumval name="CPED_CONFIG_FLAG_HasBeenBumpedInCar" description=" Has this ped been bumped by a car while driving?"/>
-    <enumval name="CPED_CONFIG_FLAG_InWaterTaskQuitToClimbLadder" description=" The in-water task has just quit in response to a ladder-climb request"/>
-    <enumval name="CPED_CONFIG_FLAG_NMTwoHandedWeaponBothHandsConstrained" description=" when using physical 2-handed weapons, both hands have been latched to the gun model (used when sending ConfigureCharacter to NM)"/>
+    <enumval name="CPED_CONFIG_FLAG_CurrLeftFootCollNM" description="footprints"/>
+    <enumval name="CPED_CONFIG_FLAG_PrevLeftFootCollNM" description="footprints"/>
+    <enumval name="CPED_CONFIG_FLAG_CurrRightFootCollNM" description="footprints"/>
+    <enumval name="CPED_CONFIG_FLAG_PrevRightFootCollNM" description="footprints"/>
+    <enumval name="CPED_CONFIG_FLAG_HasBeenBumpedInCar" description="Has this ped been bumped by a car while driving?"/>
+    <enumval name="CPED_CONFIG_FLAG_InWaterTaskQuitToClimbLadder" description="The in-water task has just quit in response to a ladder-climb request"/>
+    <enumval name="CPED_CONFIG_FLAG_NMTwoHandedWeaponBothHandsConstrained" description="when using physical 2-handed weapons, both hands have been latched to the gun model (used when sending ConfigureCharacter to NM)"/>
     <enumval name="CPED_CONFIG_FLAG_CreatedBloodPoolTimer"/>
     <enumval name="CPED_CONFIG_FLAG_DontActivateRagdollFromAnyPedImpact"/>
     <enumval name="CPED_CONFIG_FLAG_GroupPedFailedToEnterCover"/>
@@ -99,14 +99,14 @@
     <enumval name="CPED_CONFIG_FLAG_ForcePedLoadCover" description="Set by the script to force a ped to load cover"/>
     <enumval name="CPED_CONFIG_FLAG_BlockCoweringInCover"/>
     <enumval name="CPED_CONFIG_FLAG_BlockPeekingInCover"/>
-    <enumval name="CPED_CONFIG_FLAG_JustLeftCarNotCheckedForDoors" description=" Set when a ped exits a car.  The first time he he moves he should check for door obstructions."/>
+    <enumval name="CPED_CONFIG_FLAG_JustLeftCarNotCheckedForDoors" description="Set when a ped exits a car.  The first time he he moves he should check for door obstructions."/>
     <enumval name="CPED_CONFIG_FLAG_VaultFromCover"/>
     <enumval name="CPED_CONFIG_FLAG_AutoConversationLookAts"/>
-    <enumval name="CPED_CONFIG_FLAG_UsingCrouchedPedCapsule" description=" Set to indicate that the ped's bounds are in the crouched configuration"/>
-    <enumval name="CPED_CONFIG_FLAG_HasDeadPedBeenReported" description=" Whether this ped has been investigated (for dead peds)"/>
-    <enumval name="CPED_CONFIG_FLAG_ForcedAim" description=" If set, we will always behave like we have the aim trigger pressed"/>
-    <enumval name="CPED_CONFIG_FLAG_SteersAroundPeds" description=" Enables/disables the low-level steering behaviour around peds and objects"/>
-    <enumval name="CPED_CONFIG_FLAG_SteersAroundObjects" description=" Enables/disables the low-level steering behaviour around peds and objects"/>
+    <enumval name="CPED_CONFIG_FLAG_UsingCrouchedPedCapsule" description="Set to indicate that the ped's bounds are in the crouched configuration"/>
+    <enumval name="CPED_CONFIG_FLAG_HasDeadPedBeenReported" description="Whether this ped has been investigated (for dead peds)"/>
+    <enumval name="CPED_CONFIG_FLAG_ForcedAim" description="If set, we will always behave like we have the aim trigger pressed"/>
+    <enumval name="CPED_CONFIG_FLAG_SteersAroundPeds" description="Enables/disables the low-level steering behaviour around peds and objects"/>
+    <enumval name="CPED_CONFIG_FLAG_SteersAroundObjects" description="Enables/disables the low-level steering behaviour around peds and objects"/>
     <enumval name="CPED_CONFIG_FLAG_OpenDoorArmIK" description="Set if the ped should enable open door arm IK"/>
     <enumval name="CPED_CONFIG_FLAG_ForceReload" description="Force a reload of the current weapon" hideFrom="script"/>
     <enumval name="CPED_CONFIG_FLAG_DontActivateRagdollFromVehicleImpact" description ="Blocks ragdoll activation when hit by a vehicle"/>
@@ -183,7 +183,7 @@
     <enumval name="CPED_CONFIG_FLAG_PedsJackingMeDontGetIn" description="If set any ped jacking this ped will not get in as part of the jack."/>
     <enumval name="CPED_CONFIG_FLAG_AdditionalRappellingPed"/>
     <enumval name="CPED_CONFIG_FLAG_PedIgnoresAnimInterruptEvents" description="AI peds only, will not early out of anims"/>
-    <enumval name="CPED_CONFIG_FLAG_IsInCustody" description=" Signifies a player is in custody"/>
+    <enumval name="CPED_CONFIG_FLAG_IsInCustody" description="Signifies a player is in custody"/>
     <enumval name="CPED_CONFIG_FLAG_ForceStandardBumpReactionThresholds" description="By default, armed and friendly peds have increased resistance to being bumped by players and friendly vehicles. Setting this flag will make them use the standard thresholds instead."/>
     <enumval name="CPED_CONFIG_FLAG_LawWillOnlyAttackIfPlayerIsWanted" description="If set, this ped can only be attacked by law if the player is wanted"/>
     <enumval name="CPED_CONFIG_FLAG_IsAgitated" description="If set, this ped is agitated."/>
@@ -221,7 +221,7 @@
     <enumval name="CPED_CONFIG_FLAG_WaitForDirectEntryPointToBeFreeWhenExiting" description =""/>
     <enumval name="CPED_CONFIG_FLAG_OnlyRequireOnePressToExitVehicle" description =""/>
     <enumval name="CPED_CONFIG_FLAG_ForceExitToSkyDive" description =""/>
-    <enumval name="CPED_CONFIG_FLAG_SteersAroundVehicles" description=" Enables/disables the low-level steering behaviour around vehicles"/>
+    <enumval name="CPED_CONFIG_FLAG_SteersAroundVehicles" description="Enables/disables the low-level steering behaviour around vehicles"/>
     <enumval name="CPED_CONFIG_FLAG_AllowPedInVehiclesOverrideTaskFlags" description="If set, allow the ped to be set in vehicles even if the ped's TaskData would otherwise disallow it."/>
     <enumval name="CPED_CONFIG_FLAG_DontEnterLeadersVehicle" description="If set, the ped will not enter the leader's vehicle."/>
     <enumval name="CPED_CONFIG_FLAG_DisableExitToSkyDive" description =""/>
@@ -539,7 +539,7 @@
     <enumval name="CPED_RESET_FLAG_WanderingStoppedForOtherPed"/>
     <enumval name="CPED_RESET_FLAG_SupressGunfireEvents"/>
     <enumval name="CPED_RESET_FLAG_InfiniteStamina" description="Currently just for mounts, but could be expanded to anything with stamina"/>
-    <enumval name="CPED_RESET_FLAG_BlockWeaponReactionsUnlessDead" description=" Stops ragdoll and nm behaviors triggering from weapon damage unless the ped has died."/>
+    <enumval name="CPED_RESET_FLAG_BlockWeaponReactionsUnlessDead" description="Stops ragdoll and nm behaviors triggering from weapon damage unless the ped has died."/>
     <enumval name="CPED_RESET_FLAG_ForcePlayerFiring"/>
     <enumval name="CPED_RESET_FLAG_InCoverFacingLeft" description="set when exiting the cover state saying if we are facing left"/>
     <enumval name="CPED_RESET_FLAG_ForcePeekFromCover" description="if set the ped will go into peeking if they are already in cover"/>
@@ -588,8 +588,8 @@
     <enumval name="CPED_RESET_FLAG_TemporarilyBlockWeaponEquipping" description="Stop weapon equipping"/>
     <enumval name="CPED_RESET_FLAG_CoverOutroRunning" description="TASK_AIM_GUN_FROM_COVER_OUTRO"/>
     <enumval name="CPED_RESET_FLAG_DisableSeeThroughChecksWhenTargeting" description="Any targeting LoS checks will fail if any materials with 'see through' materials found."/>
-    <enumval name="CPED_RESET_FLAG_PuttingOnHelmet" description=" putting on helmet"/>
-    <enumval name="CPED_RESET_FLAG_AllowPullingPedOntoRoute" description=" allows goto task to apply heading in order to pull a ped back onto their route"/>
+    <enumval name="CPED_RESET_FLAG_PuttingOnHelmet" description="putting on helmet"/>
+    <enumval name="CPED_RESET_FLAG_AllowPullingPedOntoRoute" description="allows goto task to apply heading in order to pull a ped back onto their route"/>
     <enumval name="CPED_RESET_FLAG_ApplyAnimatedVelocityWhilstAttached" description="Allows attachment offsets to be updated from animated velocities"/>
     <enumval name="CPED_RESET_FLAG_AICoverEntryRunning" description="TASK_ENTER_COVER : State_PlayAIEntryAnim"/>
     <enumval name="CPED_RESET_FLAG_ResponseAfterScenarioPanic" description="The ped is entering threat response after panic exiting a scenario."/>
@@ -644,10 +644,10 @@
     <enumval name="CPED_RESET_FLAG_MakeHeadInvisible" description="If set, scale the head of the ped to 0.001"/>
     <enumval name="CPED_RESET_FLAG_NoAutoRunWhenFiring" description="Don't auto run when NoAutoRunWhenFiring is set."/>
     <enumval name="CPED_RESET_FLAG_PermitEventDuringScenarioExit" description="Ignore certain aspects (FOV checks, etc) of AffectsPedCore() on some events while the ped is playing a scenario exit."/>
-    <enumval name="CPED_RESET_FLAG_DisableSteeringAroundVehicles" description=" Enables/disables the low-level steering behaviour around vehicles"/>
-    <enumval name="CPED_RESET_FLAG_DisableSteeringAroundPeds" description=" Enables/disables the low-level steering behaviour around peds"/>
-    <enumval name="CPED_RESET_FLAG_DisableSteeringAroundObjects" description=" Enables/disables the low-level steering behaviour around objects"/>
-    <enumval name="CPED_RESET_FLAG_DisableSteeringAroundNavMeshEdges" description=" Enables/disables the low-level steering behaviour around nav mesh edges"/>
+    <enumval name="CPED_RESET_FLAG_DisableSteeringAroundVehicles" description="Enables/disables the low-level steering behaviour around vehicles"/>
+    <enumval name="CPED_RESET_FLAG_DisableSteeringAroundPeds" description="Enables/disables the low-level steering behaviour around peds"/>
+    <enumval name="CPED_RESET_FLAG_DisableSteeringAroundObjects" description="Enables/disables the low-level steering behaviour around objects"/>
+    <enumval name="CPED_RESET_FLAG_DisableSteeringAroundNavMeshEdges" description="Enables/disables the low-level steering behaviour around nav mesh edges"/>
     <enumval name="CPED_RESET_FLAG_WantsToEnterVehicleFromCover" description=""/>
     <enumval name="CPED_RESET_FLAG_WantsToEnterCover" description=""/>
     <enumval name="CPED_RESET_FLAG_WantsToEnterVehicleFromAiming" description=""/>
