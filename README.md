@@ -17,19 +17,3 @@
 | ------------------------------------------------------ | ----------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
 | [v_ped_stuff/ePedResetFlags.xml](ePedResetFlags.xml)   | [PED::SET_PED_RESET_FLAG](https://alloc8or.re/gta5/nativedb/?n=0xC1E8A365BF3B29F2)  | [PED::SET_PED_RESET_FLAG](https://nativedb.dotindustries.dev/gta5/natives/0xC1E8A365BF3B29F2)  | [PED::SET_PED_RESET_FLAG](https://docs.fivem.net/natives/?_0xC1E8A365BF3B29F2)  |
 |                                                        | [PED::GET_PED_RESET_FLAG](https://alloc8or.re/gta5/nativedb/?n=0xAF9E59B1B1FBF2A0)  | [PED::GET_PED_RESET_FLAG](https://nativedb.dotindustries.dev/gta5/natives/0xAF9E59B1B1FBF2A0)  | [PED::GET_PED_RESET_FLAG](https://docs.fivem.net/natives/?_0xAF9E59B1B1FBF2A0)  |
-
----
-
-Other Ressources (mostly useless tbh):
-
-[gtasnail/pedResetFlags.lua](https://gist.github.com/gtasnail/57e58de37a583616ca4b822e8ab49e45)
-
-https://gtaforums.com/topic/827579-ped-config-flags/
-
-https://wiki.rage.mp/index.php?title=Player_Config_Flags
-
-https://wiki.rage.mp/index.php?title=Player::getIsTaskActive
-
-https://pastebin.com/2gFqJ3Px
-
-https://docs.altv.mp/gta/articles/ped/flags.html (Ped Config Flags)
