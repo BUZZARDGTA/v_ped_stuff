@@ -49,7 +49,7 @@
     <enumval name="CPED_CONFIG_FLAG_DisablePlayerLockon"/>
     <enumval name="CPED_CONFIG_FLAG_DisableLockonToRandomPeds"/>
     <enumval name="CPED_CONFIG_FLAG_AllowLockonToFriendlyPlayers"/>
-    <enumval name="CPED_CONFIG_FLAG_DisableHornAudioWhenDead " description="Disable the horn when a ped dies in the car and has his head against the wheel"/>
+    <enumval name="CPED_CONFIG_FLAG_DisableHornAudioWhenDead" description="Disable the horn when a ped dies in the car and has his head against the wheel"/>
     <enumval name="CPED_CONFIG_FLAG_PedBeingDeleted"/>
     <enumval name="CPED_CONFIG_FLAG_BlockWeaponSwitching" description="Disable weapon switching while this is set"/>
     <enumval name="CPED_CONFIG_FLAG_BlockGroupPedAimedAtResponse" description="Disable the behaviour which causes player-group peds to crouch when the player aims at them"/>
