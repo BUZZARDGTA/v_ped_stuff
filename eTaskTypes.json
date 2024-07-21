@@ -1,0 +1,2222 @@
+{
+  "-1": {
+    "name": "TASK_INVALID_ID"
+  },
+  "0": {
+    "name": "TASK_HANDS_UP",
+    "rockstarCodeComment_TaskType": "For now all tasks that have a script dependency go at the top, so adding new tasks doesn't change their ordering and cause asserts"
+  },
+  "1": {
+    "name": "TASK_CLIMB_LADDER",
+    "rockstarCodeComment_TaskType": "For now all tasks that have a script dependency go at the top, so adding new tasks doesn't change their ordering and cause asserts"
+  },
+  "2": {
+    "name": "TASK_EXIT_VEHICLE",
+    "rockstarCodeComment_TaskType": "For now all tasks that have a script dependency go at the top, so adding new tasks doesn't change their ordering and cause asserts"
+  },
+  "3": {
+    "name": "TASK_COMBAT_ROLL",
+    "rockstarCodeComment_TaskType": "For now all tasks that have a script dependency go at the top, so adding new tasks doesn't change their ordering and cause asserts"
+  },
+  "4": {
+    "name": "TASK_AIM_GUN_ON_FOOT",
+    "rockstarCodeComment_TaskType": "For now all tasks that have a script dependency go at the top, so adding new tasks doesn't change their ordering and cause asserts"
+  },
+  "5": {
+    "name": "TASK_MOVE_PLAYER",
+    "rockstarCodeComment_TaskType": "player tasks"
+  },
+  "6": {
+    "name": "TASK_PLAYER_ON_FOOT",
+    "rockstarCodeComment_TaskType": "player tasks"
+  },
+  "7": {
+    "name": "TASK_PLAYER_ON_HORSE",
+    "rockstarCodeComment_TaskType": "player tasks"
+  },
+  "8": {
+    "name": "TASK_WEAPON",
+    "rockstarCodeComment_TaskType": "player tasks"
+  },
+  "9": {
+    "name": "TASK_PLAYER_WEAPON",
+    "rockstarCodeComment_TaskType": "player tasks"
+  },
+  "10": {
+    "name": "TASK_PLAYER_IDLES",
+    "rockstarCodeComment_TaskType": "player tasks"
+  },
+  "11": {
+    "name": "TASK_COMPLEX_NETWORK_PLAYER_SETTINGS_TASKS",
+    "rockstarCodeComment_TaskType": "Network Player Settings Task"
+  },
+  "12": {
+    "name": "TASK_NONE",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "13": {
+    "name": "TASK_UNINTERRUPTABLE",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "14": {
+    "name": "TASK_PAUSE",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "15": {
+    "name": "TASK_DO_NOTHING",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "16": {
+    "name": "TASK_GET_UP",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "17": {
+    "name": "TASK_GET_UP_AND_STAND_STILL",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "18": {
+    "name": "TASK_FALL_OVER",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "19": {
+    "name": "TASK_FALL_AND_GET_UP",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "20": {
+    "name": "TASK_CRAWL",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "21": {
+    "name": "TASK_COMPLEX_FALL_AND_STAY_DOWN",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "22": {
+    "name": "TASK_SIT_IDLE",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "23": {
+    "name": "TASK_SIT_DOWN",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "24": {
+    "name": "TASK_HIT_RESPONSE",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "25": {
+    "name": "TASK_COMPLEX_ON_FIRE",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "26": {
+    "name": "TASK_DAMAGE_ELECTRIC",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "27": {
+    "name": "TASK_STEP_UP",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "28": {
+    "name": "TASK_TRIGGER_LOOK_AT",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "29": {
+    "name": "TASK_CLEAR_LOOK_AT",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "30": {
+    "name": "TASK_SET_CHAR_DECISION_MAKER",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "31": {
+    "name": "TASK_SET_PED_DEFENSIVE_AREA",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "32": {
+    "name": "TASK_USE_SEQUENCE",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "33": {
+    "name": "TASK_SIMPLE_CONTROL_MOVEMENT",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "34": {
+    "name": "TASK_MOVE_STAND_STILL",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "35": {
+    "name": "TASK_COMPLEX_CONTROL_MOVEMENT",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "36": {
+    "name": "TASK_COMPLEX_MOVE_SEQUENCE",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "37": {
+    "name": "TASK_MOVE_AROUND_COVERPOINTS",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "38": {
+    "name": "TASK_AMBIENT_CLIPS",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "39": {
+    "name": "TASK_MOVE_IN_AIR",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "40": {
+    "name": "TASK_NETWORK_CLONE",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "41": {
+    "name": "TASK_USE_CLIMB_ON_ROUTE",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "42": {
+    "name": "TASK_USE_DROPDOWN_ON_ROUTE",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "43": {
+    "name": "TASK_USE_LADDER_ON_ROUTE",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "44": {
+    "name": "TASK_SET_BLOCKING_OF_NON_TEMPORARY_EVENTS",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "45": {
+    "name": "TASK_FORCE_MOTION_STATE",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "46": {
+    "name": "TASK_ON_FOOT_SLOPE_SCRAMBLE",
+    "rockstarCodeComment_TaskType": "basic tasks"
+  },
+  "47": {
+    "name": "TASK_GO_TO_AND_CLIMB_LADDER",
+    "rockstarCodeComment_TaskType": "Climbing tasks"
+  },
+  "48": {
+    "name": "TASK_CLIMB_LADDER_FULLY",
+    "rockstarCodeComment_TaskType": "Climbing tasks"
+  },
+  "49": {
+    "name": "TASK_RAPPEL",
+    "rockstarCodeComment_TaskType": "Climbing tasks"
+  },
+  "50": {
+    "name": "TASK_VAULT",
+    "rockstarCodeComment_TaskType": "Climbing tasks"
+  },
+  "51": {
+    "name": "TASK_DROP_DOWN",
+    "rockstarCodeComment_TaskType": "Climbing tasks"
+  },
+  "52": {
+    "name": "TASK_AFFECT_SECONDARY_BEHAVIOUR",
+    "rockstarCodeComment_TaskType": "secondary tasks"
+  },
+  "53": {
+    "name": "TASK_AMBIENT_LOOK_AT_EVENT",
+    "rockstarCodeComment_TaskType": "secondary tasks"
+  },
+  "54": {
+    "name": "TASK_OPEN_DOOR",
+    "rockstarCodeComment_TaskType": "secondary tasks"
+  },
+  "55": {
+    "name": "TASK_SHOVE_PED",
+    "rockstarCodeComment_TaskType": "secondary tasks"
+  },
+  "56": {
+    "name": "TASK_SWAP_WEAPON",
+    "rockstarCodeComment_TaskType": "secondary tasks"
+  },
+  "57": {
+    "name": "TASK_GENERAL_SWEEP",
+    "rockstarCodeComment_TaskType": "secondary tasks"
+  },
+  "58": {
+    "name": "TASK_POLICE",
+    "rockstarCodeComment_TaskType": "Service tasks"
+  },
+  "59": {
+    "name": "TASK_POLICE_ORDER_RESPONSE",
+    "rockstarCodeComment_TaskType": "Service tasks"
+  },
+  "60": {
+    "name": "TASK_PURSUE_CRIMINAL",
+    "rockstarCodeComment_TaskType": "Service tasks"
+  },
+  "61": {
+    "name": "TASK_POLICE_GIVE_WARNING",
+    "rockstarCodeComment_TaskType": "Service tasks"
+  },
+  "62": {
+    "name": "TASK_ARREST_PED",
+    "rockstarCodeComment_TaskType": "Service tasks"
+  },
+  "63": {
+    "name": "TASK_ARREST_PED2",
+    "rockstarCodeComment_TaskType": "Service tasks"
+  },
+  "64": {
+    "name": "TASK_BUSTED",
+    "rockstarCodeComment_TaskType": "Service tasks"
+  },
+  "65": {
+    "name": "TASK_FIRE_PATROL",
+    "rockstarCodeComment_TaskType": "Service tasks"
+  },
+  "66": {
+    "name": "TASK_HELI_ORDER_RESPONSE",
+    "rockstarCodeComment_TaskType": "Service tasks"
+  },
+  "67": {
+    "name": "TASK_HELI_PASSENGER_RAPPEL",
+    "rockstarCodeComment_TaskType": "Service tasks"
+  },
+  "68": {
+    "name": "TASK_AMBULANCE_PATROL",
+    "rockstarCodeComment_TaskType": "Service tasks"
+  },
+  "69": {
+    "name": "TASK_POLICE_WANTED_RESPONSE",
+    "rockstarCodeComment_TaskType": "Service tasks"
+  },
+  "70": {
+    "name": "TASK_SWAT",
+    "rockstarCodeComment_TaskType": "Service tasks"
+  },
+  "71": {
+    "name": "TASK_SWAT_LEADER",
+    "rockstarCodeComment_TaskType": "Service tasks"
+  },
+  "72": {
+    "name": "TASK_SWAT_WANTED_RESPONSE",
+    "rockstarCodeComment_TaskType": "Service tasks"
+  },
+  "73": {
+    "name": "TASK_SWAT_ORDER_RESPONSE",
+    "rockstarCodeComment_TaskType": "Service tasks"
+  },
+  "74": {
+    "name": "TASK_SWAT_GO_TO_STAGING_AREA",
+    "rockstarCodeComment_TaskType": "Service tasks"
+  },
+  "75": {
+    "name": "TASK_SWAT_FOLLOW_IN_LINE",
+    "rockstarCodeComment_TaskType": "Service tasks"
+  },
+  "76": {
+    "name": "TASK_WITNESS",
+    "rockstarCodeComment_TaskType": "Service tasks"
+  },
+  "77": {
+    "name": "TASK_GANG_PATROL",
+    "rockstarCodeComment_TaskType": "Service tasks"
+  },
+  "78": {
+    "name": "TASK_ARMY",
+    "rockstarCodeComment_TaskType": "Service tasks"
+  },
+  "79": {
+    "name": "TASK_SHOCKING_EVENT",
+    "rockstarCodeComment_TaskType": "Shocking event reaction tasks"
+  },
+  "80": {
+    "name": "TASK_SHOCKING_EVENT_WATCH",
+    "rockstarCodeComment_TaskType": "Shocking event reaction tasks"
+  },
+  "81": {
+    "name": "TASK_SHOCKING_EVENT_FLEE",
+    "rockstarCodeComment_TaskType": "Shocking event reaction tasks"
+  },
+  "82": {
+    "name": "TASK_SHOCKING_EVENT_GOTO",
+    "rockstarCodeComment_TaskType": "Shocking event reaction tasks"
+  },
+  "83": {
+    "name": "TASK_SHOCKING_EVENT_HURRYAWAY",
+    "rockstarCodeComment_TaskType": "Shocking event reaction tasks"
+  },
+  "84": {
+    "name": "TASK_SHOCKING_EVENT_REACT_TO_AIRCRAFT",
+    "rockstarCodeComment_TaskType": "Shocking event reaction tasks"
+  },
+  "85": {
+    "name": "TASK_SHOCKING_EVENT_REACT",
+    "rockstarCodeComment_TaskType": "Shocking event reaction tasks"
+  },
+  "86": {
+    "name": "TASK_SHOCKING_EVENT_BACK_AWAY",
+    "rockstarCodeComment_TaskType": "Shocking event reaction tasks"
+  },
+  "87": {
+    "name": "TASK_SHOCKING_POLICE_INVESTIGATE",
+    "rockstarCodeComment_TaskType": "Shocking event reaction tasks"
+  },
+  "88": {
+    "name": "TASK_SHOCKING_EVENT_STOP_AND_STARE",
+    "rockstarCodeComment_TaskType": "Shocking event reaction tasks"
+  },
+  "89": {
+    "name": "TASK_SHOCKING_NICE_CAR_PICTURE",
+    "rockstarCodeComment_TaskType": "Shocking event reaction tasks"
+  },
+  "90": {
+    "name": "TASK_SHOCKING_EVENT_THREAT_RESPONSE",
+    "rockstarCodeComment_TaskType": "Shocking event reaction tasks"
+  },
+  "91": {
+    "name": "TASK_PUT_ON_HELMET",
+    "rockstarCodeComment_TaskType": "helmet tasks"
+  },
+  "92": {
+    "name": "TASK_TAKE_OFF_HELMET",
+    "rockstarCodeComment_TaskType": "helmet tasks"
+  },
+  "93": {
+    "name": "TASK_CAR_REACT_TO_VEHICLE_COLLISION",
+    "rockstarCodeComment_TaskType": "vehicle tasks"
+  },
+  "94": {
+    "name": "TASK_REACT_TO_RUNNING_PED_OVER",
+    "rockstarCodeComment_TaskType": "vehicle tasks"
+  },
+  "95": {
+    "name": "TASK_CAR_REACT_TO_VEHICLE_COLLISION_GET_OUT",
+    "rockstarCodeComment_TaskType": "vehicle tasks"
+  },
+  "96": {
+    "name": "TASK_DEAD",
+    "rockstarCodeComment_TaskType": "More dying tasks"
+  },
+  "97": {
+    "name": "TASK_DYING_DEAD",
+    "rockstarCodeComment_TaskType": "More dying tasks"
+  },
+  "98": {
+    "name": "TASK_DEFER_TO_SCENARIO",
+    "rockstarCodeComment_TaskType": "scenario tasks",
+    "rockstarCodeComment": "Virual \"tasktype\" used by the decision maker to decide an event response based on scenario point flags."
+  },
+  "99": {
+    "name": "TASK_PARKED_VEHICLE_SCENARIO",
+    "rockstarCodeComment_TaskType": "scenario tasks"
+  },
+  "100": {
+    "name": "TASK_WANDERING_SCENARIO",
+    "rockstarCodeComment_TaskType": "scenario tasks"
+  },
+  "101": {
+    "name": "TASK_WANDERING_IN_RADIUS_SCENARIO",
+    "rockstarCodeComment_TaskType": "scenario tasks"
+  },
+  "102": {
+    "name": "TASK_COMPLEX_DRIVING_SCENARIO",
+    "rockstarCodeComment_TaskType": "scenario tasks"
+  },
+  "103": {
+    "name": "TASK_MOVE_BETWEEN_POINTS_SCENARIO",
+    "rockstarCodeComment_TaskType": "scenario tasks"
+  },
+  "104": {
+    "name": "TASK_CHAT_SCENARIO",
+    "rockstarCodeComment_TaskType": "scenario tasks"
+  },
+  "105": {
+    "name": "TASK_COMPLEX_WAIT_FOR_SEAT_TO_BE_FREE",
+    "rockstarCodeComment_TaskType": "scenario tasks"
+  },
+  "106": {
+    "name": "TASK_COWER_SCENARIO",
+    "rockstarCodeComment_TaskType": "scenario tasks"
+  },
+  "107": {
+    "name": "TASK_DEAD_BODY_SCENARIO",
+    "rockstarCodeComment_TaskType": "scenario tasks"
+  },
+  "108": {
+    "name": "TASK_WAIT_FOR_MY_CAR_TO_STOP",
+    "rockstarCodeComment_TaskType": "scenario tasks"
+  },
+  "109": {
+    "name": "TASK_COMPLEX_WAIT_FOR_DOOR_TO_BE_OPEN",
+    "rockstarCodeComment_TaskType": "scenario tasks"
+  },
+  "110": {
+    "name": "TASK_COMPLEX_DRIVE_WANDER_FOR_TIME",
+    "rockstarCodeComment_TaskType": "scenario tasks"
+  },
+  "111": {
+    "name": "TASK_COMPLEX_WAIT_FOR_TIME",
+    "rockstarCodeComment_TaskType": "scenario tasks"
+  },
+  "112": {
+    "name": "TASK_COMPLEX_GET_IN_CAR_SCENARIO",
+    "rockstarCodeComment_TaskType": "scenario tasks"
+  },
+  "113": {
+    "name": "TASK_MOBILE_PHONE_CHAT_SCENARIO",
+    "rockstarCodeComment_TaskType": "scenario tasks"
+  },
+  "114": {
+    "name": "TASK_SAY_AUDIO",
+    "rockstarCodeComment_TaskType": "scenario tasks"
+  },
+  "115": {
+    "name": "TASK_COMPLEX_MAKE_MOBILE_CALL",
+    "rockstarCodeComment_TaskType": "scenario tasks"
+  },
+  "116": {
+    "name": "TASK_WAIT_FOR_STEPPING_OUT",
+    "rockstarCodeComment_TaskType": "scenario tasks"
+  },
+  "117": {
+    "name": "TASK_COUPLE_SCENARIO",
+    "rockstarCodeComment_TaskType": "scenario tasks"
+  },
+  "118": {
+    "name": "TASK_USE_SCENARIO",
+    "rockstarCodeComment_TaskType": "scenario tasks"
+  },
+  "119": {
+    "name": "TASK_USE_VEHICLE_SCENARIO",
+    "rockstarCodeComment_TaskType": "scenario tasks"
+  },
+  "120": {
+    "name": "TASK_UNALERTED",
+    "rockstarCodeComment_TaskType": "scenario tasks"
+  },
+  "121": {
+    "name": "TASK_STEAL_VEHICLE",
+    "rockstarCodeComment_TaskType": "crime tasks"
+  },
+  "122": {
+    "name": "TASK_REACT_TO_PURSUIT",
+    "rockstarCodeComment_TaskType": "crime tasks"
+  },
+  "123": {
+    "name": "TASK_RUN_CLIP",
+    "rockstarCodeComment_TaskType": "clips (tasks that are sub-classes of CTaskSimpleRunUnloopedClip)"
+  },
+  "124": {
+    "name": "TASK_RUN_NAMED_CLIP",
+    "rockstarCodeComment_TaskType": "clips (tasks that are sub-classes of CTaskSimpleRunUnloopedClip)"
+  },
+  "125": {
+    "name": "TASK_HIT_WALL",
+    "rockstarCodeComment_TaskType": "clips (tasks that are sub-classes of CTaskSimpleRunUnloopedClip)"
+  },
+  "126": {
+    "name": "TASK_COWER",
+    "rockstarCodeComment_TaskType": "clips (tasks that are sub-classes of CTaskSimpleRunUnloopedClip)"
+  },
+  "127": {
+    "name": "TASK_CROUCH",
+    "rockstarCodeComment_TaskType": "clips (tasks that are sub-classes of CTaskSimpleRunUnloopedClip)"
+  },
+  "128": {
+    "name": "TASK_MELEE",
+    "rockstarCodeComment_TaskType": "clips (tasks that are sub-classes of CTaskSimpleRunUnloopedClip)"
+  },
+  "129": {
+    "name": "TASK_MOVE_MELEE_MOVEMENT",
+    "rockstarCodeComment_TaskType": "clips (tasks that are sub-classes of CTaskSimpleRunUnloopedClip)"
+  },
+  "130": {
+    "name": "TASK_MELEE_ACTION_RESULT",
+    "rockstarCodeComment_TaskType": "clips (tasks that are sub-classes of CTaskSimpleRunUnloopedClip)"
+  },
+  "131": {
+    "name": "TASK_MELEE_UPPERBODY_ANIM",
+    "rockstarCodeComment_TaskType": "clips (tasks that are sub-classes of CTaskSimpleRunUnloopedClip)"
+  },
+  "132": {
+    "name": "TASK_MELEE_UNINTERRUPTABLE",
+    "rockstarCodeComment_TaskType": "clips (tasks that are sub-classes of CTaskSimpleRunUnloopedClip)"
+  },
+  "133": {
+    "name": "TASK_MOVE_SCRIPTED",
+    "rockstarCodeComment_TaskType": "clips (tasks that are sub-classes of CTaskSimpleRunUnloopedClip)"
+  },
+  "134": {
+    "name": "TASK_SCRIPTED_ANIMATION",
+    "rockstarCodeComment_TaskType": "clips (tasks that are sub-classes of CTaskSimpleRunUnloopedClip)"
+  },
+  "135": {
+    "name": "TASK_SYNCHRONIZED_SCENE",
+    "rockstarCodeComment_TaskType": "clips (tasks that are sub-classes of CTaskSimpleRunUnloopedClip)",
+    "rockstarCodeComment": "Task for synchronizing an in game animated scene across multiple peds / objects"
+  },
+  "136": {
+    "name": "TASK_REACH_ARM",
+    "rockstarCodeComment_TaskType": "clips (tasks that are sub-classes of CTaskSimpleRunUnloopedClip)",
+    "rockstarCodeComment": "Performs an ik arm reach to a specified target for a duration"
+  },
+  "137": {
+    "name": "TASK_COMPLEX_EVASIVE_STEP",
+    "rockstarCodeComment_TaskType": "collision response tasks"
+  },
+  "138": {
+    "name": "TASK_MOVE_WANDER_AROUND_VEHICLE",
+    "rockstarCodeComment_TaskType": "collision response tasks"
+  },
+  "139": {
+    "name": "TASK_WALK_ROUND_FIRE",
+    "rockstarCodeComment_TaskType": "collision response tasks"
+  },
+  "140": {
+    "name": "TASK_COMPLEX_STUCK_IN_AIR",
+    "rockstarCodeComment_TaskType": "collision response tasks"
+  },
+  "141": {
+    "name": "TASK_WALK_ROUND_ENTITY",
+    "rockstarCodeComment_TaskType": "collision response tasks"
+  },
+  "142": {
+    "name": "TASK_MOVE_WALK_ROUND_VEHICLE",
+    "rockstarCodeComment_TaskType": "collision response tasks"
+  },
+  "143": {
+    "name": "TASK_MOVE_WALK_ROUND_VEHICLE_DOOR",
+    "rockstarCodeComment_TaskType": "collision response tasks"
+  },
+  "144": {
+    "name": "TASK_REACT_TO_GUN_AIMED_AT",
+    "rockstarCodeComment_TaskType": "threat response tasks"
+  },
+  "145": {
+    "name": "TASK_COMPLEX_EXTINGUISH_FIRES",
+    "rockstarCodeComment_TaskType": "threat response tasks"
+  },
+  "146": {
+    "name": "TASK_ON_FOOT_DUCK_AND_COVER",
+    "rockstarCodeComment_TaskType": "threat response tasks"
+  },
+  "147": {
+    "name": "TASK_AGGRESSIVE_RUBBERNECK",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "148": {
+    "name": "TASK_COMPLEX_LEAVE_CAR_AND_FLEE",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "149": {
+    "name": "TASK_COMPLEX_SCREAM_IN_CAR_THEN_LEAVE",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "150": {
+    "name": "TASK_IN_VEHICLE_BASIC",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "151": {
+    "name": "TASK_CAR_DRIVE_WANDER",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "152": {
+    "name": "TASK_LEAVE_ANY_CAR",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "153": {
+    "name": "TASK_COMPLEX_GET_OFF_BOAT",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "154": {
+    "name": "TASK_CAR_DRIVE_POINT_ROUTE",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "155": {
+    "name": "TASK_CAR_SET_TEMP_ACTION",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "156": {
+    "name": "TASK_BRING_VEHICLE_TO_HALT",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "157": {
+    "name": "TASK_CAR_DRIVE",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "158": {
+    "name": "TASK_COMPLEX_CAR_DRIVE_MISSION_KILL_PED",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "159": {
+    "name": "TASK_PLAYER_DRIVE",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "160": {
+    "name": "TASK_ENTER_VEHICLE",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "161": {
+    "name": "TASK_ENTER_VEHICLE_ALIGN",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "162": {
+    "name": "TASK_OPEN_VEHICLE_DOOR_FROM_OUTSIDE",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "163": {
+    "name": "TASK_ENTER_VEHICLE_SEAT",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "164": {
+    "name": "TASK_CLOSE_VEHICLE_DOOR_FROM_INSIDE",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "165": {
+    "name": "TASK_IN_VEHICLE_SEAT_SHUFFLE",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "166": {
+    "name": "TASK_OPEN_VEHICLE_DOOR_FROM_INSIDE",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "167": {
+    "name": "TASK_EXIT_VEHICLE_SEAT",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "168": {
+    "name": "TASK_CLOSE_VEHICLE_DOOR_FROM_OUTSIDE",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "169": {
+    "name": "TASK_CONTROL_VEHICLE",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "170": {
+    "name": "TASK_MOTION_IN_AUTOMOBILE",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "171": {
+    "name": "TASK_MOTION_ON_BICYCLE",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "172": {
+    "name": "TASK_MOTION_ON_BICYCLE_CONTROLLER",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "173": {
+    "name": "TASK_MOTION_IN_VEHICLE",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "174": {
+    "name": "TASK_MOTION_IN_TURRET",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "175": {
+    "name": "TASK_REACT_TO_BEING_JACKED",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "176": {
+    "name": "TASK_REACT_TO_BEING_ASKED_TO_LEAVE_VEHICLE",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "177": {
+    "name": "TASK_TRY_TO_GRAB_VEHICLE_DOOR",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "178": {
+    "name": "TASK_GET_ON_TRAIN",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "179": {
+    "name": "TASK_GET_OFF_TRAIN",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "180": {
+    "name": "TASK_RIDE_TRAIN",
+    "rockstarCodeComment_TaskType": "public car tasks"
+  },
+  "181": {
+    "name": "TASK_MOTION_RIDE_HORSE",
+    "rockstarCodeComment_TaskType": "horse related tasks"
+  },
+  "182": {
+    "name": "TASK_MOVE_MOUNTED",
+    "rockstarCodeComment_TaskType": "horse related tasks"
+  },
+  "183": {
+    "name": "TASK_MOVE_MOUNTED_SPUR_CONTROL",
+    "rockstarCodeComment_TaskType": "horse related tasks"
+  },
+  "184": {
+    "name": "TASK_MOUNT_ANIMAL",
+    "rockstarCodeComment_TaskType": "horse related tasks"
+  },
+  "185": {
+    "name": "TASK_DISMOUNT_ANIMAL",
+    "rockstarCodeComment_TaskType": "horse related tasks"
+  },
+  "186": {
+    "name": "TASK_MOUNT_SEAT",
+    "rockstarCodeComment_TaskType": "horse related tasks"
+  },
+  "187": {
+    "name": "TASK_GETTING_MOUNTED",
+    "rockstarCodeComment_TaskType": "horse related tasks"
+  },
+  "188": {
+    "name": "TASK_DISMOUNT_SEAT",
+    "rockstarCodeComment_TaskType": "horse related tasks"
+  },
+  "189": {
+    "name": "TASK_GETTING_DISMOUNTED",
+    "rockstarCodeComment_TaskType": "horse related tasks"
+  },
+  "190": {
+    "name": "TASK_MOUNT_THROW_PROJECTILE",
+    "rockstarCodeComment_TaskType": "horse related tasks"
+  },
+  "191": {
+    "name": "TASK_RIDER_REARUP",
+    "rockstarCodeComment_TaskType": "horse related tasks"
+  },
+  "192": {
+    "name": "TASK_JUMP_MOUNTED",
+    "rockstarCodeComment_TaskType": "horse related tasks"
+  },
+  "193": {
+    "name": "TASK_MOVE_DRAFT_ANIMAL",
+    "rockstarCodeComment_TaskType": "horse related tasks"
+  },
+  "194": {
+    "name": "TASK_MOUNT_FOLLOW_NEAREST_ROAD",
+    "rockstarCodeComment_TaskType": "horse related tasks"
+  },
+  "195": {
+    "name": "TASK_GO_TO_CAR_DOOR_AND_STAND_STILL",
+    "rockstarCodeComment_TaskType": "private car tasks (used only by public car tasks)"
+  },
+  "196": {
+    "name": "TASK_MOVE_GO_TO_VEHICLE_DOOR",
+    "rockstarCodeComment_TaskType": "private car tasks (used only by public car tasks)"
+  },
+  "197": {
+    "name": "TASK_SET_PED_IN_VEHICLE",
+    "rockstarCodeComment_TaskType": "private car tasks (used only by public car tasks)"
+  },
+  "198": {
+    "name": "TASK_SET_PED_OUT_OF_VEHICLE",
+    "rockstarCodeComment_TaskType": "private car tasks (used only by public car tasks)"
+  },
+  "199": {
+    "name": "TASK_VEHICLE_MOUNTED_WEAPON",
+    "rockstarCodeComment_TaskType": "private car tasks (used only by public car tasks)"
+  },
+  "200": {
+    "name": "TASK_VEHICLE_GUN",
+    "rockstarCodeComment_TaskType": "private car tasks (used only by public car tasks)"
+  },
+  "201": {
+    "name": "TASK_VEHICLE_PROJECTILE",
+    "rockstarCodeComment_TaskType": "private car tasks (used only by public car tasks)"
+  },
+  "202": {
+    "name": "TASK_START_CAR",
+    "rockstarCodeComment_TaskType": "private car tasks (used only by public car tasks)"
+  },
+  "203": {
+    "name": "TASK_VEHICLE_SHUNT",
+    "rockstarCodeComment_TaskType": "private car tasks (used only by public car tasks)"
+  },
+  "204": {
+    "name": "TASK_SMASH_CAR_WINDOW",
+    "rockstarCodeComment_TaskType": "private car tasks (used only by public car tasks)"
+  },
+  "205": {
+    "name": "TASK_MOVE_GO_TO_POINT",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "206": {
+    "name": "TASK_MOVE_ACHIEVE_HEADING",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "207": {
+    "name": "TASK_MOVE_FACE_TARGET",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "208": {
+    "name": "TASK_MOVE_GO_TO_POINT_AND_STAND_STILL",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "209": {
+    "name": "TASK_MOVE_FOLLOW_POINT_ROUTE",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "210": {
+    "name": "TASK_MOVE_SEEK_ENTITY_STANDARD",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "211": {
+    "name": "TASK_MOVE_SEEK_ENTITY_LAST_NAV_MESH_INTERSECTION",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "212": {
+    "name": "TASK_MOVE_SEEK_ENTITY_OFFSET_ROTATE",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "213": {
+    "name": "TASK_MOVE_SEEK_ENTITY_OFFSET_FIXED",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "214": {
+    "name": "TASK_MOVE_SEEK_ENTITY_RADIUS_ANGLE",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "215": {
+    "name": "TASK_EXHAUSTED_FLEE",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "216": {
+    "name": "TASK_GROWL_AND_FLEE",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "217": {
+    "name": "TASK_SCENARIO_FLEE",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "218": {
+    "name": "TASK_SMART_FLEE",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "219": {
+    "name": "TASK_FLY_AWAY",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "220": {
+    "name": "TASK_WALK_AWAY",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "221": {
+    "name": "TASK_WANDER",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "222": {
+    "name": "TASK_WANDER_IN_AREA",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "223": {
+    "name": "TASK_FOLLOW_LEADER_IN_FORMATION",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "224": {
+    "name": "TASK_GO_TO_POINT_ANY_MEANS",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "225": {
+    "name": "TASK_COMPLEX_TURN_TO_FACE_ENTITY",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "226": {
+    "name": "TASK_FOLLOW_LEADER_ANY_MEANS",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "227": {
+    "name": "TASK_PLAYER_HORSE_FOLLOW",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "228": {
+    "name": "TASK_FLY_TO_POINT",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "229": {
+    "name": "TASK_FLYING_WANDER",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "230": {
+    "name": "TASK_GO_TO_POINT_AIMING",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "231": {
+    "name": "TASK_GO_TO_SCENARIO",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "232": {
+    "name": "TASK_FOLLOW_PATROL_ROUTE",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "233": {
+    "name": "TASK_SEEK_ENTITY_AIMING",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "234": {
+    "name": "TASK_SLIDE_TO_COORD",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "235": {
+    "name": "TASK_SWIMMING_WANDER",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "236": {
+    "name": "TASK_COMPLEX_AVOID_ENTITY",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "237": {
+    "name": "TASK_MOVE_TRACKING_ENTITY",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "238": {
+    "name": "TASK_MOVE_FOLLOW_NAVMESH",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "239": {
+    "name": "TASK_MOVE_GO_TO_POINT_ON_ROUTE",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "240": {
+    "name": "TASK_ESCAPE_BLAST",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "241": {
+    "name": "TASK_MOVE_WANDER",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "242": {
+    "name": "TASK_MOVE_BE_IN_FORMATION",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "243": {
+    "name": "TASK_MOVE_CROWD_AROUND_LOCATION",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "244": {
+    "name": "TASK_MOVE_CROSS_ROAD_AT_TRAFFIC_LIGHTS",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "245": {
+    "name": "TASK_MOVE_WAIT_FOR_TRAFFIC",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "246": {
+    "name": "TASK_MOVE_GOTO_POINT_STAND_STILL_ACHIEVE_HEADING",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "247": {
+    "name": "TASK_MOVE_WAIT_FOR_NAVMESH_SPECIAL_ACTION_EVENT",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "248": {
+    "name": "TASK_MOVE_GOTO_SAFE_POSITION_ON_NAVMESH",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "249": {
+    "name": "TASK_MOVE_RETURN_TO_ROUTE",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "250": {
+    "name": "TASK_MOVE_GOTO_SHELTER_AND_WAIT",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "251": {
+    "name": "TASK_MOVE_GET_ONTO_MAIN_NAVMESH",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "252": {
+    "name": "TASK_MOVE_SLIDE_TO_COORD",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "253": {
+    "name": "TASK_MOVE_GOTO_POINT_RELATIVE_TO_ENTITY_AND_STAND_STILL",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "254": {
+    "name": "TASK_HELICOPTER_STRAFE",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "255": {
+    "name": "TASK_COMPLEX_USE_MOBILE_PHONE_AND_MOVEMENT",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "256": {
+    "name": "TASK_GET_OUT_OF_WATER",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "257": {
+    "name": "TASK_COMPLEX_SEARCH_WANDER_AFTER_TIME",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "258": {
+    "name": "TASK_COMPLEX_MOVE_FOLLOW_NAV_NODES_ROUTE",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "259": {
+    "name": "TASK_MOVE_FOLLOW_ENTITY_OFFSET",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "260": {
+    "name": "TASK_TEST_CLIP_DISTANCE",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "261": {
+    "name": "TASK_FOLLOW_WAYPOINT_RECORDING",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "262": {
+    "name": "TASK_DROP_OVER_EDGE",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "263": {
+    "name": "TASK_GENERIC_MOVE_TO_POINT",
+    "rockstarCodeComment_TaskType": "goto tasks"
+  },
+  "264": {
+    "name": "TASK_MOTION_PED",
+    "rockstarCodeComment_TaskType": "goto tasks",
+    "rockstarCodeComment_TaskSubType": "Entity base tasks"
+  },
+  "265": {
+    "name": "TASK_MOTION_PED_LOW_LOD",
+    "rockstarCodeComment_TaskType": "goto tasks",
+    "rockstarCodeComment_TaskSubType": "Entity base tasks"
+  },
+  "266": {
+    "name": "TASK_MOTION_ANIMAL",
+    "rockstarCodeComment_TaskType": "goto tasks",
+    "rockstarCodeComment_TaskSubType": "Entity base tasks"
+  },
+  "267": {
+    "name": "TASK_MOTION_BASIC_LOCOMOTION",
+    "rockstarCodeComment_TaskType": "goto tasks",
+    "rockstarCodeComment_TaskSubType": "Motion tasks"
+  },
+  "268": {
+    "name": "TASK_HUMAN_LOCOMOTION",
+    "rockstarCodeComment_TaskType": "goto tasks",
+    "rockstarCodeComment_TaskSubType": "Motion tasks"
+  },
+  "269": {
+    "name": "TASK_MOTION_BASIC_LOCOMOTION_LOW_LOD",
+    "rockstarCodeComment_TaskType": "goto tasks",
+    "rockstarCodeComment_TaskSubType": "Motion tasks"
+  },
+  "270": {
+    "name": "TASK_MOTION_STRAFING",
+    "rockstarCodeComment_TaskType": "goto tasks",
+    "rockstarCodeComment_TaskSubType": "Motion tasks"
+  },
+  "271": {
+    "name": "TASK_MOTION_TENNIS",
+    "rockstarCodeComment_TaskType": "goto tasks",
+    "rockstarCodeComment_TaskSubType": "Motion tasks"
+  },
+  "272": {
+    "name": "TASK_MOTION_AIMING",
+    "rockstarCodeComment_TaskType": "goto tasks",
+    "rockstarCodeComment_TaskSubType": "Motion tasks"
+  },
+  "273": {
+    "name": "TASK_ON_FOOT_BIRD",
+    "rockstarCodeComment_TaskType": "goto tasks",
+    "rockstarCodeComment_TaskSubType": "Motion tasks"
+  },
+  "274": {
+    "name": "TASK_ON_FOOT_FLIGHTLESS_BIRD",
+    "rockstarCodeComment_TaskType": "goto tasks",
+    "rockstarCodeComment_TaskSubType": "Motion tasks"
+  },
+  "275": {
+    "name": "TASK_ON_FOOT_HORSE ",
+    "rockstarCodeComment_TaskType": "goto tasks",
+    "rockstarCodeComment_TaskSubType": "Motion tasks"
+  },
+  "276": {
+    "name": "TASK_ON_FOOT_DOG",
+    "rockstarCodeComment_TaskType": "goto tasks",
+    "rockstarCodeComment_TaskSubType": "Motion tasks"
+  },
+  "277": {
+    "name": "TASK_ON_FOOT_DEER",
+    "rockstarCodeComment_TaskType": "goto tasks",
+    "rockstarCodeComment_TaskSubType": "Motion tasks"
+  },
+  "278": {
+    "name": "TASK_ON_FOOT_FISH",
+    "rockstarCodeComment_TaskType": "goto tasks",
+    "rockstarCodeComment_TaskSubType": "Motion tasks"
+  },
+  "279": {
+    "name": "TASK_ON_FOOT_QUAD",
+    "rockstarCodeComment_TaskType": "goto tasks",
+    "rockstarCodeComment_TaskSubType": "Motion tasks"
+  },
+  "280": {
+    "name": "TASK_MOTION_DIVING",
+    "rockstarCodeComment_TaskType": "goto tasks",
+    "rockstarCodeComment_TaskSubType": "Motion tasks"
+  },
+  "281": {
+    "name": "TASK_MOTION_SWIMMING",
+    "rockstarCodeComment_TaskType": "goto tasks",
+    "rockstarCodeComment_TaskSubType": "Motion tasks"
+  },
+  "282": {
+    "name": "TASK_MOTION_PARACHUTING",
+    "rockstarCodeComment_TaskType": "goto tasks",
+    "rockstarCodeComment_TaskSubType": "Motion tasks"
+  },
+  "283": {
+    "name": "TASK_MOTION_DRUNK",
+    "rockstarCodeComment_TaskType": "goto tasks",
+    "rockstarCodeComment_TaskSubType": "Motion tasks"
+  },
+  "284": {
+    "name": "TASK_REPOSITION_MOVE",
+    "rockstarCodeComment_TaskType": "goto tasks",
+    "rockstarCodeComment_TaskSubType": "Motion tasks"
+  },
+  "285": {
+    "name": "TASK_MOTION_AIMING_TRANSITION",
+    "rockstarCodeComment_TaskType": "goto tasks",
+    "rockstarCodeComment_TaskSubType": "Motion tasks"
+  },
+  "286": {
+    "name": "TASK_THROW_PROJECTILE",
+    "rockstarCodeComment_TaskType": "fight tasks",
+    "rockstarCodeComment_TaskSubType": "new weapon/fight tasks"
+  },
+  "287": {
+    "name": "TASK_COVER",
+    "rockstarCodeComment_TaskType": "fight tasks"
+  },
+  "288": {
+    "name": "TASK_MOTION_IN_COVER",
+    "rockstarCodeComment_TaskType": "fight tasks"
+  },
+  "289": {
+    "name": "TASK_AIM_AND_THROW_PROJECTILE",
+    "rockstarCodeComment_TaskType": "fight tasks"
+  },
+  "290": {
+    "name": "TASK_GUN",
+    "rockstarCodeComment_TaskType": "fight tasks"
+  },
+  "291": {
+    "name": "TASK_AIM_FROM_GROUND",
+    "rockstarCodeComment_TaskType": "fight tasks"
+  },
+  "292": {
+    "name": "TASK_AIM_GUN_STRAFE",
+    "rockstarCodeComment_TaskType": "fight tasks"
+  },
+  "293": {
+    "name": "TASK_AIM_GUN_CLIMBING",
+    "rockstarCodeComment_TaskType": "fight tasks"
+  },
+  "294": {
+    "name": "TASK_AIM_GUN_CLIMBING_LEDGE",
+    "rockstarCodeComment_TaskType": "fight tasks"
+  },
+  "295": {
+    "name": "TASK_AIM_GUN_VEHICLE_DRIVE_BY",
+    "rockstarCodeComment_TaskType": "fight tasks"
+  },
+  "296": {
+    "name": "TASK_AIM_GUN_SCRIPTED",
+    "rockstarCodeComment_TaskType": "fight tasks"
+  },
+  "297": {
+    "name": "TASK_AIM_GUN_RUN_AND_GUN",
+    "rockstarCodeComment_TaskType": "fight tasks"
+  },
+  "298": {
+    "name": "TASK_RELOAD_GUN",
+    "rockstarCodeComment_TaskType": "fight tasks"
+  },
+  "299": {
+    "name": "TASK_WEAPON_BLOCKED",
+    "rockstarCodeComment_TaskType": "fight tasks"
+  },
+  "300": {
+    "name": "TASK_ENTER_COVER",
+    "rockstarCodeComment_TaskType": "fight tasks"
+  },
+  "301": {
+    "name": "TASK_EXIT_COVER",
+    "rockstarCodeComment_TaskType": "fight tasks"
+  },
+  "302": {
+    "name": "TASK_AIM_GUN_FROM_COVER_INTRO",
+    "rockstarCodeComment_TaskType": "fight tasks"
+  },
+  "303": {
+    "name": "TASK_AIM_GUN_FROM_COVER_OUTRO",
+    "rockstarCodeComment_TaskType": "fight tasks"
+  },
+  "304": {
+    "name": "TASK_AIM_GUN_BLIND_FIRE",
+    "rockstarCodeComment_TaskType": "fight tasks"
+  },
+  "305": {
+    "name": "TASK_AIM_GUN_BLIND_FIRE_INTRO",
+    "rockstarCodeComment_TaskType": "fight tasks"
+  },
+  "306": {
+    "name": "TASK_AIM_GUN_BLIND_FIRE_OUTRO",
+    "rockstarCodeComment_TaskType": "fight tasks"
+  },
+  "307": {
+    "name": "TASK_COMBAT_CLOSEST_TARGET_IN_AREA",
+    "rockstarCodeComment_TaskType": "fight tasks"
+  },
+  "308": {
+    "name": "TASK_ADDITIONAL_COMBAT_TASK",
+    "rockstarCodeComment_TaskType": "fight tasks"
+  },
+  "309": {
+    "name": "TASK_IN_COVER",
+    "rockstarCodeComment_TaskType": "fight tasks"
+  },
+  "310": {
+    "name": "TASK_VEHICLE_DRIVE_BY",
+    "rockstarCodeComment_TaskType": "fight tasks"
+  },
+  "311": {
+    "name": "TASK_AIM_GUN_STANDING",
+    "rockstarCodeComment_TaskType": "fight tasks"
+  },
+  "312": {
+    "name": "TASK_AIM_GUN_ON_FOOT_PM",
+    "rockstarCodeComment_TaskType": "fight tasks"
+  },
+  "313": {
+    "name": "TASK_AIM_SWEEP",
+    "rockstarCodeComment_TaskType": "fight tasks"
+  },
+  "314": {
+    "name": "TASK_ARREST",
+    "rockstarCodeComment_TaskType": "fight tasks"
+  },
+  "315": {
+    "name": "TASK_CUFFED",
+    "rockstarCodeComment_TaskType": "fight tasks"
+  },
+  "316": {
+    "name": "TASK_IN_CUSTODY",
+    "rockstarCodeComment_TaskType": "fight tasks"
+  },
+  "317": {
+    "name": "TASK_INCAPACITATED",
+    "rockstarCodeComment_TaskType": "fight tasks"
+  },
+  "318": {
+    "name": "TASK_PLAY_CUFFED_SECONDARY_ANIMS",
+    "rockstarCodeComment_TaskType": "fight tasks"
+  },
+  "319": {
+    "name": "TASK_SHARK_CIRCLE",
+    "rockstarCodeComment_TaskType": "Animal combat tasks"
+  },
+  "320": {
+    "name": "TASK_SHARK_ATTACK",
+    "rockstarCodeComment_TaskType": "Animal combat tasks"
+  },
+  "321": {
+    "name": "TASK_AGITATED",
+    "rockstarCodeComment_TaskType": "gang/partner tasks"
+  },
+  "322": {
+    "name": "TASK_AGITATED_ACTION",
+    "rockstarCodeComment_TaskType": "gang/partner tasks"
+  },
+  "323": {
+    "name": "TASK_CONFRONT",
+    "rockstarCodeComment_TaskType": "gang/partner tasks"
+  },
+  "324": {
+    "name": "TASK_INTIMIDATE",
+    "rockstarCodeComment_TaskType": "gang/partner tasks"
+  },
+  "325": {
+    "name": "TASK_SHOVE",
+    "rockstarCodeComment_TaskType": "gang/partner tasks"
+  },
+  "326": {
+    "name": "TASK_SHOVED",
+    "rockstarCodeComment_TaskType": "gang/partner tasks"
+  },
+  "327": {
+    "name": "TASK_FINISHED",
+    "rockstarCodeComment_TaskType": "misc"
+  },
+  "328": {
+    "name": "TASK_CROUCH_TOGGLE",
+    "rockstarCodeComment_TaskType": "misc"
+  },
+  "329": {
+    "name": "TASK_REVIVE",
+    "rockstarCodeComment_TaskType": "misc"
+  },
+  "330": {
+    "name": "TASK_CLONED_FSM_TEST_HARNESS",
+    "rockstarCodeComment_TaskType": "misc"
+  },
+  "331": {
+    "name": "TASK_COMPLEX_USE_MOBILE_PHONE",
+    "rockstarCodeComment_TaskType": "phone / goggles tasks"
+  },
+  "332": {
+    "name": "TASK_SIMPLE_PHONE_TALK",
+    "rockstarCodeComment_TaskType": "phone / goggles tasks"
+  },
+  "333": {
+    "name": "TASK_SIMPLE_PHONE_IN",
+    "rockstarCodeComment_TaskType": "phone / goggles tasks"
+  },
+  "334": {
+    "name": "TASK_SIMPLE_PHONE_OUT",
+    "rockstarCodeComment_TaskType": "phone / goggles tasks"
+  },
+  "335": {
+    "name": "TASK_PARACHUTE",
+    "rockstarCodeComment_TaskType": "parachute tasks"
+  },
+  "336": {
+    "name": "TASK_PARACHUTE_OBJECT",
+    "rockstarCodeComment_TaskType": "parachute tasks"
+  },
+  "337": {
+    "name": "TASK_TAKE_OFF_PED_VARIATION",
+    "rockstarCodeComment_TaskType": "ped variation tasks"
+  },
+  "338": {
+    "name": "TASK_JETPACK",
+    "rockstarCodeComment_TaskType": "jetpack tasks."
+  },
+  "339": {
+    "name": "TASK_MOTION_JETPACK",
+    "rockstarCodeComment_TaskType": "jetpack tasks."
+  },
+  "340": {
+    "name": "TASK_COMBAT_SEEK_COVER",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "341": {
+    "name": "TASK_COMBAT_CHARGE",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "342": {
+    "name": "TASK_COMBAT_FLANK",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "343": {
+    "name": "TASK_COMBAT",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "344": {
+    "name": "TASK_COMBAT_MOUNTED",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "345": {
+    "name": "TASK_MOVE_CIRCLE",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "346": {
+    "name": "TASK_MOVE_COMBAT_MOUNTED",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "347": {
+    "name": "TASK_SEARCH",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "348": {
+    "name": "TASK_SEARCH_ON_FOOT",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "349": {
+    "name": "TASK_SEARCH_IN_AUTOMOBILE",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "350": {
+    "name": "TASK_SEARCH_IN_BOAT",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "351": {
+    "name": "TASK_SEARCH_IN_HELI",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "352": {
+    "name": "TASK_THREAT_RESPONSE",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "353": {
+    "name": "TASK_INVESTIGATE",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "354": {
+    "name": "TASK_STAND_GUARD_FSM",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "355": {
+    "name": "TASK_PATROL",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "356": {
+    "name": "TASK_SHOOT_AT_TARGET",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "357": {
+    "name": "TASK_SET_AND_GUARD_AREA",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "358": {
+    "name": "TASK_STAND_GUARD",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "359": {
+    "name": "TASK_SEPARATE",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "360": {
+    "name": "TASK_STAY_IN_COVER",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "361": {
+    "name": "TASK_VEHICLE_COMBAT",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "362": {
+    "name": "TASK_VEHICLE_PERSUIT",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "363": {
+    "name": "TASK_VEHICLE_CHASE",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "364": {
+    "name": "TASK_DRAGGING_TO_SAFETY",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "365": {
+    "name": "TASK_DRAGGED_TO_SAFETY",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "366": {
+    "name": "TASK_VARIED_AIM_POSE",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "367": {
+    "name": "TASK_MOVE_WITHIN_ATTACK_WINDOW",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "368": {
+    "name": "TASK_MOVE_WITHIN_DEFENSIVE_AREA",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "369": {
+    "name": "TASK_SHOOT_OUT_TIRE",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "370": {
+    "name": "TASK_SHELL_SHOCKED",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "371": {
+    "name": "TASK_BOAT_CHASE",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "372": {
+    "name": "TASK_BOAT_COMBAT",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "373": {
+    "name": "TASK_BOAT_STRAFE",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "374": {
+    "name": "TASK_HELI_CHASE",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "375": {
+    "name": "TASK_HELI_COMBAT",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "376": {
+    "name": "TASK_SUBMARINE_COMBAT",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "377": {
+    "name": "TASK_SUBMARINE_CHASE",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "378": {
+    "name": "TASK_PLANE_CHASE",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "379": {
+    "name": "TASK_TARGET_UNREACHABLE",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "380": {
+    "name": "TASK_TARGET_UNREACHABLE_IN_INTERIOR",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "381": {
+    "name": "TASK_TARGET_UNREACHABLE_IN_EXTERIOR",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "382": {
+    "name": "TASK_STEALTH_KILL",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "383": {
+    "name": "TASK_WRITHE",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "384": {
+    "name": "TASK_ADVANCE",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "385": {
+    "name": "TASK_CHARGE",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "386": {
+    "name": "TASK_MOVE_TO_TACTICAL_POINT",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "387": {
+    "name": "TASK_TO_HURT_TRANSIT",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "388": {
+    "name": "TASK_ANIMATED_HIT_BY_EXPLOSION",
+    "rockstarCodeComment_TaskType": "Combat tasks"
+  },
+  "389": {
+    "name": "TASK_NM_RELAX",
+    "rockstarCodeComment_TaskType": "Ragdoll tasks",
+    "rockstarCodeComment": "Don't add ragdoll tasks before this"
+  },
+  "390": {
+    "name": "TASK_NM_ROLL_UP_AND_RELAX",
+    "rockstarCodeComment_TaskType": "Ragdoll tasks"
+  },
+  "391": {
+    "name": "TASK_NM_POSE",
+    "rockstarCodeComment_TaskType": "Ragdoll tasks"
+  },
+  "392": {
+    "name": "TASK_NM_BRACE",
+    "rockstarCodeComment_TaskType": "Ragdoll tasks"
+  },
+  "393": {
+    "name": "TASK_NM_BUOYANCY",
+    "rockstarCodeComment_TaskType": "Ragdoll tasks"
+  },
+  "394": {
+    "name": "TASK_NM_INJURED_ON_GROUND",
+    "rockstarCodeComment_TaskType": "Ragdoll tasks"
+  },
+  "395": {
+    "name": "TASK_NM_SHOT",
+    "rockstarCodeComment_TaskType": "Ragdoll tasks"
+  },
+  "396": {
+    "name": "TASK_NM_HIGH_FALL",
+    "rockstarCodeComment_TaskType": "Ragdoll tasks"
+  },
+  "397": {
+    "name": "TASK_NM_BALANCE",
+    "rockstarCodeComment_TaskType": "Ragdoll tasks"
+  },
+  "398": {
+    "name": "TASK_NM_ELECTROCUTE",
+    "rockstarCodeComment_TaskType": "Ragdoll tasks"
+  },
+  "399": {
+    "name": "TASK_NM_PROTOTYPE",
+    "rockstarCodeComment_TaskType": "Ragdoll tasks"
+  },
+  "400": {
+    "name": "TASK_NM_EXPLOSION",
+    "rockstarCodeComment_TaskType": "Ragdoll tasks"
+  },
+  "401": {
+    "name": "TASK_NM_ONFIRE",
+    "rockstarCodeComment_TaskType": "Ragdoll tasks"
+  },
+  "402": {
+    "name": "TASK_NM_SCRIPT_CONTROL",
+    "rockstarCodeComment_TaskType": "Ragdoll tasks"
+  },
+  "403": {
+    "name": "TASK_NM_JUMP_ROLL_FROM_ROAD_VEHICLE",
+    "rockstarCodeComment_TaskType": "Ragdoll tasks"
+  },
+  "404": {
+    "name": "TASK_NM_FLINCH",
+    "rockstarCodeComment_TaskType": "Ragdoll tasks"
+  },
+  "405": {
+    "name": "TASK_NM_SIT",
+    "rockstarCodeComment_TaskType": "Ragdoll tasks"
+  },
+  "406": {
+    "name": "TASK_NM_FALL_DOWN",
+    "rockstarCodeComment_TaskType": "Ragdoll tasks"
+  },
+  "407": {
+    "name": "TASK_BLEND_FROM_NM",
+    "rockstarCodeComment_TaskType": "Ragdoll tasks"
+  },
+  "408": {
+    "name": "TASK_NM_CONTROL",
+    "rockstarCodeComment_TaskType": "Ragdoll tasks"
+  },
+  "409": {
+    "name": "TASK_NM_DANGLE",
+    "rockstarCodeComment_TaskType": "Ragdoll tasks"
+  },
+  "410": {
+    "name": "TASK_NM_SLUNG_OVER_SHOULDER",
+    "rockstarCodeComment_TaskType": "Ragdoll tasks"
+  },
+  "411": {
+    "name": "TASK_NM_SHOOTING_WHILE_ATTACHED",
+    "rockstarCodeComment_TaskType": "Ragdoll tasks"
+  },
+  "412": {
+    "name": "TASK_NM_GENERIC_ATTACH",
+    "rockstarCodeComment_TaskType": "Ragdoll tasks"
+  },
+  "413": {
+    "name": "TASK_NM_DRUNK",
+    "rockstarCodeComment_TaskType": "Ragdoll tasks"
+  },
+  "414": {
+    "name": "TASK_NM_DRAGGING_TO_SAFETY",
+    "rockstarCodeComment_TaskType": "Ragdoll tasks"
+  },
+  "415": {
+    "name": "TASK_NM_THROUGH_WINDSCREEN",
+    "rockstarCodeComment_TaskType": "Ragdoll tasks"
+  },
+  "416": {
+    "name": "TASK_NM_RIVER_RAPIDS",
+    "rockstarCodeComment_TaskType": "Ragdoll tasks"
+  },
+  "417": {
+    "name": "TASK_NM_SIMPLE",
+    "rockstarCodeComment_TaskType": "Ragdoll tasks"
+  },
+  "418": {
+    "name": "TASK_RAGE_RAGDOLL",
+    "rockstarCodeComment_TaskType": "Ragdoll tasks"
+  },
+  "419": {
+    "name": "TASK_RAGDOLL_LAST",
+    "rockstarCodeComment_TaskType": "Ragdoll tasks",
+    "rockstarCodeComment": "Don't add ragdoll tasks after this"
+  },
+  "420": {
+    "name": "TASK_MOVE_SKI_BASE",
+    "rockstarCodeComment_TaskType": "project specific tasks"
+  },
+  "421": {
+    "name": "TASK_JUMPVAULT",
+    "rockstarCodeComment_TaskType": "project specific tasks"
+  },
+  "422": {
+    "name": "TASK_JUMP",
+    "rockstarCodeComment_TaskType": "project specific tasks"
+  },
+  "423": {
+    "name": "TASK_FALL",
+    "rockstarCodeComment_TaskType": "project specific tasks"
+  },
+  "424": {
+    "name": "TASK_JUMP_IN_AIR",
+    "rockstarCodeComment_TaskType": "project specific tasks"
+  },
+  "425": {
+    "name": "TASK_REACT_AIM_WEAPON",
+    "rockstarCodeComment_TaskType": "project specific tasks"
+  },
+  "426": {
+    "name": "TASK_CHAT",
+    "rockstarCodeComment_TaskType": "project specific tasks"
+  },
+  "427": {
+    "name": "TASK_MOBILE_PHONE",
+    "rockstarCodeComment_TaskType": "project specific tasks"
+  },
+  "428": {
+    "name": "TASK_REACT_TO_DEAD_PED",
+    "rockstarCodeComment_TaskType": "project specific tasks"
+  },
+  "429": {
+    "name": "TASK_WATCH_INVESTIGATION",
+    "rockstarCodeComment_TaskType": "project specific tasks"
+  },
+  "430": {
+    "name": "TASK_SEARCH_FOR_UNKNOWN_THREAT",
+    "rockstarCodeComment_TaskType": "project specific tasks"
+  },
+  "431": {
+    "name": "TASK_CHECK_PED_IS_DEAD",
+    "rockstarCodeComment_TaskType": "project specific tasks"
+  },
+  "432": {
+    "name": "TASK_BOMB",
+    "rockstarCodeComment_TaskType": "project specific tasks"
+  },
+  "433": {
+    "name": "TASK_DETONATOR",
+    "rockstarCodeComment_TaskType": "project specific tasks"
+  },
+  "434": {
+    "name": "TASK_SHOOTING_WHILE_ATTACHED",
+    "rockstarCodeComment_TaskType": "project specific tasks"
+  },
+  "435": {
+    "name": "TASK_ANIMATED_ATTACH",
+    "rockstarCodeComment_TaskType": "project specific tasks"
+  },
+  "436": {
+    "name": "TASK_ELECTROCUTE",
+    "rockstarCodeComment_TaskType": "project specific tasks"
+  },
+  "437": {
+    "name": "TASK_GO_TO_POINT_USING_COVER",
+    "rockstarCodeComment_TaskType": "project specific tasks"
+  },
+  "438": {
+    "name": "TASK_MOVE_IN_FORMATION",
+    "rockstarCodeComment_TaskType": "project specific tasks"
+  },
+  "439": {
+    "name": "TASK_FOLLOW_LEADER_IN_PAIR",
+    "rockstarCodeComment_TaskType": "project specific tasks"
+  },
+  "440": {
+    "name": "TASK_PLAY_CLIP_AND_SLIDE_TO_POSITION",
+    "rockstarCodeComment_TaskType": "project specific tasks"
+  },
+  "441": {
+    "name": "TASK_CUTSCENE",
+    "rockstarCodeComment_TaskType": "project specific tasks"
+  },
+  "442": {
+    "name": "TASK_REACT_TO_EXPLOSION",
+    "rockstarCodeComment_TaskType": "project specific tasks"
+  },
+  "443": {
+    "name": "TASK_REACT_TO_IMMINENT_EXPLOSION",
+    "rockstarCodeComment_TaskType": "project specific tasks"
+  },
+  "444": {
+    "name": "TASK_DIVE_TO_GROUND",
+    "rockstarCodeComment_TaskType": "project specific tasks"
+  },
+  "445": {
+    "name": "TASK_REACT_AND_FLEE",
+    "rockstarCodeComment_TaskType": "project specific tasks"
+  },
+  "446": {
+    "name": "TASK_SIDESTEP",
+    "rockstarCodeComment_TaskType": "project specific tasks"
+  },
+  "447": {
+    "name": "TASK_CALL_POLICE",
+    "rockstarCodeComment_TaskType": "project specific tasks"
+  },
+  "448": {
+    "name": "TASK_REACT_IN_DIRECTION",
+    "rockstarCodeComment_TaskType": "project specific tasks"
+  },
+  "449": {
+    "name": "TASK_REACT_TO_BUDDY_SHOT",
+    "rockstarCodeComment_TaskType": "project specific tasks"
+  },
+  "450": {
+    "name": "TASK_FRIENDLY_FIRE_NEAR_MISS",
+    "rockstarCodeComment_TaskType": "project specific tasks"
+  },
+  "451": {
+    "name": "TASK_FRIENDLY_AIMED_AT",
+    "rockstarCodeComment_TaskType": "project specific tasks"
+  },
+  "452": {
+    "name": "TASK_PLAYER_DEATH_REACT",
+    "rockstarCodeComment_TaskType": "project specific tasks"
+  },
+  "453": {
+    "name": "TASK_VEHICLE_FIRST_TASK, TASK_VEHICLE_GOTO",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "454": {
+    "name": "TASK_VEHICLE_GOTO_AUTOMOBILE_NEW",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "455": {
+    "name": "TASK_VEHICLE_GOTO_PLANE",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "456": {
+    "name": "TASK_VEHICLE_GOTO_HELICOPTER",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "457": {
+    "name": "TASK_VEHICLE_GOTO_SUBMARINE",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "458": {
+    "name": "TASK_VEHICLE_GOTO_BOAT",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "459": {
+    "name": "TASK_VEHICLE_GOTO_POINT_AUTOMOBILE",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "460": {
+    "name": "TASK_VEHICLE_GOTO_POINT_WITH_AVOIDANCE_AUTOMOBILE",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "461": {
+    "name": "TASK_VEHICLE_PURSUE",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "462": {
+    "name": "TASK_VEHICLE_RAM",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "463": {
+    "name": "TASK_VEHICLE_SPIN_OUT",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "464": {
+    "name": "TASK_VEHICLE_APPROACH",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "465": {
+    "name": "TASK_VEHICLE_THREE_POINT_TURN",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "466": {
+    "name": "TASK_VEHICLE_DEAD_DRIVER",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "467": {
+    "name": "TASK_VEHICLE_CRUISE_NEW",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "468": {
+    "name": "TASK_VEHICLE_CRUISE_BOAT",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "469": {
+    "name": "TASK_VEHICLE_STOP",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "470": {
+    "name": "TASK_VEHICLE_PULL_OVER",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "471": {
+    "name": "TASK_VEHICLE_PASSENGER_EXIT",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "472": {
+    "name": "TASK_VEHICLE_FLEE",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "473": {
+    "name": "TASK_VEHICLE_FLEE_AIRBORNE",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "474": {
+    "name": "TASK_VEHICLE_FLEE_BOAT",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "475": {
+    "name": "TASK_VEHICLE_FOLLOW_RECORDING",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "476": {
+    "name": "TASK_VEHICLE_FOLLOW",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "477": {
+    "name": "TASK_VEHICLE_BLOCK",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "478": {
+    "name": "TASK_VEHICLE_BLOCK_CRUISE_IN_FRONT",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "479": {
+    "name": "TASK_VEHICLE_BLOCK_BRAKE_IN_FRONT",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "480": {
+    "name": "TASK_VEHICLE_BLOCK_BACK_AND_FORTH",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "481": {
+    "name": "TASK_VEHICLE_CRASH",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "482": {
+    "name": "TASK_VEHICLE_LAND",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "483": {
+    "name": "TASK_VEHICLE_LAND_PLANE",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "484": {
+    "name": "TASK_VEHICLE_HOVER",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "485": {
+    "name": "TASK_VEHICLE_ATTACK",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "486": {
+    "name": "TASK_VEHICLE_ATTACK_TANK",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "487": {
+    "name": "TASK_VEHICLE_CIRCLE",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "488": {
+    "name": "TASK_VEHICLE_POLICE_BEHAVIOUR",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "489": {
+    "name": "TASK_VEHICLE_POLICE_BEHAVIOUR_HELICOPTER",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "490": {
+    "name": "TASK_VEHICLE_POLICE_BEHAVIOUR_BOAT",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "491": {
+    "name": "TASK_VEHICLE_ESCORT",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "492": {
+    "name": "TASK_VEHICLE_HELI_PROTECT",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "493": {
+    "name": "TASK_VEHICLE_PLAYER_DRIVE",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "494": {
+    "name": "TASK_VEHICLE_PLAYER_DRIVE_AUTOMOBILE",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "495": {
+    "name": "TASK_VEHICLE_PLAYER_DRIVE_BIKE",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "496": {
+    "name": "TASK_VEHICLE_PLAYER_DRIVE_BOAT",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "497": {
+    "name": "TASK_VEHICLE_PLAYER_DRIVE_SUBMARINE",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "498": {
+    "name": "TASK_VEHICLE_PLAYER_DRIVE_SUBMARINECAR",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "499": {
+    "name": "TASK_VEHICLE_PLAYER_DRIVE_AMPHIBIOUS_AUTOMOBILE",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "500": {
+    "name": "TASK_VEHICLE_PLAYER_DRIVE_PLANE",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "501": {
+    "name": "TASK_VEHICLE_PLAYER_DRIVE_HELI",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "502": {
+    "name": "TASK_VEHICLE_PLAYER_DRIVE_AUTOGYRO",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "503": {
+    "name": "TASK_VEHICLE_PLAYER_DRIVE_DIGGER_ARM",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "504": {
+    "name": "TASK_VEHICLE_PLAYER_DRIVE_TRAIN",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "505": {
+    "name": "TASK_VEHICLE_PLANE_CHASE",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "506": {
+    "name": "TASK_VEHICLE_NO_DRIVER",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "507": {
+    "name": "TASK_VEHICLE_ANIMATION",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "508": {
+    "name": "TASK_VEHICLE_CONVERTIBLE_ROOF",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "509": {
+    "name": "TASK_VEHICLE_PARK_NEW",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "510": {
+    "name": "TASK_VEHICLE_FOLLOW_WAYPOINT_RECORDING",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "511": {
+    "name": "TASK_VEHICLE_GOTO_NAVMESH",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "512": {
+    "name": "TASK_VEHICLE_REACT_TO_COP_SIREN",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "513": {
+    "name": "TASK_VEHICLE_GOTO_LONGRANGE",
+    "rockstarCodeComment_TaskType": "project specific tasks",
+    "rockstarCodeComment_TaskSubType": "real vehicle AI tasks"
+  },
+  "514": {
+    "name": "TASK_VEHICLE_WAIT",
+    "rockstarCodeComment_TaskType": "temp action vehicle AI tasks"
+  },
+  "515": {
+    "name": "TASK_VEHICLE_REVERSE",
+    "rockstarCodeComment_TaskType": "temp action vehicle AI tasks"
+  },
+  "516": {
+    "name": "TASK_VEHICLE_BRAKE",
+    "rockstarCodeComment_TaskType": "temp action vehicle AI tasks"
+  },
+  "517": {
+    "name": "TASK_VEHICLE_HANDBRAKE",
+    "rockstarCodeComment_TaskType": "temp action vehicle AI tasks"
+  },
+  "518": {
+    "name": "TASK_VEHICLE_TURN",
+    "rockstarCodeComment_TaskType": "temp action vehicle AI tasks"
+  },
+  "519": {
+    "name": "TASK_VEHICLE_GO_FORWARD",
+    "rockstarCodeComment_TaskType": "temp action vehicle AI tasks"
+  },
+  "520": {
+    "name": "TASK_VEHICLE_SWERVE",
+    "rockstarCodeComment_TaskType": "temp action vehicle AI tasks"
+  },
+  "521": {
+    "name": "TASK_VEHICLE_FLY_DIRECTION",
+    "rockstarCodeComment_TaskType": "temp action vehicle AI tasks"
+  },
+  "522": {
+    "name": "TASK_VEHICLE_HEADON_COLLISION",
+    "rockstarCodeComment_TaskType": "temp action vehicle AI tasks"
+  },
+  "523": {
+    "name": "TASK_VEHICLE_BOOST_USE_STEERING_ANGLE",
+    "rockstarCodeComment_TaskType": "temp action vehicle AI tasks"
+  },
+  "524": {
+    "name": "TASK_VEHICLE_SHOT_TIRE",
+    "rockstarCodeComment_TaskType": "temp action vehicle AI tasks"
+  },
+  "525": {
+    "name": "TASK_VEHICLE_BURNOUT",
+    "rockstarCodeComment_TaskType": "temp action vehicle AI tasks"
+  },
+  "526": {
+    "name": "TASK_VEHICLE_REV_ENGINE",
+    "rockstarCodeComment_TaskType": "temp action vehicle AI tasks"
+  },
+  "527": {
+    "name": "TASK_VEHICLE_SURFACE_IN_SUBMARINE",
+    "rockstarCodeComment_TaskType": "temp action vehicle AI tasks"
+  },
+  "528": {
+    "name": "TASK_VEHICLE_PULL_ALONGSIDE",
+    "rockstarCodeComment_TaskType": "temp action vehicle AI tasks"
+  },
+  "529": {
+    "name": "TASK_VEHICLE_TRANSFORM_TO_SUBMARINE",
+    "rockstarCodeComment_TaskType": "temp action vehicle AI tasks"
+  },
+  "530": {
+    "name": "TASK_ANIMATED_FALLBACK",
+    "rockstarCodeComment_TaskType": "temp action vehicle AI tasks"
+  },
+  "531": {
+    "name": "MAX_NUM_TASK_TYPES",
+    "rockstarCodeComment_TaskType": "The end"
+  }
+}

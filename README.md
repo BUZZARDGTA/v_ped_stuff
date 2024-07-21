@@ -8,7 +8,7 @@
 </p>
 
 
-# • [eTaskTypeIndex.h](eTaskTypeIndex.h) <small>(GET_IS_TASK_ACTIVE)</small>
+# • [eTaskTypes.json](eTaskTypes.json) <small>(GET_IS_TASK_ACTIVE)</small>
 
 <div align="center">
 
@@ -18,7 +18,7 @@
 
 </div>
 
-# • [ePedConfigFlags.xml](ePedConfigFlags.xml) <small>(PED_CONFIG_FLAG)</small>
+# • [ePedConfigFlags.json](ePedConfigFlags.json) <small>(PED_CONFIG_FLAG)</small>
 
 <div align="center">
 
@@ -29,7 +29,7 @@
 
 </div>
 
-# • [ePedResetFlags.xml](ePedResetFlags.xml) <small>(PED_RESET_FLAG)</small>
+# • [ePedResetFlags.json](ePedResetFlags.json) <small>(PED_RESET_FLAG)</small>
 
 <div align="center">
 

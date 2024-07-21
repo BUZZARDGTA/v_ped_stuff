@@ -1,0 +1,1864 @@
+{
+  "0": {
+    "name": "FallenDown",
+    "rockstarDescription": "decides whether to ik rotate body to match ground angle"
+  },
+  "1": {
+    "name": "DontRenderThisFrame",
+    "rockstarDescription": "force ped to stop rendering this frame (for example - drive task can stop peds rendering inside buses)"
+  },
+  "2": {
+    "name": "IsDrowning"
+  },
+  "3": {
+    "name": "PedHitWallLastFrame"
+  },
+  "4": {
+    "name": "UsingMobilePhone"
+  },
+  "5": {
+    "name": "BlockMovementAnims",
+    "rockstarDescription": "completely disable processing of on-foot movement anim blending for this frame"
+  },
+  "6": {
+    "name": "ZeroDesiredMoveBlendRatios",
+    "rockstarDescription": "zero out all inputs to movement system this frame, causing ped to stop moving"
+  },
+  "7": {
+    "name": "DontChangeMbrInSimpleMoveDoNothing",
+    "rockstarDescription": "If this is set, then CTaskSimpleMoveDoNothing will not reset desired moveblendratio to zero this frame."
+  },
+  "8": {
+    "name": "FollowingRoute",
+    "rockstarDescription": "whether this ped is following a route of some sort - used to let simplest goto task pull the ped back onto their current route segment"
+  },
+  "9": {
+    "name": "TakingRouteSplineCorner",
+    "rockstarDescription": "whether the ped is cornering via a spline curve, which will take them off their route linesegment"
+  },
+  "10": {
+    "name": "Wandering"
+  },
+  "11": {
+    "name": "ProcessPhysicsTasks",
+    "rockstarDescription": "do we need to call process physics for (main) tasks this frame"
+  },
+  "12": {
+    "name": "ProcessPreRender2",
+    "rockstarDescription": "do we need to call ProcessPreRender2 for tasks"
+  },
+  "13": {
+    "name": "SetLastMatrixDone"
+  },
+  "14": {
+    "name": "FiringWeapon",
+    "rockstarDescription": "set when ped fires any weapon, so script can check the flag"
+  },
+  "15": {
+    "name": "SearchingForCover",
+    "rockstarDescription": "Set if the ped is likely to be searching for cover, used by the navmesh to load coverpoints around interested peds"
+  },
+  "16": {
+    "name": "KeepCoverPoint",
+    "rockstarDescription": "Set if the ped wants to keep their current cover point this frame, otherwise it gets released"
+  },
+  "17": {
+    "name": "IsClimbing",
+    "rockstarDescription": "If the ped is climbing, shimmying or on a ladder.  Stops ProcessProbes() from happening."
+  },
+  "18": {
+    "name": "IsJumping",
+    "rockstarDescription": "is the ped jumping."
+  },
+  "19": {
+    "name": "IsLanding",
+    "rockstarDescription": "is landing after being in the air"
+  },
+  "20": {
+    "name": "CullExtraFarAway",
+    "rockstarDescription": "flag Ai can set to make ped get culled further away (used for roadblock cops, crimials...)"
+  },
+  "21": {
+    "name": "DontActivateRagdollFromAnyPedImpactReset"
+  },
+  "22": {
+    "name": "ForceScriptControlledRagdoll"
+  },
+  "23": {
+    "name": "TaskUseKinematicPhysics",
+    "rockstarDescription": "For use by tasks - puts the ped into Kinematic physics mode. In this mode the ped will push other objects our of the way, but not be physically affected by them"
+  },
+  "24": {
+    "name": "TemporarilyBlockWeaponSwitching",
+    "rockstarDescription": "Stop weapon switch processing"
+  },
+  "25": {
+    "name": "DoNotClampFootIk",
+    "rockstarDescription": "Stop clamping the foot IK. Maybe the clamps should be parameters of the IK manager, but apparently that is to be refactored in future"
+  },
+  "26": {
+    "name": "MoveBlend_bFleeTaskRunning",
+    "rockstarDescription": "TASK_SMART_FLEE, or TASK_COMPLEX_LEAVE_CAR_AND_FLEE"
+  },
+  "27": {
+    "name": "IsAiming",
+    "rockstarDescription": "TASK_GUN or TASK_USE_COVER"
+  },
+  "28": {
+    "name": "MoveBlend_bTaskComplexGunRunning",
+    "rockstarDescription": "TASK_COMPLEX_GUN (only)"
+  },
+  "29": {
+    "name": "MoveBlend_bMeleeTaskRunning",
+    "rockstarDescription": "TASK_COMPLEX_MELEE"
+  },
+  "30": {
+    "name": "MoveBlend_bCopSearchTaskRunning",
+    "rockstarDescription": "TASK_COMPLEX_SEARCH_FOR_PED_ON_FOOT"
+  },
+  "31": {
+    "name": "PatrollingInVehicle",
+    "rockstarDescription": "ped is patrolling in a vehicle, likely meaning they are swat or police"
+  },
+  "32": {
+    "name": "RaiseVelocityChangeLimit"
+  },
+  "33": {
+    "name": "DimTargetReticule"
+  },
+  "34": {
+    "name": "IsWalkingRoundPlayer",
+    "rockstarDescription": "Whether this ped is walking around another ped (one frame latency)"
+  },
+  "35": {
+    "name": "GestureAnimsAllowed"
+  },
+  "36": {
+    "name": "VisemeAnimsBlocked",
+    "rockstarDescription": "Blocks viseme anims from playing"
+  },
+  "37": {
+    "name": "AmbientAnimsBlocked",
+    "rockstarDescription": "Blocks new ambient idles from starting."
+  },
+  "38": {
+    "name": "KnockedToTheFloorByPlayer"
+  },
+  "39": {
+    "name": "RandomisePointsDuringNavigation"
+  },
+  "40": {
+    "name": "Prevent180SkidTurns"
+  },
+  "41": {
+    "name": "IsOnAssistedMovementRoute"
+  },
+  "42": {
+    "name": "ApplyVelocityDirectly",
+    "rockstarDescription": "Should we apply the velocity directly to the physics collider or go through the force solver?"
+  },
+  "43": {
+    "name": "DisablePlayerLockon"
+  },
+  "44": {
+    "name": "ResetMoveGroupAfterRagdoll",
+    "rockstarDescription": "If true, will reset the temp anim group when not ragdolling"
+  },
+  "45": {
+    "name": "DisablePedConstraints",
+    "rockstarDescription": "Allow the ped to rotate around freely"
+  },
+  "46": {
+    "name": "DisablePlayerJumping",
+    "rockstarDescription": "Disables player jumping if true. Reset in ResetPostPhysics, as it will be set via script",
+    "rockstarCodeComment": "Disable jumping (exclusive from climbing)."
+  },
+  "47": {
+    "name": "DisablePlayerVaulting",
+    "rockstarDescription": "Disables player vaulting/climbing if true.",
+    "rockstarCodeComment": "Disable climbing / vaulting (but not auto-vault, that's a seperate flag)."
+  },
+  "48": {
+    "name": "DisableAsleepImpulse",
+    "rockstarDescription": "Disable the code that pushes peds which fall asleep in the air"
+  },
+  "49": {
+    "name": "ForcePostCameraAIUpdate"
+  },
+  "50": {
+    "name": "ForcePostCameraAnimUpdate"
+  },
+  "51": {
+    "name": "ePostCameraAnimUpdateUseZeroTimestep"
+  },
+  "52": {
+    "name": "CollideWithGlassRagdoll"
+  },
+  "53": {
+    "name": "CollideWithGlassWeapon"
+  },
+  "54": {
+    "name": "SyncDesiredHeadingToCurrentHeading"
+  },
+  "55": {
+    "name": "AllowUpdateIfNoCollisionLoaded",
+    "rockstarCodeComment": "Don't freeze this ped for not having bounds loaded around it"
+  },
+  "56": {
+    "name": "InternalWalkingRndPlayer"
+  },
+  "57": {
+    "name": "PlacingCharge",
+    "rockstarDescription": "Setting Bomb (firing weapon is set also)"
+  },
+  "58": {
+    "name": "ScriptDisableSecondaryAnimationTasks",
+    "rockstarDescription": "Disable upper body animtion tasks such as shove ped and open door anims",
+    "rockstarCodeComment": "Disable upper body animtion tasks such as shove ped and open door anims"
+  },
+  "59": {
+    "name": "SearchingForClimb"
+  },
+  "60": {
+    "name": "SearchingForDoors",
+    "rockstarCodeComment": "Will check for the closest door in proximity and store it off"
+  },
+  "61": {
+    "name": "WanderingStoppedForOtherPed"
+  },
+  "62": {
+    "name": "SupressGunfireEvents",
+    "rockstarCodeComment": "Supresses AI generating fire events, so civilians wont be shocked or react, for use in a shooting range for example"
+  },
+  "63": {
+    "name": "InfiniteStamina",
+    "rockstarDescription": "Currently just for mounts, but could be expanded to anything with stamina",
+    "rockstarCodeComment": "Currently just for mounts, but could be expanded to anything with stamina"
+  },
+  "64": {
+    "name": "BlockWeaponReactionsUnlessDead",
+    "rockstarDescription": "Stops ragdoll and nm behaviors triggering from weapon damage unless the ped has died.",
+    "rockstarCodeComment": "Stops the ped from reacting to damage events (such as shots / fires, etc). The ped will still take damage while this flag is active. Note: this does not block explosion reactions."
+  },
+  "65": {
+    "name": "ForcePlayerFiring",
+    "rockstarCodeComment": "Forces player to fire even if they aren't pressing fire"
+  },
+  "66": {
+    "name": "InCoverFacingLeft",
+    "rockstarDescription": "set when exiting the cover state saying if we are facing left"
+  },
+  "67": {
+    "name": "ForcePeekFromCover",
+    "rockstarDescription": "if set the ped will go into peeking if they are already in cover",
+    "rockstarCodeComment": "Forces an actor that is in cover to continue (or start if they haven't yet) peeking"
+  },
+  "68": {
+    "name": "NotAllowedToChangeCrouchState",
+    "rockstarDescription": "if set the ped will not be allowed to change their crouch state"
+  },
+  "69": {
+    "name": "ForcePedToStrafe",
+    "rockstarDescription": "forces a ped to strafe",
+    "rockstarCodeComment": "Forces an actor to strafe"
+  },
+  "70": {
+    "name": "ForceMeleeStrafingAnims",
+    "rockstarDescription": "forces a ped to use the melee strafing anims when strafing"
+  },
+  "71": {
+    "name": "UseKinematicPhysics",
+    "rockstarDescription": "To be used by scripts - puts the ped into Kinematic physics mode. In this mode the ped will push other objects our of the way, but not be physically affected by them",
+    "rockstarCodeComment": "Enables kinematic physics mode on this ped. This stops other physical objects from pushing the ped around, and causes the ped to push any physical objects out of its way when it moves into them."
+  },
+  "72": {
+    "name": "ClearLockonTarget",
+    "rockstarDescription": "Clears the player's lockon target next frame",
+    "rockstarCodeComment": "Clear the players lockon target next frame"
+  },
+  "73": {
+    "name": "CanPedSeeHatedPedBeingUsed",
+    "rockstarDescription": "Activates can ped see hated ped generating events even when blocking of non-temp events is on"
+  },
+  "74": {
+    "name": "InstantBlendToAim",
+    "rockstarDescription": "Makes the ped performa an instant blend to aim if starting a gun task this frame"
+  },
+  "75": {
+    "name": "ForceImprovedIdleTurns",
+    "rockstarDescription": "Forces the ped to use an improved idle turning system that should help him turn to face more quickly"
+  },
+  "76": {
+    "name": "HitPedWithWeapon",
+    "rockstarDescription": "set when damage is inflicted by this ped on another ped"
+  },
+  "77": {
+    "name": "ForcePedToUseScripCamHeading",
+    "rockstarDescription": "forces a ped to the scripted camera heading instead of gameplay",
+    "rockstarCodeComment": "forces a ped to the scripted camera heading instead of gameplay"
+  },
+  "78": {
+    "name": "ProcessProbesWhenExtractingZ",
+    "rockstarDescription": "makes the capsule physics push the ped out of the ground even when extracting z"
+  },
+  "79": {
+    "name": "KeepDesiredCoverPoint",
+    "rockstarDescription": "should the ped keep their desired cover point this frame"
+  },
+  "80": {
+    "name": "HasProcessedCornering",
+    "rockstarDescription": "whether the ped has already processed slowing down for this corner"
+  },
+  "81": {
+    "name": "StandingOnForkliftForks",
+    "rockstarDescription": "Set when the ped standing capsule hits the forklift forks."
+  },
+  "82": {
+    "name": "AimWeaponReactionRunning",
+    "rockstarDescription": "ped is running the reaction task this frame"
+  },
+  "83": {
+    "name": "InContactWithFoliage",
+    "rockstarDescription": "ped is in contact with GTA_FOLIAGE_TYPE bounds"
+  },
+  "84": {
+    "name": "ForceExplosionCollisions",
+    "rockstarDescription": "ped will always collide with explosions, even when collision is off"
+  },
+  "85": {
+    "name": "IgnoreTargetsCoverForLOS",
+    "rockstarDescription": "when checking LOS against targets this ped will ignore their cover (if the cover exists)",
+    "rockstarCodeComment": "When doing LOS checks to other peds we won't use the cover vantage position as the \"target\" position"
+  },
+  "86": {
+    "name": "BlockAnimatedWeaponReactions",
+    "rockstarDescription": "Ped should not play animated damager reactions while this flag is set"
+  },
+  "87": {
+    "name": "DisablePedCapsule",
+    "rockstarDescription": "Removes the ped capsule from the physics simulation"
+  },
+  "88": {
+    "name": "DisableCrouchWhileInCover",
+    "rockstarDescription": "Force the crouch flag to return true while in cover.",
+    "rockstarCodeComment": "Force the crouch flag to return true while in cover."
+  },
+  "89": {
+    "name": "IncreasedAvoidanceRadius",
+    "rockstarDescription": "Adds extra 2m onto the radius other peds use to avoid this ped during local steering."
+  },
+  "90": {
+    "name": "UNUSED_REPLACE_ME"
+  },
+  "91": {
+    "name": "ForceRunningSpeedForFragSmashing",
+    "rockstarDescription": "Can be set by designers to force the ped to smash more easily through frags.",
+    "rockstarCodeComment": "Forces a ped to apply forces to frags as if running on contact, to guarantee peds will smash through frag objects when playing custom anims"
+  },
+  "92": {
+    "name": "EnableMoverAnimationWhileAttached",
+    "rockstarDescription": "While flagged, any mover animation will be applied to the offset of the attachment."
+  },
+  "93": {
+    "name": "NoTimeDelayBeforeShot",
+    "rockstarDescription": "While flagged, The time delay before a player can fire after aiming is 0"
+  },
+  "94": {
+    "name": "SearchingForAutoVaultClimb",
+    "rockstarDescription": "inform climb code we are doing an autovault"
+  },
+  "95": {
+    "name": "ExtraLongWeaponRange",
+    "rockstarDescription": "Extends the range of a peds weapons to 250m",
+    "rockstarCodeComment": "Force the bullets gun range to increase to 250m"
+  },
+  "96": {
+    "name": "ForcePlayerToEnterVehicleThroughDirectDoorOnly",
+    "rockstarDescription": "Forces the player to only use direct access when entering vehicles",
+    "rockstarCodeComment": "Forces the player to only use direct access when entering vehicles"
+  },
+  "97": {
+    "name": "TaskCullExtraFarAway",
+    "rockstarDescription": "Can be set by ai tasks on the main task tree to disable a ped getting cull from a vehicle.",
+    "rockstarCodeComment": "Disable a ped getting cull from a vehicle from pretend occupants."
+  },
+  "98": {
+    "name": "IsVaulting",
+    "rockstarDescription": "Set the entire time CTaskVault is running."
+  },
+  "99": {
+    "name": "IsParachuting",
+    "rockstarDescription": "Set the entire time CTaskParachute is running."
+  },
+  "100": {
+    "name": "SuppressSlowingForCorners",
+    "rockstarDescription": "If set this will prevent the ped from slowing down to take corners this frame"
+  },
+  "101": {
+    "name": "DisableProcessProbes",
+    "rockstarDescription": "Disables processing of probes."
+  },
+  "102": {
+    "name": "DisablePlayerAutoVaulting",
+    "rockstarCodeComment": "If this flag is set on a ped it will not attempt to autovault"
+  },
+  "103": {
+    "name": "DisableGaitReduction"
+  },
+  "104": {
+    "name": "ExitVehicleTaskFinishedThisFrame"
+  },
+  "105": {
+    "name": "RequiresLegIk"
+  },
+  "106": {
+    "name": "JayWalking",
+    "rockstarDescription": "If set then the ped is jay walking and a vehicle is allowed to run him over."
+  },
+  "107": {
+    "name": "UseBulletPenetration",
+    "rockstarDescription": "Ped will use bullet penetration code.",
+    "rockstarCodeComment": "If this flag is set on a ped it will use the bullet shoot through code"
+  },
+  "108": {
+    "name": "ForceAimAtHead",
+    "rockstarDescription": "Force all attackers to target the head of this ped",
+    "rockstarCodeComment": "Force all attackers to target the head of this ped"
+  },
+  "109": {
+    "name": "IsInStationaryScenario",
+    "rockstarDescription": "In a scenario and not moving",
+    "rockstarCodeComment": "Inform avoidance code that this ped isn't going anywhere and should be steered around rather than waited for"
+  },
+  "110": {
+    "name": "TemporarilyBlockWeaponEquipping",
+    "rockstarDescription": "Stop weapon equipping"
+  },
+  "111": {
+    "name": "CoverOutroRunning",
+    "rockstarDescription": "TASK_AIM_GUN_FROM_COVER_OUTRO"
+  },
+  "112": {
+    "name": "DisableSeeThroughChecksWhenTargeting",
+    "rockstarDescription": "Any targeting LoS checks will fail if any materials with 'see through' materials found.",
+    "rockstarCodeComment": "Any targeting LoS checks will fail if any materials with 'see through' materials found."
+  },
+  "113": {
+    "name": "PuttingOnHelmet",
+    "rockstarDescription": "putting on helmet",
+    "rockstarCodeComment": "When set, the ped is putting on a helmet. DONT SET THIS only query it"
+  },
+  "114": {
+    "name": "AllowPullingPedOntoRoute",
+    "rockstarDescription": "allows goto task to apply heading in order to pull a ped back onto their route"
+  },
+  "115": {
+    "name": "ApplyAnimatedVelocityWhilstAttached",
+    "rockstarDescription": "Allows attachment offsets to be updated from animated velocities"
+  },
+  "116": {
+    "name": "AICoverEntryRunning",
+    "rockstarDescription": "TASK_ENTER_COVER : State_PlayAIEntryAnim"
+  },
+  "117": {
+    "name": "ResponseAfterScenarioPanic",
+    "rockstarDescription": "The ped is entering threat response after panic exiting a scenario."
+  },
+  "118": {
+    "name": "IsNearDoor",
+    "rockstarDescription": "Ped is near a non-vehicle door"
+  },
+  "119": {
+    "name": "DisableTorsoSolver"
+  },
+  "120": {
+    "name": "PanicInVehicle",
+    "rockstarCodeComment": "When set, the ped will play panic animations if in a vehicle"
+  },
+  "121": {
+    "name": "DisableDynamicCapsuleRadius",
+    "rockstarDescription": "Turn off dynamic adjustments to ped capsules"
+  },
+  "122": {
+    "name": "IsRappelling",
+    "rockstarDescription": "Is currently in a rappel task"
+  },
+  "123": {
+    "name": "SkipReactInReactAndFlee",
+    "rockstarDescription": "When this ped goes to ThreatResponse, play the flee transition but not the reaction clip if fleeing."
+  },
+  "124": {
+    "name": "CannotBeTargeted",
+    "rockstarDescription": "Will prevent this ped from being a part of any other peds target list",
+    "rockstarCodeComment": "When set, this ped cannot be added to the targeting list of AI peds, will be removed if already in the list and is thought of as not able to be attacked"
+  },
+  "125": {
+    "name": "IsFalling",
+    "rockstarDescription": "Ped is in pure fall state (i.e. no parachuting, landing etc included"
+  },
+  "126": {
+    "name": "ForceInjuryAfterStunned",
+    "rockstarDescription": "Forces this ped to the injured state after being stunned",
+    "rockstarCodeComment": "Forces this ped to the injured state after being stunned"
+  },
+  "127": {
+    "name": "HurtThisFrame",
+    "rockstarDescription": "The ped has entered the hurt state this frame"
+  },
+  "128": {
+    "name": "BlockWeaponFire",
+    "rockstarDescription": "Prevent the ped from shooting a weapon",
+    "rockstarCodeComment": "Prevent the ped from shooting a weapon"
+  },
+  "129": {
+    "name": "ExpandPedCapsuleFromSkeleton",
+    "rockstarDescription": "Set the ped capsule radius based on skeleton",
+    "rockstarCodeComment": "Set the ped capsule radius based on skeleton"
+  },
+  "130": {
+    "name": "DisableWeaponLaserSight",
+    "rockstarDescription": "Toggle the weapon laser sight off for this frame",
+    "rockstarCodeComment": "Toggle the weapon laser sight off for this frame"
+  },
+  "131": {
+    "name": "PedExitedVehicleThisFrame",
+    "rockstarDescription": "Set when ped gets set out of vehicle"
+  },
+  "132": {
+    "name": "SearchingForDropDown",
+    "rockstarDescription": "Ped is seatching for drop down"
+  },
+  "133": {
+    "name": "UseTighterTurnSettings",
+    "rockstarDescription": "Ped should use tighter turn settings in human locomotion motion task"
+  },
+  "134": {
+    "name": "DisableArmSolver",
+    "rockstarDescription": "Disable the arm solver this frame"
+  },
+  "135": {
+    "name": "DisableHeadSolver"
+  },
+  "136": {
+    "name": "DisableLegSolver"
+  },
+  "137": {
+    "name": "DisableTorsoReactSolver"
+  },
+  "138": {
+    "name": "ForcePreCameraAIUpdate"
+  },
+  "139": {
+    "name": "TasksNeedProcessMoveSignalCalls",
+    "rockstarDescription": "Set when peds require calls to ProcessMoveSignals(), for AI timeslicing to work with Move"
+  },
+  "140": {
+    "name": "ShootFromGround"
+  },
+  "141": {
+    "name": "NoCollisionMovementMode",
+    "rockstarDescription": "Set when a ped is moving in an area where collisions with fixed geometry are unlikely.  The ped's physics will not be forced to activate."
+  },
+  "142": {
+    "name": "IsNearLaddder",
+    "rockstarDescription": "Ped is near top of a ladder"
+  },
+  "143": {
+    "name": "SkipAimingIdleIntro"
+  },
+  "144": {
+    "name": "IgnoredByAutoOpenDoors",
+    "rockstarDescription": "Set this for a ped to be ignored by the auto opened doors when checking to see if the door should be opened."
+  },
+  "145": {
+    "name": "BlockIkWeaponReactions",
+    "rockstarDescription": "Ped should not play Ik damager reactions while this flag is set"
+  },
+  "146": {
+    "name": "FirstPhysicsUpdate",
+    "rockstarDescription": "Ped was just created this frame"
+  },
+  "147": {
+    "name": "SpawnedThisFrameByAmbientPopulation",
+    "rockstarDescription": "Ped was spawned this frame"
+  },
+  "148": {
+    "name": "DisableRootSlopeFixupSolver"
+  },
+  "149": {
+    "name": "SuspendInitiatedMeleeActions",
+    "rockstarDescription": "Temporarily suspend any melee actions this frame (does not include hit reactions). Use PCF_DisableMelee to turn it off completely",
+    "rockstarCodeComment": "Temporarily suspend any melee actions this frame (does not include hit reactions). Use PCF_DisableMelee to turn it off completely"
+  },
+  "150": {
+    "name": "SuppressInAirEvent",
+    "rockstarDescription": "Prevents ped from getting the in air event the next frame",
+    "rockstarCodeComment": "Prevents ped from getting the in air event the next frame"
+  },
+  "151": {
+    "name": "AllowTasksIncompatibleWithMotion",
+    "rockstarDescription": "If set, ped will skip CheckTasksAreCompatibleWithMotion",
+    "rockstarCodeComment": "If set, allows ped to have tasks incompatible with its current motion"
+  },
+  "152": {
+    "name": "IsEnteringOrExitingVehicle",
+    "rockstarDescription": "TASK_ENTER_VEHICLE or TASK_EXIT_VEHICLE"
+  },
+  "153": {
+    "name": "PlayerOnHorse",
+    "rockstarDescription": "TASK_PLAYER_ON_HORSE"
+  },
+  "154": {
+    "name": "HasGunTaskWithAimingState",
+    "rockstarDescription": "Ped is running TASK_GUN and task's state is State_Aim"
+  },
+  "155": {
+    "name": "SuppressLethalMeleeActions",
+    "rockstarDescription": "This will suppress any melee action that is considered lethal (RA_IS_LETHAL, defined in action_table.meta)",
+    "rockstarCodeComment": "This will suppress any melee action that is considered lethal (RA_IS_LETHAL, defined in action_table.meta)"
+  },
+  "156": {
+    "name": "InstantBlendToAimFromScript",
+    "rockstarCodeComment": "Blend straight into an aim instantly, if starting a gun task this frame"
+  },
+  "157": {
+    "name": "IsStillOnBicycle"
+  },
+  "158": {
+    "name": "IsSittingAndCycling"
+  },
+  "159": {
+    "name": "IsStandingAndCycling"
+  },
+  "160": {
+    "name": "IsDoingCoverAimOutro"
+  },
+  "161": {
+    "name": "ApplyCoverWeaponBlockingOffsets"
+  },
+  "162": {
+    "name": "IsInLowCover"
+  },
+  "163": {
+    "name": "AmbientIdleAndBaseAnimsBlocked",
+    "rockstarDescription": "Blocks ambient idles and base animations from playing."
+  },
+  "164": {
+    "name": "UseAlternativeWhenBlock",
+    "rockstarDescription": "If set, ped will use alternative aiming/firing anims"
+  },
+  "165": {
+    "name": "ForceLowLodWaterCheck",
+    "rockstarDescription": "If set, the ped will always force probe for being in water when in low LOD mode."
+  },
+  "166": {
+    "name": "MakeHeadInvisible",
+    "rockstarDescription": "If set, scale the head of the ped to 0.001",
+    "rockstarCodeComment": "If set, scale the head of the ped to 0.001"
+  },
+  "167": {
+    "name": "NoAutoRunWhenFiring",
+    "rockstarDescription": "Don't auto run when NoAutoRunWhenFiring is set.",
+    "rockstarCodeComment": "Don't auto run when NoAutoRunWhenFiring is set"
+  },
+  "168": {
+    "name": "PermitEventDuringScenarioExit",
+    "rockstarDescription": "Ignore certain aspects (FOV checks, etc) of AffectsPedCore() on some events while the ped is playing a scenario exit."
+  },
+  "169": {
+    "name": "DisableSteeringAroundVehicles",
+    "rockstarDescription": "Enables/disables the low-level steering behaviour around vehicles"
+  },
+  "170": {
+    "name": "DisableSteeringAroundPeds",
+    "rockstarDescription": "Enables/disables the low-level steering behaviour around peds"
+  },
+  "171": {
+    "name": "DisableSteeringAroundObjects",
+    "rockstarDescription": "Enables/disables the low-level steering behaviour around objects"
+  },
+  "172": {
+    "name": "DisableSteeringAroundNavMeshEdges",
+    "rockstarDescription": "Enables/disables the low-level steering behaviour around nav mesh edges",
+    "rockstarCodeComment": "Don't let this ped take navmesh edges into account when performing their low-level steering/avoidance code"
+  },
+  "173": {
+    "name": "WantsToEnterVehicleFromCover"
+  },
+  "174": {
+    "name": "WantsToEnterCover"
+  },
+  "175": {
+    "name": "WantsToEnterVehicleFromAiming"
+  },
+  "176": {
+    "name": "CapsuleBeingPushedByVehicle"
+  },
+  "177": {
+    "name": "DisableTakeOffParachutePack",
+    "rockstarCodeComment": "Disable taking off the parachute pack"
+  },
+  "178": {
+    "name": "IsCallingPolice"
+  },
+  "179": {
+    "name": "ForceCombatTaunt",
+    "rockstarDescription": "Forces a combat taunt for peds using the insult special ability.",
+    "rockstarCodeComment": "If this ped has the INSULT special ability, and this flag is set, he will always use the combat taunt when the special is activated"
+  },
+  "180": {
+    "name": "IgnoreCombatTaunts",
+    "rockstarCodeComment": "This ped will ignore combat taunts"
+  },
+  "181": {
+    "name": "SkipAiUpdateProcessControl",
+    "rockstarDescription": "True if we've already run this ped's AI and can skip it from within ProcessControl"
+  },
+  "182": {
+    "name": "OverridePhysics",
+    "rockstarDescription": "A reset flag that disables collision and gravity on the ped and drives entity positions and rotations directly, rather than going through the physics update."
+  },
+  "183": {
+    "name": "WasPhysicsOverridden",
+    "rockstarDescription": "True if physics was overriden during the last update."
+  },
+  "184": {
+    "name": "BlockWeaponHoldingAnims",
+    "rockstarDescription": "Block any onfoot weapon holding anims."
+  },
+  "185": {
+    "name": "DisableMoveTaskHeadingAdjustments",
+    "rockstarDescription": "True if the ped's movement task should not adjust the heading of the ped."
+  },
+  "186": {
+    "name": "DisableBodyLookSolver"
+  },
+  "187": {
+    "name": "PreventAllMeleeTakedowns",
+    "rockstarDescription": "Will temporarily prevent any takedown from being performed on this ped",
+    "rockstarCodeComment": "Will temporarily prevent any takedown from being performed on this ped"
+  },
+  "188": {
+    "name": "PreventFailedMeleeTakedowns",
+    "rockstarDescription": "Will temporarily prevent any failed takedowns from being performed on this ped",
+    "rockstarCodeComment": "Will temporarily prevent any failed takedown from being performed on this ped"
+  },
+  "189": {
+    "name": "IsPedalling"
+  },
+  "190": {
+    "name": "UseTighterAvoidanceSettings",
+    "rockstarDescription": "Ped should use tighter avoidance settings in navigation task",
+    "rockstarCodeComment": "Will temporarily force min avoidance on this ped.  will brush other peds but avoid a bit"
+  },
+  "191": {
+    "name": "IsHigherPriorityClipControllingPed",
+    "rockstarDescription": "True if the active task on the main task tree is taking responsibility for the mover track"
+  },
+  "192": {
+    "name": "VehicleCrushingRagdoll",
+    "rockstarDescription": "Set to true if a vehicle is pressing downward on the ragdoll"
+  },
+  "193": {
+    "name": "OnActivationUpdate",
+    "rockstarDescription": "Ped was just activated this frame"
+  },
+  "194": {
+    "name": "ForceMotionStateLeaveDesiredMBR",
+    "rockstarDescription": "Set this to disable setting the desired move blendratio when forcing the motion state. Usefull for forcing a flee start, etc"
+  },
+  "195": {
+    "name": "DisableDropDowns",
+    "rockstarDescription": "Disable drop downs for this ped",
+    "rockstarCodeComment": "Disable drop downs for this ped"
+  },
+  "196": {
+    "name": "InContactWithBIGFoliage",
+    "rockstarDescription": "ped is in contact with GTA_FOLIAGE_TYPE bounds that are large and the player can be hidden"
+  },
+  "197": {
+    "name": "DisableTakeOffScubaGear",
+    "rockstarCodeComment": "Disable taking off the scuba gear"
+  },
+  "198": {
+    "name": "DisableCellphoneAnimations",
+    "rockstarDescription": "tells taskmobile phone to Blends out move network and prevents it from blending in"
+  },
+  "199": {
+    "name": "IsExitingVehicle",
+    "rockstarDescription": "TASK_EXIT_VEHICLE"
+  },
+  "200": {
+    "name": "DisableActionMode",
+    "rockstarDescription": "Disables combat anims for ped",
+    "rockstarCodeComment": "Disable combat anims for ped."
+  },
+  "201": {
+    "name": "EquippedWeaponChanged",
+    "rockstarDescription": "Equipped weapon changed this frame"
+  },
+  "202": {
+    "name": "TouchingOverhang",
+    "rockstarDescription": "Some part appears to be contrained downwards"
+  },
+  "203": {
+    "name": "TooSteepForPlayer",
+    "rockstarDescription": "We're standing on something flagged too steep for the player to stand on"
+  },
+  "204": {
+    "name": "BlockSecondaryAnim",
+    "rockstarDescription": "Block any secondary scripted task animations playing on this ped"
+  },
+  "205": {
+    "name": "IsInCombat",
+    "rockstarDescription": "This ped is running the combat task"
+  },
+  "206": {
+    "name": "UseHeadOrientationForPerception",
+    "rockstarDescription": "Will use the ped's head orientation for perception tests",
+    "rockstarCodeComment": "Use the ped's head orientation for perception tests"
+  },
+  "207": {
+    "name": "IsDoingDriveby",
+    "rockstarDescription": "This ped is running a driveby gun or projectile task"
+  },
+  "208": {
+    "name": "IsEnteringCover",
+    "rockstarDescription": "This ped is running a cover entry task"
+  },
+  "209": {
+    "name": "ForceMovementScannerCheck",
+    "rockstarDescription": "Set to make CStaticMovementScanner::Scan() check for collisions as if we were moving"
+  },
+  "210": {
+    "name": "DisableJumpRagdollOnCollision",
+    "rockstarDescription": "If true, the player will no longer auto-ragdoll when colliding with objects, peds, etc. while jumping",
+    "rockstarCodeComment": "The player will no longer auto-ragdoll when colliding with objects, peds, etc. while jumping"
+  },
+  "211": {
+    "name": "IsBeingMeleeHomedByPlayer",
+    "rockstarDescription": "Set on the target ped in melee if the player is homing towards them"
+  },
+  "212": {
+    "name": "ShouldLaunchBicycleThisFrame",
+    "rockstarDescription": "This ped should launch the bicycle this frame"
+  },
+  "213": {
+    "name": "CanDoBicycleWheelie",
+    "rockstarDescription": "This ped can do a bicycle wheelie"
+  },
+  "214": {
+    "name": "ForceProcessPhysicsUpdateEachSimStep",
+    "rockstarDescription": "If true, ProcessPhysics() will execute completely for each physics simulation step"
+  },
+  "215": {
+    "name": "DisablePedCapsuleMapCollision",
+    "rockstarDescription": "Disables collision between the ped capsule and the map (usefull in cases where the entity position is being tightly controlled outside of physics, e.g. by an animation)"
+  },
+  "216": {
+    "name": "DisableSeatShuffleDueToInjuredDriver",
+    "rockstarDescription": "If true, motion in vehicle task won't shuffle to the driver seat just because the driver is injured"
+  },
+  "217": {
+    "name": "DisableParachuting",
+    "rockstarCodeComment": "Disable parachuting for the ped"
+  },
+  "218": {
+    "name": "ProcessPostMovement",
+    "rockstarDescription": "do we need to call ProcessPostMovement for tasks"
+  },
+  "219": {
+    "name": "ProcessPostCamera",
+    "rockstarDescription": "do we need to call ProcessPostCamera for tasks"
+  },
+  "220": {
+    "name": "ProcessPostPreRender",
+    "rockstarDescription": "do we need to call ProcessPostPreRender for tasks"
+  },
+  "221": {
+    "name": "PreventBicycleFromLeaningOver"
+  },
+  "222": {
+    "name": "KeepParachutePackOnAfterTeleport",
+    "rockstarCodeComment": "Keep the parachute pack on after a teleport"
+  },
+  "223": {
+    "name": "DontRaiseFistsWhenLockedOn",
+    "rockstarCodeComment": "Whether or not you want the player ped to use the new front melee logic in TODO #981120"
+  },
+  "224": {
+    "name": "PreferMeleeBodyIkHitReaction",
+    " rockstarDescription1": "This will prefer all melee hit reactions to use body ik hit reactions if ragdoll is not selected",
+    "rockstarCodeComment": "This will prefer all melee hit reactions to use body ik hit reactions if ragdoll is not selected"
+  },
+  "225": {
+    "name": "ProcessPhysicsTasksMotion",
+    "rockstarDescription": "do we need to call process physics for motion tasks this frame"
+  },
+  "226": {
+    "name": "ProcessPhysicsTasksMovement",
+    "rockstarDescription": "do we need to call process physics for movement tasks this frame"
+  },
+  "227": {
+    "name": "DisableFriendlyGunReactAudio",
+    "rockstarDescription": "If set, disables friendly responses to gunshots/being aimed at.",
+    "rockstarCodeComment": "If set, disables friendly responses to gunshots/being aimed at."
+  },
+  "228": {
+    "name": "DisableAgitationTriggers",
+    "rockstarCodeComment": "Disables agitation triggers"
+  },
+  "229": {
+    "name": "ForceForwardTransitionInReactAndFlee",
+    "rockstarDescription": "If set, force CTaskReactAndFlee to use a forward facing flee transition"
+  },
+  "230": {
+    "name": "IsEnteringVehicle",
+    "rockstarDescription": "TASK_ENTER_VEHICLE"
+  },
+  "231": {
+    "name": "DoNotSkipNavMeshTrackerUpdate",
+    "rockstarDescription": "If set we will not allow the NavMeshTracker update to be skipped this frame."
+  },
+  "232": {
+    "name": "RagdollOnVehicle",
+    "rockstarDescription": "Set to true when the ragdoll is lying on top of a vehicle (note- hands, feet, forearms and shins are not included in the test)"
+  },
+  "233": {
+    "name": "BlockRagdollActivationInVehicle"
+  },
+  "234": {
+    "name": "DisableNMForRiverRapids",
+    "rockstarDescription": "If set, disable NM reactions to fast moving water",
+    "rockstarCodeComment": "Disable NM reactions to fast moving water for this ped"
+  },
+  "235": {
+    "name": "IsInWrithe",
+    "rockstarDescription": "If set, the ped is on the ground writhing and might start shooting from ground"
+  },
+  "236": {
+    "name": "PreventGoingIntoStillInVehicleState",
+    "rockstarDescription": "If set, the ped will not go into the still in vehicle pose",
+    "rockstarCodeComment": "If set, the ped will not go into the still in vehicle pose"
+  },
+  "237": {
+    "name": "UseFastEnterExitVehicleRates",
+    "rockstarDescription": "If set, the ped will get in and out of vehicles faster",
+    "rockstarCodeComment": "If set, the ped will get in and out of vehicles faster (same as in mp)"
+  },
+  "238": {
+    "name": "DisableGroundAttachment",
+    "rockstarDescription": "If set, the ped won't attach to a ground physical when his physics disables (useful for cutscenes, etc)"
+  },
+  "239": {
+    "name": "DisableAgitation",
+    "rockstarCodeComment": "Disables agitation"
+  },
+  "240": {
+    "name": "DisableTalk",
+    "rockstarCodeComment": "Disables talking"
+  },
+  "241": {
+    "name": "InterruptedToQuickStartEngine"
+  },
+  "242": {
+    "name": "PedEnteredFromLeftEntry"
+  },
+  "243": {
+    "name": "IsDiving"
+  },
+  "244": {
+    "name": "DisableVehicleImpacts"
+  },
+  "245": {
+    "name": "DeepVehicleImpacts"
+  },
+  "246": {
+    "name": "DisablePedCapsuleControl"
+  },
+  "247": {
+    "name": "UseProbeSlopeStairsDetection",
+    "rockstarCodeComment": "Uses more expensive slope/stairs detection"
+  },
+  "248": {
+    "name": "DisableVehicleDamageReactions",
+    "rockstarCodeComment": "Disables vehicle damage reactions"
+  },
+  "249": {
+    "name": "DisablePotentialBlastReactions",
+    "rockstarCodeComment": "Disables potential blast reactions"
+  },
+  "250": {
+    "name": "OnlyAllowLeftArmDoorIk",
+    "rockstarCodeComment": "When set along side open door ik, will only use the left hand"
+  },
+  "251": {
+    "name": "OnlyAllowRightArmDoorIk",
+    "rockstarCodeComment": "When set along side open door ik, will only use the left hand"
+  },
+  "252": {
+    "name": "ForceProcessPedStandingUpdateEachSimStep",
+    "rockstarDescription": "When set, ProcessPedStanding will get called for each physics step."
+  },
+  "253": {
+    "name": "DisableFlashLight",
+    "rockstarDescription": "When set, the flash light on a Ai weapon will be turned off.",
+    "rockstarCodeComment": "When set, the flash light on a Ai weapon will be turned off"
+  },
+  "254": {
+    "name": "DoingCombatRoll",
+    "rockstarDescription": "When set, the ped is doing a combat roll"
+  },
+  "255": {
+    "name": "DisableBodyRecoilSolver"
+  },
+  "256": {
+    "name": "CanAbortExitForInAirEvent",
+    "rockstarDescription": "When set, the ped can abort the exit vehicle anim to go into fall"
+  },
+  "257": {
+    "name": "DisableSprintDamage"
+  },
+  "258": {
+    "name": "ForceEnableFlashLightForAI",
+    "rockstarDescription": "When set, the ai ped will enable their flash light",
+    "rockstarCodeComment": "When set, the ai ped will enable their flash light"
+  },
+  "259": {
+    "name": "IsDoingCoverAimIntro"
+  },
+  "260": {
+    "name": "IsAimingFromCover"
+  },
+  "261": {
+    "name": "WaitingForCompletedPathRequest",
+    "rockstarDescription": "This ped is waiting for a path request which is now complete, so their tasks must be updated this frame"
+  },
+  "262": {
+    "name": "DisableCombatAudio",
+    "rockstarCodeComment": "Disables combat audio"
+  },
+  "263": {
+    "name": "DisableCoverAudio",
+    "rockstarCodeComment": "Disables cover audio"
+  },
+  "264": {
+    "name": "PreventBikeFromLeaning"
+  },
+  "265": {
+    "name": "InCoverTaskActive"
+  },
+  "266": {
+    "name": "EnableSteepSlopePrevention",
+    "rockstarDescription": "Pushes the ped through the same steep slope tolerances in TaskMotionBase that the player encounters"
+  },
+  "267": {
+    "name": "InsideEnclosedSearchRegion"
+  },
+  "268": {
+    "name": "JumpingOutOfVehicle"
+  },
+  "269": {
+    "name": "IsTuckedOnBicycleThisFrame"
+  },
+  "270": {
+    "name": "ProcessPostMovementTimeSliced",
+    "rockstarDescription": "Parallel flag to ProcessPostMovement, except this is reset in PreTask(), meaning it stays consistent across timeslicing."
+  },
+  "271": {
+    "name": "EnablePressAndReleaseDives",
+    "rockstarCodeComment": "Player has to press and hold dive button to dive in water"
+  },
+  "272": {
+    "name": "OnlyExitVehicleOnButtonRelease",
+    "rockstarCodeComment": "Only allows player to exit vehicle when button is released rather than pressed or held"
+  },
+  "273": {
+    "name": "IsGoingToStandOnExitedVehicle"
+  },
+  "274": {
+    "name": "BlockRagdollFromVehicleFallOff"
+  },
+  "275": {
+    "name": "DisableTorsoVehicleSolver"
+  },
+  "276": {
+    "name": "IsExitingUpsideDownVehicle"
+  },
+  "277": {
+    "name": "IsExitingOnsideVehicle"
+  },
+  "278": {
+    "name": "IsExactStopping"
+  },
+  "279": {
+    "name": "IsExactStopSettling"
+  },
+  "280": {
+    "name": "IsTrainCrushingRagdoll"
+  },
+  "281": {
+    "name": "OverrideHairScale",
+    "rockstarDescription": "Scales the ped's hair down to the specified value"
+  },
+  "282": {
+    "name": "ConsiderAsPlayerCoverThreatWithoutLOS",
+    "rockstarDescription": "Considered as a threat as part of player cover search even if they can't see the player",
+    "rockstarCodeComment": "Considered as a threat as part of player cover search even if they can't see the player"
+  },
+  "283": {
+    "name": "BlockCustomAIEntryAnims",
+    "rockstarCodeComment": "Disables ped from using custom ai cover entry animations"
+  },
+  "284": {
+    "name": "IgnoreVehicleEntryCollisionTests",
+    "rockstarCodeComment": "Ignore the vehicle entry collision tests for this ped"
+  },
+  "285": {
+    "name": "StreamActionModeAnimsIfDisabled",
+    "rockstarDescription": "Stream action mode anims even if action mode is disabled"
+  },
+  "286": {
+    "name": "ForceUpdateRagdollMatrix",
+    "rockstarDescription": "Ped requires ragdoll matrix update next frame."
+  },
+  "287": {
+    "name": "PreventGoingIntoShuntInVehicleState",
+    "rockstarDescription": "If set, the ped will not go into the shunt in vehicle pose",
+    "rockstarCodeComment": "If set, the ped will not go into the shunt in vehicle pose"
+  },
+  "288": {
+    "name": "DisableIndependentMoverFrame"
+  },
+  "289": {
+    "name": "DoingDrivebyOutro"
+  },
+  "290": {
+    "name": "BeingElectrocuted"
+  },
+  "291": {
+    "name": "DisableUnarmedDrivebys"
+  },
+  "292": {
+    "name": "TalkingToPlayer"
+  },
+  "293": {
+    "name": "DontActivateRagdollFromPlayerPedImpactReset",
+    "rockstarDescription": "Block ragdoll activations from animated player bumps"
+  },
+  "294": {
+    "name": "DontActivateRagdollFromAiRagdollImpactReset",
+    "rockstarDescription": "Block ragdoll activations from collisions with an ai ragdoll"
+  },
+  "295": {
+    "name": "DontActivateRagdollFromPlayerRagdollImpactReset",
+    "rockstarDescription": "Block ragdoll activations from collisions with a player ragdoll"
+  },
+  "296": {
+    "name": "DisableVisemeBodyAdditive",
+    "rockstarDescription": "If set, prevents visemes from playing any additive body animations"
+  },
+  "297": {
+    "name": "CapsuleBeingPushedByPlayerCapsule",
+    "rockstarDescription": "Set when the player capsule is pushing up against this peds capsule"
+  },
+  "298": {
+    "name": "ForceActionMode"
+  },
+  "299": {
+    "name": "ForceUnarmedActionMode"
+  },
+  "300": {
+    "name": "UsingMoverExtraction",
+    "rockstarDescription": "Set when the players capsule is getting repositioned each frame relative to an anim and origin"
+  },
+  "301": {
+    "name": "BeingJacked"
+  },
+  "302": {
+    "name": "EnableVoiceDrivenMouthMovement",
+    "rockstarDescription": "If set, turn on the voice driven mouth movement",
+    "rockstarCodeComment": "If set, turn on the voice driven mouth movement"
+  },
+  "303": {
+    "name": "IsReloading"
+  },
+  "304": {
+    "name": "UseTighterEnterVehicleSettings",
+    "rockstarDescription": "Ped should use tighter (shorter) settings for entering vehicles",
+    "rockstarCodeComment": "To have peds do better vehicle entries when in a group and interfered by other peds, use carefully though"
+  },
+  "305": {
+    "name": "InRaceMode",
+    "rockstarDescription": "Set when the player is in the race mode.",
+    "rockstarCodeComment": "Set when the player is in the races to make the player more interesting to look at."
+  },
+  "306": {
+    "name": "DisableAmbientMeleeMoves",
+    "rockstarDescription": "Disable ambient (initial) melee moves",
+    "rockstarCodeComment": "Disable ambient (initial) melee moves"
+  },
+  "307": {
+    "name": "ForceBuoyancyProcessingIfAsleep"
+  },
+  "308": {
+    "name": "AllowSpecialAbilityInVehicle",
+    "rockstarDescription": "Allows the player to trigger the special ability while in a vehicle",
+    "rockstarCodeComment": "Allows the player to trigger the special ability while in a vehicle"
+  },
+  "309": {
+    "name": "DisableInVehicleActions",
+    "rockstarDescription": "Prevents ped from doing in vehicle actions such as starting engine, hotwiring, closing door etc.",
+    "rockstarCodeComment": "Prevents ped from doing in vehicle actions like closing door, hotwiring, starting engine, putting on helmet etc"
+  },
+  "310": {
+    "name": "ForceInstantSteeringWheelIkBlendIn",
+    "rockstarDescription": "Forces ped to blend in steering wheel ik instantly rather than over time.",
+    "rockstarCodeComment": "Forces ped to blend in steering wheel ik instantly rather than over time"
+  },
+  "311": {
+    "name": "IgnoreThreatEngagePlayerCoverBonus",
+    "rockstarDescription": "Ignores the bonus score for selecting cover that the player can engage the enemy at",
+    "rockstarCodeComment": "Ignores the bonus score for selecting cover that the player can engage the enemy at"
+  },
+  "312": {
+    "name": "Block180Turns",
+    "rockstarDescription": "Blocks triggering of 180 turns in human locomotion this frame."
+  },
+  "313": {
+    "name": "DontCloseVehicleDoor",
+    "rockstarDescription": "Prevents the ped from closing the vehicle door of the car they're in",
+    "rockstarCodeComment": "Prevents the ped from closing the vehicle door of the car they're inside"
+  },
+  "314": {
+    "name": "SkipExplosionOcclusion",
+    "rockstarDescription": "Map collision will not block this ped from being hit by explosions",
+    "rockstarCodeComment": "Explosions can't be blocked by map collision when damaging this ped"
+  },
+  "315": {
+    "name": "ProcessPhysicsTasksTimeSliced",
+    "rockstarDescription": "Parallel flag to ProcessPhysicsTasks, except this is reset in PreTask(), meaning it stays consistent across timeslicing."
+  },
+  "316": {
+    "name": "MeleeStrikeAgainstNonPed",
+    "rockstarDescription": "Set when the ped has performed a melee strike and hit any non ped material",
+    "rockstarCodeComment": "Set when the ped has performed a melee strike and hit any non ped material"
+  },
+  "317": {
+    "name": "IgnoreNavigationForDoorArmIK",
+    "rockstarDescription": "We will not attempt to walk around doors when using arm IK",
+    "rockstarCodeComment": "We will not attempt to walk around doors when using arm IK"
+  },
+  "318": {
+    "name": "DisableAimingWhileParachuting",
+    "rockstarDescription": "Disable aiming while parachuting",
+    "rockstarCodeComment": "Disable aiming while parachuting"
+  },
+  "319": {
+    "name": "DisablePedCollisionWithPedEvent",
+    "rockstarDescription": "Disable hit reaction due to colliding with a ped",
+    "rockstarCodeComment": "Disable hit reaction due to colliding with a ped"
+  },
+  "320": {
+    "name": "IgnoreVelocityWhenClosingVehicleDoor",
+    "rockstarDescription": "Will ignore the vehicle speed threshold and close the door anyway",
+    "rockstarCodeComment": "Will ignore the vehicle speed threshold and close the door anyway"
+  },
+  "321": {
+    "name": "SkipOnFootIdleIntro",
+    "rockstarCodeComment": "Skip idle intro"
+  },
+  "322": {
+    "name": "DontWalkRoundObjects",
+    "rockstarDescription": "Don't walk round objects that we collide with whilst moving",
+    "rockstarCodeComment": "Don't walk round objects that we collide with whilst moving"
+  },
+  "323": {
+    "name": "DisablePedEnteredMyVehicleEvents",
+    "rockstarCodeComment": "Disable ped entered my vehicle events"
+  },
+  "324": {
+    "name": "CancelLeftHandGripIk",
+    "rockstarDescription": "Call ProcessLeftHandGripIk() to cancel left hand grip IK, at the right time of the frame"
+  },
+  "325": {
+    "name": "ResetMovementStaticCounter",
+    "rockstarDescription": "Will keep reset the static counter when this is set"
+  },
+  "326": {
+    "name": "DisableInVehiclePedVariationBlocking",
+    "rockstarDescription": "Will allow ped variations to be rendered in vehicles, even if marked otherwise",
+    "rockstarCodeComment": "Will allow ped variations to be rendered in vehicles, even if marked otherwise"
+  },
+  "327": {
+    "name": "ReduceEffectOfVehicleRamControlLoss",
+    "rockstarDescription": "When on a mission this reset flag will slightly reduce the amount of time the player loses control of their vehicle when hit by an AI ped",
+    "rockstarCodeComment": "When on a mission this reset flag will slightly reduce the amount of time the player loses control of their vehicle when hit by an AI ped"
+  },
+  "328": {
+    "name": "DisablePlayerMeleeFriendlyAttacks",
+    "rockstarDescription": "Another flag to disable friendly attack from the player. Set on the opponent you would like it to be disabled on.",
+    "rockstarCodeComment": "Another flag to disable friendly attack from the player. Set on the opponent you would like it to be disabled on."
+  },
+  "329": {
+    "name": "MotionPedDoPostMovementIndependentMover"
+  },
+  "330": {
+    "name": "IsMeleeTargetUnreachable",
+    "rockstarDescription": "Set when the melee target has been deemed unreachable (AI only)",
+    "rockstarCodeComment": "Set when the melee target has been deemed unreachable (AI only)"
+  },
+  "331": {
+    "name": "DisableAutoForceOutWhenBlowingUpCar",
+    "rockstarCodeComment": "Disable automatically forcing player to exit a vehicle in a network game when blowing up vehicle"
+  },
+  "332": {
+    "name": "ThrowingProjectile"
+  },
+  "333": {
+    "name": "OverrideHairScaleLarger",
+    "rockstarDescription": "Scales the ped's hair up to the specified value"
+  },
+  "334": {
+    "name": "DisableDustOffAnims",
+    "rockstarDescription": "Disable amient dust off animations",
+    "rockstarCodeComment": "Disable amient dust off animations"
+  },
+  "335": {
+    "name": "DisableMeleeHitReactions",
+    "rockstarDescription": "This ped will refrain from ever performing a melee hit reaction",
+    "rockstarCodeComment": "This ped will refrain from ever performing a melee hit reaction"
+  },
+  "336": {
+    "name": "VisemeAnimsAudioBlocked",
+    "rockstarDescription": "Blocks viseme anims audio from playing"
+  },
+  "337": {
+    "name": "AllowHeadPropInVehicle",
+    "rockstarDescription": "This overrides PV_FLAG_NOT_IN_CAR set on any head prop and stops it from being removed when getting into the vehicle",
+    "rockstarCodeComment": "This overrides PV_FLAG_NOT_IN_CAR set on any head prop and stops it from being removed when getting into the vehicle"
+  },
+  "338": {
+    "name": "IsInVehicleChase"
+  },
+  "339": {
+    "name": "DontQuitMotionAiming"
+  },
+  "340": {
+    "name": "SetLastBoundMatricesDone",
+    "rockstarDescription": "Ensure that the last bound matrices are only updated once per frame"
+  },
+  "341": {
+    "name": "PreserveAnimatedAngularVelocity",
+    "rockstarDescription": "Don't allow the locomotion task to adjust angular velocity coming from animation"
+  },
+  "342": {
+    "name": "OpenDoorArmIK",
+    "rockstarDescription": "Set if the ped should enable open door arm IK",
+    "rockstarCodeComment": "Reset version of PCF_OpenDoorArmIK, which sets if the ped should enable open door arm IK."
+  },
+  "343": {
+    "name": "UseTighterTurnSettingsForScript",
+    "rockstarDescription": "Script set flag, to force use of tighter turn settings in locomotion task",
+    "rockstarCodeComment": "Force use of tighter turn settings in locomotion task"
+  },
+  "344": {
+    "name": "ForcePreCameraProcessExternallyDrivenDOFs",
+    "rockstarDescription": "Set if the ped should process externally driven dofs before the pre-camera ai update"
+  },
+  "345": {
+    "name": "LadderBlockingMovement",
+    "rockstarDescription": "Ped is waiting for ladder and blocking movement to prevent falling off"
+  },
+  "346": {
+    "name": "DisableVoiceDrivenMouthMovement",
+    "rockstarDescription": "If set, turn off the voice driven mouth movement (overrides EnableVoiceDrivenMouthMovement)",
+    "rockstarCodeComment": "If set, turn off the voice driven mouth movement (overrides EnableVoiceDrivenMouthMovement)"
+  },
+  "347": {
+    "name": "SteerIntoSkids",
+    "rockstarDescription": "If set, steer into skids while driving",
+    "rockstarCodeComment": "If set, steer into skids while driving"
+  },
+  "348": {
+    "name": "AllowOpenDoorIkBeforeFullMovement",
+    "rockstarDescription": "When set, code will ignore the logic that requires the ped to be in CTaskHumanLocomotion::State_Moving",
+    "rockstarCodeComment": "When set, code will ignore the logic that requires the ped to be in CTaskHumanLocomotion::State_Moving"
+  },
+  "349": {
+    "name": "AllowHomingMissileLockOnInVehicle",
+    "rockstarDescription": "When set, code will bypass rel settings and allow a homing lock on to this ped when they are in a vehicle",
+    "rockstarCodeComment": "When set, code will bypass rel settings and allow a homing lock on to this ped when they are in a vehicle"
+  },
+  "350": {
+    "name": "AllowCloneForcePostCameraAIUpdate"
+  },
+  "351": {
+    "name": "DisableHighHeels",
+    "rockstarDescription": "Force the high heels DOF to be 0",
+    "rockstarCodeComment": "Force the high heels DOF to be 0"
+  },
+  "352": {
+    "name": "BreakTargetLock",
+    "rockstarDescription": "Force lock on to break for this ped"
+  },
+  "353": {
+    "name": "DontUseSprintEnergy",
+    "rockstarDescription": "Player does not get tired when sprinting",
+    "rockstarCodeComment": "Player does not get tired when sprinting"
+  },
+  "354": {
+    "name": "DontChangeHorseMbr",
+    "rockstarDescription": "Similar to CPED_RESET_FLAG_DontChangeMbrInSimpleMoveDoNothing, but for horses."
+  },
+  "355": {
+    "name": "DisableMaterialCollisionDamage",
+    "rockstarDescription": "Don't be damaged by touching dangerous material (e.g. electic generator)",
+    "rockstarCodeComment": "Don't be damaged by touching dangerous material (e.g. electic generator)"
+  },
+  "356": {
+    "name": "DisableMPFriendlyLockon",
+    "rockstarDescription": "Don't target friendly players in MP",
+    "rockstarCodeComment": "Don't target friendly players in MP"
+  },
+  "357": {
+    "name": "DisableMPFriendlyLethalMeleeActions",
+    "rockstarDescription": "Don't melee kill friendly players in MP",
+    "rockstarCodeComment": "Don't melee kill friendly players in MP"
+  },
+  "358": {
+    "name": "IfLeaderStopsSeekCover",
+    "rockstarDescription": "If our leader stops, try and seek cover if we can",
+    "rockstarCodeComment": "If our leader stops, try and seek cover if we can"
+  },
+  "359": {
+    "name": "ProcessPostPreRenderAfterAttachments",
+    "rockstarDescription": "do we need to call CPED_RESET_FLAG_ProcessPostPreRenderAfterAttachments for tasks"
+  },
+  "360": {
+    "name": "DoDamageCoughFacial"
+  },
+  "361": {
+    "name": "IsUsingJetpack",
+    "rockstarDescription": "Is ped currently using jetpack. e.g. in air"
+  },
+  "362": {
+    "name": "UseInteriorCapsuleSettings",
+    "rockstarDescription": "Use Interior capsule settings",
+    "rockstarCodeComment": "Use Interior capsule settings"
+  },
+  "363": {
+    "name": "IsClosingVehicleDoor",
+    "rockstarDescription": "Ped is closing a vehicle door",
+    "rockstarCodeComment": "Ped is closing a vehicle door"
+  },
+  "364": {
+    "name": "DisableIdleExtraHeadingChange",
+    "rockstarDescription": "Disable lerping the ped towards the desired heading in the locomotion idle"
+  },
+  "365": {
+    "name": "OnlySelectVehicleWeapons",
+    "rockstarDescription": "Only allows vehicle weapons to be selected in CPedWeaponSelector::SelectWeapon"
+  },
+  "366": {
+    "name": "IsWarpingIntoVehicleMP",
+    "rockstarDescription": "Set in CTaskEnterVehicle::SetPedInSeat_OnEnter if ped is warping into a vehicle in multiplayer"
+  },
+  "367": {
+    "name": "RemoveHelmet",
+    "rockstarDescription": "Forces a ped to remove its helmet."
+  },
+  "368": {
+    "name": "IsRemovingHelmet",
+    "rockstarDescription": "Returns true if ped is removing its helmet."
+  },
+  "369": {
+    "name": "GestureAnimsBlockedFromScript"
+  },
+  "370": {
+    "name": "NeverRagdoll",
+    "rockstarDescription": "Disable all attempts by this ped to ragdoll."
+  },
+  "371": {
+    "name": "DisableWallHitAnimation",
+    "rockstarDescription": "Disable stuck wall hit animation for the ped this frame.",
+    "rockstarCodeComment": "Disable stuck wall hit animation for the ped this frame"
+  },
+  "372": {
+    "name": "PlayAgitatedAnimsInVehicle",
+    "rockstarDescription": "Play agitated anims in vehicle - overrides normal sit idle",
+    "rockstarCodeComment": "When set, the ped will play panic animations if in a vehicle"
+  },
+  "373": {
+    "name": "IsSeatShuffling",
+    "rockstarDescription": "Returns true if ped is shuffling seat.",
+    "rockstarCodeComment": "Ped is shuffling seat"
+  },
+  "374": {
+    "name": "IsThrowingProjectileWhileAiming",
+    "rockstarDescription": "True if we are running TASK_AIM_AND_THROW_PROJECTILE as a subtask of TASK_AIM_GUN_ON_FOOT."
+  },
+  "375": {
+    "name": "DisableProjectileThrowsWhileAimingGun",
+    "rockstarDescription": "Set by script command DISABLE_PLAYER_THROW_GRENADE_WHILE_USING_GUN."
+  },
+  "376": {
+    "name": "AllowControlRadioInAnySeatInMP",
+    "rockstarDescription": "Allows ped in any seat to control radio in multiplayer.",
+    "rockstarCodeComment": "Allows ped in any seat to control the radio (in MP only)"
+  },
+  "377": {
+    "name": "DisableSpycarTransformation",
+    "rockstarDescription": "Blocks ped from manually transforming spycar to/from car/sub modes.",
+    "rockstarCodeComment": "Blocks ped from manually transforming spycar to/from car/sub modes"
+  },
+  "378": {
+    "name": "BlockQuadLocomotionIdleTurns",
+    "rockstarDescription": "Prevent CTaskQuadLocomotion from blending in idle turns, regardless of desired/currenting heading differential."
+  },
+  "379": {
+    "name": "BlockHeadbobbingToRadio",
+    "rockstarDescription": "Blocks ped from headbobbing to radio music in vehicles.",
+    "rockstarCodeComment": "Blocks ped from headbobbing to radio music in vehicles"
+  },
+  "380": {
+    "name": "PlayFPSIdleFidgets",
+    "rockstarDescription": "Allows us to load and play idle fidgets in TaskMotionAiming"
+  },
+  "381": {
+    "name": "ForceExtraLongBlendInForPedSkipIdleCoverTransition",
+    "rockstarDescription": "When putting a ped directly into cover, the ped will blend in the new cover anims slowly to prevent a pose pop",
+    "rockstarCodeComment": "When putting a ped directly into cover, the ped will blend in the new cover anims slowly to prevent a pose pop, see B*1788366"
+  },
+  "382": {
+    "name": "BlendingOutFPSIdleFidgets",
+    "rockstarDescription": "True if FPS idle fidgets are blending out"
+  },
+  "383": {
+    "name": "DisableMotionBaseVelocityOverride"
+  },
+  "384": {
+    "name": "FPSSwimUseSwimMotionTask",
+    "rockstarDescription": "Set to true when we are pressing forward on the left stick in FPS mode so we switch from Aiming to Swimmimg/Diving motion tasks"
+  },
+  "385": {
+    "name": "FPSSwimUseAimingMotionTask",
+    "rockstarDescription": "Set to true when we are strafing in water in FPS mode so we use the motion aiming task"
+  },
+  "386": {
+    "name": "FiringWeaponWhenReady",
+    "rockstarDescription": "set when ped has decided to fire weapon when ready, used in FPS mode"
+  },
+  "387": {
+    "name": "IsBlindFiring",
+    "rockstarDescription": "True if the blind fire task is running"
+  },
+  "388": {
+    "name": "IsPeekingFromCover",
+    "rockstarDescription": "True if the ped is peeking in cover"
+  },
+  "389": {
+    "name": "TaskSkipProcessPreComputeImpacts",
+    "rockstarDescription": "True to bail out of ProcessPreComputeImpacts"
+  },
+  "390": {
+    "name": "DisableAssistedAimLockon",
+    "rockstarDescription": "Don't ever try to lock on to this ped with cinematic aim",
+    "rockstarCodeComment": "Don't ever try to lock on to this ped with cinematic aim"
+  },
+  "391": {
+    "name": "FPSAllowAimIKForThrownProjectile",
+    "rockstarDescription": "To control enabling of FPS aim IK while using a projectile until it is ready"
+  },
+  "392": {
+    "name": "TriggerRoadRageAnim"
+  },
+  "393": {
+    "name": "ForcePreCameraAiAnimUpdateIfFirstPerson",
+    "rockstarDescription": "Force a pre camera ai and animation update if the ped is the first person camera target during the pre camera update"
+  },
+  "394": {
+    "name": "NoCollisionDamageFromOtherPeds",
+    "rockstarDescription": "Any ped this is set on won't register damage from collisions against other peds.",
+    "rockstarCodeComment": "Any ped this is set on won't register damage from collisions against other peds."
+  },
+  "395": {
+    "name": "BlockCameraSwitching",
+    "rockstarDescription": "Block camera view mode switching."
+  },
+  "396": {
+    "name": "NeverDieFromCapsuleRagdollSettings",
+    "rockstarDescription": "Negate the capsule's preference for ragdoll triggering death on this ped."
+  },
+  "397": {
+    "name": "InContactWithDeepSurface",
+    "rockstarDescription": "ped is in contact with GTA_DEEP_SURFACE_TYPE bounds"
+  },
+  "398": {
+    "name": "DontSuppressUseNavMeshToNavigateToVehicleDoorWhenVehicleInWater",
+    "rockstarCodeComment": "For thing that inherit from boats only"
+  },
+  "399": {
+    "name": "IncludePedReferenceVelocityWhenFiringProjectiles",
+    "rockstarDescription": "Add on the ped's velocity to the projectile's initial velocity."
+  },
+  "400": {
+    "name": "IsDoingCoverOutroToPeek"
+  },
+  "401": {
+    "name": "InstantBlendToAimNoSettle",
+    "rockstarCodeComment": "If true it avoids playing the settle anim when aiming"
+  },
+  "402": {
+    "name": "ForcePreCameraAnimUpdate",
+    "rockstarDescription": "Force a pre camera animation update if the ped is the first person camera target during the pre camera update"
+  },
+  "403": {
+    "name": "DisableHelmetCullFPS",
+    "rockstarDescription": "Disables PV_FLAG_HIDE_IN_FIRST_PERSON from culling the prop in CPedPropsMgr::RenderPropsInternal"
+  },
+  "404": {
+    "name": "ShouldIgnoreCoverAutoHeadingCorrection"
+  },
+  "405": {
+    "name": "DisableReticuleInCoverThisFrame"
+  },
+  "406": {
+    "name": "ForceScriptedCameraLowCoverAngleWhenEnteringCover",
+    "rockstarCodeComment": "For first person mode, when the player enters low cover, will orientate camera to face left or right rather than into cover"
+  },
+  "407": {
+    "name": "DisableCameraConstraintFallBackThisFrame"
+  },
+  "408": {
+    "name": "DisableFPSArmIK",
+    "rockstarDescription": "Disables FPS arm IK in CTaskPlayerOnFoot::IsStateValidForFPSIK"
+  },
+  "409": {
+    "name": "DisableRightArmIKInCoverOutroFPS",
+    "rockstarDescription": "Turn off right arm IK during cover outros in FPS mode when set"
+  },
+  "410": {
+    "name": "DoFPSSprintBreakOut"
+  },
+  "411": {
+    "name": "DoFPSJumpBreakOut"
+  },
+  "412": {
+    "name": "IsExitingCover"
+  },
+  "413": {
+    "name": "WeaponBlockedInFPSMode",
+    "rockstarDescription": "True if running CTaskWeaponBlocked in FPS mode"
+  },
+  "414": {
+    "name": "PoVCameraConstrained"
+  },
+  "415": {
+    "name": "ScriptClearingPedTasks",
+    "rockstarDescription": "Set in CommandClearPedTasksImmediately in commands_task.cpp"
+  },
+  "416": {
+    "name": "WasFPSJumpingWithProjectile",
+    "rockstarDescription": "ped was jumping on foot with projectile in hand"
+  },
+  "417": {
+    "name": "DisableMeleeWeaponSelection"
+  },
+  "418": {
+    "name": "WaypointPlaybackSlowMoreForCorners",
+    "rockstarDescription": "slow for corners more aggressively for waypoint playback",
+    "rockstarCodeComment": "Allows peds following waypoint recordings to slow down more for corners. (Achieves same effect as the EWAYPOINT_SUPPRESS_EXACTSTOP flag, which is passed into TASK_FOLLOW_WAYPOINT_RECORDING)."
+  },
+  "419": {
+    "name": "FPSPlacingProjectile",
+    "rockstarDescription": "True while placing a projectile in FPS mode"
+  },
+  "420": {
+    "name": "UseBulletPenetrationForGlass",
+    "rockstarDescription": "Ped will use bullet penetration code when glass material is hit.",
+    "rockstarCodeComment": "Ped will use bullet penetration code when glass material is hit."
+  },
+  "421": {
+    "name": "FPSPlantingBombOnFloor",
+    "rockstarDescription": "Doing a floor plant with a bomb in FPS mode"
+  },
+  "422": {
+    "name": "ForceSkipFPSAimIntro",
+    "rockstarDescription": "don't do FPS Aim intro"
+  },
+  "423": {
+    "name": "CanBePinnedByFriendlyBullets",
+    "rockstarDescription": "If set on a ped then they are allowed to be pinned by bullets from friendly peds",
+    "rockstarCodeComment": "If set on a ped then they are allowed to be pinned by bullets from friendly peds"
+  },
+  "424": {
+    "name": "DisableLeftArmIKInCoverOutroFPS",
+    "rockstarDescription": "Turn off left arm IK during cover outros in FPS mode when set"
+  },
+  "425": {
+    "name": "DisableSpikeStripRoadBlocks",
+    "rockstarDescription": "Blocks road blocks with spike strips from spawning",
+    "rockstarCodeComment": "Blocks road blocks with spike strips from spawning"
+  },
+  "426": {
+    "name": "SkipFPSUnHolsterTransition",
+    "rockstarDescription": "skip aim unholster transition"
+  },
+  "427": {
+    "name": "PutDownHelmetFX",
+    "rockstarDescription": "trigger the put down helmet fx"
+  },
+  "428": {
+    "name": "IsLowerPriorityMeleeTarget",
+    "rockstarDescription": "Peds marked with this flag will only be able to be hit by the player if the player explicitly presses the melee button",
+    "rockstarCodeComment": "Peds marked with this flag will only be able to be hit by the player if the player explicitly presses the melee button"
+  },
+  "429": {
+    "name": "ForceScanForEventsThisFrame",
+    "rockstarDescription": "disable timeslicing of event scanning",
+    "rockstarCodeComment": "Disable timeslicing of event scanning this frame (see url:bugstar:2100836 for an example situation where this is useful)"
+  },
+  "430": {
+    "name": "StartProjectileTaskWithPrimingDisabled",
+    "rockstarDescription": "Set this flag to disable priming when the projectile task starts up until the attack trigger is released and pressed again"
+  },
+  "431": {
+    "name": "CheckFPSSwitchInCameraUpdate",
+    "rockstarDescription": "Set if we want to perform a second AI/anim update when switching between first person/third person"
+  },
+  "432": {
+    "name": "ForceAutoEquipHelmetsInAicraft",
+    "rockstarDescription": "Force ped to auto-equip a helmet om entering aircraft. Overrides PCF_DisableAutoEquipHelmetsInAicraft (set in the interaction menu)",
+    "rockstarCodeComment": "Forces ped to auto-equip a helmet when entering an aircraft. Overrides PCF_DisableAutoEquipHelmetsInAicraft which is set in the interaction menu."
+  },
+  "433": {
+    "name": "BlockRemotePlayerRecording",
+    "rockstarDescription": "Flag used by replay editor to disable recording specified remote players (for url:bugstar:2218297).",
+    "rockstarCodeComment": "Flag used by replay editor to disable recording specified remote players (for url:bugstar:2218297)."
+  },
+  "434": {
+    "name": "InflictedDamageThisFrame",
+    "rockstarDescription": "Inflicted damage this frame"
+  },
+  "435": {
+    "name": "UseFirstPersonVehicleAnimsIfFPSCamNotDominant",
+    "rockstarDescription": "allow FPS vehicle anims even if FPS camera isn't dominant",
+    "rockstarCodeComment": "allow FPS vehicle anims even if FPS camera isn't dominant"
+  },
+  "436": {
+    "name": "ForceIntoStandPoseOnJetski",
+    "rockstarDescription": "puts the ped in a standing pose on the jetski",
+    "rockstarCodeComment": "allow FPS vehicle anims even if FPS camera isn't dominant"
+  },
+  "437": {
+    "name": "InAirDefenceSphere",
+    "rockstarDescription": "Ped is located inside an air defence sphere."
+  },
+  "438": {
+    "name": "SuppressTakedownMeleeActions",
+    "rockstarDescription": "This will suppress all takedown melee actions (RA_IS_TAKEDOWN or RA_IS_STEALTH_KILL, defined in action_table.meta)",
+    "rockstarCodeComment": "This will suppress all takedown melee actions (RA_IS_TAKEDOWN or RA_IS_STEALTH_KILL, defined in action_table.meta)"
+  },
+  "439": {
+    "name": "InvertLookAroundControls",
+    "rockstarDescription": "Inverts lookaround controls (right stick / mouse) for this player, for this frame.",
+    "rockstarCodeComment": "Inverts lookaround controls (right stick / mouse) for this player"
+  },
+  "440": {
+    "name": "IgnoreCombatManager",
+    "rockstarDescription": "Allows attacking ped to engage another entity without waiting for its turn (if there's multiple attackers).",
+    "rockstarCodeComment": "Allows attacking ped to engage another entity without waiting for its turn (if there's multiple attackers)"
+  },
+  "441": {
+    "name": "UseBlendedCamerasOnUpdateFpsCameraRelativeMatrix",
+    "rockstarDescription": "Check if there is an active camera blending and use the blended camera frame when compute the FPS camera relative matrix.",
+    "rockstarCodeComment": "Check if there is an active camera blending and use the blended camera frame when compute the FPS camera relative matrix."
+  },
+  "442": {
+    "name": "ForceMeleeCounter",
+    "rockstarDescription": "Forces the ped to perform a dodge and a counter move if it's attacked.",
+    "rockstarCodeComment": "Forces the ped to perform a dodge and a counter move if it's attacked."
+  },
+  "443": {
+    "name": "WasHitByVehicleMelee",
+    "rockstarDescription": "Indicates that ped was hit by vehicle melee attack."
+  },
+  "444": {
+    "name": "SuppressNavmeshForEnterVehicleTask",
+    "rockstarDescription": "Dont allow ped to use navmesh when navigating in TaskEnterVehicle",
+    "rockstarCodeComment": "Suppress navmesh navigation in TaskEnterVehicle. Will use gotopoint or bail if cant use that"
+  },
+  "445": {
+    "name": "DisableShallowWaterBikeJumpOutThisFrame",
+    "rockstarCodeComment": "Prevents the ped from jumping out of the vehicle in shallow water if the bike is submerged"
+  },
+  "446": {
+    "name": "DisablePlayerCombatRoll",
+    "rockstarDescription": "Disables player combat rolling.",
+    "rockstarCodeComment": "Prevents the player from performing a combat roll."
+  },
+  "447": {
+    "name": "IgnoreDetachSafePositionCheck",
+    "rockstarDescription": "Will ignore safe position check on detaching the ped",
+    "rockstarCodeComment": "Will ignore safe position check on detaching the ped"
+  },
+  "448": {
+    "name": "DisableEasyLadderConditions",
+    "rockstarDescription": "Prevents the more forgiving MP ladder detection settings from being used, and forces SP settings.",
+    "rockstarCodeComment": "Prevents the more forgiving MP ladder detection settings from being used, and forces SP settings."
+  },
+  "449": {
+    "name": "PlayerIgnoresScenarioSpawnRestrictions",
+    "rockstarDescription": "Makes local player ignore certain scenario spawn restrictions on scenarios that respect this flag",
+    "rockstarCodeComment": "Makes local player ignore certain scenario spawn restrictions on scenarios that respect this flag"
+  },
+  "450": {
+    "name": "UsingDrone",
+    "rockstarDescription": "Indicates player is using Drone from Battle DLC",
+    "rockstarCodeComment": "Indicates player is using Drone from Battle DLC"
+  },
+  "451": {
+    "name": "ForceWantedLevelWhenKilled",
+    "rockstarDescription": "Will force the player that killed this ped to get wanted level, even if he wouldnt otherwise"
+  },
+  "452": {
+    "name": "UseScriptedWeaponFirePosition",
+    "rockstarDescription": "Will use scripted firing position on the clones of this ped on other machines",
+    "rockstarCodeComment": "Will use scripted firing position on the clones of this ped on other machines"
+  },
+  "453": {
+    "name": "EnableCollisionOnNetworkCloneWhenFixed",
+    "rockstarDescription": "Enable collision on player ped network clones when physics is fixed"
+  },
+  "454": {
+    "name": "UseExtendedRagdollCollisionCalculator",
+    "rockstarDescription": "Use extended logic for determining damage instigator for ragdoll collisions",
+    "rockstarCodeComment": "Use extended logic for determining damage instigator for ragdoll collisions"
+  },
+  "455": {
+    "name": "PreventLockonToFriendlyPlayers",
+    "rockstarDescription": "Prevent the player locking on to friendly players",
+    "rockstarCodeComment": "Prevent the player locking on to friendly players"
+  },
+  "456": {
+    "name": "OnlyAbortScriptedAnimOnMovementByInput",
+    "rockstarDescription": "Modifies AF_ABORT_ON_PED_MOVEMENT to only trigger an abort when movement would be caused by player input",
+    "rockstarCodeComment": "Modifies AF_ABORT_ON_PED_MOVEMENT to only trigger an abort when movement would be caused by player input"
+  },
+  "457": {
+    "name": "PreventAllStealthKills",
+    "rockstarDescription": "Prevents stealth take downs from being preformed on a ped",
+    "rockstarCodeComment": "Prevents stealth take downs from being preformed on a ped"
+  },
+  "458": {
+    "name": "BlockFallTaskFromExplosionDamage",
+    "rockstarDescription": "Prevent peds from entering a fall task if affected by explosion damage",
+    "rockstarCodeComment": "Prevent peds from entering a fall task if affected by explosion damage"
+  },
+  "459": {
+    "name": "AllowPedRearEntry",
+    "rockstarDescription": "Mimics the behaviour like with boss peds by holding the button for entering the rear seats",
+    "rockstarCodeComment": "Mimics the behaviour of boss peds by holding the button for entering the rear seats"
+  }
+}
