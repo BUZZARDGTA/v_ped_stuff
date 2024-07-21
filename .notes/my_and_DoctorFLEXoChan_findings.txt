@@ -1,3 +1,4 @@
+PRF:
 1   -- invisible locally but weapon assets visible
 2   -- weapon wheel you cannot select any firearm but you can select a few knifes (not all of them).
 18  -- in first person your weapon camera view is a bit shallower, however it does some weird camera movements restrictions.

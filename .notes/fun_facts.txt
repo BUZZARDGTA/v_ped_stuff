@@ -4,13 +4,13 @@ I could technically find all of them if someone wants me to.
 I just randomely found those while doing my essential testings.
 
 PCF:
-    ["125"] = "IsDrunk" -- > has been removed
+    ["125"] = "IsDrunk" --> has been removed
+    ["169"] = "CannotBeTargeted" --> has been removed // DEPRECATED - Use the reset flag instead. // Replaced with "PreventAllMeleeTaunts"
 
     ["20"] = "AllowMedicsToAttend" --> old name / R* employee lazy
     ["26"] = "DontAllowToBeDraggedOutOfVehicle" --> old name / R* employee lazy
     ["114"] = "ForceControlledKnockout" --> old name / R* employee lazy
     ["115"] = "FallsOutOfVehicleWhenKilled" --> old name / R* employee lazy
-    ["169"] = "CannotBeTargeted" --> old name / R* employee lazy
     ["198"] = "DontReactivateRagdollOnPedCollisionWhenDead" --> old name / R* employee lazy
     ["259"] = "AllowMissionPedToUseInjuredMovement" --> old name / R* employee lazy
     ["300"] = "ShouldThrowSmokeGrenadeNow" --> old name / R* employee lazy
