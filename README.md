@@ -1,6 +1,6 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/Online_Version-1.69-green" alt="Online Version">
-  <img src="https://img.shields.io/badge/Game_Build-3274-green" alt="Game Build">
+  <img src="https://img.shields.io/badge/Online_Version-1.69-red" alt="Online Version">
+  <img src="https://img.shields.io/badge/Game_Build-3274-red" alt="Game Build">
   <br><br>
   <strong>Without being pretentious, my repository offers the most up-to-date enums.</strong>
   <br>
